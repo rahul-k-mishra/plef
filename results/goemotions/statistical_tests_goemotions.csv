@@ -1,0 +1,11 @@
+metric_1,metric_2,pearson_r,pearson_p,pearson_sig,spearman_rho,spearman_p,spearman_sig,direction_correct,hypothesis,n
+sentiment,gase,0.4525,0.0001,***,0.3736,0.0001,***,YES,Expected +ve,50000
+sentiment,cd_index,-0.0189,0.001,***,-0.0194,0.001,***,YES,Expected -ve,50000
+sentiment,vads,-0.1575,0.0001,***,-0.1193,0.0001,***,NO,Expected +ve,50000
+pti,cd_index,0.0115,0.01,**,0.0173,0.001,***,YES,Expected +ve,50000
+pti,pai,0.25,0.0001,***,0.3166,0.0001,***,YES,Expected +ve,50000
+gase,lewi_drop,-0.0375,0.5,ns,-0.0379,0.5,ns,YES,Expected -ve,645
+teg,ties,-0.0022,0.5,ns,-0.0025,0.5,ns,NO,Expected +ve,50000
+vads,gase,-0.1569,0.0001,***,-0.1157,0.0001,***,NO,Expected +ve,50000
+nava,lewi_drop,0.807,0.0001,***,0.7326,0.0001,***,YES,Expected +ve,645
+cd_index,ties,0.0124,0.01,**,0.0145,0.01,**,YES,Expected +ve,50000

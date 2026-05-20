@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — dailydialog  Generated: 2026-05-09 23:12
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Dailydialog, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.043 & *** & +0.299 & YES \\
+    sentiment & cd_index & +0.009 & ns & +0.029 & NO \\
+    sentiment & vads & -0.222 & *** & -0.146 & NO \\
+    pti & cd_index & +0.074 & *** & +0.078 & YES \\
+    pti & pai & +0.048 & *** & +0.069 & YES \\
+    gase & lewi_drop & +0.076 & *** & +0.017 & NO \\
+    teg & ties & +0.042 & *** & +0.031 & YES \\
+    vads & gase & -0.130 & *** & -0.245 & NO \\
+    nava & lewi_drop & +0.732 & *** & +0.649 & YES \\
+    cd_index & ties & +0.076 & *** & +0.053 & YES \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — semeval2017  (N=10,000)  Generated: 2026-05-09 23:08
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Semeval2017 ($N=10,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.468 & 0.628 & +0.319 & *** \\
+    VADER & 0.491 & 0.660 & +0.422 & *** \\
+    NRC & 0.306 & 0.609 & +0.319 & *** \\
+    LIWC & 0.408 & 0.608 & +0.344 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

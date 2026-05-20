@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — empathetic  (N=30,000)  Generated: 2026-05-09 23:07
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Empathetic ($N=30,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.427 & 0.607 & +0.303 & *** \\
+    VADER & 0.394 & 0.591 & +0.306 & *** \\
+    NRC & 0.328 & 0.589 & +0.279 & *** \\
+    LIWC & 0.334 & 0.561 & +0.247 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

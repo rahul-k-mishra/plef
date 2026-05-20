@@ -1,0 +1,20 @@
+% Table 1: dailydialog Corpus Statistics  (N=13,118)  Generated: 2026-05-09 23:12
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Dailydialog ($N=13,118$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & +0.0097 & 0.0490 & -0.4588 & +0.9081 \\
+    GASE (composite health) & +0.6093 & 0.1194 & +0.2581 & +0.8389 \\
+    PTI (pronoun power) & +0.0232 & 0.3090 & -0.9500 & +0.8889 \\
+    TEG (emotional volatility) & +0.0639 & 0.0828 & +0.0000 & +0.7615 \\
+    RCI (relational coherence) & +0.0240 & 0.0313 & +0.0000 & +0.6667 \\
+    PAI (power asymmetry) & +0.1456 & 0.1200 & +0.0000 & +0.6508 \\
+    NAVA (narrative arc) & -0.0124 & 0.1121 & -1.0751 & +1.2167 \\
+    LEWI drop magnitude & -0.0080 & 0.0925 & -0.8201 & +0.7420 \\
+    CD-index (distortions) & +0.0676 & 0.0777 & +0.0000 & +0.4468 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

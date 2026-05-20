@@ -1,0 +1,20 @@
+% Ablation Study Table — Generated: 2026-05-09 22:41
+\begin{table}[h]
+  \centering
+  \caption{Ablation Study: Component Contribution to PLEF Metrics}
+  \begin{tabular}{llrr}
+    \toprule
+    Metric & Component Removed & $\Delta$ Score & \% Change \\
+    \midrule
+    GASE & Sentiment (w=0.30) & — & — \\
+    GASE & Neg-Entropy (w=0.25) & — & — \\
+    GASE & Att-Security (w=0.25) & — & — \\
+    GASE & Anti-Horsemen (w=0.20) & — & — \\
+    LEWI & Gaussian smoothing & — & — \\
+    PTI & We-pronoun & +0.0095 & +5.0\% \\
+    NAVA & 1/3→1/4 partition & +0.0002 & +5.9\% \\
+    RCI & Stop words included & -0.0046 & -30.0\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+% Fill in GASE rows from PLEF ABL module output.

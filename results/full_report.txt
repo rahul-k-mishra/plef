@@ -1,0 +1,55 @@
+==============================================================
+PLEF AUTOMATED ANALYSIS REPORT
+Generated: 2026-05-09 23:15
+Corpus: r/relationship_advice  N=1317 posts
+==============================================================
+
+CORPUS DESCRIPTIVE STATISTICS
+----------------------------------------
+  Sentiment (PLEF-VADER)              μ=-0.0187  SD=0.1011
+  GASE (composite health)             μ=+0.4604  SD=0.0759
+  PTI (pronoun power)                 μ=+0.5963  SD=0.4552
+  TEG (emotional volatility)          μ=+0.2195  SD=0.1261
+  NAVA (narrative arc)                μ=-0.0361  SD=0.1805
+  LEWI drop magnitude                 μ=-0.0301  SD=0.1544
+  CD-index (distortions)              μ=+0.1642  SD=0.0872
+  VADS (disclosure depth)             μ=+0.0878  SD=0.0570
+  TIES (inconsistency)                μ=+0.0426  SD=0.1548
+
+BASELINE COMPARISON
+----------------------------------------
+  PLEF      Macro-F1=0.431  AUC=0.713  r=+0.435
+  VADER     Macro-F1=0.565  AUC=0.823  r=+0.674
+  NRC       Macro-F1=0.147  AUC=0.790  r=+0.535
+  LIWC      Macro-F1=0.622  AUC=0.808  r=+0.610
+
+CORRELATION ANALYSIS
+----------------------------------------
+  sentiment      x gase            r=+0.418***   ρ=+0.613***   direction=YES
+  sentiment      x cd_index        r=-0.000ns    ρ=+0.014ns    direction=YES
+  sentiment      x vads            r=-0.220***   ρ=-0.164***   direction=NO
+  pti            x cd_index        r=+0.052ns    ρ=+0.041ns    direction=YES
+  pti            x pai             r=+0.381***   ρ=+0.435***   direction=YES
+  gase           x lewi_drop       r=+0.051ns    ρ=+0.003ns    direction=NO
+  teg            x ties            r=+0.034ns    ρ=+0.072**    direction=YES
+  vads           x gase            r=-0.145***   ρ=-0.141***   direction=NO
+  nava           x lewi_drop       r=+0.605***   ρ=+0.602***   direction=YES
+  cd_index       x ties            r=+0.168***   ρ=+0.260***   direction=YES
+
+EFFECT SIZE
+----------------------------------------
+  Cohen's d (pos vs neg PLEF sentiment): d=+1.237  g=+1.236  (Large)
+
+==============================================================
+FILES SAVED
+----------------------------------------
+  results/
+    all_posts_metrics.csv     (all metrics for all posts)
+    corpus_summary.csv        (mean, SD, min, max)
+    baseline_comparison.csv   (PLEF vs VADER vs NRC vs LIWC)
+    statistical_tests.csv     (Pearson, Spearman, p-values)
+    paper_table1.txt          (LaTeX Table 1)
+    paper_table2.txt          (LaTeX Table 2)
+    paper_table3.txt          (LaTeX Table 3)
+    full_report.txt           (this report)
+==============================================================

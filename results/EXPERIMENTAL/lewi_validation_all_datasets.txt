@@ -1,0 +1,11 @@
+LEWI VALIDATION -- ALL DATASETS
+
+consensus: LEWI_SD=0.1401, NAVA x LEWI r=+0.832(***), n=70
+dailydialog: LEWI_SD=0.1111, NAVA x LEWI r=+0.742(***), n=4671
+empathetic: LEWI_SD=0.1884, NAVA x LEWI r=+0.668(***), n=334
+goemotions: LEWI_SD=0.1724, NAVA x LEWI r=+0.850(***), n=67
+isear: LEWI_SD=0.1296, NAVA x LEWI r=+0.638(***), n=28
+meld: LEWI_SD=0.1049, NAVA x LEWI r=+0.835(***), n=176
+reddit_relationship: LEWI_SD=0.1832, NAVA x LEWI r=+0.773(***), n=163
+semeval2017: LEWI_SD=0.1439, NAVA x LEWI r=+0.749(***), n=166
+tweeteval: LEWI_SD=0.1429, NAVA x LEWI r=+0.849(***), n=120

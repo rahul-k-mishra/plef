@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — empathetic  Generated: 2026-05-09 23:07
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Empathetic, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.463 & *** & +0.513 & YES \\
+    sentiment & cd_index & -0.005 & ns & -0.001 & YES \\
+    sentiment & vads & -0.257 & *** & -0.226 & NO \\
+    pti & cd_index & -0.024 & *** & +0.032 & NO \\
+    pti & pai & +0.472 & *** & +0.458 & YES \\
+    gase & lewi_drop & +0.075 & *** & +0.067 & NO \\
+    teg & ties & +0.014 & * & +0.014 & YES \\
+    vads & gase & -0.201 & *** & -0.184 & NO \\
+    nava & lewi_drop & +0.725 & *** & +0.613 & YES \\
+    cd_index & ties & +0.021 & *** & +0.020 & YES \\
+    \bottomrule
+  \end{tabular}
+\end{table}

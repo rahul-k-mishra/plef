@@ -1,0 +1,29 @@
+=================================================================
+PLEF EXPERIMENTAL REPORT
+Generated: 2026-05-09 23:13
+Datasets: 9
+=================================================================
+
+  H1: PENDING human annotation
+  H2: TESTABLE via proxy
+  H3: TESTABLE NOW
+  H4: TESTABLE if multi-subreddit corpus downloaded
+  H5: TESTABLE NOW
+  H6: TESTABLE NOW
+  H7: TESTABLE NOW
+
+Files:
+  ablation_all_datasets.csv
+  mcnemar_all_datasets.csv
+  pti_dominance_all_datasets.csv
+  teg_instability_all_datasets.csv
+  ablation_study_full.txt
+  baseline_significance.txt
+  lewi_annotation_protocol.txt
+  lewi_validation_all_datasets.txt
+  paper_ablation_all_datasets.txt
+  paper_ablation_table.txt
+  paper_mcnemar_all_datasets.txt
+  pre_registered_hypotheses.txt
+  pti_dominance_result.txt
+  teg_instability_result.txt

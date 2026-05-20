@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — semeval2017  Generated: 2026-05-09 23:08
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Semeval2017, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.283 & *** & +0.250 & YES \\
+    sentiment & cd_index & -0.012 & ns & -0.012 & YES \\
+    sentiment & vads & -0.109 & *** & -0.085 & NO \\
+    pti & cd_index & +0.070 & *** & +0.071 & YES \\
+    pti & pai & +0.346 & *** & +0.379 & YES \\
+    gase & lewi_drop & +0.168 & ** & +0.171 & NO \\
+    teg & ties & +0.000 & ns & +0.000 & NO \\
+    vads & gase & -0.107 & *** & -0.065 & NO \\
+    nava & lewi_drop & +0.758 & *** & +0.731 & YES \\
+    cd_index & ties & +0.000 & ns & +0.000 & NO \\
+    \bottomrule
+  \end{tabular}
+\end{table}

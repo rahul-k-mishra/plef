@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — reddit_relationship  Generated: 2026-05-09 23:03
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Reddit Relationship, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.450 & *** & +0.395 & YES \\
+    sentiment & cd_index & -0.030 & ** & -0.030 & YES \\
+    sentiment & vads & -0.151 & *** & -0.116 & NO \\
+    pti & cd_index & -0.009 & ns & -0.007 & NO \\
+    pti & pai & +0.255 & *** & +0.344 & YES \\
+    gase & lewi_drop & -0.096 & ns & -0.069 & YES \\
+    teg & ties & -0.005 & ns & -0.006 & NO \\
+    vads & gase & -0.153 & *** & -0.101 & NO \\
+    nava & lewi_drop & +0.779 & *** & +0.693 & YES \\
+    cd_index & ties & +0.013 & ns & +0.016 & YES \\
+    \bottomrule
+  \end{tabular}
+\end{table}

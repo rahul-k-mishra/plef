@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — isear  (N=2,042)  Generated: 2026-05-09 23:08
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Isear ($N=2,042$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.270 & 0.500 & +0.000 & ns \\
+    VADER & 0.291 & 0.500 & +0.000 & ns \\
+    NRC & 0.310 & 0.500 & +0.000 & ns \\
+    LIWC & 0.312 & 0.500 & +0.000 & ns \\
+    \bottomrule
+  \end{tabular}
+\end{table}

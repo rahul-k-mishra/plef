@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison (auto-generated 2026-05-09 23:15)
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Macro-F1, Macro-AUC, Pearson $r$ vs Gold Labels}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    System & Macro-F1 & Accuracy & Macro-AUC & Pearson $r$ & $p$ \\
+    \midrule
+    PLEF & 0.431 & 0.422 & 0.713 & +0.435 & *** \\
+    VADER & 0.565 & 0.680 & 0.823 & +0.674 & *** \\
+    NRC & 0.147 & 0.280 & 0.790 & +0.535 & *** \\
+    LIWC & 0.622 & 0.686 & 0.808 & +0.610 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

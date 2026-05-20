@@ -1,0 +1,10 @@
+dataset,pti_mean,pti_pai_r,pti_pai_sig,n,H2
+consensus,0.1259,0.266,***,5000,YES
+dailydialog,0.0515,0.1013,***,5000,NO
+empathetic,0.4943,0.4686,***,5000,YES
+goemotions,0.101,0.2432,***,5000,NO
+isear,0.4267,0.8687,***,2042,YES
+meld,0.0637,0.1353,***,5000,NO
+reddit_relationship,0.1549,0.2557,***,5000,YES
+semeval2017,0.084,0.305,***,5000,YES
+tweeteval,0.0824,0.317,***,5000,YES

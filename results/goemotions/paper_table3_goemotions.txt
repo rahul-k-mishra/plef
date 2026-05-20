@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — goemotions  Generated: 2026-05-09 23:05
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Goemotions, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.453 & *** & +0.374 & YES \\
+    sentiment & cd_index & -0.019 & *** & -0.019 & YES \\
+    sentiment & vads & -0.158 & *** & -0.119 & NO \\
+    pti & cd_index & +0.011 & ** & +0.017 & YES \\
+    pti & pai & +0.250 & *** & +0.317 & YES \\
+    gase & lewi_drop & -0.037 & ns & -0.038 & YES \\
+    teg & ties & -0.002 & ns & -0.003 & NO \\
+    vads & gase & -0.157 & *** & -0.116 & NO \\
+    nava & lewi_drop & +0.807 & *** & +0.733 & YES \\
+    cd_index & ties & +0.012 & ** & +0.015 & YES \\
+    \bottomrule
+  \end{tabular}
+\end{table}

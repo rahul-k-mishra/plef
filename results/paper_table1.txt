@@ -1,0 +1,20 @@
+% Table 1: PLEF Corpus Descriptive Statistics (auto-generated 2026-05-09 23:15)
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — r/relationship\_advice Corpus ($N=1317$)}
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Median & Min & Max & $n$ \\
+    \midrule
+    Sentiment (PLEF-VADER) & -0.0187 & 0.1011 & -0.0109 & -0.8750 & +0.7650 & 1317 \\
+    GASE (composite health) & +0.4604 & 0.0759 & +0.4518 & +0.1324 & +0.7523 & 1317 \\
+    PTI (pronoun power) & +0.5963 & 0.4552 & +0.7647 & -0.9800 & +0.9902 & 1317 \\
+    TEG (emotional volatility) & +0.2195 & 0.1261 & +0.2041 & +0.0000 & +1.2977 & 1317 \\
+    NAVA (narrative arc) & -0.0361 & 0.1805 & -0.0165 & -0.9638 & +1.0097 & 1289 \\
+    LEWI drop magnitude & -0.0301 & 0.1544 & -0.0118 & -0.8316 & +0.8384 & 1289 \\
+    CD-index (distortions) & +0.1642 & 0.0872 & +0.1667 & +0.0000 & +0.4601 & 1317 \\
+    VADS (disclosure depth) & +0.0878 & 0.0570 & +0.0809 & +0.0000 & +0.4247 & 1317 \\
+    TIES (inconsistency) & +0.0426 & 0.1548 & +0.0000 & +0.0000 & +2.5909 & 1317 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

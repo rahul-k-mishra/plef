@@ -1,0 +1,20 @@
+% Table 1: meld Corpus Statistics  (N=9,881)  Generated: 2026-05-09 23:09
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Meld ($N=9,881$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & +0.0036 & 0.1334 & -0.9609 & +0.7906 \\
+    GASE (composite health) & +0.6803 & 0.0835 & +0.0729 & +0.9155 \\
+    PTI (pronoun power) & +0.0622 & 0.4031 & -0.8750 & +0.8889 \\
+    TEG (emotional volatility) & +0.0187 & 0.0852 & +0.0000 & +1.1976 \\
+    RCI (relational coherence) & +0.0104 & 0.0771 & +0.0000 & +1.0000 \\
+    PAI (power asymmetry) & +0.1917 & 0.1677 & +0.0000 & +0.7802 \\
+    NAVA (narrative arc) & +0.0137 & 0.1380 & -0.6124 & +1.1976 \\
+    LEWI drop magnitude & +0.0079 & 0.0871 & -0.6124 & +0.7984 \\
+    CD-index (distortions) & +0.0126 & 0.0332 & +0.0000 & +0.2500 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

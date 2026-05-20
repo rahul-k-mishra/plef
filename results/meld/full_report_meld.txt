@@ -1,0 +1,54 @@
+==============================================================
+PLEF ANALYSIS REPORT — MELD
+Generated: 2026-05-09 23:09
+N = 9,881 items
+==============================================================
+
+DATASET INFO
+----------------------------------------
+  Source:      GitHub (declare-lab/MELD)
+  Citation:    Poria et al. (2019) MELD. ACL 2019.
+  Label type:  Human-annotated
+
+CORPUS STATISTICS
+----------------------------------------
+  Sentiment (PLEF-VADER)              μ=+0.0036  SD=0.1334
+  GASE (composite health)             μ=+0.6803  SD=0.0835
+  PTI (pronoun power)                 μ=+0.0622  SD=0.4031
+  TEG (emotional volatility)          μ=+0.0187  SD=0.0852
+  RCI (relational coherence)          μ=+0.0104  SD=0.0771
+  PAI (power asymmetry)               μ=+0.1917  SD=0.1677
+  NAVA (narrative arc)                μ=+0.0137  SD=0.1380
+  LEWI drop magnitude                 μ=+0.0079  SD=0.0871
+  CD-index (distortions)              μ=+0.0126  SD=0.0332
+
+BASELINE COMPARISON
+----------------------------------------
+  PLEF      F1=0.330  AUC=0.537  r=+0.123
+  VADER     F1=0.322  AUC=0.536  r=+0.147
+  NRC       F1=0.296  AUC=0.533  r=+0.122
+  LIWC      F1=0.307  AUC=0.537  r=+0.144
+
+CORRELATION ANALYSIS
+----------------------------------------
+  sentiment      x gase            r=+0.566***   dir=YES
+  sentiment      x cd_index        r=-0.034***   dir=YES
+  sentiment      x vads            r=-0.081***   dir=NO
+  pti            x cd_index        r=+0.049***   dir=YES
+  pti            x pai             r=+0.134***   dir=YES
+  gase           x lewi_drop       r=-0.159**    dir=YES
+  teg            x ties            r=+0.000ns    dir=NO
+  vads           x gase            r=-0.070***   dir=NO
+  nava           x lewi_drop       r=+0.783***   dir=YES
+  cd_index       x ties            r=+0.000ns    dir=NO
+
+EFFECT SIZE
+----------------------------------------
+  Cohen's d (pos vs neg): d=+0.313  g=+0.313  (Small)
+
+SUMMARY
+----------------------------------------
+  PLEF Macro-F1:   0.330
+  PLEF Macro-AUC:  0.537
+  Correlations:    6/10 in predicted direction
+==============================================================

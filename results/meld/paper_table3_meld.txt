@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — meld  Generated: 2026-05-09 23:09
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Meld, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.566 & *** & +0.591 & YES \\
+    sentiment & cd_index & -0.034 & *** & -0.033 & YES \\
+    sentiment & vads & -0.081 & *** & -0.045 & NO \\
+    pti & cd_index & +0.049 & *** & +0.051 & YES \\
+    pti & pai & +0.134 & *** & +0.162 & YES \\
+    gase & lewi_drop & -0.159 & ** & -0.138 & YES \\
+    teg & ties & +0.000 & ns & +0.000 & NO \\
+    vads & gase & -0.070 & *** & -0.049 & NO \\
+    nava & lewi_drop & +0.783 & *** & +0.622 & YES \\
+    cd_index & ties & +0.000 & ns & +0.000 & NO \\
+    \bottomrule
+  \end{tabular}
+\end{table}

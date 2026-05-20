@@ -1,0 +1,10 @@
+dataset,teg_mean,teg_ties_r,sig,n,H3
+consensus,0.3394,0.0,ns,655,NO
+dailydialog,0.1239,-0.0102,ns,3171,NO
+empathetic,0.3527,0.0274,ns,1638,NO
+goemotions,0.3598,0.0,ns,716,NO
+isear,0.4199,0.0,ns,274,NO
+meld,0.3201,0.0,ns,309,NO
+reddit_relationship,0.3546,0.0,ns,1351,NO
+semeval2017,0.3244,0.0,ns,640,NO
+tweeteval,0.3464,0.0,ns,545,NO

@@ -1,0 +1,20 @@
+% Table 1: semeval2017 Corpus Statistics  (N=10,000)  Generated: 2026-05-09 23:08
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Semeval2017 ($N=10,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & +0.0322 & 0.1543 & -0.8858 & +0.8402 \\
+    GASE (composite health) & +0.6757 & 0.0865 & +0.1124 & +0.9389 \\
+    PTI (pronoun power) & +0.0989 & 0.3405 & -0.8000 & +0.8571 \\
+    TEG (emotional volatility) & +0.0427 & 0.1282 & +0.0000 & +1.1909 \\
+    RCI (relational coherence) & +0.0079 & 0.0327 & +0.0000 & +0.5714 \\
+    PAI (power asymmetry) & +0.1398 & 0.1636 & +0.0000 & +0.6364 \\
+    NAVA (narrative arc) & -0.0355 & 0.1818 & -0.8200 & +0.4939 \\
+    LEWI drop magnitude & -0.0079 & 0.1373 & -0.6553 & +0.5006 \\
+    CD-index (distortions) & +0.0092 & 0.0288 & +0.0000 & +0.2500 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

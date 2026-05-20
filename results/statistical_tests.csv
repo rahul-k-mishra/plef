@@ -1,0 +1,11 @@
+metric_1,metric_2,pearson_r,pearson_p,pearson_sig,spearman_rho,spearman_p,spearman_sig,direction_correct,hypothesis,n
+sentiment,gase,0.4182,0.0001,***,0.613,0.0001,***,YES,Expected +ve: more positive sentiment → higher GASE,1317
+sentiment,cd_index,-0.0002,0.5,ns,0.0144,0.5,ns,YES,Expected -ve: more negative → more cognitive distortions,1317
+sentiment,vads,-0.2199,0.0001,***,-0.1637,0.0001,***,NO,Expected +ve: positive language → deeper disclosure,1317
+pti,cd_index,0.0523,0.1,ns,0.0413,0.5,ns,YES,Expected +ve: self-focus → more distortions,1317
+pti,pai,0.3805,0.0001,***,0.4353,0.0001,***,YES,Expected +ve: I-dominant → power asymmetry,1317
+gase,lewi_drop,0.051,0.1,ns,0.0032,0.5,ns,NO,Expected -ve: higher health → smaller watershed drop,1289
+teg,ties,0.0335,0.5,ns,0.0725,0.01,**,YES,Expected +ve: volatility → more contradictions,1317
+vads,gase,-0.1453,0.0001,***,-0.1412,0.0001,***,NO,Expected +ve: deeper disclosure → healthier expression,1317
+nava,lewi_drop,0.6051,0.0001,***,0.6017,0.0001,***,YES,Expected +ve: tragic arc → larger sentiment drop,1289
+cd_index,ties,0.1677,0.0001,***,0.2596,0.0001,***,YES,Expected +ve: distortions → inconsistency,1317

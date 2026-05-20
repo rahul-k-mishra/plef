@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — consensus  Generated: 2026-05-09 23:13
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Consensus, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.393 & *** & +0.350 & YES \\
+    sentiment & cd_index & -0.024 & * & -0.020 & YES \\
+    sentiment & vads & -0.138 & *** & -0.117 & NO \\
+    pti & cd_index & -0.008 & ns & -0.004 & NO \\
+    pti & pai & +0.277 & *** & +0.361 & YES \\
+    gase & lewi_drop & -0.188 & * & -0.345 & YES \\
+    teg & ties & +0.000 & ns & +0.000 & NO \\
+    vads & gase & -0.142 & *** & -0.088 & NO \\
+    nava & lewi_drop & +0.801 & *** & +0.769 & YES \\
+    cd_index & ties & +0.000 & ns & +0.000 & NO \\
+    \bottomrule
+  \end{tabular}
+\end{table}

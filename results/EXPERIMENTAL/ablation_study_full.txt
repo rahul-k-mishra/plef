@@ -1,0 +1,39 @@
+=================================================================
+FULL ABLATION STUDY
+N=200 texts
+Generated: 2026-05-09 22:41
+=================================================================
+
+GASE ABLATION
+----------------------------------------
+  Full GASE mean: +0.6458
+
+  Without Sentiment (S)         : GASE_mean=+0.6361  Δ=-0.0096  (-1.5%)
+  Without Neg-Entropy (1-H)     : GASE_mean=+0.5208  Δ=-0.1250  (-19.4%)
+  Without Att-Security (1-A)    : GASE_mean=+0.5208  Δ=-0.1250  (-19.4%)
+  Without Anti-Horsemen (1-G)   : GASE_mean=+0.5458  Δ=-0.1000  (-15.5%)
+
+LEWI ABLATION
+----------------------------------------
+  LEWI drop mean: +0.1807  SD=0.3368
+  Meaningful watershed rate: 100.0%
+
+PTI ABLATION
+----------------------------------------
+  Full PTI mean: +0.1898
+  Without We-pronoun: +0.1992  Δ=+0.0095
+
+TEG ABLATION
+----------------------------------------
+  Full TEG mean: +0.3545
+  TEG (half sentences): +0.3014  Δ=-0.0532
+
+NAVA ABLATION
+----------------------------------------
+  NAVA (1/3 partition): +0.0042
+  NAVA (1/4 partition): +0.0045  Δ=+0.0002
+
+RCI ABLATION
+----------------------------------------
+  RCI (all tokens): +0.0153
+  RCI (content words): +0.0107  Δ=-0.0046

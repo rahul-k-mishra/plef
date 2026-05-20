@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis (auto-generated 2026-05-09 23:15)
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Pearson $r$ and Spearman $\rho$}
+  \begin{tabular}{llrrrrl}
+    \toprule
+    Metric 1 & Metric 2 & $r$ & $p$ & $\rho$ & $p$ & Direction \\
+    \midrule
+    sentiment & gase & +0.418 & *** & +0.613 & *** & YES \\
+    sentiment & cd_index & -0.000 & ns & +0.014 & ns & YES \\
+    sentiment & vads & -0.220 & *** & -0.164 & *** & NO \\
+    pti & cd_index & +0.052 & ns & +0.041 & ns & YES \\
+    pti & pai & +0.381 & *** & +0.435 & *** & YES \\
+    gase & lewi_drop & +0.051 & ns & +0.003 & ns & NO \\
+    teg & ties & +0.034 & ns & +0.072 & ** & YES \\
+    vads & gase & -0.145 & *** & -0.141 & *** & NO \\
+    nava & lewi_drop & +0.605 & *** & +0.602 & *** & YES \\
+    cd_index & ties & +0.168 & *** & +0.260 & *** & YES \\
+    \bottomrule
+  \end{tabular}
+\end{table}

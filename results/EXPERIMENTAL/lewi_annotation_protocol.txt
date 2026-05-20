@@ -1,0 +1,7 @@
+LEWI ANNOTATION PROTOCOL
+
+Task: Read each text. Mark the sentence number where the
+emotional tone shifts most significantly (the turning point).
+
+Target: kappa >= 0.60 with 3 independent raters.
+After annotation: save as lewi_annotations.csv

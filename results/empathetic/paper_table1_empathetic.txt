@@ -1,0 +1,20 @@
+% Table 1: empathetic Corpus Statistics  (N=30,000)  Generated: 2026-05-09 23:07
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Empathetic ($N=30,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & +0.0042 & 0.1759 & -0.8790 & +0.8847 \\
+    GASE (composite health) & +0.6535 & 0.1105 & +0.0679 & +0.9587 \\
+    PTI (pronoun power) & +0.5016 & 0.3749 & -0.8333 & +0.9091 \\
+    TEG (emotional volatility) & +0.1139 & 0.1953 & +0.0000 & +1.3808 \\
+    RCI (relational coherence) & +0.0099 & 0.0355 & +0.0000 & +0.5000 \\
+    PAI (power asymmetry) & +0.2977 & 0.1121 & +0.0000 & +0.6783 \\
+    NAVA (narrative arc) & +0.0034 & 0.2050 & -1.0708 & +0.8664 \\
+    LEWI drop magnitude & +0.0030 & 0.1770 & -0.8162 & +0.7573 \\
+    CD-index (distortions) & +0.0214 & 0.0434 & +0.0000 & +0.3333 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

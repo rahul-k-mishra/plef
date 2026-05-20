@@ -1,0 +1,20 @@
+% Table 1: isear Corpus Statistics  (N=2,042)  Generated: 2026-05-09 23:08
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Isear ($N=2,042$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & -0.0602 & 0.2150 & -0.8316 & +0.8885 \\
+    GASE (composite health) & +0.6448 & 0.1251 & +0.1124 & +0.9155 \\
+    PTI (pronoun power) & +0.4267 & 0.2968 & -0.6667 & +0.9231 \\
+    TEG (emotional volatility) & +0.0563 & 0.1572 & +0.0000 & +1.2973 \\
+    RCI (relational coherence) & +0.0056 & 0.0282 & +0.0000 & +0.3750 \\
+    PAI (power asymmetry) & +0.2421 & 0.1549 & +0.0000 & +0.5417 \\
+    NAVA (narrative arc) & +0.1716 & 0.2547 & -0.1943 & +0.5859 \\
+    LEWI drop magnitude & +0.0821 & 0.1296 & -0.2294 & +0.3739 \\
+    CD-index (distortions) & +0.0100 & 0.0298 & +0.0000 & +0.2500 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

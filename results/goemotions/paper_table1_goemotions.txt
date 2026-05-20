@@ -1,0 +1,20 @@
+% Table 1: goemotions Corpus Statistics  (N=50,000)  Generated: 2026-05-09 23:05
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Goemotions ($N=50,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & +0.0201 & 0.1874 & -0.9335 & +0.9313 \\
+    GASE (composite health) & +0.6663 & 0.1026 & +0.0659 & +0.9602 \\
+    PTI (pronoun power) & +0.1010 & 0.3815 & -0.8333 & +0.8750 \\
+    TEG (emotional volatility) & +0.0518 & 0.1462 & +0.0000 & +1.5675 \\
+    RCI (relational coherence) & +0.0072 & 0.0435 & +0.0000 & +1.0000 \\
+    PAI (power asymmetry) & +0.1745 & 0.1697 & +0.0000 & +0.7294 \\
+    NAVA (narrative arc) & -0.0069 & 0.2144 & -0.7906 & +0.7923 \\
+    LEWI drop magnitude & +0.0050 & 0.1732 & -0.7720 & +0.7607 \\
+    CD-index (distortions) & +0.0143 & 0.0353 & +0.0000 & +0.3333 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

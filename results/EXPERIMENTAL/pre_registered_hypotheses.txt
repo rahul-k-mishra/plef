@@ -1,0 +1,32 @@
+=================================================================
+PLEF PRE-REGISTERED HYPOTHESES
+Registered: 2026-05-09 23:13
+=================================================================
+
+  H1: LEWI correlates with human turning points (r>0.30)
+     Threshold: r>0.30, IoU>0.50
+     Status: PENDING human annotation
+
+  H2: Higher PTI correlates with relational dominance (r>0.25)
+     Threshold: r>0.25, p<.05
+     Status: TESTABLE via proxy
+
+  H3: TEG correlates with emotional instability (r>0.20)
+     Threshold: r>0.20, p<.05
+     Status: TESTABLE NOW
+
+  H4: GASE lower in dissolution vs stable narratives (d>0.50)
+     Threshold: d>0.50, p<.05
+     Status: TESTABLE if multi-subreddit corpus downloaded
+
+  H5: NAVA arc classification above 50% accuracy
+     Threshold: Acc>0.50
+     Status: TESTABLE NOW
+
+  H6: CD-index correlates negatively with sentiment (r<-0.15)
+     Threshold: r<-0.15, p<.05
+     Status: TESTABLE NOW
+
+  H7: PLEF and VADER differ significantly (McNemar p<.05)
+     Threshold: p<.05
+     Status: TESTABLE NOW

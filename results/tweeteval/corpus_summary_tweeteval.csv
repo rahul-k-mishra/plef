@@ -1,0 +1,16 @@
+metric,label,mean,sd,median,min,max,n
+sentiment,Sentiment (PLEF-VADER),0.028,0.1578,0.0,-0.885,0.9408,15000
+gase,GASE (composite health),0.676,0.0862,0.7,0.0961,0.9658,15000
+pti,PTI (pronoun power),0.0889,0.3328,0.0,-0.8333,0.8571,15000
+teg,TEG (emotional volatility),0.0398,0.1232,0.0,0.0,1.2294,15000
+rci,RCI (relational coherence),0.0087,0.0343,0.0,0.0,0.5714,15000
+pai,PAI (power asymmetry),0.1344,0.1634,0.0,0.0,0.6364,15000
+nava,NAVA (narrative arc),-0.0028,0.1835,0.0,-0.5423,0.8176,358
+lewi_drop,LEWI drop magnitude,0.0098,0.1412,0.0,-0.5759,0.8176,358
+cd_index,CD-index (distortions),0.01,0.0298,0.0,0.0,0.25,15000
+vads,VADS (disclosure depth),0.0189,0.0717,0.0,0.0,0.9091,15000
+ties,TIES (inconsistency),0.0,0.0,0.0,0.0,0.0,15000
+vader_score,VADER baseline,0.0888,0.2502,0.0,-0.9136,0.9468,15000
+nrc_score,NRC baseline,0.0054,0.0239,0.0,-0.3,0.3333,15000
+liwc_score,LIWC baseline,0.1156,0.3568,0.0,-0.9999,1.0,15000
+n_words,Word count,18.5557,4.8816,19.0,3,32,15000

@@ -1,0 +1,20 @@
+% Table 1: consensus Corpus Statistics  (N=10,000)  Generated: 2026-05-09 23:13
+\begin{table}[h]
+  \centering
+  \caption{PLEF Descriptive Statistics — Consensus ($N=10,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Metric & $\mu$ & SD & Min & Max \\
+    \midrule
+    Sentiment (PLEF-VADER) & +0.0141 & 0.1676 & -0.8750 & +0.9001 \\
+    GASE (composite health) & +0.6683 & 0.0942 & +0.1329 & +0.9453 \\
+    PTI (pronoun power) & +0.1306 & 0.4008 & -0.8333 & +0.8571 \\
+    TEG (emotional volatility) & +0.0454 & 0.1329 & +0.0000 & +1.2231 \\
+    RCI (relational coherence) & +0.0103 & 0.0484 & +0.0000 & +1.0000 \\
+    PAI (power asymmetry) & +0.1919 & 0.1679 & +0.0000 & +0.6667 \\
+    NAVA (narrative arc) & -0.0004 & 0.1606 & -0.7906 & +0.5423 \\
+    LEWI drop magnitude & +0.0118 & 0.1291 & -0.4443 & +0.5423 \\
+    CD-index (distortions) & +0.0171 & 0.0381 & +0.0000 & +0.2500 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

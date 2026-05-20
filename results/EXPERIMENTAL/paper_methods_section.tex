@@ -1,0 +1,32 @@
+% PLEF Experimental Design -- Generated 2026-05-09 23:13
+% Scope: ALL 9 datasets
+
+\section{Experimental Design}
+
+All experiments run across all 9 evaluation datasets. Pre-computed metric values from the multi-dataset pipeline 
+were used as input, avoiding redundant recomputation.
+
+\subsection{Datasets}
+Experiments were conducted on 9 datasets:
+\begin{enumerate}
+  \item Consensus
+  \item Dailydialog
+  \item Empathetic
+  \item Goemotions
+  \item Isear
+  \item Meld
+  \item Reddit Relationship
+  \item Semeval2017
+  \item Tweeteval
+\end{enumerate}
+
+\subsection{Baseline Significance Tests (H7)}
+McNemar's test applied to all datasets comparing PLEF vs. VADER, 
+PLEF vs. NRC, VADER vs. NRC.
+
+\subsection{Construct Validity (H2, H3)}
+PTI dominance and TEG instability experiments run across all datasets.
+
+\subsection{Ablation}
+Component removal analysis across all datasets: LEWI variance, 
+RCI non-zero rate, GASE components.

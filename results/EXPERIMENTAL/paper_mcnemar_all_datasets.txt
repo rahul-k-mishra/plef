@@ -1,0 +1,20 @@
+% McNemar Tests
+\begin{table}[h]
+\centering
+\caption{McNemar's Test: PLEF vs. VADER Across All Datasets}
+\begin{tabular}{lrrrrl}
+\toprule
+Dataset & $N$ & PLEF Acc & VADER Acc & $\chi^2$ & Sig \\
+\midrule
+  consensus & 5,000 & 0.824 & 1.000 & 879.00 & *** \\
+  dailydialog & 5,000 & 0.755 & 0.303 & 1966.73 & *** \\
+  empathetic & 5,000 & 0.454 & 0.406 & 51.93 & *** \\
+  goemotions & 5,000 & 0.500 & 0.543 & 50.57 & *** \\
+  isear & 2,042 & 0.682 & 0.776 & 102.27 & *** \\
+  meld & 5,000 & 0.478 & 0.461 & 8.82 & ** \\
+  reddit relationship & 5,000 & 0.498 & 0.552 & 62.73 & *** \\
+  semeval2017 & 5,000 & 0.549 & 0.588 & 52.20 & *** \\
+  tweeteval & 5,000 & 0.532 & 0.568 & 39.66 & *** \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — goemotions  (N=50,000)  Generated: 2026-05-09 23:05
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Goemotions ($N=50,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.446 & 0.627 & +0.327 & *** \\
+    VADER & 0.485 & 0.660 & +0.401 & *** \\
+    NRC & 0.383 & 0.614 & +0.301 & *** \\
+    LIWC & 0.422 & 0.626 & +0.365 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,48 @@
+=================================================================
+PLEF MULTI-DATASET MASTER REPORT
+Generated: 2026-05-09 23:13
+Datasets analysed: 9
+=================================================================
+
+  Dataset                             N     F1    AUC      r      d     Dir
+  ──────────────────────────── ──────── ────── ────── ────── ────── ───────
+  reddit_relationship            10,000  0.463  0.633 +0.311 +0.759    6/10
+  goemotions                     50,000  0.446  0.627 +0.327 +0.776    7/10
+  empathetic                     30,000  0.427  0.607 +0.303 +0.793    6/10
+  isear                           2,042  0.270  0.500 +0.000 +0.000    5/10
+  semeval2017                    10,000  0.468  0.628 +0.319 +0.747    5/10
+  meld                            9,881  0.330  0.537 +0.123 +0.313    6/10
+  tweeteval                      15,000  0.427  0.600 +0.270 +0.657    5/10
+  dailydialog                    13,118  0.298  0.500 +0.000 +0.000    6/10
+  consensus                      10,000  0.605  0.838 +0.577 +2.246    5/10
+  ─────────────────────────────────────────────────────────────────
+  AVERAGE ACROSS ALL DATASETS            0.415  0.608 +0.248
+
+CITATIONS
+----------------------------------------
+  [reddit_relationship] Reddit public posts (2021–2023)
+  [goemotions] Demszky et al. (2020) GoEmotions. ACL 2020.
+  [empathetic] Rashkin et al. (2019) EmpatheticDialogues. EMNLP 2019.
+  [isear] Scherer & Wallbott (1994) JPSP 66(2):310-328.
+  [semeval2017] Rosenthal et al. (2017) SemEval-2017 Task 4. SemEval.
+  [meld] Poria et al. (2019) MELD. ACL 2019.
+  [tweeteval] Barbieri et al. (2020) TweetEval. EMNLP Findings 2020.
+  [dailydialog] Li et al. (2017) DailyDialog. IJCNLP 2017.
+  [consensus] VADER+NRC+LIWC ensemble agreement (silver standard)
+
+FILES SAVED
+----------------------------------------
+  results/
+    COMBINED/
+      cross_dataset_comparison.csv
+      paper_table_all_datasets.txt
+      master_report.txt
+    reddit_relationship/  (10,000 items)
+    goemotions/  (50,000 items)
+    empathetic/  (30,000 items)
+    isear/  (2,042 items)
+    semeval2017/  (10,000 items)
+    meld/  (9,881 items)
+    tweeteval/  (15,000 items)
+    dailydialog/  (13,118 items)
+    consensus/  (10,000 items)

@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — dailydialog  (N=13,118)  Generated: 2026-05-09 23:12
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Dailydialog ($N=13,118$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.298 & 0.500 & +0.000 & ns \\
+    VADER & 0.156 & 0.500 & +0.000 & ns \\
+    NRC & 0.330 & 0.500 & +0.000 & ns \\
+    LIWC & 0.228 & 0.500 & +0.000 & ns \\
+    \bottomrule
+  \end{tabular}
+\end{table}

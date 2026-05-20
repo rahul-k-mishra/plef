@@ -1,0 +1,10 @@
+dataset,n,plef_f1,plef_auc,plef_r,vader_f1,direction_rate,cohens_d,effect_size,citation
+reddit_relationship,10000,0.463,0.6332,0.3115,0.493,6/10,0.7594,Medium,Reddit public posts (2021–2023)
+goemotions,50000,0.446,0.6272,0.3274,0.485,7/10,0.7765,Medium,Demszky et al. (2020) GoEmotions. ACL 2020.
+empathetic,30000,0.427,0.6071,0.3026,0.394,6/10,0.7932,Medium,Rashkin et al. (2019) EmpatheticDialogues. EMNLP 2019.
+isear,2042,0.27,0.5,0.0,0.291,5/10,0,Small,Scherer & Wallbott (1994) JPSP 66(2):310-328.
+semeval2017,10000,0.468,0.6277,0.3192,0.491,5/10,0.7472,Medium,Rosenthal et al. (2017) SemEval-2017 Task 4. SemEval.
+meld,9881,0.33,0.537,0.1228,0.322,6/10,0.3127,Small,Poria et al. (2019) MELD. ACL 2019.
+tweeteval,15000,0.427,0.6,0.2702,0.444,5/10,0.6572,Medium,Barbieri et al. (2020) TweetEval. EMNLP Findings 2020.
+dailydialog,13118,0.298,0.5,0.0,0.156,6/10,0,Small,Li et al. (2017) DailyDialog. IJCNLP 2017.
+consensus,10000,0.605,0.8378,0.5774,1.0,5/10,2.2457,Large,VADER+NRC+LIWC ensemble agreement (silver standard)

@@ -1,0 +1,1 @@
+TEG Instability: r_variance=+0.9038(***), r_ties=+0.0000(ns), N=57

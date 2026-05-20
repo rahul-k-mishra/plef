@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — tweeteval  (N=15,000)  Generated: 2026-05-09 23:10
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Tweeteval ($N=15,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.427 & 0.600 & +0.270 & *** \\
+    VADER & 0.444 & 0.623 & +0.343 & *** \\
+    NRC & 0.294 & 0.579 & +0.243 & *** \\
+    LIWC & 0.375 & 0.583 & +0.273 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

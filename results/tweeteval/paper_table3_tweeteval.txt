@@ -1,0 +1,21 @@
+% Table 3: Correlation Analysis — tweeteval  Generated: 2026-05-09 23:10
+\begin{table}[h]
+  \centering
+  \caption{Inter-metric Correlations — Tweeteval, Pearson r and Spearman $\rho$}
+  \begin{tabular}{llrrrl}
+    \toprule
+    M1 & M2 & $r$ & Sig & $\rho$ & Dir \\
+    \midrule
+    sentiment & gase & +0.327 & *** & +0.302 & YES \\
+    sentiment & cd_index & +0.002 & ns & -0.001 & NO \\
+    sentiment & vads & -0.113 & *** & -0.080 & NO \\
+    pti & cd_index & +0.045 & *** & +0.044 & YES \\
+    pti & pai & +0.328 & *** & +0.361 & YES \\
+    gase & lewi_drop & -0.049 & ns & -0.001 & YES \\
+    teg & ties & +0.000 & ns & +0.000 & NO \\
+    vads & gase & -0.124 & *** & -0.086 & NO \\
+    nava & lewi_drop & +0.789 & *** & +0.738 & YES \\
+    cd_index & ties & +0.000 & ns & +0.000 & NO \\
+    \bottomrule
+  \end{tabular}
+\end{table}

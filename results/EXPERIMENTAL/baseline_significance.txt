@@ -1,0 +1,5 @@
+BASELINE SIGNIFICANCE TESTS
+N = 500
+McNemar's test results saved.
+Unique PLEF correct (vs VADER): 42
+Unique VADER correct (vs PLEF): 64

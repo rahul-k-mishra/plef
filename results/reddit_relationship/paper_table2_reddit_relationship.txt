@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — reddit_relationship  (N=10,000)  Generated: 2026-05-09 23:03
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Reddit Relationship ($N=10,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.463 & 0.633 & +0.311 & *** \\
+    VADER & 0.493 & 0.660 & +0.378 & *** \\
+    NRC & 0.244 & 0.615 & +0.296 & *** \\
+    LIWC & 0.438 & 0.631 & +0.356 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

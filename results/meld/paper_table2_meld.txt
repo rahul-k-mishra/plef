@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — meld  (N=9,881)  Generated: 2026-05-09 23:09
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Meld ($N=9,881$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.330 & 0.537 & +0.123 & *** \\
+    VADER & 0.322 & 0.536 & +0.147 & *** \\
+    NRC & 0.296 & 0.533 & +0.122 & *** \\
+    LIWC & 0.307 & 0.537 & +0.144 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}

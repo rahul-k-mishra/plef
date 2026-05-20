@@ -1,0 +1,15 @@
+% Table 2: Baseline Comparison — consensus  (N=10,000)  Generated: 2026-05-09 23:13
+\begin{table}[h]
+  \centering
+  \caption{Baseline Comparison — Consensus ($N=10,000$)}
+  \begin{tabular}{lrrrr}
+    \toprule
+    System & Macro-F1 & Macro-AUC & Pearson $r$ & Sig \\
+    \midrule
+    PLEF & 0.605 & 0.838 & +0.577 & *** \\
+    VADER & 1.000 & 1.000 & +0.972 & *** \\
+    NRC & 1.000 & 1.000 & +0.934 & *** \\
+    LIWC & 1.000 & 1.000 & +1.000 & *** \\
+    \bottomrule
+  \end{tabular}
+\end{table}
