@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.bak
+reddit_posts/
+datasets/
+*_corpus.csv
+reddit_raw.json
