@@ -1,3 +1,9 @@
+## Previous version
+
+The implementation and results of the previous version of this work, which
+this evaluation corrects, are preserved at the `pre-revision` tag:
+https://github.com/rahul-k-mishra/plef/tree/pre-revision
+
 # PLEF V2 -- analysis release
 
 Generated 2026-09-01T13:38:40 by
