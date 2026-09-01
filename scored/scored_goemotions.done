@@ -1,0 +1,9 @@
+{
+ "corpus": "goemotions",
+ "rows": 54263,
+ "sha256": "281ccf93a274a6809358bedd6c7fac50ed33a4bb2ad176f890fbe41ca0f6e978",
+ "seconds": 558.6,
+ "words": 696105,
+ "trajectory_in_scope": false,
+ "at": "2026-08-29T02:00:00"
+}

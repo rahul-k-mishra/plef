@@ -1,0 +1,75 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 11 : RESPONSE-SPACE AUDIT
+==============================================================================
+  script version : 11.2.0
+  started        : 2026-09-01T09:30:30
+  scored posts with a sentence count : 200
+
+A  BOUNDARY SELECTIONS IN THE HUMAN CRITERION
+------------------------------------------------------------------------------
+  The metric can return only positions 2..N-1. If a human selected
+  sentence 1 or sentence N, the metric CANNOT match that response,
+  so its exact-match probability is 0, not 1/(N-2).
+
+  comparison posts                 : 19
+  human selection INTERIOR (2..N-1): 18
+  human selection on the BOUNDARY  : 1
+      1707opw: selected sentence 17 of 17
+
+  exact-match benchmark, all posts treated as interior : 5.02%
+  exact-match benchmark, boundary posts contribute 0   : 4.67%
+
+  ** Boundary selections exist. The reported benchmark is
+     too high and must be replaced by the corrected value. **
+
+  per-post audit table written: D:\Research\PLEF\Version_2\PLEF_V2\results\tables\chance_per_post.csv
+  It gives N_i, the annotator's selection, the boundary flag
+  and each post's exact contribution, so both benchmarks are
+  auditable rather than trusted averages.
+  within-one-sentence benchmark recomputed here: 14.21%
+
+B  EXISTENCE AND LOCATION AGREEMENT, SEPARATED
+------------------------------------------------------------------------------
+  The reported pairwise figure counts a shared zero as agreement but
+  compares it against an interior-sentence chance rate. Those are
+  different response spaces. Split into the two questions.
+
+  ROUND: round1_compromised
+    1 vs 2   n=200
+      EXISTENCE  agree 129/200 = 64.5%   chance 66.5%   (marginal-based)
+      LOCATION   agree 13/122 = 10.7%   chance 7.4%   (mean of 1/(N-2))
+    1 vs 3   n=200
+      EXISTENCE  agree 127/200 = 63.5%   chance 66.5%   (marginal-based)
+      LOCATION   agree 22/121 = 18.2%   chance 9.3%   (mean of 1/(N-2))
+    2 vs 3   n=200
+      EXISTENCE  agree 128/200 = 64.0%   chance 65.7%   (marginal-based)
+      LOCATION   agree 20/120 = 16.7%   chance 7.4%   (mean of 1/(N-2))
+
+  ROUND: round3_low_reliability
+    1 vs 2   n=53
+      EXISTENCE  agree 31/53 = 58.5%   chance 65.0%   (marginal-based)
+      LOCATION   agree 7/30 = 23.3%   chance 7.8%   (mean of 1/(N-2))
+    1 vs 3   n=51
+      EXISTENCE  agree 32/51 = 62.7%   chance 54.4%   (marginal-based)
+      LOCATION   agree 9/26 = 34.6%   chance 5.6%   (mean of 1/(N-2))
+    2 vs 3   n=48
+      EXISTENCE  agree 25/48 = 52.1%   chance 52.1%   (marginal-based)
+      LOCATION   agree 5/18 = 27.8%   chance 8.2%   (mean of 1/(N-2))
+
+  The manuscript must report these two separately, each against its
+  own chance rate, rather than one mixed percentage against an
+  interior-sentence-only benchmark.
+
+WRITING
+------------------------------------------------------------------------------
+  D:\Research\PLEF\Version_2\PLEF_V2\results\tables\response_space.csv
+  D:\Research\PLEF\Version_2\PLEF_V2\results\RESPONSE_SPACE_AUDIT.md
+
+==============================================================================
+DONE
+==============================================================================
+  Report stage A's corrected exact-match benchmark in Table 9,
+  and stage B's existence and location figures separately in the
+  reliability section. Do not quote one mixed percentage against
+  an interior-only chance rate.

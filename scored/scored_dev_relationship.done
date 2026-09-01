@@ -1,0 +1,9 @@
+{
+ "corpus": "dev_relationship",
+ "rows": 200,
+ "sha256": "d4f2437473cd1e3596697dbe307c072801310b1aafaec0450ce92bb950e43061",
+ "seconds": 115.2,
+ "words": 102188,
+ "trajectory_in_scope": true,
+ "at": "2026-08-30T12:54:58"
+}

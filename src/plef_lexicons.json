@@ -1,0 +1,3353 @@
+{
+ "ABSOLUTE_PAIRS": [
+  [
+   "\\balways\\b",
+   "\\bnever\\b"
+  ],
+  [
+   "\\beveryone\\b",
+   "\\bnobody\\b"
+  ],
+  [
+   "\\beverything\\b",
+   "\\bnothing\\b"
+  ],
+  [
+   "\\ball the time\\b",
+   "\\bnot once\\b"
+  ],
+  [
+   "\\bevery time\\b",
+   "\\bnot once\\b"
+  ],
+  [
+   "\\bconstantly\\b",
+   "\\brarely\\b"
+  ],
+  [
+   "\\bperfect\\b",
+   "\\bterrible\\b"
+  ],
+  [
+   "\\bcompletely\\b",
+   "\\bnot at all\\b"
+  ]
+ ],
+ "APOLOGY_WORDS": [
+  "sorry",
+  "apologise",
+  "apologize",
+  "apology",
+  "forgive",
+  "forgave",
+  "my fault",
+  "my mistake",
+  "i was wrong",
+  "i'm to blame",
+  "mea culpa"
+ ],
+ "ARCHETYPES": {
+  "Idealize–Devalue": {
+   "desc": "Partner placed on pedestal, then torn down when imperfection appears.",
+   "ref": "McAdams (1993)",
+   "signals": [
+    "perfect",
+    "ideal",
+    "perfect person",
+    "thought they were",
+    "pedestal",
+    "put on",
+    "turned out",
+    "not who i thought",
+    "changed",
+    "different person",
+    "mask",
+    "facade"
+   ]
+  },
+  "Mirror Dynamic": {
+   "desc": "Partners reflect each other's wounds; neither heals, both spiral.",
+   "ref": "Fisher (1984)",
+   "signals": [
+    "same",
+    "both",
+    "we both",
+    "just like",
+    "remind me of",
+    "mirror",
+    "reflection",
+    "recognised",
+    "saw myself",
+    "same patterns",
+    "repeated",
+    "same mistakes"
+   ]
+  },
+  "Push-Pull": {
+   "desc": "Cycles of intense closeness followed by distance and rejection.",
+   "ref": "Bowlby (1969)",
+   "signals": [
+    "hot and cold",
+    "come close",
+    "push away",
+    "one minute",
+    "next minute",
+    "cycle",
+    "again",
+    "back and forth",
+    "on and off",
+    "pull me in",
+    "push me away",
+    "couldn't leave"
+   ]
+  },
+  "Rescuer–Victim": {
+   "desc": "Rescuer tries to fix a broken partner; eventually collapses under the weight.",
+   "ref": "Hazan & Shaver (1987)",
+   "signals": [
+    "fix",
+    "save",
+    "help",
+    "rescue",
+    "broken",
+    "damaged",
+    "couldn't help",
+    "tried to help",
+    "needed me",
+    "dependent",
+    "relied",
+    "dragged down",
+    "exhausted",
+    "couldn't do it alone"
+   ]
+  },
+  "Slow Fade": {
+   "desc": "Gradual, quiet erosion of connection with no dramatic ending.",
+   "ref": "Duck (1982)",
+   "signals": [
+    "slowly",
+    "drifted",
+    "grew apart",
+    "less and less",
+    "stopped",
+    "faded",
+    "distant",
+    "no longer",
+    "used to",
+    "remember when",
+    "different now",
+    "silence",
+    "nothing left"
+   ]
+  },
+  "Tragic Hero": {
+   "desc": "One person sacrifices everything; the other takes without reciprocating.",
+   "ref": "McAdams (1993)",
+   "signals": [
+    "sacrifice",
+    "gave up",
+    "gave everything",
+    "worth it",
+    "deserve",
+    "loyal",
+    "faithful",
+    "alone",
+    "abandoned",
+    "left",
+    "walked out",
+    "never appreciated",
+    "nothing in return"
+   ]
+  }
+ },
+ "ATTACHMENT": {
+  "anxious": [
+   "cling",
+   "clingy",
+   "abandon",
+   "need you",
+   "terrified of losing",
+   "please don't leave",
+   "desperately",
+   "scared you'll leave",
+   "what if you leave",
+   "beg",
+   "begging",
+   "hysterical",
+   "checking",
+   "constant contact",
+   "reassurance",
+   "validation"
+  ],
+  "avoidant": [
+   "space",
+   "distance",
+   "independent",
+   "too much",
+   "smothered",
+   "suffocating",
+   "back off",
+   "commitment",
+   "walls",
+   "cold",
+   "emotionally unavailable",
+   "withdrawn",
+   "pushing away",
+   "don't need",
+   "just fine alone",
+   "don't want to talk"
+  ],
+  "disorganised": [
+   "want you to stay but scared",
+   "love you but hate you",
+   "don't know what I want",
+   "pull you in then push away",
+   "confused",
+   "chaos",
+   "both comfort and threat",
+   "freeze",
+   "dissociate",
+   "can't think straight"
+  ],
+  "secure": [
+   "talk it out",
+   "communicate",
+   "trust each other",
+   "safe",
+   "understand each other",
+   "work through",
+   "together we",
+   "secure",
+   "stable",
+   "mutual",
+   "respect boundaries",
+   "healthy disagreement",
+   "space and closeness"
+  ]
+ },
+ "COGNITIVE_DISTORTIONS": {
+  "Black-White Thinking": {
+   "desc": "All-or-nothing; no middle ground recognised",
+   "patterns": [
+    "\\b(always|never|every time|all the time|nothing|everything|nobody|everybody|completely|totally|absolutely|100%|zero)\\b",
+    "\\b(perfect|perfectly|not once|without exception|no exception)"
+   ],
+   "ref": "Burns (1980)"
+  },
+  "Catastrophising": {
+   "desc": "Treating a setback as total, permanent catastrophe",
+   "patterns": [
+    "\\b(ruin|ruined|destroyed|end of|never recover|catastroph|worst.*(ever|always)|everything.*fall)",
+    "\\b(disaster|unbearable|devastat|collapse|shatter|fall apart|fall to pieces)"
+   ],
+   "ref": "Beck (1979)"
+  },
+  "Emotional Reasoning": {
+   "desc": "Treating feelings as objective facts about reality",
+   "patterns": [
+    "\\b(feel (like|that).*(must|is|are|am)|feels? true|feels? real|feelings? tell me|gut says|i just know|instinct says)",
+    "\\b(feel (worthless|stupid|ugly|bad|terrible|awful).*(so|therefore|means|must be))"
+   ],
+   "ref": "Clark & Beck (2010)"
+  },
+  "Fortune Telling": {
+   "desc": "Predicting negative outcomes as inevitable",
+   "patterns": [
+    "\\b(will never|won't ever|never going to|it.s over|no point|there.s no|can.t change|won.t change|will always be|nothing will)",
+    "\\b(doomed|inevitable|certain to|bound to fail|destined)"
+   ],
+   "ref": "Clark & Beck (2010)"
+  },
+  "Jumping to Conclusions": {
+   "desc": "Reaching negative conclusions with insufficient evidence",
+   "patterns": [
+    "\\b(obvious|clearly|obviously|it.s clear|evidently|without a doubt|no doubt|definitely|certainly|must be|has to be|can only mean)",
+    "\\b(what else could|there.s only one|the only explanation|plain as day|anyone can see)"
+   ],
+   "ref": "Clark & Beck (2010)"
+  },
+  "Labelling": {
+   "desc": "Attaching fixed global labels to self or others",
+   "patterns": [
+    "\\b(i am (a )?(loser|failure|idiot|stupid|worthless|pathetic|weak|coward|terrible person|bad person|monster|fraud|fake))",
+    "\\b(he is|she is|they are).{0,20}(terrible|awful|monster|toxic|narcissist|abuser|manipulat)"
+   ],
+   "ref": "Burns (1980)"
+  },
+  "Magnification / Minimisation": {
+   "desc": "Exaggerating flaws or minimising achievements",
+   "patterns": [
+    "\\b(huge|massive|enormous|gigantic|terrible|major).{0,20}(mistake|problem|flaw|error|issue)",
+    "\\b(just a|only a|merely a|tiny|small|little|nothing really|not a big deal|doesn.t matter)"
+   ],
+   "ref": "Beck (1979)"
+  },
+  "Mental Filter": {
+   "desc": "Focusing exclusively on negatives, filtering out positives",
+   "patterns": [
+    "\\b(despite|even though|but still|yet still|nevertheless.*bad|no matter (what|how)|regardless.*negative)",
+    "\\b(yes but|sure but|granted but|i know but|i get it but)"
+   ],
+   "ref": "Beck (1979)"
+  },
+  "Mind Reading": {
+   "desc": "Assuming knowledge of another's thoughts without evidence",
+   "patterns": [
+    "\\b(knows?|knew) (i |me |my |what i|how i|that i)",
+    "\\b(they think|she thinks|he thinks|must think|probably think|obviously think|clearly think|assume.*feel|assume.*know)"
+   ],
+   "ref": "Beck (1979)"
+  },
+  "Overgeneralisation": {
+   "desc": "Drawing broad conclusions from a single event",
+   "patterns": [
+    "\\b(always happens|keeps happening|every time|pattern|again and again|time after time|once more|once again|yet again|typical|typical of)",
+    "\\b(never works|never changes|nothing ever|always the same)"
+   ],
+   "ref": "Burns (1980)"
+  },
+  "Personalisation": {
+   "desc": "Assuming excessive personal responsibility for external events",
+   "patterns": [
+    "\\b(my fault|because of me|i caused|i made (him|her|them)|i ruined|i destroyed|i broke|i am responsible|blame myself|all my fault)",
+    "\\b(if only i|i should have|i could have|had i not)"
+   ],
+   "ref": "Burns (1980)"
+  },
+  "Should Statements": {
+   "desc": "Rigid internal rules creating guilt, shame or resentment",
+   "patterns": [
+    "\\b(should|shouldn.t|must|mustn.t|have to|ought to|supposed to|expected to|need to be|need to have)\\b",
+    "\\b(shouldn.t have|should have|must have|ought to have)"
+   ],
+   "ref": "Burns (1980)"
+  }
+ },
+ "CONTROL_VERBS": [
+  "control",
+  "demand",
+  "force",
+  "make",
+  "insist",
+  "require",
+  "expect",
+  "order",
+  "command",
+  "tell",
+  "dictate",
+  "rule",
+  "dominate",
+  "own",
+  "possess"
+ ],
+ "DIMINISHERS": {
+  "a bit": 0.7,
+  "a little": 0.6,
+  "almost": 0.7,
+  "barely": 0.5,
+  "fairly": 0.8,
+  "hardly": 0.4,
+  "kind of": 0.7,
+  "mildly": 0.6,
+  "nearly": 0.7,
+  "partly": 0.7,
+  "rather": 0.8,
+  "slightly": 0.6,
+  "somewhat": 0.7,
+  "sort of": 0.7
+ },
+ "DISCLOSURE_TIERS": {
+  "Deep": {
+   "desc": "Core wounds, identity fears, childhood roots (Bowlby 1969)",
+   "patterns": [
+    "\\b(ashamed|shame|worthless|unlovable|broken|core|wound|inner|deep inside|fundamentally|identity|who i am|not enough|always been|childhood|never felt|abandoned as|real me|true self|terrified to|scared to admit)\\b"
+   ],
+   "weight": 1.0
+  },
+  "Mid": {
+   "desc": "Explicit emotional expression (Pennebaker 2011)",
+   "patterns": [
+    "\\b(feel|felt|feeling|emotion|hurt|angry|sad|scared|afraid|lonely|confused|jealous|guilty|embarrassed|upset|anxious|vulnerable)\\b"
+   ],
+   "weight": 0.6
+  },
+  "Surface": {
+   "desc": "External event narration without emotional unpacking",
+   "patterns": [
+    "\\b(happened|went|came|said|did|told|asked|left|stayed|came back|she was|he was|they were|we went|i went|i came)\\b"
+   ],
+   "weight": 0.3
+  }
+ },
+ "HORSEMAN_PATTERNS": {
+  "contempt": [
+   "\\beyeroll\\b",
+   "\\brolling my eyes\\b",
+   "\\bpathetic\\b",
+   "\\byou're disgusting\\b",
+   "\\bsneer\\b",
+   "\\byou're beneath\\b"
+  ],
+  "criticism": [
+   "\\byou always\\b",
+   "\\byou never\\b",
+   "\\bwhat's wrong with you\\b",
+   "\\bwhy can't you\\b",
+   "\\byou're so\\b.*\\b(bad|wrong|stupid|lazy)\\b"
+  ],
+  "defensiveness": [
+   "\\bit's not my fault\\b",
+   "\\bnot my problem\\b",
+   "\\bi didn't do anything\\b",
+   "\\byou started it\\b",
+   "\\bwhy are you always blaming\\b"
+  ],
+  "stonewalling": [
+   "\\bnot talking\\b",
+   "\\bsilent treatment\\b",
+   "\\bcold shoulder\\b",
+   "\\bshutting down\\b",
+   "\\btuning out\\b",
+   "\\bwalls up\\b"
+  ]
+ },
+ "INTENSIFIERS": {
+  "absolutely": 1.4,
+  "awfully": 1.3,
+  "completely": 1.3,
+  "deeply": 1.3,
+  "enormously": 1.3,
+  "extremely": 1.5,
+  "genuinely": 1.2,
+  "immensely": 1.4,
+  "incredibly": 1.5,
+  "insanely": 1.4,
+  "overwhelmingly": 1.5,
+  "profoundly": 1.4,
+  "quite": 1.1,
+  "really": 1.3,
+  "seriously": 1.2,
+  "severely": 1.4,
+  "so": 1.2,
+  "terribly": 1.3,
+  "totally": 1.3,
+  "tremendously": 1.4,
+  "truly": 1.2,
+  "utterly": 1.4,
+  "very": 1.4
+ },
+ "KEY_RELATIONSHIP_WORDS": [
+  "love",
+  "trust",
+  "happy",
+  "together",
+  "partner",
+  "us",
+  "we",
+  "home",
+  "future",
+  "hope",
+  "care",
+  "feel",
+  "need",
+  "want",
+  "stay",
+  "leave"
+ ],
+ "LEXICON": {
+  "abandoned": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "abandonment": {
+   "attachment": "anxious",
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "adore": {
+   "e": [
+    "love",
+    "joy"
+   ],
+   "i": 1.1,
+   "s": 2.5
+  },
+  "affair": {
+   "e": [
+    "anger",
+    "jealousy",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "affection": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "affectionate": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "afraid": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "aggression": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "aggressive": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "alone": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "always wrong": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.1,
+   "s": -2.0
+  },
+  "amazing": {
+   "e": [
+    "joy",
+    "surprise"
+   ],
+   "i": 1.1,
+   "s": 2.0
+  },
+  "ambivalent": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.5
+  },
+  "anger": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "angry": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "annoyed": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "anxiety": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "anxious": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "ashamed": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "attack": {
+   "e": [
+    "anger",
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "attracted": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "attraction": {
+   "e": [
+    "love",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "belittle": {
+   "e": [
+    "anger",
+    "contempt"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "belittling": {
+   "e": [
+    "contempt"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "betray": {
+   "e": [
+    "anger",
+    "sadness",
+    "jealousy"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "betrayal": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "betrayed": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "better": {
+   "e": [
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 0.8
+  },
+  "bitter": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "bitterness": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "bliss": {
+   "e": [
+    "joy",
+    "love"
+   ],
+   "i": 1.2,
+   "s": 3.0
+  },
+  "blissful": {
+   "e": [
+    "joy",
+    "love"
+   ],
+   "i": 1.2,
+   "s": 3.0
+  },
+  "bond": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "bonded": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "brilliant": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.1,
+   "s": 2.0
+  },
+  "broken": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "can't live without": {
+   "attachment": "anxious",
+   "e": [
+    "love",
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -1.0
+  },
+  "caring": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "change": {
+   "e": [
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 0.5
+  },
+  "cheat": {
+   "e": [
+    "anger",
+    "jealousy"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "cheated": {
+   "e": [
+    "anger",
+    "jealousy",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "cheating": {
+   "e": [
+    "anger",
+    "jealousy",
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "cheerful": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "cherish": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.1,
+   "s": 2.5
+  },
+  "cling": {
+   "attachment": "anxious",
+   "e": [
+    "fear",
+    "love"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "clinging": {
+   "attachment": "anxious",
+   "e": [
+    "fear",
+    "love"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "clingy": {
+   "attachment": "anxious",
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "cold": {
+   "e": [
+    "sadness",
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.2
+  },
+  "cold shoulder": {
+   "e": [
+    "sadness",
+    "anger"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.0,
+   "s": -1.8
+  },
+  "commitment": {
+   "e": [
+    "trust",
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "commitment issues": {
+   "attachment": "avoidant",
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -1.5
+  },
+  "committed": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "communicate": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "communication": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "companion": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "companionship": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "compromise": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "conflicted": {
+   "e": [
+    "confusion",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "confused": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "confusion": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "connected": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "connection": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "contempt": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.3,
+   "s": -2.8
+  },
+  "contemptuous": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.3,
+   "s": -2.8
+  },
+  "content": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "contented": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "control": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "controlling": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "critical": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "criticism": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "criticize": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.0,
+   "s": -1.8
+  },
+  "cruel": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "cruelty": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "cry": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "crying": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "danger": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "dangerous": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "deceive": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "deceived": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "deception": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "defensive": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "horseman": "defensiveness",
+   "i": 1.0,
+   "s": -1.2
+  },
+  "degrade": {
+   "e": [
+    "anger",
+    "contempt"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "degrading": {
+   "e": [
+    "contempt"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "delight": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "delighted": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "dependable": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "depressed": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "depression": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "desire": {
+   "e": [
+    "love",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 1.2
+  },
+  "despair": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "despise": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "devastated": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.3,
+   "s": -2.8
+  },
+  "devastation": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "devoted": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.2
+  },
+  "devotion": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.2
+  },
+  "disgust": {
+   "e": [
+    "disgust",
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "disgusted": {
+   "e": [
+    "disgust",
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "disgusting": {
+   "e": [
+    "disgust",
+    "contempt"
+   ],
+   "horseman": "contempt",
+   "i": 1.2,
+   "s": -2.5
+  },
+  "dismiss": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "dismissive": {
+   "e": [
+    "anger",
+    "contempt"
+   ],
+   "i": 1.1,
+   "s": -1.8
+  },
+  "don't know": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.5
+  },
+  "don't leave": {
+   "attachment": "anxious",
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "don't understand": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "doubt": {
+   "e": [
+    "confusion",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "doubtful": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "drained": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "dread": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.2
+  },
+  "dreading": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.2
+  },
+  "dream": {
+   "e": [
+    "hope",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "dreams": {
+   "e": [
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "earned secure": {
+   "attachment": "secure",
+   "e": [
+    "trust",
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "ecstatic": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.3,
+   "s": 3.0
+  },
+  "effort": {
+   "e": [
+    "anticipation",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 0.8
+  },
+  "elated": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.2,
+   "s": 2.5
+  },
+  "embarrassed": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "embarrassment": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "emptiness": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "empty": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "enraged": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.3,
+   "s": -3.0
+  },
+  "envious": {
+   "e": [
+    "jealousy"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "envy": {
+   "e": [
+    "jealousy"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "excited": {
+   "e": [
+    "joy",
+    "anticipation"
+   ],
+   "i": 1.1,
+   "s": 2.0
+  },
+  "excitement": {
+   "e": [
+    "joy",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "exhausted": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "exhaustion": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "eye roll": {
+   "e": [
+    "contempt"
+   ],
+   "horseman": "contempt",
+   "i": 1.1,
+   "s": -2.0
+  },
+  "failed": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "failure": {
+   "e": [
+    "sadness",
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "faithful": {
+   "e": [
+    "trust",
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "fantastic": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.2,
+   "s": 2.5
+  },
+  "fear": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "fear of intimacy": {
+   "attachment": "avoidant",
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -1.5
+  },
+  "fidelity": {
+   "e": [
+    "trust",
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "forward": {
+   "e": [
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 0.5
+  },
+  "frustrated": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "frustration": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "fulfilled": {
+   "e": [
+    "joy",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "fulfillment": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "fun": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "furious": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.3,
+   "s": -2.8
+  },
+  "fury": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "future": {
+   "e": [
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 0.5
+  },
+  "genuine": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "glad": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "grateful": {
+   "e": [
+    "joy",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "gratitude": {
+   "e": [
+    "joy",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "great": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "grief": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.5
+  },
+  "grieve": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.5
+  },
+  "grieving": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "grow": {
+   "e": [
+    "hope",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "growth": {
+   "e": [
+    "hope",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "guilt": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "guilty": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "happiness": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "happy": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "hate": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "hatred": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "heal": {
+   "e": [
+    "hope",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "healing": {
+   "e": [
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "heartache": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "heartbreak": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "heartbroken": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "hidden": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "hiding": {
+   "e": [
+    "fear",
+    "jealousy"
+   ],
+   "i": 1.0,
+   "s": -1.2
+  },
+  "honest": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "honesty": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "hope": {
+   "e": [
+    "hope",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "hopeful": {
+   "e": [
+    "hope",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "hopeless": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "hopelessness": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "hostile": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "hostility": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "humiliate": {
+   "e": [
+    "anger",
+    "contempt"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "humiliation": {
+   "e": [
+    "contempt",
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "hurt": {
+   "e": [
+    "sadness",
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "hurting": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "improve": {
+   "e": [
+    "hope",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 0.8
+  },
+  "improving": {
+   "e": [
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 0.8
+  },
+  "incredible": {
+   "e": [
+    "joy",
+    "surprise"
+   ],
+   "i": 1.1,
+   "s": 2.0
+  },
+  "independent": {
+   "attachment": "avoidant",
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 0.5
+  },
+  "infidelity": {
+   "e": [
+    "anger",
+    "jealousy",
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "insecure": {
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "insecurity": {
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "insult": {
+   "e": [
+    "anger",
+    "contempt"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "insulting": {
+   "e": [
+    "contempt"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "intimacy": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "intimate": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "irate": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "irritated": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "irritation": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "it's not my fault": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "defensiveness",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "jealous": {
+   "e": [
+    "jealousy",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "jealousy": {
+   "e": [
+    "jealousy",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "joy": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.5
+  },
+  "joyful": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.1,
+   "s": 2.5
+  },
+  "joyous": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.1,
+   "s": 2.5
+  },
+  "keep distance": {
+   "attachment": "avoidant",
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "laugh": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "laughing": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "leave me": {
+   "attachment": "anxious",
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "liar": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "lie": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "lied": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "lies": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "livid": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.3,
+   "s": -2.8
+  },
+  "loathe": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "loneliness": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "lonely": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "longing": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "looking forward": {
+   "e": [
+    "anticipation",
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "loss": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "lost": {
+   "e": [
+    "confusion",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "love": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.5
+  },
+  "loved": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.2
+  },
+  "loving": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "loyal": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "loyalty": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "lying": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "magnificent": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.2,
+   "s": 2.5
+  },
+  "manipulate": {
+   "e": [
+    "anger",
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "manipulation": {
+   "e": [
+    "anger",
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "manipulative": {
+   "e": [
+    "anger",
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "mean": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "miserable": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "misery": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "miss": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.0,
+   "s": -0.5
+  },
+  "missing": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.0,
+   "s": -0.5
+  },
+  "mixed": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.3
+  },
+  "mock": {
+   "e": [
+    "anger",
+    "contempt"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "mocking": {
+   "e": [
+    "contempt"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "need you": {
+   "attachment": "anxious",
+   "e": [
+    "love",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -0.5
+  },
+  "nervous": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "never right": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.1,
+   "s": -2.0
+  },
+  "not my problem": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "defensiveness",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "numb": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "open": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "optimism": {
+   "e": [
+    "hope",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "optimistic": {
+   "e": [
+    "hope",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "overwhelmed": {
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "pain": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "painful": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "panic": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "panicking": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "paranoia": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.2
+  },
+  "paranoid": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.2
+  },
+  "passion": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "passionate": {
+   "e": [
+    "love",
+    "anticipation"
+   ],
+   "i": 1.1,
+   "s": 1.8
+  },
+  "pathetic": {
+   "e": [
+    "contempt",
+    "anger"
+   ],
+   "horseman": "contempt",
+   "i": 1.2,
+   "s": -2.5
+  },
+  "pleased": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "pleasure": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "possessive": {
+   "e": [
+    "jealousy",
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -1.8
+  },
+  "possessiveness": {
+   "e": [
+    "jealousy"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "possibility": {
+   "e": [
+    "hope",
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "potential": {
+   "e": [
+    "hope"
+   ],
+   "i": 1.0,
+   "s": 1.0
+  },
+  "push away": {
+   "attachment": "avoidant",
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "push you away": {
+   "attachment": "avoidant",
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "rage": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.3,
+   "s": -3.0
+  },
+  "regret": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "regretful": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "rejected": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "rejection": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "reliable": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "remorse": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "remorseful": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "repulsed": {
+   "e": [
+    "disgust"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "resent": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "resentful": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "resentment": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "respect": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "respected": {
+   "e": [
+    "trust",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "revolting": {
+   "e": [
+    "disgust"
+   ],
+   "i": 1.1,
+   "s": -2.5
+  },
+  "risk": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "romance": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "romantic": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "sad": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "sadness": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "safe": {
+   "e": [
+    "trust",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "safe haven": {
+   "attachment": "secure",
+   "e": [
+    "trust",
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "safety": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "scared": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "scream": {
+   "e": [
+    "anger",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "screaming": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "secret": {
+   "e": [
+    "fear",
+    "jealousy"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "secure": {
+   "e": [
+    "trust",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "secure base": {
+   "attachment": "secure",
+   "e": [
+    "trust",
+    "love"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "security": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "shame": {
+   "e": [
+    "sadness",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "shattered": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "shut down": {
+   "e": [
+    "sadness",
+    "anger"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.0,
+   "s": -1.8
+  },
+  "silent treatment": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.1,
+   "s": -2.0
+  },
+  "sincere": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "sincerity": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "smile": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "smiling": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "sorrow": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "sorrowful": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "soulmate": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.2,
+   "s": 2.5
+  },
+  "space": {
+   "attachment": "avoidant",
+   "e": [],
+   "i": 1.0,
+   "s": 0.0
+  },
+  "stonewalling": {
+   "e": [
+    "anger",
+    "sadness"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.1,
+   "s": -2.0
+  },
+  "stuck": {
+   "e": [
+    "confusion",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "suffer": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "suffering": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "suffocate": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "suffocating": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "support": {
+   "e": [
+    "trust",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "supportive": {
+   "e": [
+    "trust",
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "tears": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "tender": {
+   "e": [
+    "love",
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "tenderness": {
+   "e": [
+    "love"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "terrified": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.3,
+   "s": -2.8
+  },
+  "terror": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.2,
+   "s": -2.8
+  },
+  "threat": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -2.0
+  },
+  "threatened": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "tired": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.2
+  },
+  "togetherness": {
+   "e": [
+    "love",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "transparent": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "trapped": {
+   "e": [
+    "fear",
+    "anger"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "trust": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "trusted": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 2.0
+  },
+  "try": {
+   "e": [
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 0.5
+  },
+  "trying": {
+   "e": [
+    "anticipation"
+   ],
+   "i": 1.0,
+   "s": 0.5
+  },
+  "uncertain": {
+   "e": [
+    "confusion",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "uncertainty": {
+   "e": [
+    "confusion",
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "unclear": {
+   "e": [
+    "confusion"
+   ],
+   "i": 1.0,
+   "s": -0.5
+  },
+  "understanding": {
+   "e": [
+    "trust"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "understood": {
+   "e": [
+    "trust",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.5
+  },
+  "unfaithful": {
+   "e": [
+    "anger",
+    "jealousy"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "unsafe": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "useless": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.1,
+   "s": -2.0
+  },
+  "vicious": {
+   "e": [
+    "anger",
+    "disgust"
+   ],
+   "i": 1.2,
+   "s": -2.5
+  },
+  "vulnerable": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.2
+  },
+  "walls": {
+   "attachment": "avoidant",
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.0
+  },
+  "walls up": {
+   "e": [
+    "fear",
+    "sadness"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "warmth": {
+   "e": [
+    "love",
+    "joy"
+   ],
+   "i": 1.0,
+   "s": 1.8
+  },
+  "weep": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "weeping": {
+   "e": [
+    "sadness"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "withdraw": {
+   "e": [
+    "sadness"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "withdrawn": {
+   "e": [
+    "sadness"
+   ],
+   "horseman": "stonewalling",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "wonderful": {
+   "e": [
+    "joy"
+   ],
+   "i": 1.1,
+   "s": 2.5
+  },
+  "worried": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "worry": {
+   "e": [
+    "fear"
+   ],
+   "i": 1.0,
+   "s": -1.5
+  },
+  "worthless": {
+   "e": [
+    "contempt",
+    "sadness"
+   ],
+   "horseman": "contempt",
+   "i": 1.2,
+   "s": -2.5
+  },
+  "yearning": {
+   "e": [
+    "sadness",
+    "love"
+   ],
+   "i": 1.0,
+   "s": -0.8
+  },
+  "yell": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "yelling": {
+   "e": [
+    "anger"
+   ],
+   "i": 1.0,
+   "s": -1.8
+  },
+  "you always": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.0,
+   "s": -1.5
+  },
+  "you never": {
+   "e": [
+    "anger"
+   ],
+   "horseman": "criticism",
+   "i": 1.0,
+   "s": -1.5
+  }
+ },
+ "NEGATORS": [
+  "aren't",
+  "barely",
+  "can't",
+  "cannot",
+  "couldn't",
+  "didn't",
+  "doesn't",
+  "don't",
+  "hardly",
+  "isn't",
+  "n't",
+  "neither",
+  "never",
+  "no",
+  "nobody",
+  "nor",
+  "not",
+  "nothing",
+  "nowhere",
+  "scarcely",
+  "shouldn't",
+  "wasn't",
+  "weren't",
+  "without",
+  "won't",
+  "wouldn't"
+ ],
+ "RUMINATION_MARKERS": [
+  "\\bwhy\\s+did\\b",
+  "\\bwhy\\s+didn't\\b",
+  "\\bif\\s+only\\b",
+  "\\bshould\\s+have\\b",
+  "\\bcould\\s+have\\b",
+  "\\bwould\\s+have\\b",
+  "\\bwhat\\s+if\\b",
+  "\\bkeep\\s+thinking\\b",
+  "\\bcan't\\s+stop\\s+thinking\\b",
+  "\\bover\\s+and\\s+over\\b",
+  "\\bstuck\\s+on\\b",
+  "\\bcan't\\s+let\\s+go\\b",
+  "\\bobsess(ed|ing|ive|ion)\\b",
+  "\\breplay(ing)?\\b",
+  "\\bkeep\\s+replaying\\b",
+  "\\bstill\\s+thinking\\b",
+  "\\bcan't\\s+move\\s+on\\b"
+ ],
+ "SARCASM_PATTERNS": [
+  "\\bgreat,\\s+just\\s+great\\b",
+  "\\boh,?\\s+great\\b",
+  "\\bwonderful[,.]?\\s+really\\b",
+  "\\bperfect[,.]?\\s+absolutely\\s+perfect\\b",
+  "\\blovely[,.]?\\s+just\\s+lovely\\b",
+  "\\bfantastic[,!]\\b(?=.*right\\b)",
+  "\\bsure[,.]?\\s+because\\s+that\\s+makes\\s+sense\\b",
+  "\\boh,?\\s+how\\s+sweet\\b",
+  "\\byeah,?\\s+right\\b",
+  "\\bsuddenly\\s+cares\\b",
+  "\\bmy\\s+hero\\b",
+  "\\bthanks\\s+for\\s+nothing\\b",
+  "\\bdon't\\s+flatter\\s+yourself\\b"
+ ],
+ "STOP_WORDS": [
+  "a",
+  "about",
+  "above",
+  "after",
+  "again",
+  "against",
+  "all",
+  "also",
+  "although",
+  "always",
+  "am",
+  "an",
+  "and",
+  "any",
+  "are",
+  "aren't",
+  "as",
+  "at",
+  "be",
+  "because",
+  "been",
+  "before",
+  "being",
+  "below",
+  "between",
+  "both",
+  "but",
+  "by",
+  "can",
+  "can't",
+  "cannot",
+  "could",
+  "couldn't",
+  "did",
+  "didn't",
+  "do",
+  "does",
+  "doesn't",
+  "doing",
+  "don't",
+  "down",
+  "during",
+  "each",
+  "few",
+  "for",
+  "from",
+  "further",
+  "get",
+  "got",
+  "had",
+  "hadn't",
+  "has",
+  "hasn't",
+  "have",
+  "haven't",
+  "having",
+  "he",
+  "he'd",
+  "he'll",
+  "he's",
+  "her",
+  "here",
+  "here's",
+  "hers",
+  "herself",
+  "him",
+  "himself",
+  "his",
+  "how",
+  "how's",
+  "i",
+  "i'd",
+  "i'll",
+  "i'm",
+  "i've",
+  "if",
+  "in",
+  "into",
+  "is",
+  "isn't",
+  "it",
+  "it's",
+  "its",
+  "itself",
+  "just",
+  "know",
+  "let's",
+  "like",
+  "ll",
+  "made",
+  "make",
+  "me",
+  "might",
+  "mightn't",
+  "more",
+  "most",
+  "mustn't",
+  "my",
+  "myself",
+  "no",
+  "nor",
+  "not",
+  "now",
+  "of",
+  "off",
+  "on",
+  "once",
+  "only",
+  "or",
+  "other",
+  "ought",
+  "our",
+  "ours",
+  "ourselves",
+  "out",
+  "over",
+  "own",
+  "re",
+  "s",
+  "same",
+  "shan't",
+  "she",
+  "she'd",
+  "she'll",
+  "she's",
+  "should",
+  "shouldn't",
+  "so",
+  "some",
+  "such",
+  "t",
+  "than",
+  "that",
+  "that's",
+  "the",
+  "their",
+  "theirs",
+  "them",
+  "themselves",
+  "then",
+  "there",
+  "there's",
+  "these",
+  "they",
+  "they'd",
+  "they'll",
+  "they're",
+  "they've",
+  "this",
+  "those",
+  "through",
+  "to",
+  "too",
+  "under",
+  "until",
+  "up",
+  "us",
+  "ve",
+  "very",
+  "was",
+  "wasn't",
+  "we",
+  "we'd",
+  "we'll",
+  "we're",
+  "we've",
+  "were",
+  "weren't",
+  "what",
+  "what's",
+  "when",
+  "when's",
+  "where",
+  "where's",
+  "which",
+  "while",
+  "who",
+  "who's",
+  "whom",
+  "why",
+  "why's",
+  "will",
+  "with",
+  "won't",
+  "would",
+  "wouldn't",
+  "you",
+  "you'd",
+  "you'll",
+  "you're",
+  "you've",
+  "your",
+  "yours",
+  "yourself",
+  "yourselves"
+ ]
+}

@@ -1,0 +1,126 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 04 : CORE REBUILD
+==============================================================================
+  script version : 04.2.0
+  started        : 2026-08-29T01:13:36
+  V2 root        : D:\Research\PLEF\Version_2\PLEF_V2
+  workers        : 7
+
+S1  LIFT LEXICONS FROM V1 (verbatim, via AST)
+------------------------------------------------------------------------------
+  LEXICON                   348 entries
+  NEGATORS                  26 entries
+  INTENSIFIERS              23 entries
+  DIMINISHERS               14 entries
+  SARCASM_PATTERNS          13 entries
+  ATTACHMENT                4 entries
+  CONTROL_VERBS             15 entries
+  APOLOGY_WORDS             11 entries
+  COGNITIVE_DISTORTIONS     12 entries
+  HORSEMAN_PATTERNS         4 entries
+  ARCHETYPES                6 entries
+  ABSOLUTE_PAIRS            8 entries
+  DISCLOSURE_TIERS          3 entries
+  STOP_WORDS                195 entries
+  KEY_RELATIONSHIP_WORDS    16 entries
+  RUMINATION_MARKERS        17 entries
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\src\plef_lexicons.json
+  sha256   18294c6727f66003df67c0c01ab9e66073dca34d3c60541878c35ba84825165c
+  Nothing was retyped. Retyping a lexicon is how V1 produced a
+  100-word system under the name VADER.
+
+S2  GENERATE src/plef_core.py
+------------------------------------------------------------------------------
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\src\plef_core.py
+  sha256   e0dd29f192cad4dfb5e54df84c19a8adb5903fd9487e7b97f880eb2f76313c1a
+  621 lines, standard library only
+
+  dev split loaded: 200 posts (never evaluation data)
+
+S3  UNIT TESTS (hand-computed expectations)
+------------------------------------------------------------------------------
+  PASS  TEG mean abs successive diff                   got=0.5 want=0.5
+  PASS  TEG undefined for N<2                          got=None want=None
+  PASS  NAVA positive when it ends worse               got=2.0 want=2.0
+  PASS  NAVA class tragic                              got='tragic' want='tragic'
+  PASS  NAVA negative when it ends better              got=-2.0 want=-2.0
+  PASS  NAVA class redemptive                          got='redemptive' want='redemptive'
+  PASS  NAVA class flat                                got='flat' want='flat'
+  PASS  NAVA class mildly_declining                    got='mildly_declining' want='mildly_declining'
+  PASS  NAVA undefined below 4 sentences               got=None want=None
+  PASS  LEWI index = argmax |2nd difference|           got=5.0 want=5.0
+  PASS  LEWI segments are disjoint (pre+post cover N)  got=8.0 want=8.0
+  PASS  LEWI drop = mean(pre) - mean(post)             got=-0.6 want=-0.6
+  PASS  LEWI undefined below 4 sentences               got=None want=None
+  PASS  PTI smoothed                                   got=0.5 want=0.5
+  PASS  PTI unsmoothed                                 got=0.6 want=0.6
+  PASS  PTI unsmoothed undefined with no pronouns      got=None want=None
+  PASS  PAI is invariant to I/You swap (pronoun term removed) got=0.5 want=0.5
+  PASS  PAI v1 retained for coupling comparison        I_dom=0.6
+  PASS  GASE full matches formula                      got=0.485 want=0.485
+  PASS  GASE deltas are NOT weight x 0.5 (the V1 bug)  deltas=[0.122143, -0.038333, -0.071667, -0.00375]
+  PASS  GASE deltas differ across components           |dS|=0.122143 |dH|=0.038333
+  PASS  RCI undefined for a single segment             got=None want=None
+  PASS  semantic coherence undefined for 1 sentence    got=None want=None
+  PASS  NSPL None when any input is None               got=None want=None
+  PASS  negation reduces a positive sentence           +0.5423 -> -0.4118
+  PASS  empty text scores 0.0                          got=0.0 want=0.0
+  PASS  undefined metrics are None, never 0.0          clean
+
+  ALL UNIT TESTS PASSED
+
+S4  PURITY GATE (fresh subprocess, all third-party blocked)
+------------------------------------------------------------------------------
+  import plef_core with numpy/scipy/pandas/... blocked: PASS
+  The manuscript may state that the framework core runs on the
+  standard library alone, and point at this test as the evidence.
+
+S5  DETERMINISM (cross-process, bitwise)
+------------------------------------------------------------------------------
+  25 texts scored in two separate processes: IDENTICAL
+
+S6  LEWI: V2 (published definition) vs V1 (what the code did)
+------------------------------------------------------------------------------
+  texts compared               : 198
+  same watershed sentence      : 76.3%
+  within one sentence          : 82.3%
+  median |drop difference|     : 0.0000
+
+  V1's manuscript documented the second-difference algorithm and its
+  code ran a different one. This is the size of that discrepancy, and
+  it belongs in the response letter as a number rather than a
+  description.
+
+S7  BENCHMARK (dev split -- never evaluation data)
+------------------------------------------------------------------------------
+  200 texts, 102,188 words, 7 workers
+  elapsed 33.9s   5.9 texts/s   3,010 words/s
+
+  script 05 must score 5,501,892 words with this core.
+  (read from MANIFEST/corpora.json, not hardcoded)
+  projection: 30.5 minutes at this rate
+  NSPL's LSA is O(sentences x vocabulary) per document, so long
+  narratives cost far more per word than short ones; the projection
+  above is from 390-word posts and is therefore conservative for the
+  short-form corpora.
+
+S8  APPEND D21-D26 TO DECISIONS.md
+------------------------------------------------------------------------------
+  appended -> D:\Research\PLEF\Version_2\PLEF_V2\DECISIONS.md
+  sha256    4f810b51de58e26cdc7b535febe5f8a8da45e7edf31e5fa349ef636fb02511c8
+
+==============================================================================
+DONE
+==============================================================================
+  core       : D:\Research\PLEF\Version_2\PLEF_V2\src\plef_core.py
+  lexicons   : D:\Research\PLEF\Version_2\PLEF_V2\src\plef_lexicons.json
+  manifest   : D:\Research\PLEF\Version_2\PLEF_V2\MANIFEST\core.json
+  decisions  : D:\Research\PLEF\Version_2\PLEF_V2\DECISIONS.md
+  log        : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\console_log_04.txt
+
+  unit tests PASSED | purity PASSED | determinism PASSED
+
+  NEXT: send me this log. Script 05 runs the full evaluation:
+  PLEF core plus six real baselines plus three legacy toys across
+  all eight corpora, sharded and checkpointed.

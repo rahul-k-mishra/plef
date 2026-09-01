@@ -1,0 +1,9 @@
+{
+ "corpus": "tweeteval",
+ "rows": 59899,
+ "sha256": "f3b096f415bfb7ae9da3ba3cd300282e9716a9d4e773741fbc80d698dde5ada4",
+ "seconds": 595.9,
+ "words": 1098918,
+ "trajectory_in_scope": false,
+ "at": "2026-08-29T02:37:57"
+}

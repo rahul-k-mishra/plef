@@ -1,0 +1,35 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 12 : EQUATION AUDIT
+==============================================================================
+  script version : 12.1.0
+  started        : 2026-09-01T09:25:34
+
+  The metrics below are re-implemented FROM THE PRINTED EQUATIONS,
+  without importing the framework. Agreement therefore means the
+  PAPER is reproducible, not merely that the code agrees with
+  itself.
+
+  dev_relationship   n=198
+    LEWI drop  reproduced 198   mismatched 0
+    NAVA       reproduced 198   mismatched 0
+    watershed index consistent 198   inconsistent 0
+
+  relationship       n=1,288
+    LEWI drop  reproduced 1,288   mismatched 0
+    NAVA       reproduced 1,288   mismatched 0
+    watershed index consistent 1,288   inconsistent 0
+
+SUMMARY
+------------------------------------------------------------------------------
+  documents audited            : 1,486
+  LEWI drop reproduced         : 1,486   mismatched 0
+  NAVA reproduced              : 1,486   mismatched 0
+  watershed index consistent   : 1,486   inconsistent 0
+
+==============================================================================
+DONE
+==============================================================================
+  Every stored value is reproduced by the equations exactly as
+  printed in the manuscript. A reader with the paper and the
+  sentence scores can regenerate both trajectory metrics.

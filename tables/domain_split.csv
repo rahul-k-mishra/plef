@@ -1,0 +1,15 @@
+labels,system,relationship,general,delta,n
+V1_silver,PLEF,0.4194,0.4064,0.013,1137
+V1_silver,vader,0.3973,0.4836,-0.0862,1137
+V1_silver,nrc,0.4242,0.4232,0.001,1137
+V1_silver,empath,0.4088,0.4241,-0.0153,1137
+V1_silver,afinn,0.4716,0.5085,-0.0369,1137
+V1_silver,huliu,0.4173,0.4841,-0.0667,1137
+V1_silver,labmt,0.2634,0.3251,-0.0618,1137
+human_gold,PLEF,0.3378,0.4064,-0.0686,36
+human_gold,vader,0.3648,0.4836,-0.1188,36
+human_gold,nrc,0.3395,0.4232,-0.0837,36
+human_gold,empath,0.4066,0.4241,-0.0175,36
+human_gold,afinn,0.3627,0.5085,-0.1458,36
+human_gold,huliu,0.4019,0.4841,-0.0822,36
+human_gold,labmt,0.3203,0.3251,-0.0049,36

@@ -1,0 +1,9 @@
+pair,n,r,lo,hi
+H2 (V1)  PTI x PAI_v1   [pronoun term PRESENT],1308,0.3791,0.3349,0.4249
+H2 (V2)  PTI x PAI      [pronoun term REMOVED],1308,0.0902,0.0447,0.1367
+H2-ext   PAI x NRC-VAD dominance,1308,0.021,-0.0255,0.0691
+H2-ext   PAI_v1 x VAD dominance,1308,-0.0235,-0.0745,0.0254
+H3-ext   TEG x NRC-EmoInt volatility,1308,-0.0961,-0.1664,-0.0301
+H3       TEG x TIES,1308,0.0004,-0.0389,0.0428
+H6       Sentiment x CD-index,1308,0.0176,-0.0476,0.0773
+NSPL x GASE (internal),1308,0.1084,0.0485,0.164

@@ -1,0 +1,10 @@
+corpus,metric,n,defined_pct,distribution
+dailydialog,RASP,101026,100.0,"{'none': 94437, 'Rescuer–Victim': 2821, 'Mirror Dynamic': 1171, 'Push-Pull': 993, 'Tragic Hero': 637, 'Idealize–Devalue': 583, 'Slow Fade': 384}"
+dev_relationship,RASP,200,100.0,"{'Mirror Dynamic': 52, 'Rescuer–Victim': 29, 'Push-Pull': 28, 'Tragic Hero': 28, 'none': 23, 'Idealize–Devalue': 22, 'Slow Fade': 18}"
+empathetic,RASP,19157,100.0,"{'none': 17053, 'Tragic Hero': 678, 'Rescuer–Victim': 531, 'Slow Fade': 307, 'Push-Pull': 225, 'Mirror Dynamic': 212, 'Idealize–Devalue': 151}"
+goemotions,RASP,54263,100.0,"{'none': 49809, 'Mirror Dynamic': 1381, 'Rescuer–Victim': 986, 'Tragic Hero': 730, 'Push-Pull': 710, 'Idealize–Devalue': 336, 'Slow Fade': 311}"
+isear,RASP,7666,100.0,"{'none': 6685, 'Tragic Hero': 323, 'Push-Pull': 175, 'Rescuer–Victim': 171, 'Mirror Dynamic': 144, 'Slow Fade': 114, 'Idealize–Devalue': 54}"
+meld,RASP,13708,100.0,"{'none': 13167, 'Push-Pull': 146, 'Rescuer–Victim': 116, 'Tragic Hero': 106, 'Mirror Dynamic': 85, 'Idealize–Devalue': 47, 'Slow Fade': 41}"
+relationship,RASP,1308,100.0,"{'Mirror Dynamic': 361, 'Tragic Hero': 202, 'Rescuer–Victim': 170, 'Idealize–Devalue': 156, 'none': 155, 'Push-Pull': 132, 'Slow Fade': 132}"
+semeval2017,RASP,52806,100.0,"{'none': 48233, 'Push-Pull': 1344, 'Mirror Dynamic': 1123, 'Rescuer–Victim': 775, 'Tragic Hero': 691, 'Idealize–Devalue': 383, 'Slow Fade': 257}"
+tweeteval,RASP,59899,100.0,"{'none': 54693, 'Push-Pull': 1501, 'Mirror Dynamic': 1215, 'Tragic Hero': 887, 'Rescuer–Victim': 884, 'Idealize–Devalue': 416, 'Slow Fade': 303}"

@@ -1,0 +1,30 @@
+{
+  "generated": "2026-08-29T01:14:35",
+  "script_version": "04.2.0",
+  "lexicons": {
+    "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\src\\plef_lexicons.json",
+    "sha256": "18294c6727f66003df67c0c01ab9e66073dca34d3c60541878c35ba84825165c"
+  },
+  "core": {
+    "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\src\\plef_core.py",
+    "sha256": "e0dd29f192cad4dfb5e54df84c19a8adb5903fd9487e7b97f880eb2f76313c1a"
+  },
+  "lewi_v1_v2": {
+    "n": 198,
+    "same_pct": 76.26262626262626,
+    "within1_pct": 82.32323232323232,
+    "median_abs_drop_diff": 0.0
+  },
+  "benchmark": {
+    "texts": 200,
+    "words": 102188,
+    "seconds": 33.944584369659424,
+    "words_per_sec": 3010.4360356033217,
+    "workers": 7,
+    "corpus_total_words": 5501892,
+    "projected_minutes_full_run": 30.460105750635144
+  },
+  "unit_tests": "passed",
+  "purity": "passed",
+  "determinism": "passed"
+}

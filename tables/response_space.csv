@@ -1,0 +1,8 @@
+stage,n,interior,boundary,benchmark_naive,benchmark_corrected,round,pair,existence_agree_pct,existence_chance_pct,location_n,location_agree_pct,location_chance_pct
+A,19,18,1,5.02,4.669,,,,,,,
+B,200,,,,,round1_compromised,1v2,64.5,66.52,122,10.66,7.4
+B,200,,,,,round1_compromised,1v3,63.5,66.52,121,18.18,9.29
+B,200,,,,,round1_compromised,2v3,64.0,65.68,120,16.67,7.36
+B,53,,,,,round3_low_reliability,1v2,58.49,64.97,30,23.33,7.78
+B,51,,,,,round3_low_reliability,1v3,62.75,54.44,26,34.62,5.59
+B,48,,,,,round3_low_reliability,2v3,52.08,52.08,18,27.78,8.2

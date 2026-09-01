@@ -1,0 +1,321 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 02 : BASELINE ENVIRONMENT (hardened)
+==============================================================================
+  script version : 02.4.0
+  started        : 2026-08-28T23:54:02
+  V2 root        : D:\Research\PLEF\Version_2\PLEF_V2
+  V1 source      : D:\Research\PLEF\Old\PLEF
+  workers        : 7
+
+S0  ARCHIVE EXTRACTION AND INVENTORY
+------------------------------------------------------------------------------
+  archives in data/external: 3
+  NRC-Emotion-Intensity-Lexicon.zip          already extracted -> NRC-Emotion-Intensity-Lexicon/
+  NRC-Emotion-Lexicon.zip                    already extracted -> NRC-Emotion-Lexicon/
+  NRC-VAD-Lexicon-v2.1.zip                   already extracted -> NRC-VAD-Lexicon-v2.1/
+
+  candidate lexicon files: 268
+             911  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\ListOfLanguages-For-Which-Lexicon-Availabale.txt
+      21,826,436  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon-v1-ForVariousLanguages-withZeroIntensityEntries.txt
+      14,267,052  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon-v1-ForVariousLanguages.txt
+         211,206  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon-v1.txt
+         166,530  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\anger-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          21,809  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\anger-NRC-Emotion-Intensity-Lexicon-v1.txt
+         164,054  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\anticipation-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          12,680  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\anticipation-NRC-Emotion-Intensity-Lexicon-v1.txt
+         164,974  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\disgust-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          15,857  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\disgust-NRC-Emotion-Intensity-Lexicon-v1.txt
+         167,658  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\fear-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          25,867  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\fear-NRC-Emotion-Intensity-Lexicon-v1.txt
+         165,662  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\joy-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          18,468  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\joy-NRC-Emotion-Intensity-Lexicon-v1.txt
+         165,782  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\sadness-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          18,994  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\sadness-NRC-Emotion-Intensity-Lexicon-v1.txt
+         162,938  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\surprise-NRC-EmoIntv1-withZeroIntensityEntries.txt
+           8,534  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\surprise-NRC-Emotion-Intensity-Lexicon-v1.txt
+         166,566  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\trust-NRC-EmoIntv1-withZeroIntensityEntries.txt
+          22,047  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerEmotion\trust-NRC-Emotion-Intensity-Lexicon-v1.txt
+         299,946  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Afrikaans-NRC-Emotion-Intensity-Lexicon-v1.txt
+         310,344  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Albanian-NRC-Emotion-Intensity-Lexicon-v1.txt
+         358,496  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Amharic-NRC-Emotion-Intensity-Lexicon-v1.txt
+         334,604  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Arabic-NRC-Emotion-Intensity-Lexicon-v1.txt
+         390,902  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Armenian-NRC-Emotion-Intensity-Lexicon-v1.txt
+         312,688  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Azerbaijani-NRC-Emotion-Intensity-Lexicon-v1.txt
+         306,617  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Basque-NRC-Emotion-Intensity-Lexicon-v1.txt
+         387,501  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Belarusian-NRC-Emotion-Intensity-Lexicon-v1.txt
+         426,465  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Bengali-NRC-Emotion-Intensity-Lexicon-v1.txt
+         302,298  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Bosnian-NRC-Emotion-Intensity-Lexicon-v1.txt
+         386,067  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Bulgarian-NRC-Emotion-Intensity-Lexicon-v1.txt
+         303,572  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Catalan-NRC-Emotion-Intensity-Lexicon-v1.txt
+         305,834  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Cebuano-NRC-Emotion-Intensity-Lexicon-v1.txt
+         306,952  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Chichewa-NRC-Emotion-Intensity-Lexicon-v1.txt
+         291,015  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Chinese-Simplified-NRC-Emotion-Intensity-Lexicon-v1.txt
+         291,016  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Chinese-Traditional-NRC-Emotion-Intensity-Lexicon-v1.txt
+         302,786  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Corsican-NRC-Emotion-Intensity-Lexicon-v1.txt
+         306,019  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Croatian-NRC-Emotion-Intensity-Lexicon-v1.txt
+         309,751  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Czech-NRC-Emotion-Intensity-Lexicon-v1.txt
+         301,125  NRC-Emotion-Intensity-Lexicon\NRC-Emotion-Intensity-Lexicon\OneFilePerLanguage\Danish-NRC-Emotion-Intensity-Lexicon-v1.txt
+    ... and 228 more
+
+S1  INTERPRETER AND PACKAGE CHECK
+------------------------------------------------------------------------------
+  python 3.11.9  (win32)  cpu_count=8
+  OK      vaderSentiment     3.3.2
+  OK      afinn              0.1
+  OK      empath             0.89
+  OK      nltk               3.10.3
+  OK      labMTsimple        2.8.8
+  OK      nltk:opinion_lexicon
+
+S2  LEXICON IDENTIFICATION BY CONTENT
+------------------------------------------------------------------------------
+  Classified from FULL-FILE column structure and value ranges.
+  Filenames are not trusted for classification; they are used only
+  to exclude translation / per-emotion / sense-level variants.
+
+  candidates: 6 kept, 260 excluded by path rule
+    excluded by: OneFilePerLanguage=216, OneFilePerEmotion=26, mwe-=4, unigrams-=4, ForVariousLanguages=3, README=3, -polar-=3, Senselevel=1
+
+  EMOINT             9,829 rows     5,891 terms  NRC-Emotion-Intensity-Lexicon-v1.txt
+                 -> 3 cols, emotion names, continuous values
+  EMOLEX           141,540 rows    14,154 terms  NRC-Emotion-Lexicon-Wordlevel-v0.92.txt
+                 -> 3 cols, emotion names, binary values
+  VAD               54,801 rows    54,801 terms  NRC-VAD-Lexicon-v2.1.txt
+                 -> header names V/A/D
+  TWO_COL           54,801 rows    54,801 terms  arousal-NRC-VAD-Lexicon-v2.1.txt
+                 -> 2 columns -- single-emotion or single-dimension split
+  TWO_COL           54,801 rows    54,801 terms  dominance-NRC-VAD-Lexicon-v2.1.txt
+                 -> 2 columns -- single-emotion or single-dimension split
+  TWO_COL           54,801 rows    54,801 terms  valence-NRC-VAD-Lexicon-v2.1.txt
+                 -> 2 columns -- single-emotion or single-dimension split
+
+  SELECTED NRC Emotion Lexicon (EmoLex)
+     file   : NRC-Emotion-Lexicon-Wordlevel-v0.92.txt
+     terms  : 14,154   rows: 141,540
+     expect : 14,182   deviation 28  OK
+     sha256 : 02c661544f4f12ae0c14f9576a10959e8d39a151bb091e455a71a08dcaa2535a
+  SELECTED NRC Emotion Intensity Lexicon
+     file   : NRC-Emotion-Intensity-Lexicon-v1.txt
+     terms  : 5,891   rows: 9,829
+     scores : (0.0, 0.986), 697 distinct
+     sha256 : 2bed5450b43134e4f849b013424eb76a76e2bdc0ec35df7ec0a0a477031239cb
+  SELECTED NRC Valence-Arousal-Dominance Lexicon
+     file   : NRC-VAD-Lexicon-v2.1.txt
+     terms  : 54,801   rows: 54,801
+     ranges : V(-1.0, 1.0) A(-1.0, 1.0) D(-1.0, 1.0)   distinct V=1191
+     sha256 : 42c718817fc91d5c133581b24b0bb31d2b14a0b16edb19bc6ce6ab70343e5a45
+
+  NOT redistributable (NRC non-commercial research licence).
+  Cite Mohammad & Turney (2013) for EmoLex; Mohammad (2018) for EmoInt and VAD.
+
+S4  LEGACY V1 TOY LEXICON EXTRACTION (verbatim, via AST)
+------------------------------------------------------------------------------
+  NOTE _NRC_SEEDS: 60 literal keys, 58 unique -- duplicates ['happy', 'disgust']
+  _VADER_SEEDS        100 unique (100 literal)  vs published ~7,506  = 1.33%
+  _NRC_SEEDS           58 unique (60 literal)  vs published 14,182  = 0.41%
+  _LIWC_CATEGORIES      8 categories, 88 words
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\src\legacy_v1_lexicons.json
+
+S3  ADAPTER MODULE
+------------------------------------------------------------------------------
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\src\plef_baselines.py
+  sha256   2af862ce5f155215397279ed3e3cf0f50f80e4a64aee6cbc04367cd9d921f838
+
+S5  KNOWN-ANSWER AND ADVERSARIAL VERIFICATION
+------------------------------------------------------------------------------
+  lexicon / category sizes:
+    vader               7,506  OK
+    nrc                 6,453  ** expected ~14,182 **
+    empath                194  OK
+    afinn               3,382  OK
+    huliu               6,789  OK
+    labmt              10,222  OK
+    V1_vader_toy          100
+    V1_nrc_toy             58
+    V1_liwc_toy             8
+
+  core (no negation) -- asserted for all       vader       nrc    empath     afinn     huliu     labmt  V1_vader  V1_nrc_t  V1_liwc_
+------------------------------------------------------------------------------
+  I love this so much!                         0.670     1.000     1.000     0.268     1.000     0.855     0.612     0.200     1.000
+  I hate everything about this.               -0.572    -1.000    -1.000    -0.268    -1.000    -0.665    -0.625    -0.200    -1.000
+  The book is on the table.                    0.000     0.000     0.000     0.000     0.000     0.560     0.000     0.000     0.000
+  He betrayed me and I feel broken.           -0.796    -1.000    -0.500    -0.302    -1.000    -0.236    -0.823    -0.143    -1.000
+  She is kind and I am grateful every da       0.751     1.000     1.000     0.333     1.000     0.439     0.758     0.111     1.000
+
+  negation -- asserted only for VADER-family     vader       nrc    empath     afinn     huliu     labmt  V1_vader  V1_nrc_t  V1_liwc_
+------------------------------------------------------------------------------
+  This is not good at all.                    -0.341     1.000     0.000    -0.163     1.000     0.190    -0.341     0.167     1.000
+  Nothing bad happened, it was wonderful       0.761     0.000    -1.000     0.082     0.000    -0.058     0.779     0.000     1.000
+
+  Bag-of-words systems that mis-handle negation (EXPECTED, not a failure):
+    nrc            +1.000   [This is not good at all.]
+    empath         +0.000   [This is not good at all.]
+    huliu          +1.000   [This is not good at all.]
+    labmt          +0.190   [This is not good at all.]
+    V1_nrc_toy     +0.167   [This is not good at all.]
+    V1_liwc_toy    +1.000   [This is not good at all.]
+    nrc            +0.000   [Nothing bad happened, it was wonde]
+    empath         -1.000   [Nothing bad happened, it was wonde]
+    huliu          +0.000   [Nothing bad happened, it was wonde]
+    labmt          -0.058   [Nothing bad happened, it was wonde]
+    V1_nrc_toy     +0.000   [Nothing bad happened, it was wonde]
+  This is a real limitation of these lexicons and belongs in the paper,
+  not a defect. Only VADER implements negation.
+
+  adversarial robustness (crash / NaN / out-of-range):
+    empty          OK
+    whitespace     OK
+    single_word    OK
+    punct_only     OK
+    all_caps       OK
+    emoji          OK
+    unicode        OK
+    html           OK
+    digits         OK
+    repeated       OK
+    very_long      OK
+    newlines       OK
+    quotes         OK
+    nonlatin       OK
+
+  All checks passed: signs correct, no crashes, no NaN, all in range.
+
+S6  DETERMINISM (cross-process, bitwise)
+------------------------------------------------------------------------------
+  19 inputs scored twice in two separate processes
+  all 9 baselines bitwise identical across processes
+
+S7  IMPORT-PURITY HARNESS (build and self-test)
+------------------------------------------------------------------------------
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\src\plef_purity.py
+  Checks run in FRESH SUBPROCESSES. Purging compiled extensions such
+  as numpy from a live interpreter raises 'cannot load module more
+  than once per process' and poisons everything after it, so a purity
+  claim must be tested in a process that never imported the package.
+  self-test A: stdlib 'json' under blocker      -> PASS (allowed)
+  self-test B: third-party 'nltk' under blocker -> PASS (blocked)
+     blocker message: ImportError: PURITY VIOLATION: attempted import of 'nltk' (blocked package 'nltk')
+  harness VERIFIED -- script 04 uses it
+  sha256   832710940dc82741588f6ad941704930cf93c4a8c2a422be805629f245ee5bf9
+
+S8b  COVERAGE AND INTER-SYSTEM AGREEMENT (held-out text)
+------------------------------------------------------------------------------
+
+S8a  PREVIEW SOURCE: PROVENANCE AUDIT AND DISJOINTNESS PROOF
+------------------------------------------------------------------------------
+  V1 loader load_reddit_relationship() reads, in priority order:
+    1. reddit_posts_corpus_original.csv   (47,684 rows)
+    2. reddit_posts_corpus.csv        (only if the first is absent)
+
+  Audit of the file actually used (reddit_posts_corpus_original.csv):
+    median words per item : 14
+    id prefixes           : ['ge_']
+    exact-text overlap with GoEmotions raw : 47,666 (100.0%)
+
+    ** The corpus described in Table 2 as 'Relationship narratives
+       (7 subreddits)' is GoEmotions comment text. It is not
+       relationship narratives, and it is not independent of the
+       GoEmotions corpus counted separately. This is a disclosure
+       item for the response letter. Script 03 rebuilds it. **
+
+  Held-out pool : reddit_posts_corpus.csv
+    rows >=20 words        : 1,317
+    dropped as non-disjoint: 0
+    HELD-OUT USABLE        : 1,317
+    median words           : 370
+    subreddits             : {'relationships': 300, 'relationship_advice': 300, 'BreakUps': 200, 'survivinginfidelity': 200, 'confession': 150, 'emotionalsupport': 150, 'heartbreak': 17}
+
+  Disjointness is proved by normalised-text SHA-1 against every
+  evaluation text reconstructible locally (GoEmotions raw splits and
+  the file the V1 Reddit loader actually consumed): 53,943 hashes.
+  These posts were never scored in any V1 evaluation, so nothing
+  measured here can leak into a decision about evaluation data.
+  sample 1,317 held-out posts | seed 20260828
+  NOTE: pool smaller than --preview-n (3,000); using all of it.
+  scored in 75.9s (17.3 texts/s, 8,821 words/s on 7 workers)
+  mean length 509 words
+
+  system            coverage      mean       sd   %pos   %neu   %neg  %nonzero
+------------------------------------------------------------------------------
+  vader                8.86%   +0.2855   0.8449  64.5%   1.2%  34.3%     99.8%
+  nrc                  8.73%   +0.1587   0.3253  65.5%  11.5%  23.0%     93.7%
+  empath              34.86%   -0.0030   0.3582  42.0%  13.5%  44.5%     95.1%
+  afinn                7.71%   +0.0187   0.2145  43.4%  19.9%  36.8%     98.0%
+  huliu                6.74%   -0.0186   0.3505  40.7%  13.8%  45.5%     93.4%
+  labmt               95.97%   +0.2285   0.0711  97.8%   1.9%   0.3%     99.9%
+  V1_vader_toy         1.88%   +0.3295   0.6804  65.3%   6.5%  28.2%     95.2%
+  V1_nrc_toy           1.27%   +0.0019   0.0088   0.1%  99.9%   0.0%     79.0%
+  V1_liwc_toy          4.90%   +0.2488   0.4657  59.1%  24.1%  16.9%     76.2%
+
+  Coverage is the fraction of tokens each lexicon can even see.
+
+  Pairwise Cohen's kappa, 3-class labels (real systems):
+                vader      nrc   empath    afinn    huliu    labmt
+  vader         1.000    0.353    0.283    0.501    0.421    0.033
+  nrc           0.353    1.000    0.241    0.313    0.294    0.039
+  empath        0.283    0.241    1.000    0.305    0.311    0.013
+  afinn         0.501    0.313    0.305    1.000    0.495    0.016
+  huliu         0.421    0.294    0.311    0.495    1.000    0.015
+  labmt         0.033    0.039    0.013    0.016    0.015    1.000
+
+  Real system vs the V1 toy that carried its name:
+    vader    vs V1_vader_toy     agreement  70.1%   kappa +0.379
+    nrc      vs V1_nrc_toy       agreement  11.6%   kappa +0.000
+    empath   vs V1_liwc_toy      agreement  49.7%   kappa +0.219
+
+S9  SENSITIVITY: THRESHOLD, AFINN NORMALISATION, EMPATH MAPPING
+------------------------------------------------------------------------------
+  sample 1,317 posts
+
+  (a) variant comparison
+    variant                     mean       sd    %pos    %neu    %neg
+------------------------------------------------------------------------------
+    afinn:sqrt               +0.0187   0.2145   43.4%   19.9%   36.8%
+    afinn:dens               +0.0036   0.0618   17.9%   67.7%   14.4%
+    afinn:mean               +0.0108   0.1528   39.2%   28.0%   32.8%
+    afinn:tanh               +0.0703   0.8748   52.7%    2.0%   45.3%
+    empath:broad             -0.0030   0.3582   42.0%   13.5%   44.5%
+    empath:narrow            -0.1641   0.4797   28.2%   15.0%   56.7%
+
+  (b) threshold sweep -- percent labelled NEUTRAL at each cut point
+    system               0.00     0.02     0.05     0.10     0.15     0.20     0.30
+------------------------------------------------------------------------------
+    vader                0.2%     0.5%     1.2%     1.7%     2.3%     3.3%     4.5%
+    nrc                  6.3%     7.1%    11.5%    22.8%    33.1%    43.4%    60.1%
+    empath               4.2%     7.2%    13.5%    25.7%    35.8%    44.9%    61.0%
+    afinn                2.0%     7.2%    19.9%    40.0%    56.3%    69.3%    85.1%
+    huliu                6.6%     7.6%    13.8%    26.0%    37.0%    48.4%    63.6%
+    labmt                0.1%     0.6%     1.9%     4.8%    11.0%    28.0%    87.3%
+    V1_vader_toy         4.8%     4.9%     6.5%     8.2%     9.7%    11.2%    15.2%
+    V1_nrc_toy          21.0%    95.8%    99.9%   100.0%   100.0%   100.0%   100.0%
+    V1_liwc_toy         23.8%    23.8%    24.1%    26.0%    30.7%    36.2%    45.5%
+
+  Reading: a system whose neutral fraction swings sharply across this
+  row is threshold-sensitive, so its macro-F1 is a property of the
+  threshold as much as of the system. AUC is not.
+
+S10  DECISIONS.md  (the pre-registration for V2)
+------------------------------------------------------------------------------
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\DECISIONS.md
+  sha256   6493bed3fe6c276bd58ed7fda8541275a87929f6a0e375cc4b2d0a3c88073ff1
+  Commit this file NOW, before script 04 produces any evaluation number.
+
+==============================================================================
+DONE
+==============================================================================
+  adapter      : D:\Research\PLEF\Version_2\PLEF_V2\src\plef_baselines.py
+  purity       : D:\Research\PLEF\Version_2\PLEF_V2\src\plef_purity.py
+  legacy toys  : D:\Research\PLEF\Version_2\PLEF_V2\src\legacy_v1_lexicons.json
+  decisions    : D:\Research\PLEF\Version_2\PLEF_V2\DECISIONS.md
+  environment  : D:\Research\PLEF\Version_2\PLEF_V2\MANIFEST\environment.json
+  log          : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\console_log_02.txt
+
+  determinism verified : True
+  purity harness works : True
+  lexicons identified  : ['emoint', 'emolex', 'vad']
+  throughput           : 17 texts/s -> approx 153.7 min for 160k texts on 7 workers
+
+  NEXT: send me this log. Script 03 rebuilds the nine dataset loaders
+  and wires VAD/EmoInt to the two hypotheses that currently have no
+  external criterion.

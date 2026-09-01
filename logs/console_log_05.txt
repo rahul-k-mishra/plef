@@ -1,0 +1,79 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 05 : FULL EVALUATION RUN
+==============================================================================
+  script version : 05.4.0
+  started        : 2026-08-30T12:53:02
+  V2 root        : D:\Research\PLEF\Version_2\PLEF_V2
+  workers        : 7   chunk target: 2,000
+
+INPUTS
+------------------------------------------------------------------------------
+  nrc      NRC-Emotion-Lexicon-Wordlevel-v0.92.txt
+  vad      NRC-VAD-Lexicon-v2.1.txt
+  emoint   NRC-Emotion-Intensity-Lexicon-v1.txt
+  legacy   legacy_v1_lexicons.json
+  unknown corpora ignored: ['dev_relationship']
+
+SCORING SHARDS
+------------------------------------------------------------------------------
+  Declared scope (D20): trajectory metrics IN SCOPE only for ['dev_relationship', 'relationship']
+  Declared (D18): no classification on ['dev_relationship', 'relationship']
+  Declared (D10, D16): binary corpora ['empathetic', 'isear']
+
+  dev_relationship added: the annotated split, scored so that
+  H1 and H5 can be evaluated. Excluded from all pooled results.
+
+  dev_relationship      200 items     102,188 words  7 chunk(s) of ~29   trajectory IN scope  +sentence vectors
+                       200 rows in  115.2s (    887 w/s) -> scored_dev_relationship.csv
+
+  manifest: folded back 8 shard(s) present on disk but not scored in this run:
+    dailydialog, empathetic, goemotions, isear, meld, relationship, semeval2017, tweeteval
+
+COMPLETENESS AUDIT
+------------------------------------------------------------------------------
+  Every metric, per corpus: how many items produced a value rather
+  than None. A metric that is mostly None is not a weak metric, it is
+  an inapplicable one, and the paper must say which it is.
+
+  corpus           lewi_dr     nava      teg      rci     ties  sem_coh     nspl      pti      pai     gase  cd_inde     vads
+------------------------------------------------------------------------------
+  dailydialog         3.9%     3.9%    44.4%    29.4%    44.4%    39.9%    39.9%   100.0%   100.0%   100.0%   100.0%   100.0%
+  dev_relationship    99.0%    99.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%
+  empathetic          1.5%     1.5%    53.9%    50.6%    53.9%    53.6%    53.6%   100.0%   100.0%   100.0%   100.0%   100.0%
+  goemotions          1.7%     1.7%    42.5%    30.5%    42.5%    40.0%    40.0%   100.0%   100.0%   100.0%   100.0%   100.0%
+  isear               3.9%     3.9%    33.5%    33.1%    33.5%    33.4%    33.4%   100.0%   100.0%   100.0%   100.0%   100.0%
+  meld                2.6%     2.6%    27.5%    11.8%    27.5%    22.5%    22.5%   100.0%   100.0%   100.0%   100.0%   100.0%
+  relationship       98.5%    98.5%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%   100.0%
+  semeval2017         6.4%     6.4%    59.8%    53.6%    59.8%    58.8%    58.8%   100.0%   100.0%   100.0%   100.0%   100.0%
+  tweeteval           4.3%     4.3%    50.1%    41.0%    50.1%    48.7%    48.7%   100.0%   100.0%   100.0%   100.0%   100.0%
+
+SANITY CHECKS
+------------------------------------------------------------------------------
+  PASS  dailydialog   (101,026 rows)
+  PASS  dev_relationship   (200 rows, no gold labels as declared)
+  PASS  empathetic   (19,157 rows)
+  PASS  goemotions   (54,263 rows)
+  PASS  isear   (7,666 rows)
+  PASS  meld   (13,708 rows)
+  PASS  relationship   (1,308 rows, no gold labels as declared)
+  PASS  semeval2017   (52,806 rows)
+  PASS  tweeteval   (59,899 rows)
+
+==============================================================================
+DONE
+==============================================================================
+  scored     : D:\Research\PLEF\Version_2\PLEF_V2\results\canonical
+  manifest   : D:\Research\PLEF\Version_2\PLEF_V2\MANIFEST\scored.json
+  log        : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\console_log_05.txt
+
+  corpora in manifest : 9   scored this run: 1   skipped: 0   failed: none
+  rows           : 310,033
+  words          : 5,604,080
+  elapsed        : 1.9 min (48,510 words/s overall)
+  sanity checks  : PASSED
+
+  NEXT: send me this log. Script 06 computes the statistics:
+  Table 3 against real baselines, bootstrap confidence intervals,
+  the NAVA x LEWI structural null, PAI against VAD dominance, TEG
+  against EmoInt, and the honest hypothesis scoreboard.

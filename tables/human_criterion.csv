@@ -1,0 +1,2 @@
+n,single_rater,h1_within1_chance,h1_within2_chance,h1_n,h1_exact,h1_within1,h1_chance,h1_ci,h1_verdict,h1_human_none,h1_lewi_always_fires,h5_n,h5_agreement,h5_kappa,h5_baseline,h5_verdict,h5_tvd
+36,True,0.12869724900606416,0.21449541501010694,19,0.0,0.10526315789473684,0.04289908300202139,"[0.0, 0.16818436536845052]",NOT ABOVE CHANCE,16,True,35,0.37142857142857144,0.020356234096692013,0.42857142857142855,NOT above the majority baseline,0.05714285714285714

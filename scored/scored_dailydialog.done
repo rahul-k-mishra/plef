@@ -1,0 +1,9 @@
+{
+ "corpus": "dailydialog",
+ "rows": 101026,
+ "sha256": "bd7a7380eb4e4b10206bdebf1e697f3372ecdbf602360a525c4ee67a92d39a79",
+ "seconds": 1148.2,
+ "words": 1397722,
+ "trajectory_in_scope": false,
+ "at": "2026-08-29T01:46:58"
+}

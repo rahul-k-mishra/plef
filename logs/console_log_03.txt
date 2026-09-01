@@ -1,0 +1,182 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 03 : DATASET REBUILD AND VALIDATION
+==============================================================================
+  script version : 03.4.0
+  started        : 2026-08-29T22:48:18
+  V2 root        : D:\Research\PLEF\Version_2\PLEF_V2
+  V1 source      : D:\Research\PLEF\Old\PLEF
+  workers        : 7
+
+S0  RAW SOURCE INVENTORY AND HASHES
+------------------------------------------------------------------------------
+  hashed 525 raw source files (including all 492 reddit_posts/*.txt individually)
+  aggregate evidence hash: 078f017f6f2014cde7259de16e4b4e85d5aea683280cad4f37d5d4a5804bb9a6
+         439,059  ge_dev.tsv
+         436,706  ge_test.tsv
+       3,519,053  ge_train.tsv
+       1,670,985  isear.csv
+         121,640  meld_dev.csv
+         294,526  meld_test.csv
+       1,119,290  meld_train.csv
+          24,568  tweeteval_test_labels.txt
+       1,156,877  tweeteval_test_text.txt
+          91,230  tweeteval_train_labels.txt
+       4,970,029  tweeteval_train_text.txt
+           4,000  tweeteval_val_labels.txt
+    ... and 513 more
+
+S1  REBUILD ALL LOADERS (parallel)
+------------------------------------------------------------------------------
+  corpus                raw   usable  kept%           labels  distribution
+------------------------------------------------------------------------------
+  relationship        1,508    1,508 100.0%             none  (no labels -- trajectory only)
+  goemotions         54,263   54,263 100.0%            human  neu:40.7%  pos:38.3%  neg:21.0%
+  empathetic         19,161   19,157 100.0%            human  pos:50.5%  neg:49.5%
+  isear               7,666    7,666 100.0%            human  neg:85.7%  pos:14.3%
+  semeval2017        52,806   52,806 100.0%            human  neu:45.1%  pos:38.9%  neg:16.0%
+  meld               13,708   13,708 100.0%            human  neu:47.0%  neg:30.5%  pos:22.5%
+  tweeteval          59,899   59,899 100.0%            human  neu:45.9%  pos:35.1%  neg:19.0%
+  dailydialog       102,979  101,026  98.1%            human  neu:84.9%  pos:12.5%  neg:2.7%
+
+    relationship    genuine 7-subreddit narratives; NO trustworthy labels; trajectory analysis only (D18)
+    goemotions      3 human raters, Demszky et al. 2020 groupings
+    empathetic      self-reported situation emotion; BINARY (D16); a handful of rows with CSV-broken emotion fields are dropped, not pooled
+    isear           expert annotators; NO neutral class; BINARY (D10)
+                    text_edits = 5,337
+    semeval2017     SemEval-2017 Task 4A gold labels
+    meld            human annotation; dataset Sentiment column used directly
+    tweeteval       TweetEval sentiment; derived from SemEval-2017
+    dailydialog     manual utterance labels; mixed-quote numpy repr parsed
+
+S2  VALIDATION GATE
+------------------------------------------------------------------------------
+  PASS   relationship
+           * TRAJECTORY-ONLY: no classification result may be computed
+  PASS   goemotions
+  PASS   empathetic
+           * BINARY: declared two-class in DECISIONS.md
+  PASS   isear
+           * BINARY: declared two-class in DECISIONS.md
+  PASS   semeval2017
+  PASS   meld
+  PASS   tweeteval
+  PASS   dailydialog
+
+  V1 comparison, the two corpora that failed silently:
+    isear        V1: 2,042 items, 100% neu
+                 V2: 7,666 items, neg:85.7%, pos:14.3%
+                     emotions: {'anger': 1096, 'sadness': 1096, 'disgust': 1096, 'shame': 1096, 'fear': 1095, 'joy': 1094, 'guilt': 1093}
+    dailydialog  V1: 13,118 items, 100% neu
+                 V2: 101,026 items, neu:84.9%, pos:12.5%, neg:2.7%
+                     emotions: {'no_emotion': 84061, 'happiness': 12580, 'surprise': 1706, 'sadness': 1140, 'anger': 1016, 'disgust': 350, 'fear': 173}
+
+S3  DEVELOPMENT SPLIT (reserved, never evaluated)
+------------------------------------------------------------------------------
+  source          : relationship corpus, 1,508 posts
+  dev split       : 200 posts (seed 20260829)
+  evaluation set  : 1,308 posts
+  dev split hash  : edc1a20fe6519480d7712510f5bb73df768f96347b91657443ab001921a5061b
+
+  Every future smoke test, threshold sweep and sensitivity
+  analysis uses ONLY the dev split. It appears in no result.
+  written -> D:\Research\PLEF\Version_2\PLEF_V2\data\interim\dev_split_relationship.csv
+
+S4  CROSS-CORPUS DUPLICATE DETECTION (all pairs, by text hash)
+------------------------------------------------------------------------------
+                   relations goemotion empatheti     isear semeval20      meld tweeteval dailydial
+  relationship             -      0.0%      0.0%      0.0%      0.0%      0.0%      0.0%      0.0%
+  goemotions            0.0%         -      0.0%      0.0%      0.0%      0.1%      0.0%      0.0%
+  empathetic            0.0%      0.0%         -      0.0%      0.0%      0.0%      0.0%      0.0%
+  isear                 0.0%      0.0%      0.0%         -      0.0%      0.0%      0.0%      0.0%
+  semeval2017           0.0%      0.0%      0.0%      0.0%         -      0.0%     42.8%      0.0%
+  meld                  0.0%      0.4%      0.0%      0.0%      0.0%         -      0.0%      0.0%
+  tweeteval             0.0%      0.0%      0.0%      0.0%     37.8%      0.0%         -      0.0%
+  dailydialog           0.0%      0.0%      0.0%      0.0%      0.0%      0.0%      0.0%         -
+
+  MATERIAL OVERLAP (>5% of the row corpus appears in the column corpus):
+    semeval2017    -> tweeteval       22,603 items  42.8%
+    tweeteval      -> semeval2017     22,603 items  37.8%
+
+  All counts below are for the EVALUATION set: the reserved dev
+  split has already been removed. There is exactly one number for
+  each quantity in this log.
+
+  evaluation items, summed over corpora : 309,833
+  evaluation items, unique              : 265,452
+  duplicate inflation                   : 44,381 (14.3%)
+  reserved dev split (not evaluated)    : 200
+  manuscript claimed                    : 150,041
+
+S5  STRUCTURAL STATISTICS (what the trajectory metrics can use)
+------------------------------------------------------------------------------
+  corpus                  n       words   w/item   sents  >=4 sents   usable%
+------------------------------------------------------------------------------
+  relationship        1,308     674,440      390      24      1,288     98.5%
+  goemotions         54,263     696,105       12       1        914      1.7%
+  empathetic         19,157     343,838       16       2        290      1.5%
+  isear               7,666     165,608       18       1        296      3.9%
+  semeval2017        52,806   1,015,652       20       2      3,405      6.4%
+  meld               13,708     109,609        6       1        354      2.6%
+  tweeteval          59,899   1,098,918       19       2      2,584      4.3%
+  dailydialog       101,026   1,397,722       11       1      3,892      3.9%
+  --------------------------------------------------------------------------
+  TOTAL             309,833   5,501,892                      13,023
+
+  The '>=4 sents' column is the population on which LEWI, TEG and
+  NAVA can be computed at all. V1 reported 5,795 such items in
+  Table 5, 3.9% of its claimed corpus.
+
+S6  WRITE CANONICAL CORPORA
+------------------------------------------------------------------------------
+  relationship        1,308 -> corpus_relationship.csv         round-trip OK
+  goemotions         54,263 -> corpus_goemotions.csv           round-trip OK
+  empathetic         19,157 -> corpus_empathetic.csv           round-trip OK
+  isear               7,666 -> corpus_isear.csv                round-trip OK
+  semeval2017        52,806 -> corpus_semeval2017.csv          round-trip OK
+  meld               13,708 -> corpus_meld.csv                 round-trip OK
+  tweeteval          59,899 -> corpus_tweeteval.csv            round-trip OK
+  dailydialog       101,026 -> corpus_dailydialog.csv          round-trip OK
+
+S7  EXTEND DECISIONS.md
+------------------------------------------------------------------------------
+  appended -> D:\Research\PLEF\Version_2\PLEF_V2\DECISIONS.md
+  sha256    e75ef976d6e95407f44bc3ff1046b041b21451a507707135182f3c61e3a4c2b0
+
+S8  HUMAN ANNOTATION TASK (dev split)
+------------------------------------------------------------------------------
+  rater 1: annotation_task_rater1.csv  (200 posts, order seed 20268748)
+  rater 2: annotation_task_rater2.csv  (200 posts, order seed 20276667)
+  rater 3: annotation_task_rater3.csv  (200 posts, order seed 20284586)
+  guide  : D:\Research\PLEF\Version_2\PLEF_V2\data\interim\annotations\ANNOTATION_GUIDE.md
+  posts have 3-176 sentences (median 22)
+
+  This is the direct test of H1 that all three reviewers asked for.
+  Until it is returned, H1 stays marked NOT TESTED.
+
+S9  CONSENSUS CORPUS -- REMOVED
+------------------------------------------------------------------------------
+  none present
+  The construction is not used anywhere in V2. Lexicon-agreement
+  labelling does not work on long narratives: over ~390 words a
+  bag-of-words sum drifts positive regardless of content.
+
+S10  SCRIPT 02 DEFECT FIXES
+------------------------------------------------------------------------------
+  adapter already patched or structure changed; no edit made
+
+==============================================================================
+DONE
+==============================================================================
+  corpora    : D:\Research\PLEF\Version_2\PLEF_V2\data\interim
+  manifest   : D:\Research\PLEF\Version_2\PLEF_V2\MANIFEST\corpora.json
+  decisions  : D:\Research\PLEF\Version_2\PLEF_V2\DECISIONS.md
+  log        : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\console_log_03.txt
+
+  corpora built  : 8
+  failed gate    : none
+  unique items   : 265,452   (manuscript claimed 150,041)
+  total words    : 5,501,892
+
+  NEXT: send me this log. Script 04 rebuilds the PLEF core as a
+  standard-library module with unit tests and the purity check.

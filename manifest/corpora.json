@@ -1,0 +1,3131 @@
+{
+  "aggregate_source_hash": "078f017f6f2014cde7259de16e4b4e85d5aea683280cad4f37d5d4a5804bb9a6",
+  "generated": "2026-08-29T22:48:54",
+  "script_version": "03.4.0",
+  "raw_sources": [
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\ge_dev.tsv",
+      "size": 439059,
+      "sha256": "575489c079c9de1097062a01738f998590d6b7ead66dd1c9fd1d2ba01fd8bc62"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\ge_test.tsv",
+      "size": 436706,
+      "sha256": "0587b2dd8b27b97352adbfc3fb083d46005c8946657fdc2b1ca8b1cc7f1f8be4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\ge_train.tsv",
+      "size": 3519053,
+      "sha256": "1c254a142be5c00e80d819b9ae1bbd36d94b2eeb8f4b1271846508d57e57d9c5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\isear.csv",
+      "size": 1670985,
+      "sha256": "370110fff70a1e1d9e23b10cf6db1f64876120fa02276afe5916fbfeb038cdca"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\meld_dev.csv",
+      "size": 121640,
+      "sha256": "2e89c6f8aa182d6f62f8c6331aece905ac7273ca4999660bfb5213e1d0370c1c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\meld_test.csv",
+      "size": 294526,
+      "sha256": "8d37103938f7067600839fe29d5a114a6cd1bcdafb75bec101e06464c5006888"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\meld_train.csv",
+      "size": 1119290,
+      "sha256": "d2fa2d6529cf03cac2989efec05c9b27d8fd2f4c8fc5974c7ae88aa537fa02db"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\tweeteval_test_labels.txt",
+      "size": 24568,
+      "sha256": "6afb4afe9374d1f983bcf9a7c79b108d0f37fdf020a83f30488309bed215db9d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\tweeteval_test_text.txt",
+      "size": 1156877,
+      "sha256": "09a93a55c63fd93f97485ef7302889d7edb4091cd49733aa37da094f0bfa0675"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\tweeteval_train_labels.txt",
+      "size": 91230,
+      "sha256": "122bfb1732fb6995b0e5c5f726c0ba457c469c3b6e60513007ce5037f23e65d4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\tweeteval_train_text.txt",
+      "size": 4970029,
+      "sha256": "368f01052ea6fd8ffc408a2a2e6ac9669e31542581a0396ef16591ea26eb98a6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\tweeteval_val_labels.txt",
+      "size": 4000,
+      "sha256": "b4566926c72e2e4e2916c864def94e76c4cdde52446af2c7ba4fc2006e057e51"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\tweeteval_val_text.txt",
+      "size": 219137,
+      "sha256": "e5b021e6fc45064c260b09814b803d8f56cada519c4d952d72f43d48a350a964"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\dailydialog_extracted\\test.csv",
+      "size": 561656,
+      "sha256": "7bbe640e69f7debf0a98bf57acc5e3236dad438a864c5ea14fee7ba7968588e3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\dailydialog_extracted\\train.csv",
+      "size": 6233555,
+      "sha256": "d618b3188870840ce97443895cd83bdef076e6ab32a529e64e4515cab020abb9"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\dailydialog_extracted\\validation.csv",
+      "size": 575615,
+      "sha256": "c88eaac5228671ef23152685187b24ab36da48bbfde49d94e3a86603c3906431"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\empathetic_extracted\\emotion-emotion_69k.csv",
+      "size": 16724038,
+      "sha256": "f4f179c7f4bdf0402183c4d762dfc5daa063fb973d95932c36ff93c17c8f42d0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts_corpus.csv",
+      "size": 3718957,
+      "sha256": "3cf7a8cff46c7ac9d46eb6d2196f30a9ce61174661704f753f6c691537fca07e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\.DS_Store",
+      "size": 6148,
+      "sha256": "db6ae195121774085da53b51bd4097ff6dcda1f44ab05775b9fdde17c8f6c654"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\livejournal-2014test-A.tsv",
+      "size": 97983,
+      "sha256": "1b54487f3a40455e8bb20d28fdf84fa29f87d453caded9f40582ca64cff8828a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\README.txt",
+      "size": 3511,
+      "sha256": "a083e7685ad02709cee8b6be4128d1f762b77f89342cd68f9636edb7d7de1280"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\sms-2013test-A.tsv",
+      "size": 206354,
+      "sha256": "4123538dc893a6638945286e49d2286acaf5fcbc5bbd8db6588c8cf0f9153100"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2013dev-A.txt",
+      "size": 241753,
+      "sha256": "e402ab2e9bad766275ef5af490e2c3b0edca8236d60e6e69227589186bffd896"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2013test-A.txt",
+      "size": 509953,
+      "sha256": "eb98d2342016eefda22dd563aa1ccde18aed399eeba572d8c963bbc56c196164"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2013train-A.txt",
+      "size": 1420274,
+      "sha256": "111969d156c516b40bd504fcedcca52bbd44ec24add6f59290eb94df9b9c392c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2014sarcasm-A.txt",
+      "size": 9969,
+      "sha256": "8321459374f88fc32b0b93da76c8740e7a3f30256886dbe9fcebb04b0ae8906f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2014test-A.txt",
+      "size": 268406,
+      "sha256": "d6aa09ca41031e3deefb7e5b2f74f53260ab374f993e2275d8e4ccec6b210253"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2015test-A.txt",
+      "size": 344669,
+      "sha256": "54b3481924c025d31ac9669c049603b91035b40e8becd6629fb9476a6d9a62f4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2015train-A.txt",
+      "size": 71983,
+      "sha256": "29780e613f562a511fa427196503c3f95fea6c0298470e157deab88a0e0ed65e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2016dev-A.txt",
+      "size": 294054,
+      "sha256": "47bda81cb91db2bf92222a5f20742b5e3edc14eb391e74b882b284e5afd0c8bb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2016devtest-A.txt",
+      "size": 286151,
+      "sha256": "c16686ebaa3b61770f4d4d2a60d051715146950faa93e039bb0aefb3523c3b38"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2016test-A.txt",
+      "size": 2995085,
+      "sha256": "8bf50e0fb4d5ca3d4b27414cc620fe226b4d844cbff68db5b298c2e70803ab10"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\datasets\\semeval2017_extracted\\2017_English_final\\GOLD\\Subtask_A\\twitter-2016train-A.txt",
+      "size": 864760,
+      "sha256": "f49f65cf5e94b47d077ab7715d3d0a656c09b5c71608678a672d7378ef79c932"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\148ysit.txt",
+      "size": 2646,
+      "sha256": "b50c855209a53d17fd2bee79c5ac26e7ba759800cc5de6977b60e1ded54f7430"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\14dif6a.txt",
+      "size": 3415,
+      "sha256": "7862637fce37ce29e14bfd68bd03c2f694f0d6abbafc2dcfa497dc495533b668"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\14ece6v.txt",
+      "size": 2125,
+      "sha256": "6c0ffbaebc867a694a15537903473cbadb64b298c84bebfaa8e63e0f023a093c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\14ge64t.txt",
+      "size": 3254,
+      "sha256": "91ac6ca67f92b7cd1a9f053a8284c0bf6e6ea29a62b4e2aacc1a0adad50baba1"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\152ckkp.txt",
+      "size": 10318,
+      "sha256": "3154a49aae53de7134559bbf8e4a6ebd1b3a589190f08db74e62d3a654469441"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\15pjpj3.txt",
+      "size": 3929,
+      "sha256": "b279b472f0d1cdddb68ef09e05204e5331d81993fb6c5939f5c096aa6256c35c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1707opw.txt",
+      "size": 2805,
+      "sha256": "38e8c0290dd0569e3d1c16265cea2cbc1af683c5282225142b352645412ec2c4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1cqqp4l.txt",
+      "size": 3372,
+      "sha256": "31faddde2d6056bb069f2dca03b82fe08cedf48a310f934fcaa4d090286ff8ec"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1dw3fk0.txt",
+      "size": 3795,
+      "sha256": "5bf14b55c53ba897e1f3884097bc5b32beea602e2668925929ffee7b1e2ecaae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1eenoqy.txt",
+      "size": 4753,
+      "sha256": "af8eaaa67469684ec9a1ae77cb7eeb2d74b4c84a4ccdef9bb3d9b8a989df2fea"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1g88vhh.txt",
+      "size": 3206,
+      "sha256": "4dbb692b50ed1dc9b96dcaadc7f976687c7318433f2afa3867f6c10245e32423"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1gt6lli.txt",
+      "size": 1792,
+      "sha256": "b437f7be04d95492ab7b01d07f83698997938ffc3ead635ebf6040a133f0af13"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\1obsrui.txt",
+      "size": 5094,
+      "sha256": "7efbdf9f4b5e4e69ab2d7a4f39b2032b0f63abe072cbdb0d397fc773562436c7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\8m4kd4.txt",
+      "size": 2231,
+      "sha256": "57a4729722e2f23aa6a4c1e22a0bd5e4758c167019da91b512a8b82019822100"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\8x0yms.txt",
+      "size": 8399,
+      "sha256": "977230f1a8ae9f85dcef06f49aa0898fd3fe6ba752bbdc50bc6aabd2ad755eee"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\971m2x.txt",
+      "size": 3499,
+      "sha256": "fe228338a584ffe09a061bada16652a4e5c125e785b21b007926d4f71b51485f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\9sl5wd.txt",
+      "size": 2760,
+      "sha256": "45270f94b9c310e4b39fd5058a011097332cfba0b95617b9c198d8b931b2da55"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\9u4emi.txt",
+      "size": 1742,
+      "sha256": "63b926569a91dde909b54806ac2a3bd88439798769c2ee56c918805acd79d4e4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\9ysvo6.txt",
+      "size": 3279,
+      "sha256": "d03a43f9a207e428eda7667e8d56e33a909fb41a5e1b4f585cc83ab5351f192a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a03zh9.txt",
+      "size": 3229,
+      "sha256": "927fac259c84b6f8c00c5b18cfdcf408fd252b3fba342b71764277317d6912f2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a0br04.txt",
+      "size": 4075,
+      "sha256": "f7e974f2e67f74fc3baaa1ed504c313f429333a3a9d4af2e55dd716e70dc09bd"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a1x7uk.txt",
+      "size": 3494,
+      "sha256": "0e2dc36d5ef007cb962026ddb21bd5bd9f9bc371dc7cb2f82f9bbeb48fa50aa3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a2qwqk.txt",
+      "size": 3736,
+      "sha256": "3e741c2a14807726554a4be73d924912733f420847cb58506b90f90b2482c907"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a3bk8v.txt",
+      "size": 1956,
+      "sha256": "3af48249f061fb83942ae35ce24c543336ba7a0664a66516200ae761f0a42fd9"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a492j5.txt",
+      "size": 10564,
+      "sha256": "811ad7322332408d2a194d66d89dfef2e6437df471b10e1c8978b7cc72ec4bb3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a4ygtg.txt",
+      "size": 1661,
+      "sha256": "96a3c1ad2a5c112d00e1cc5b0c2c842675dd753736283293c23604120c0eb624"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a7idgp.txt",
+      "size": 2680,
+      "sha256": "2a226cbe1d4e457034ff8010773dc3e53e07cd555fe180084fb0341b1467abab"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a9jdy7.txt",
+      "size": 5587,
+      "sha256": "ca44a05661dd66938df3c774193bf018cc161e9d96e5e38e70bd455958982150"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\a9pkm2.txt",
+      "size": 3101,
+      "sha256": "ea1f73680b499ec728b2f77ea6d57fc73b02d84283b052113ce32d19a8dd7343"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aa3wtq.txt",
+      "size": 977,
+      "sha256": "a77c30a8fe6da0ca9777f5defda2492eb4b14ee2d0bc759b75b53ecc5ecda9cd"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aap3jo.txt",
+      "size": 5673,
+      "sha256": "f35482cdddd84431684efc51d7fc3943a4da51d5341ffeb549bd8784d193588b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\abtm2z.txt",
+      "size": 2865,
+      "sha256": "ac881b5242f9227d0b0e546f969486786a3f8d617ede4867d33cd8daee14b239"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ac9740.txt",
+      "size": 1158,
+      "sha256": "bd48d3e2e6288842840d92e8b55e2ef45ba259130721f269119450175dc8b964"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\adkg4u.txt",
+      "size": 1334,
+      "sha256": "1f32d9d807fe8f68d8de39f30bb88be1b097b2a884d7c0635a204fe58e576a9b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\adpyl8.txt",
+      "size": 1813,
+      "sha256": "7b185317a63f6a273e5d2f56bac709e1a5b5d18e4b701a3474787f632144e06f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\afczbg.txt",
+      "size": 947,
+      "sha256": "08579a68e09610009386c6372a79ea1219a4135001f05d9cbf838c6af696820a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\afwd24.txt",
+      "size": 1203,
+      "sha256": "86eb96dbf756837968e66d1b290ccfd9199cc654859768201730ad2c5c6cf7f5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ag5cnx.txt",
+      "size": 2985,
+      "sha256": "a97447f239653f4edc0e649d7e90b774fb7547d028193e7b559cfd7f65bef59f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aijhzx.txt",
+      "size": 9637,
+      "sha256": "9a8b63c7d7a82bff8073f69967ee32299c1f5280dbcbc04857caf2567239f264"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ajmn30.txt",
+      "size": 2185,
+      "sha256": "54cd909689b439b5e9603c294d1c4206f76fad05da8011bd0ad2ebd37f31f045"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\akodbj.txt",
+      "size": 1488,
+      "sha256": "52c504818e585d6d69934af57f1065501172f53342147263d7b0c8aca30eec78"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\alro8i.txt",
+      "size": 2026,
+      "sha256": "73145894b4946d8bff9c41f30b2eb8373bfe01b538497b975c00982c89a00e28"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\anh0p9.txt",
+      "size": 3251,
+      "sha256": "7aeef4896fe9080830957b9c17db1fea9c28255776bcfcccf58b244554fe97fd"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ap2441.txt",
+      "size": 603,
+      "sha256": "29a923329517df6ef842d7f5104b57b4ba543ec182c1961e3e21ff379569b231"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\apr24a.txt",
+      "size": 1881,
+      "sha256": "20559ac6045c4c43b260938796d24925a358ac33ac752938208030ab2d0169cb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aqkded.txt",
+      "size": 2269,
+      "sha256": "fb4fabf7c2e635419fc3fe029a9d86fd62480a8689ef0f5121b83d3843c063a4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\asdwxx.txt",
+      "size": 2281,
+      "sha256": "e9f65c6fa8087aba9e85c626e69bd7af9671e9474c5d6d5c0047355925f9647d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\at3fsi.txt",
+      "size": 1638,
+      "sha256": "71360904166b3e2a27a98af691a012d67904c8e0f9d590abcf876ab8ccc9aa89"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aun72q.txt",
+      "size": 3163,
+      "sha256": "c4875c60271f573710f559b47548e05d42f5514f0caa6042443dda54a4995bfb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\av79bp.txt",
+      "size": 976,
+      "sha256": "d311776190fc1e9303e73beec23c2ad1958eb42e0fa70dfb5b3fa5d3eda15238"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\avwpo0.txt",
+      "size": 6534,
+      "sha256": "002683f0124b25b8b1f5b78ef2a62048832bbb4f6d3e9c3474ccb68d4070cdc9"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aw620c.txt",
+      "size": 3311,
+      "sha256": "37e55babf5aa328c5313f366d66b501495686839c7204faa1904f57e3af4e037"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\aw9dzh.txt",
+      "size": 995,
+      "sha256": "5464e8e4bd32ad4db26ae6de55bf4b596de63ef637ded9b1a9505eef6b4ed95d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\awkz8n.txt",
+      "size": 2175,
+      "sha256": "402e97a389f456db858df5c911ae52bf0cf78faba6b79aa794482f28923285aa"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\awmlep.txt",
+      "size": 1884,
+      "sha256": "1f9b080d945f69bb61a9498ae7000db523d7008226cce13f61b4aaadfe0e83f2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ax601h.txt",
+      "size": 2099,
+      "sha256": "cf15e504336e4e64c523241f07aca84f134c1318b09ada9681e8138f4c1d5fe0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\axkv7v.txt",
+      "size": 2138,
+      "sha256": "b4006059f0d0a6c62ccca6f28fc31c22462d19f921f5a4d4d3a2d4923d1eccab"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b1izig.txt",
+      "size": 1173,
+      "sha256": "2ae39e0270cd75ab372e86773010439d170cd1600e0dc7c4b9c80743df8b30a7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b1tpdw.txt",
+      "size": 5462,
+      "sha256": "2171f86b46f6db2e40669fe0783705f2b24a607cb07abd79378de39a82ad5426"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b2dt6r.txt",
+      "size": 5551,
+      "sha256": "11ed52d24aa5f229b765df6c0ccf29a867fc5076ea61a5572c8344b630dfceaa"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b32oa9.txt",
+      "size": 15220,
+      "sha256": "aaa92d6a46cecf32eef1e34af827241e604b259de8e725d2f8b983254360e84d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b3m2gk.txt",
+      "size": 2970,
+      "sha256": "93179e7721a23e185d398c5c3e5f386e368914cfd57a8857810e112a35c9dac6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b4gq9w.txt",
+      "size": 619,
+      "sha256": "2bfcdc2ab061019d28569aa24825a241c174d4c6ffeb2f1c711df4d445db83ae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b5a8w4.txt",
+      "size": 2956,
+      "sha256": "ac460d719c449da4a9a5356f2e501507549161a9cf436e0d648883adfdd627ea"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b5mysn.txt",
+      "size": 3160,
+      "sha256": "c34ce526893f99d9d8c3077edcc4ec911b36e4d6a7a07526a7c33cb0d1982ffe"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b6fd8u.txt",
+      "size": 5152,
+      "sha256": "18b4ecd13e4983729a4c6db64afe043794b868675883d13d3b99a5d2a904349d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b78m0s.txt",
+      "size": 3352,
+      "sha256": "fe3d82e8e124d10425f62ad392a0da0cdac1f65063540ebfc02f6a4a40a534f4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b7lmii.txt",
+      "size": 8236,
+      "sha256": "a3f25ef8c9bd3acb2266954d1bfabeeac1a924d2f695ae2af60087ac651bdb02"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b800pl.txt",
+      "size": 6761,
+      "sha256": "8622bab4f804fd1dc56f75307e2f87be7660bb8d4a1a487d3cd5a2bdc3e795a2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b8kigy.txt",
+      "size": 1449,
+      "sha256": "543b59c40298e4d3eb6060e86ad6fe4db27e3198dfe39408ae7347a5811e17ce"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b9arq5.txt",
+      "size": 4123,
+      "sha256": "959aa2226dd8faf225f2bd2c1a251ba02b6d26f50c677729fabf2c0788306646"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\b9vxn3.txt",
+      "size": 1879,
+      "sha256": "2b9a1f15f6d37c8684148029b2e71af093ee21d896cc31057a80dee3da1bff1a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bal41x.txt",
+      "size": 1968,
+      "sha256": "5d7eeef598d73462a5103b53bd037dfce772324f823b74eeb5dd9da9cf47dd96"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bb6tv5.txt",
+      "size": 7562,
+      "sha256": "14ea6b7340ebe7005c16f3fc017f0ada393f0830d4d1995846679bddd51d2dde"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bbm8hz.txt",
+      "size": 1294,
+      "sha256": "995744735574d4613f3c414f4a2964aaefad767f6d1d988790980fccee1134e6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bc9lvj.txt",
+      "size": 1692,
+      "sha256": "dbd78e796e13b74230d9fe1106319c024cb442136be2da285607defe97be758e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bch7qp.txt",
+      "size": 1573,
+      "sha256": "3b3e242b8e6bfa38f6ae16edd90b657572d7a28bf055082a2a38312b22558960"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bd1wj8.txt",
+      "size": 1008,
+      "sha256": "bb8599c64732250d7106360cfcddbac2ff8621d4074ebd53a7e4421f823f9e29"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bd9kir.txt",
+      "size": 544,
+      "sha256": "903a32383ce3afd76d1fc711458be99127a393d6184dbff4908ed6009aa0f47d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\beskkf.txt",
+      "size": 2284,
+      "sha256": "71d4a6b1532f92d296b148fb422c15838e2752e1592f0d9a977710cd2f0d8358"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bf4w4x.txt",
+      "size": 972,
+      "sha256": "708b7a796dd41e33a58c21bfe4c9793cde764d3a5568064a6f04a447f7a1a0ae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bfzwek.txt",
+      "size": 1117,
+      "sha256": "2610d359698ce799075f7baee989648992ce643c222fcc927a41ad25bd735f0f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bgl4mn.txt",
+      "size": 1901,
+      "sha256": "dc022db4a406442295580e233c52e4c30c90fcba1dc2fd34b06fe06a1aae2e7b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bgzhox.txt",
+      "size": 789,
+      "sha256": "0b6e12e0a112429125289dac3a8597951e74811352be2127ce3f303bbebeae65"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bhb9ar.txt",
+      "size": 1618,
+      "sha256": "ed24105f89ba326bad13c5d8409d8675b92f43f5d7788f4c4cc709aa6f0c8ee6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bi38sa.txt",
+      "size": 2137,
+      "sha256": "0224e5fc3d8af4846900f916abbd4e5195ecf3ff7c46bf3f4912580d0bb0686c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bjikr9.txt",
+      "size": 7627,
+      "sha256": "b07b42b32a2c09da7cf20ee584b75a1943df74d712d15007272f5f8aff0b26c0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bkft0r.txt",
+      "size": 1344,
+      "sha256": "35a340adff559ddb46aa955d82881ba38afe881c8e9c9648e3d5e7b0b5cca9ad"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bkyrmb.txt",
+      "size": 866,
+      "sha256": "94a397fa0d9a5c2b96f2f2b67dc60ab7612fe4cdc03198fbb791a2c6995b430f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bl31eh.txt",
+      "size": 1990,
+      "sha256": "7bf8a1241cd2ce36212afdd2bc914f2cab0b67525be20b00d864b9775a982a6f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\blf7xp.txt",
+      "size": 2744,
+      "sha256": "2eb3e97c4070ef649f29c5d47616deb5b715f58a5e4b95bbbea5c0d6ba5280da"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\blird0.txt",
+      "size": 3569,
+      "sha256": "87296d341a6c21011903b49933dc42d76a8d6e8a630e237e257325cc25f9959e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\blu5qk.txt",
+      "size": 7969,
+      "sha256": "31196ce3d0ffc72dbe0d42c1f81da7731e3886b0720d727bc5714efd39c95d69"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bm1ivc.txt",
+      "size": 6049,
+      "sha256": "22ec3754d77e826f204e8e05c71f637fc41ce2c1910327b976acb8f82aaa38d0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bmgf4t.txt",
+      "size": 622,
+      "sha256": "75261038a3b0afb41e388e66de9a5b476d0e5100c9d265281f69c27c1ad0e131"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bn1zq2.txt",
+      "size": 4264,
+      "sha256": "1c156504ccf6590c1e3deb94dd70d967ede37ebb2146f20184495b9c27f9f4ff"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bnagtv.txt",
+      "size": 2189,
+      "sha256": "27b4031fcbbd6a09fe1219f71a492869a56730902d9c6849adade9c4b000aa56"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bnrv9w.txt",
+      "size": 2291,
+      "sha256": "a941141058341b41eba1d636323ef546a74dd93e8054305b71549105f60c616b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\boai5u.txt",
+      "size": 4096,
+      "sha256": "3589b16ad49a447b96bcb5ccbde418e5376b8ea3b83cba41f4348582f38f266f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bosguk.txt",
+      "size": 1114,
+      "sha256": "90e4e1aaaa1fd50b2286289e1b2ec1983e6e02ee594b1dfa9e8a1b6f67a34cbe"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\boy83i.txt",
+      "size": 1396,
+      "sha256": "e9f321efa9d633a9fce0f157062e96f12f7db0929f002590d59e27bd01878280"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\brs5pc.txt",
+      "size": 1554,
+      "sha256": "cd95903643e00613f3f0c43cbd94275adf86bbba91b0646fc769ac8ab37324f5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bsfbde.txt",
+      "size": 3944,
+      "sha256": "d82276f8665972825d2bfecf0d14534fac9d1e956055f8113e580217a69bb4c8"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\btdnq2.txt",
+      "size": 1900,
+      "sha256": "62e91cd7e7632b92713fc67cc17771a2299923c2fec0efa7b993ab8e863a03ee"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bty3oi.txt",
+      "size": 1889,
+      "sha256": "b71bdaf700ba1eec28ecd4d74ad8b4e226eb4dc0fde644ce83960eda2105ea0a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\buthr1.txt",
+      "size": 606,
+      "sha256": "1bb40dc7d2294ed052ab9dbc791787a5f1ab9767a0e6bf740b50927f71938b97"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bwmfm2.txt",
+      "size": 1191,
+      "sha256": "d144bde37a5ed0c9c9f2f81cb686b138cf32c272fcd57512106834356380ece9"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bwxccc.txt",
+      "size": 2258,
+      "sha256": "93f712937f35e494322defa310309986abd8e73418c78045129b7ea6bc3e22e3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bynyu9.txt",
+      "size": 4335,
+      "sha256": "16ddd9318a1e91bae791a10f42f5707ea637d775ebeaf25469eea205f0eb88c4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\bz7l6z.txt",
+      "size": 2753,
+      "sha256": "a7b2d26f63b4ef27d3e4676c6e6de9fc1cc937dc60f061c5f0dc8e42753f786f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c13s1w.txt",
+      "size": 4505,
+      "sha256": "8e103b6e0c70c372cc4d85e3fd3f3687efe46f9a1dbe5d8eb601b092fb4a027b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c1o3ou.txt",
+      "size": 3815,
+      "sha256": "a416cdd95d8397caca9d7f1ae300cb91f141e4febbb63e43099f40aef922fda4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c225le.txt",
+      "size": 6808,
+      "sha256": "8b8340550d30b0ee898d22e25dd4ce3f30db7eaa9319bfcdbcef2b76a5803c51"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c2grcq.txt",
+      "size": 4045,
+      "sha256": "cfbd62885d49dba1913700ddbbb102784201f7db43e302072a1f38e3fcecb1d3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c3c2s3.txt",
+      "size": 5761,
+      "sha256": "b4cdab7c7636ce16ac84d390fc486506c29b2033ccfd96169cf8dc35d8f88256"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c5rn6a.txt",
+      "size": 3643,
+      "sha256": "d84bb265a3a2c900ecce9c813b1b4cd11e43afcad9a76fbbf052c319ec7c1e7e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\c82g4x.txt",
+      "size": 2705,
+      "sha256": "e3769c002cad837f6cb87804b5943b23e214721375f8e2bd4fe4e0069af241f7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ca66sv.txt",
+      "size": 2034,
+      "sha256": "0d32b67d5e61c1c5d0b2749459d666df62a64d5ca0881c9ffe832b47a02999ad"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\calfeu.txt",
+      "size": 761,
+      "sha256": "737ab17a77f69f37126bb9a195ba5ac3a62639e3dbb7927252a92e1531d23017"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cb9wkl.txt",
+      "size": 2638,
+      "sha256": "3eb459369b05d5ed3289c5a1c461360e86009c98352ca11a7b4b3868fa2fc284"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cbtqgv.txt",
+      "size": 1367,
+      "sha256": "e8e225a9ed3021c75aa5af12cedf3ea0065732d9adea2104915509218fb7105c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cc3mlx.txt",
+      "size": 2598,
+      "sha256": "81639696bb8eb5e46c8d44d8b00c81bd4ed16eea2bc69b6819f376228fca3f28"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ccpwcu.txt",
+      "size": 6283,
+      "sha256": "5731966f56441e38ddc90c613233ccac0c86766a1755571601753210c33cf29a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cd2qxf.txt",
+      "size": 2192,
+      "sha256": "462fd53de770a2382a1d1400e95faab9f07212ad849c3c87e927fb51fea73de6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cdf4xr.txt",
+      "size": 1279,
+      "sha256": "5ed477a306d1911942f15eb84f065eec7303207fed8a0a848c0eb55036601138"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cdufmj.txt",
+      "size": 4962,
+      "sha256": "13d55378b8d04b75a8f3e51678e1bf126173061d53dc869cb99e92f430340a07"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cdzjre.txt",
+      "size": 2048,
+      "sha256": "224017b048519d42dc950dfe6313eec403cbaaf73fc0bb86128bd527673a1654"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cejrfl.txt",
+      "size": 1611,
+      "sha256": "30a490b7c5a9d65f1d9599c4d4edae47194068c9cfa074c3286caa73971a4216"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cg0d5l.txt",
+      "size": 743,
+      "sha256": "9628c07551ca162e3d9cfe771698d1fec613efd60f2c0f28a8b4b7e98b258a4f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cgcwwy.txt",
+      "size": 2424,
+      "sha256": "c9bdbd900cb50d5f31d4d3bee121a07826e8fcdd2bb0c1b9c918919b1bd00bfe"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ci1p3j.txt",
+      "size": 1097,
+      "sha256": "f3ded4d874d33d70987d80876e97588fb25368b29b30eb826d5a95439e9e7aa4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\citoye.txt",
+      "size": 4482,
+      "sha256": "c3ed97a7ebb076a447ce51b005f68ad1e34e3659f2e22e34a3ddda99ee55dc89"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cj8egj.txt",
+      "size": 2857,
+      "sha256": "d9bb6a6d4dee43c5f8dfd03de9a86add1d0df57d8bbe43535de862d7ab97f155"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ckodpt.txt",
+      "size": 1045,
+      "sha256": "957c6fc8ae6d14ceea8c19b506db64721b8a97518df232e452c2ead1be899d5d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cn10cf.txt",
+      "size": 514,
+      "sha256": "0c3303115203f19d3e99d2d7f5d15e2140e49b2505eb4592d7558efeaff0f439"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cnaoo0.txt",
+      "size": 871,
+      "sha256": "fb7b8cc6e3d05215e2a8d3d8a2d58b17c1e7ccca619b8f1bb06809f9ec9bd91b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cnnuk5.txt",
+      "size": 1283,
+      "sha256": "9bdfd2ea75a38382222ea77d449ef6379186174fbc82a3969f6d5f6ce4966db5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\co8q04.txt",
+      "size": 14820,
+      "sha256": "cfe76ce4fe5e6fc7aa3b1277ce6f026854d8da943ee8ae3af91360aad8ea4af5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\coi6jl.txt",
+      "size": 2920,
+      "sha256": "094ffcbb4f5618d8c5e8d50d568342166880789fba8f2d148e1738457f574d5e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\crn3ab.txt",
+      "size": 975,
+      "sha256": "bcfb5af22821b3a1a7e41b02b6e7a85a8e666090a6d9f44e3fc439e3c07468c8"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cs3yjm.txt",
+      "size": 1086,
+      "sha256": "96b152f2d5ac28e18e192d3c6ea4e828f0c80d8eb70540439a39cc58503a26da"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\csi2q5.txt",
+      "size": 1470,
+      "sha256": "c42e809402ce95d36b1b83f531af2fec1ce6d4671ab2cc8e50633b7793342934"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\csw8po.txt",
+      "size": 4831,
+      "sha256": "bd9f187708ef58e1c5365ddb10244b75bdcb42272559d3d0b7d57fe7c7eca6f1"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cten9x.txt",
+      "size": 2893,
+      "sha256": "6da961de571486ff319591a4603a4e130ac4e8a529dbb0c0cb8c1feb7f6dbdac"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ctspb2.txt",
+      "size": 1401,
+      "sha256": "25ba2d65a8b083bd565652f2d4d8e11ba9ecee9dbfdd0cca477b198fa4f5ac61"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cv4gf8.txt",
+      "size": 2819,
+      "sha256": "5bd9617c1132e4eb4c50c7b918823ee151733ea0286b09267df76aef24244aae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cv8umo.txt",
+      "size": 477,
+      "sha256": "0f77c80d03ea15c3973f3c30de4a7ad9022f66fdf835b2b573b368a4d06e68fa"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cvnhto.txt",
+      "size": 2896,
+      "sha256": "5950e82be0bc8d5236b02a8931971e1d1baf44ff3a6fdc07c22949030aa0f60e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cx7vr0.txt",
+      "size": 1626,
+      "sha256": "836962e6efbe25a72c431f64532efce3b7063623fd4b20df5e9ed0a7a9dbf56a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cxj6m4.txt",
+      "size": 1112,
+      "sha256": "5fab3ba9b69cda823692427c9ce64c97be90d7b839ba8e90680d2214684c75cf"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cxr0sp.txt",
+      "size": 4151,
+      "sha256": "58225726e8969d5035bc0ec79e69173bc90324ede743e64b0c7b8357c48bcdb5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cxzlcz.txt",
+      "size": 7780,
+      "sha256": "4a4f18d9516875c7342ea56dc4e818829b0dfa6202607e6d44a5f5cc212ae928"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cy7neo.txt",
+      "size": 4552,
+      "sha256": "e9e207013e8a51e849c8394af0ba0ae9371dfce857a47b697fc579c53d93dfab"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cyh5cv.txt",
+      "size": 1934,
+      "sha256": "8b677ef2391adbe7aaa7380b1c22399611323b2ed450901762754afe6ec2e79f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\cyx19m.txt",
+      "size": 2218,
+      "sha256": "f8f4b829ee63d4842f21a87e7289e7b62d11c6322f22d5af6b07d09e271e1236"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\czhvrp.txt",
+      "size": 5147,
+      "sha256": "a1f65b057231cea93d9ef9b548db8a6372a1a67c321e12ca49fc0ab81219f4ee"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\czqc2i.txt",
+      "size": 4546,
+      "sha256": "3fccbf241d912e04a13ec25aece2404d8805f0e08554e18dd35e315b4f7ad13c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d0tzvs.txt",
+      "size": 1309,
+      "sha256": "ef327581716f7e43a79de1df206d5274f6dd74a888812f43ecf5d78205c2de52"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d15fol.txt",
+      "size": 1581,
+      "sha256": "f803b8d241926b91ff10d322082d8c2644a31a6fa7886d8b0bae552be167fa3d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d1ka8d.txt",
+      "size": 6783,
+      "sha256": "14d03ea2be9f94c51f46c7b641f15ffdba99a0d2f4777ff06a9badbf0c2efe1d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d1uwj7.txt",
+      "size": 1645,
+      "sha256": "137232a292e0d4f31c6500c91a272ae37ec44f08ba21e525d1e2312b39e7be15"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d2ds6u.txt",
+      "size": 4709,
+      "sha256": "6025a5e92a310cd506d8b2b60b3e6e3165e7f2913f23cf8268deec41ef8b0e47"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d2ov7l.txt",
+      "size": 1545,
+      "sha256": "41ab8b664accbcd616d5df9abfbc70312ececa283124d0c21dd022fb973319db"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d2trgo.txt",
+      "size": 4430,
+      "sha256": "8d388aeec08f7719929ed3c121ebc8ca16cce29d4f250a6a3541c8c68142a9f4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d36bvg.txt",
+      "size": 1344,
+      "sha256": "d49c20e89d74f1003ca3e875759f01a95aa8d8488ef9f30467bb542329e6afbc"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d4ofaz.txt",
+      "size": 2163,
+      "sha256": "84f4b8f53294b93d60d4c9fe1a206719e2928d30edb079d0b2f589f4b05524bb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d4xn2j.txt",
+      "size": 3496,
+      "sha256": "a67b195c4e29340652fc166b0a8e7b880a75755a35306e3981934cff4a506d7e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d5ohzg.txt",
+      "size": 824,
+      "sha256": "ea9d1e5a6332158bd8015fe4edbdb092badca42c5f09eca641e51d969811b144"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\d6qhud.txt",
+      "size": 1739,
+      "sha256": "c434ae39ed38295c79a6d517d9812251044f81fb871a74820b30f39db8161ed7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dab7hx.txt",
+      "size": 864,
+      "sha256": "e3725b066e47248463b20b26d1026e7df0468bc4f554855ea57ccd3414bb61ee"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\db5uub.txt",
+      "size": 735,
+      "sha256": "740eae5ec9097fbeb11b64b8272fc3ada9f944f1247c850682a3d3b0a4ab4812"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dcskoo.txt",
+      "size": 1299,
+      "sha256": "fcecb4ea0b19835510ff926c8f9b99bd20642d3a7bcd06018ea61b85203f0fd3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dcz74v.txt",
+      "size": 4517,
+      "sha256": "473fbaffdba2d5f9c1607901be5c7982b86a15386a33dcdcbebf8581b98108b7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ddanvc.txt",
+      "size": 2090,
+      "sha256": "35a6097ab192642ff9e278db36686925b00e515a3ce83bc498326bf00cf13f13"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ddimvo.txt",
+      "size": 1230,
+      "sha256": "af4be244b3b2daf3df55e4f977988a15517a11fc13fde546adbb7cbc0cc85154"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ddol0a.txt",
+      "size": 2660,
+      "sha256": "b81cb4e1bdf398ccaab979eefb5db462f0b417cb6127b6b2fb426a30527ee127"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\deaccl.txt",
+      "size": 3053,
+      "sha256": "80e740eef63a114eb0a76eb0f654919d3c993a3a6a4dab63359f23ca71b3749d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\di16ij.txt",
+      "size": 6706,
+      "sha256": "eabcaf62f85a1917421589de50589a827539fe68a6fb5327728362b4a599358a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dicrrh.txt",
+      "size": 2410,
+      "sha256": "17eda57d3578ff83b1dd2d7548a27ee26b6acea1b0178da18ca1869c1808b558"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\diuo5c.txt",
+      "size": 4866,
+      "sha256": "62c75968f67f5807c43760995a9089d21e5bcd60313d5b85b5eaa72c4576318b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dje1ta.txt",
+      "size": 3419,
+      "sha256": "4e1cb969c75981f425c196bd6315470eb94956b5cbf51a78544eacf81f37217f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dk8wih.txt",
+      "size": 2211,
+      "sha256": "ed4779c773d1ab48a8bb3310fe4d2a759a6d34cf32663ba4468b1c322719d7d0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dkpxfk.txt",
+      "size": 3521,
+      "sha256": "18921bc816d7ee00df19f96848cfee68d2fa0cd2f2bcbdf896d0be0214ddd8ee"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dl02bm.txt",
+      "size": 2768,
+      "sha256": "f113a8cb2a1684d1c7e2c7b94457bec46c16d8d443f079aae83100a7c6aa7721"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dlnu8d.txt",
+      "size": 1038,
+      "sha256": "0a63a2d0612da5de66e5eeb04d36a280b49f55a4cfa4ee95305fdd1a19328e17"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dlx8az.txt",
+      "size": 2514,
+      "sha256": "ea91930829526546e90524bae56c3d065ad60710cb11f3c1909f0f6f6902f4d4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dmj00k.txt",
+      "size": 2159,
+      "sha256": "12dc488331b4cdabe991536fee4ce5ab9e9c8bf65cc5062dfa3bac4831779324"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dn1q0t.txt",
+      "size": 2234,
+      "sha256": "2b2441273e3caee9ca5011bec8464b62653f339e976d6a0d35d69e487200f6b4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dnppxb.txt",
+      "size": 4274,
+      "sha256": "a7a0d1557a1ee78bc971be366289282c3a57634a33425ec77cd117ec230d6444"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dsj4nn.txt",
+      "size": 6263,
+      "sha256": "2085b62e12e86991deb3dabd9f7584ad2ad8eab99a0c3073249506aaf0c282ba"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dsmcm0.txt",
+      "size": 5078,
+      "sha256": "3215b8f538bda4d4c113208cd060c07dc67daed23dbbc24ea4e48a6fd51147d4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\duk7rb.txt",
+      "size": 12726,
+      "sha256": "421973a11c37514dd0211bef7a1280585b5e2342cb3e33fc812233dd1522910d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dvyqby.txt",
+      "size": 3460,
+      "sha256": "7dc445dd044af6fc9f696cde8c0f98b82cd8d67e5f5b40667cfab8a92e28b089"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dwwpsc.txt",
+      "size": 5824,
+      "sha256": "de5660c6f7cca0e7c6deac141baf8227bb33da5a9314e8a1b6778e19a056e1cb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dx90b8.txt",
+      "size": 4423,
+      "sha256": "c52c751fbb5a1068622ba188e64b845da59a22ad312094f48d8cf87dfa8e6380"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dym9jt.txt",
+      "size": 3892,
+      "sha256": "5ee08ac6255853242d14afcf1671802d94a76eb9e2dee4c27e29d27449ba3ce5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dyzusp.txt",
+      "size": 3397,
+      "sha256": "a7b65ada15effba2711655b44db64984b14d0046f38c0bf1c790808778fb8637"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\dzj2cb.txt",
+      "size": 1749,
+      "sha256": "230ae7eb5946c2fcb8f28213d752ac0040b796a5743bbec610efc822d370a73e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e025s8.txt",
+      "size": 5377,
+      "sha256": "22e9c541f8158dd311da71fcf5b9304710613ab72cad65faa518c438c72a404f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e12ftl.txt",
+      "size": 488,
+      "sha256": "cd7d29277376df4bd32c771ac8b154dce088898f3678dcef8d84edcd109262f7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e2p524.txt",
+      "size": 2597,
+      "sha256": "efedf1c2171b4712e56684db6d3e05827b9cafea2a79f4ac20cb787dda2162a7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e33cna.txt",
+      "size": 9053,
+      "sha256": "fb52f96f736a4c152d2ce0c44ea39940d518b31b00cd9eabe6c94327284a8831"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e35vj6.txt",
+      "size": 7649,
+      "sha256": "6a3654421eea130a5b2f68252c60c42a229d28261b7316e844936f55c648948e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e3gf4c.txt",
+      "size": 6511,
+      "sha256": "6c0b69156b1b7db2ba66d018b6cf7210efd96b3f3c9c7859f423ecd9851c4f94"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e4eiez.txt",
+      "size": 3930,
+      "sha256": "e25af287ea3da4c8b4def6ef7ac95b697fb94baad719e41249297d0cd3cb0fa4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e4zu6s.txt",
+      "size": 4659,
+      "sha256": "2575d4ab297040d351421fe3771a12635d7db44eb244ce09ce051f03205312c4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e6fs4c.txt",
+      "size": 4585,
+      "sha256": "320787a56fd200d1dd4391ace1bf6812974622dc9511093aa91e46367327acf1"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e73l8f.txt",
+      "size": 1257,
+      "sha256": "2843bdc1bad66233f78045a28525a7b093af97b6cb2b0e9e76cb8345a6ec1a54"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\e9uyf8.txt",
+      "size": 3988,
+      "sha256": "9428e4877edcd280c9e74d04fea34fc0bbffc50e4544a9275d149f4941688271"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ebj5gl.txt",
+      "size": 1247,
+      "sha256": "c6fd5b539e10cf24330298fb107ca1eeb85d1cf42ecd0f534a8be3b55d639446"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ecv01j.txt",
+      "size": 2577,
+      "sha256": "1518010bda1d451594aa7cd3939dede46f5eedf938d67ab4997255b0a369b297"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\edvvxy.txt",
+      "size": 2645,
+      "sha256": "07d8a4159cf63e344a9e4584bce1276ea55fecbf8e940a74cfcf861e7df543b2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eemzdf.txt",
+      "size": 2795,
+      "sha256": "7fd26615089e02224fdd93af1fb2f64d0f29f3c753208b74818cc4aa2b35d417"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\efnn56.txt",
+      "size": 7102,
+      "sha256": "9804e650489db69882fd1125441e4c48534eee418b1fd8a5ba1d485bbdf7151c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eguu88.txt",
+      "size": 2284,
+      "sha256": "8ed9dbb7595e66233d1541992bd93d6f4609b00ab923b4877d721a746a8923bc"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ehlwqh.txt",
+      "size": 1487,
+      "sha256": "237db892fc534cf1e3e901ec1b45c260274212823b47600596275d176221d140"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eiyhsn.txt",
+      "size": 10189,
+      "sha256": "a59e1f4ccd15eb4c960be2df241040fec1c6f86a66a82aed7a0cea6403031004"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ej3aq7.txt",
+      "size": 1511,
+      "sha256": "d5a2424c73344c9b09d6872cb8dff0ae0f3086ffa0dcf450b8991bb819587ba4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ejgbu9.txt",
+      "size": 8957,
+      "sha256": "7a1d32bcf847bfe821a747eaddc0312060806c66d0acf33084e15b6a63af2646"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eli2do.txt",
+      "size": 8308,
+      "sha256": "8fd790f7cf4888127594dab32c3a5d69074a9e16e7be1c306553d1cb38b94daa"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eop40o.txt",
+      "size": 3268,
+      "sha256": "f466cb71d05ab4abaf92f4994a875ffbd06733732cf9401a3bbac667e56f4f66"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eqfcej.txt",
+      "size": 4553,
+      "sha256": "3a4c7134c3f35e72b1e78dc6fb81bdcd4a0c0a7a6bed8a258b98c373fcaa5422"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\er6s67.txt",
+      "size": 2724,
+      "sha256": "519702d91b461f03188478a428983921a8252528843edc468d9f7135ad20bd54"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ertsws.txt",
+      "size": 2082,
+      "sha256": "e445804c81c4a32e9b7f352003f87e836fcdd2d8783db9daecacb35482f10765"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\erzvnf.txt",
+      "size": 2439,
+      "sha256": "0938f0838793c4ce3e313a6afff8686f93000b70b6efc6086829d40a07b93911"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\esg96s.txt",
+      "size": 2746,
+      "sha256": "ce05ece5f6c1a9449e871713d046565862424ec3147a532cbf248226b3494a09"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\etbkyi.txt",
+      "size": 2660,
+      "sha256": "9d5b64cc89b035d1c09491a9bdf9748733f8a9760204ad0514628b54404eeba0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ev66yp.txt",
+      "size": 4605,
+      "sha256": "e89011eab5456330926950af97659994b66783a7fd57904c4ff7d047c23d77c0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\evq7u7.txt",
+      "size": 3895,
+      "sha256": "815ace15017bccfee039f2705cbe15fc8df454d938871917c2307f95df431c87"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ewz3oa.txt",
+      "size": 4318,
+      "sha256": "dd690e61a77f6edf7626e098e5378c60cffd6d15bbe28db896c58b09f9a2422f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ey0g9k.txt",
+      "size": 5696,
+      "sha256": "6cb824bf76569bb512291bd930da25660ec30dce1cc75db6788a0820b0939ed0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\eyhfvm.txt",
+      "size": 1321,
+      "sha256": "e7db54892e789772251c7871128706c88493b6e290399f749351caba4f5c0002"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ezivwn.txt",
+      "size": 3062,
+      "sha256": "5aa4d3484396f52a178cc972eff8bb54ca3f4d818629d58201fcfe28a49d10c0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f003hj.txt",
+      "size": 1627,
+      "sha256": "998fe8bb88280d2ef63c715716df87bf58996d75ea7c4264e145c9c35e66ffea"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f1bneb.txt",
+      "size": 3789,
+      "sha256": "edba0a7b4aafcba7ddfa46bc6b19519301021dd8322384a3b33da699aa463002"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f1uoo2.txt",
+      "size": 2682,
+      "sha256": "116c3c90f60034abccbeee82bac764fc2f25eaa57adbe91c490f41ef4ed38a92"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f3kpyk.txt",
+      "size": 5794,
+      "sha256": "ab9e1d95cc2a189e3f8e39569c9eee50d01032b3babd4b6a0c1f8f787999a048"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f71dnx.txt",
+      "size": 2965,
+      "sha256": "250a6ef6ddd082bd16beddcc0e6831caefd4e4e37fa9b99f156ec557b9546072"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f7dfg1.txt",
+      "size": 2828,
+      "sha256": "eac6f6dd7a6a43376f17be704b0ff3288452dc4c2fa303668972f1ccf90e380a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\f9eykf.txt",
+      "size": 709,
+      "sha256": "4034137ea87d4568dd241b1def572a79fa1de9f1f5b007e8b9cf040f3986a18d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fbpotp.txt",
+      "size": 8422,
+      "sha256": "f3a518d0c5c285919e2052b26650f358da7510462fcd7774735bff272dfdfd39"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fbyqvq.txt",
+      "size": 2030,
+      "sha256": "302740097ad4fbc87334291593d37c5c86c7da52ba46d6f00895607a4af23f95"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fd6kbb.txt",
+      "size": 2549,
+      "sha256": "b89026973048c41310133106e8d9086dfe5fcca09723129219a91d5de7e92138"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fdzm9q.txt",
+      "size": 2365,
+      "sha256": "e8e95fdeac12ab8d37245605800d2cd202d193c3796f9c1d6fca6ffd6ed2f217"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fef04y.txt",
+      "size": 2266,
+      "sha256": "05e2ccb4d9efaeae625d41e49c9c8a2a6b9353a103122547b2fc8c7e79984e47"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fftnp5.txt",
+      "size": 2565,
+      "sha256": "8061bd90995e002239d41f25a9927df9cd5f992245d31a2e890e746e0bfaae51"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fg0h4o.txt",
+      "size": 2058,
+      "sha256": "13a3c4afddd63021a9da9977c0140034a6d3697b291c7f7f05ca193e30532415"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fgdjw7.txt",
+      "size": 7546,
+      "sha256": "8a1c27cb8a7dc8bed9c94d2a97ced6f0b4f8c6b18beac48ddd50ad6687308c3a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fi9zhr.txt",
+      "size": 841,
+      "sha256": "c41435da6c026d3d8a2d6b6994c99b1e90137147918bc666c0a0b947a4cdc27a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fk3jts.txt",
+      "size": 2086,
+      "sha256": "f87f8b672dcc8ea9db67b1be08d111d969241ec4f364b725bbceebcbf34b8c5b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\flnkos.txt",
+      "size": 1962,
+      "sha256": "e7dc420ed50f901892418af676997d16157e76e78b2b5ee95217d0a97108bf77"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\flpnme.txt",
+      "size": 4760,
+      "sha256": "900120ea101e0ad65130d0d373ac980d18df8454c322e1b05f9cf2b1ccf7102a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fmh62m.txt",
+      "size": 620,
+      "sha256": "6ab2028d63d364b89fdec2706929a89fdab33f459d828ad36c466dcdef5f405a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fn2thu.txt",
+      "size": 6978,
+      "sha256": "a0482004c73dc309cc223be80f7c73faa0c48b6e080ccfa6e36a4f19acef7ddb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fp0vad.txt",
+      "size": 3207,
+      "sha256": "1a49b70bb1eadb314ada61c2009c18959b287bb1569b5514c8350b61d5ec5572"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fpxm56.txt",
+      "size": 4600,
+      "sha256": "79646c7a75ab0a0eeab2df3a902d2de3d6c4bbad681dbfd5bb0df0917bef0478"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fqrzt9.txt",
+      "size": 1640,
+      "sha256": "340f391099fd791c5cd25e678bd73a18014b8ad82198ec81175b3e199d8cfa9d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fs938m.txt",
+      "size": 2169,
+      "sha256": "046f6732ff9048f9ccadb258f22fd2a42c99b5496428150d1047b2681907b5a5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fubn0u.txt",
+      "size": 2783,
+      "sha256": "6dc67b9f445b44cf0dac7370560d0feaff99cb1c5770716211e44574edca7048"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fv7ec7.txt",
+      "size": 4941,
+      "sha256": "3487f8eae94d5f9e9c13bc92961ebb7d9315d40e20df57b4f1cfbe5b4b11beef"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fvceaa.txt",
+      "size": 1369,
+      "sha256": "e9a5411fe06a8080995dc04b120544f33fc008ca781867e001e665120ee78783"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fwog3j.txt",
+      "size": 2163,
+      "sha256": "42c7ee8991c84c61cd9b334f4d21e3426bb418cfb64bdf3377822e323839d1c6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\fygql7.txt",
+      "size": 1861,
+      "sha256": "e779ab2062586a0525a0972631b6ec903639bb735d0138024fdedbae5b12976a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g0flm4.txt",
+      "size": 886,
+      "sha256": "bcbfe6c849dbc3cd099cbd024e9a5638e32ecf5480972cc67fb25d8e86afece2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g0pxlk.txt",
+      "size": 3472,
+      "sha256": "04cc8dd7a4e0c09d9f40bd72157083da0fc26341a8b637da97dc19988009847f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g15i07.txt",
+      "size": 3101,
+      "sha256": "522f253df3a71f404d8d05ebefcbdc471fd9430898d2c5cc14c243823d6b1d9c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g2fikt.txt",
+      "size": 3274,
+      "sha256": "85e2df13e0213cf2054e684fbf1cb76cd0f7bf950c6bdee578e10dc945fc953c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g2jdjz.txt",
+      "size": 3619,
+      "sha256": "883ffef049fc811a2654bb82cc9cc8ac4f8c9227b96daa4ac5a48373504e0b72"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g2ybe5.txt",
+      "size": 2714,
+      "sha256": "e9bec72411836f509c8c4f360047a5d80e08d935ae72c854910e382bbac0443c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g3frb9.txt",
+      "size": 2446,
+      "sha256": "98fd176a8719c49fd4fafec5e4ec1252b0a1a2eabb798775e7c75c06b6830f65"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g3x37g.txt",
+      "size": 3981,
+      "sha256": "8ca77a6b9f210e00daba4638adb6b41a919b6e290c5d07ba3057f475b57f0f85"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g4ws1j.txt",
+      "size": 1193,
+      "sha256": "36c3b86d0a7dc9c8124aa8f96ba810db4c28bcddef0296b7b79fcfb45c05bcae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g6ll28.txt",
+      "size": 1963,
+      "sha256": "f84a3f3df9aefd79b5ddbdc7dd23f03891d09777ca7116af1b1cceebf6c1a62e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g6tgz5.txt",
+      "size": 1502,
+      "sha256": "5d8f75e15be8fb925db155ed03c308d305f391c9bff3dcd896debd9398edb525"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g7rw4k.txt",
+      "size": 2785,
+      "sha256": "dacceab2e71635739b2b7b90ae318cc50503b73e2fe5fd12af131b755f7c8b08"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g9j503.txt",
+      "size": 5277,
+      "sha256": "0bbc73a9b6398da03b35caf44624b53c7eb9ca7ff9717741392e6140135816ef"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\g9pbol.txt",
+      "size": 1445,
+      "sha256": "62828259690245ddf2ffdbf8229cb8c844c0ca667659324bf767deb7c2da7f2a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gaf7wj.txt",
+      "size": 5359,
+      "sha256": "21a0cb0f610c4d989bb9693b7cc6f2c12c138fd54e60d0fbf66f529c7838134f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gbx8pu.txt",
+      "size": 2541,
+      "sha256": "82f49468f752ced3506d4c68e57c4821b1c432d0884a119dc2548d6d5e2f8172"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gbzt6z.txt",
+      "size": 6108,
+      "sha256": "0e365f5f6d14c0708690af72b7f1c48b69f42e385fe78cbc45d5d125fe3cb6ac"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gcez2h.txt",
+      "size": 873,
+      "sha256": "fcb5c4c0aa8d16a0037908ad43751c064b26a73ca8eb82c93a846e8385a6a97f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ghqrce.txt",
+      "size": 2636,
+      "sha256": "8b11070d700ba3d29336bcb6da921ec73082f6d31431c4bc2d70d44471e669f2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gi9vko.txt",
+      "size": 2753,
+      "sha256": "ab7b29fa4cd01cc385cad1b57ebb019d547506762207df8daf3b43ec3922862b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gipjxn.txt",
+      "size": 5395,
+      "sha256": "78acabb4e1057c25f35b8c2f70732f8a0626dd125487ddf2aa854d62fd47f0f7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gk0u0e.txt",
+      "size": 575,
+      "sha256": "1f68940d32968ca1f2143e5223e63fe64741704afa1ef65985cfc5698de1b387"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gkvb89.txt",
+      "size": 2703,
+      "sha256": "282fe6725f91d52c04f12c5f0ad35b0eb3555949b4783d914639c9ecc24c196b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gmatau.txt",
+      "size": 1374,
+      "sha256": "9142c5e4ad0f9d3d24a69466823d2fd78d4c603794c1107588d1c69bffc98927"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gmoulm.txt",
+      "size": 3943,
+      "sha256": "71dad1f66e7f7d925c5416ea70fc62106d4609b3d9f8bb53bd2163462372ba81"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gmue7l.txt",
+      "size": 1457,
+      "sha256": "a98e31b528f5957cd17b1f35fb85c3d745726758615494fde9257134ab4d1784"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gn1oda.txt",
+      "size": 3168,
+      "sha256": "2779bd2753835f5a75e92e11c656b835f8c16c4b0f4b2880db7ce2547b5a93ad"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gnq99t.txt",
+      "size": 815,
+      "sha256": "9559f61119b4b1ee8fbdb849574df89dafee93a8ed843d301079199c4f0717f5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\go0ocs.txt",
+      "size": 5251,
+      "sha256": "50fbb5fbc355e9e14f7233ec5ae94bb5871b98a2c0890e9969672da34280b646"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gojmbo.txt",
+      "size": 6581,
+      "sha256": "74eefaecbd60c45b6fdc2ec64d4a1e6485366e5b00d5c807f83be8ea16c5dce3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\got5f4.txt",
+      "size": 2521,
+      "sha256": "188fab34a0130d5c1c468392b087df70a0c8c7a62106ea77fcdb138f313b91c6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gpa82s.txt",
+      "size": 10492,
+      "sha256": "fe2a7c4651f0e6e6afde91f188821f3c3b87320f58d467be5f2e5c31ad46bff7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gphush.txt",
+      "size": 1406,
+      "sha256": "1d6876e90830289a161f58937a7cd52e674be18bb19cc38aac8deffa7b6c444b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gpwsn0.txt",
+      "size": 2450,
+      "sha256": "c437ae6b89ce2d0bef15a77b637306fa7ed67622629110190d951e19cfc3669e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gqc0lf.txt",
+      "size": 1318,
+      "sha256": "e4028c717e1bdc6f137e964e9dd9e0417ea6e22faddcbdc230ee5ca8e0d1b101"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gqsqd8.txt",
+      "size": 2960,
+      "sha256": "42b591274e62199b5a4bb81894366679f5cfb7b4e7821d236b8924847a5335b6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\grbrxr.txt",
+      "size": 884,
+      "sha256": "1fa844caa00e4d8b1b95212d04c03c452a2602f9d993ccf5b02db8356d5dd929"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gswmw3.txt",
+      "size": 2182,
+      "sha256": "7f38102a03a72f022ed08455546897f6e0b2deaaa2edb21abaf6899b5b3e254e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gt5730.txt",
+      "size": 4983,
+      "sha256": "c71850004b72c1c177fed86b2380d405055b1ba6a17ae8a95c79bf81834ef19c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gtcz33.txt",
+      "size": 3412,
+      "sha256": "3f569c63c6c34eeb75671451c6665d97d829396b3f289c28749d6ff6c86fdc45"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gtg22x.txt",
+      "size": 2793,
+      "sha256": "78efe9e355d4f8a7f8f177854fcf5052b49d8081ca6be06bf52d529a61551959"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gu9ny7.txt",
+      "size": 2176,
+      "sha256": "6577f28c6b7737884593d4b9a415ee8df0e5eb10582a1e453d976f20056693b1"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\guqonf.txt",
+      "size": 8068,
+      "sha256": "6e3cded6747d603e33dbb29ec635fbe5b646a1d708bae8b28be9c0d9e374932d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\guyvwe.txt",
+      "size": 5765,
+      "sha256": "6253cf645f5083896f5f6b9d9d134f13a23b929fa91296855fbfde130423bf77"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gv88ba.txt",
+      "size": 1981,
+      "sha256": "e60bbe615725eb9f66a91355b3a5922fe666853980558dd55445fe8a2c15d8c8"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gw1jd3.txt",
+      "size": 435,
+      "sha256": "4ce8b43f4087c7c367c83adc8e98a30279c6da0d9663b2a8df907b9e4c3233d6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gw6zq4.txt",
+      "size": 2811,
+      "sha256": "2f147bd012437f83e27e94c6063b1b725432f698ddd72ac1bd47d462ff2c056a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gwdaw1.txt",
+      "size": 3292,
+      "sha256": "61fdef08baa71abcd4c5825324855202548f36d83bc18458d78fdd7bc2031d09"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gxh3g6.txt",
+      "size": 5479,
+      "sha256": "162f3eb113bfbabb4fbec231a70aec278867c5225b11a3d2380fc860244b2549"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gxudx8.txt",
+      "size": 2981,
+      "sha256": "26e794b776c6d0ef0f24d4fe1b560e6fe68b8073029073d8f4c60939012e8ffc"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gy1vd4.txt",
+      "size": 5870,
+      "sha256": "d128bc32c6c543e10ffb998436f04b4f3c3a629ee435fe9f8efaad81165f4fba"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gy79dx.txt",
+      "size": 2068,
+      "sha256": "c449b6e2e2cb80e1c7292bbe8bbfa0c7b080d120c6898098e79b89710b8eecc1"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gz52uh.txt",
+      "size": 1168,
+      "sha256": "0af2168b495f2fe93fca7863627f310e3dc22fc0e194127d0ebd2286e33ea612"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\gzr9c5.txt",
+      "size": 2563,
+      "sha256": "13e2f8657dda67cd08213eb1e3dd31bfcbafcb5874bdf94d9d63958227049b6b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h015k3.txt",
+      "size": 4079,
+      "sha256": "36362a13e92eb84b55eabe0619ac32deaed58f9f98c997a25ff6e0e88720acc0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h0f3v1.txt",
+      "size": 3096,
+      "sha256": "8617089141662c8fa98adff39612385fc5eb7563804537524336e530cd22d8a5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h0urwu.txt",
+      "size": 1405,
+      "sha256": "16416744607bfcd9eb2a159165460575ffae0d79169dc37e11209064ffeafb6e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h130y2.txt",
+      "size": 4643,
+      "sha256": "3aa8416d18baebfbd49eec4a205573c6e31148966d880e70ffc901e5420d7b8e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h7brue.txt",
+      "size": 6176,
+      "sha256": "dbf8ad6cf9f21396888c81c4cb1d60edb95ae0ed0ccd7c38aecafc1e5073772a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h7nxf4.txt",
+      "size": 766,
+      "sha256": "b17627d3372ed69c18348e51f1f841f5a9abad22df75eebb37423c43e8a41cbe"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h7w3b7.txt",
+      "size": 2689,
+      "sha256": "c697230a006acaa6869d5f080f812e99344671b3aa08144eb7316baffacd219d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h899cg.txt",
+      "size": 4116,
+      "sha256": "0af10fc3705a3cf35d8000d66918bb13e63fbe7c60e8cbb0663eeb159996bdef"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h9bwuh.txt",
+      "size": 3085,
+      "sha256": "04dc7d103a9f8ed01122b2ecfbb5d8a529356b40c776493d05ea482e475e4156"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\h9wv4x.txt",
+      "size": 1696,
+      "sha256": "7f908a2ac7419f6a21168af3727f1e5cb725c80d14aa99928462e1481b15872c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hapw69.txt",
+      "size": 2036,
+      "sha256": "adf84cb0f1c12f17d3c87a75d3ac3ad58b7acbd56a4a4b5c6824048affdb40c2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hbn4w3.txt",
+      "size": 3780,
+      "sha256": "ae3cc1fc6a6928f32e5fb11a9f64a3986704d296d1eab94ea3b198de30aee48f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hc7p4w.txt",
+      "size": 1765,
+      "sha256": "083ad5555692ed92a30232270ead26e1e24d92a46e20814f48624a41eae6a0e9"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hctqfj.txt",
+      "size": 1513,
+      "sha256": "e1c91ac5b3bdac0631bf46c41f440bfb3df65209ab95fc2979cc80df080f4c7f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hdi6lt.txt",
+      "size": 5834,
+      "sha256": "98d2205ea52291a1e27dc27bed2aec40ecf08643b7c3ae5e20f90c33e98f7153"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\heszvw.txt",
+      "size": 4010,
+      "sha256": "2fa1d2fc533e75bc5db0a06e7e68675e4a49f6db7cd19dfb05bec8f2c074bc17"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hf2uy8.txt",
+      "size": 1402,
+      "sha256": "5e66d24bba053cf578eb10c1d3d037055e1aba315e0999e5d63fec311800e52b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hf3nlc.txt",
+      "size": 4146,
+      "sha256": "5b6f7851aaf1b2d9d9e2a8ae9df3179574e7f349fd82f493e12fc4eab5b1d9f4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hfbp98.txt",
+      "size": 5725,
+      "sha256": "4ceb6a4519c4d06cc90dcf1972fc1fe685cd7cbbd7e7bd77a73ca7c9d9422f17"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hflyqc.txt",
+      "size": 1278,
+      "sha256": "2c52272135ea1912e7bc5a84e7df757db6a34021636fbf1a1190fde366019d1d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hg7ovv.txt",
+      "size": 1423,
+      "sha256": "0b3d06954382822470ad310fec093e624ca1896534b343a46e9c9f92a065116a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hhhq2f.txt",
+      "size": 5542,
+      "sha256": "703d98143f25cab43adaff30e5d973be21d9833c1e3a26940af0469ccb960560"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hi0hxt.txt",
+      "size": 2430,
+      "sha256": "afe2dec880b5385fc28598614d46a640f677a7464a763793cec5359414a3d138"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hi97h9.txt",
+      "size": 3305,
+      "sha256": "59d900fb9ea9a16b501ee9846119304f97f3d1443393a2d919a9ba78a806391e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\him27x.txt",
+      "size": 2456,
+      "sha256": "18c75c5761aca3b6b9422529254984b77f780ba5624ab52da1ab8ceff849f46f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hins1e.txt",
+      "size": 2150,
+      "sha256": "ba6f0b27bdc319740795bead96cb935a32399888b06a96c20439e0ca6dc0cd9d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hj921t.txt",
+      "size": 6403,
+      "sha256": "07b93c38e70e5e9871e03e714a1298b3b4310b6619dbe1629844e00a8317de5b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hjkgnj.txt",
+      "size": 3655,
+      "sha256": "0ed4e2fe6c175c7e51add0ac29a813d341d671bcf465560714f5ab32f8c012bb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hjq4xz.txt",
+      "size": 3095,
+      "sha256": "3500848347be001691f169290ab24619cdeb6d829785f9223f1c7bf85589c13b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hk02fz.txt",
+      "size": 1530,
+      "sha256": "8a47e24d9e2ad074a51e4d322cf08dc9139152a71e251fb10b6a166d3dc5a52c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hkneb0.txt",
+      "size": 693,
+      "sha256": "e5cc8bd0dd9216c6a2962e04b39a9854c326ac0042820de71abd2b6670e85ea4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hkx57u.txt",
+      "size": 4082,
+      "sha256": "299ef3109c4ddffc5045eb4518194255313803ace83b9f384233e7fcd9d9503a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hlb6ub.txt",
+      "size": 2133,
+      "sha256": "48ecd7aaf637ebbc24a2411d8e5451663fd17f9bc64f8c0ec7139f6e0666669e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hlgv6r.txt",
+      "size": 2593,
+      "sha256": "7a7a9d3f4fe6b1ea297f93c72810da8f2cd6bdab02783aef4a13c0bc936b4137"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hlk24c.txt",
+      "size": 2010,
+      "sha256": "99693349d9f2f0c7c104393df2c65055af5d444474290ec04978ce1fe05c2b94"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hlt9ih.txt",
+      "size": 6983,
+      "sha256": "b427bba86d644c501c1361ec50f0ab1086305c737145a2ce3bd21182d1c4b0f3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hm2azy.txt",
+      "size": 1090,
+      "sha256": "0997c0bf4e3e1db13a50203e1031d7aaa44700476bede7b2ed0b66a238c9e1c8"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hml5aw.txt",
+      "size": 4719,
+      "sha256": "807ba5a0eda04b7de54583ce5d099e9c78ae99a0478446671ff37227bd754166"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hmw6r6.txt",
+      "size": 1617,
+      "sha256": "164a2ed9fc823d54b72be5dfb8b6052b6021e0163a22ce8c3ec067361604fe7d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hmzvgt.txt",
+      "size": 2405,
+      "sha256": "ec8269d463a939bd0b842cac345fea877162a7851e0fa477f0a2290c2887a469"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hn7qho.txt",
+      "size": 1109,
+      "sha256": "a734821f6f5d802ddbb6b87f85f4b4deec1e1999344965a2e44aecd17bc73aa4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hnda6b.txt",
+      "size": 3606,
+      "sha256": "617d5b9eb4fd25967c1931f036d0650aaf94ff511ed768d85df3cffe9898dd3d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hnklhw.txt",
+      "size": 954,
+      "sha256": "f57d98b10d55509fcc136ebf25db1e1ff72a9f75bdc9d2e0f2041cd6d54af5a7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ho0thi.txt",
+      "size": 4053,
+      "sha256": "53de671aa6732891eddab40f0fa6c4df718a3fbea146f96c6849ab41aed83936"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hoi00p.txt",
+      "size": 2049,
+      "sha256": "aa95b7c6cd3c2e2ca9ce0f53e73ca94415e408f4116acdb73b2d1364fa5dc0a8"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hpf5l4.txt",
+      "size": 5825,
+      "sha256": "3308372fbecd1d01b8cb3d83c0532aba2b367f1e1b1c2828d9393dfb55b0cbf2"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hpr67u.txt",
+      "size": 1714,
+      "sha256": "280954c921f0bbed24362273c7c24f2bdca238cd0c668061ff6f9585bac0da11"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hq34kx.txt",
+      "size": 3931,
+      "sha256": "efc7d1b5f0320f6ce4c28b93af596026c5d1def873e9342100c29e45f6bedaf6"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hqdh6u.txt",
+      "size": 3314,
+      "sha256": "35827466e52020d0c600fef42626a2d7484288857f6b017312812ab96197ff58"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hqhhan.txt",
+      "size": 2257,
+      "sha256": "8d22d94d7e6ad19037c1ff2b331c37f584c57a6b57c2fc99882d4c79c2bb045f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hrou7t.txt",
+      "size": 7097,
+      "sha256": "d865c544416754e5d1a20dfc7296e60dab20bd45a59769d487744e59d9badf1a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hrrf21.txt",
+      "size": 2632,
+      "sha256": "f5e2a62886390990079206f89c770e483243a66524bd50d198ddc6f8cdd0e750"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hrx74p.txt",
+      "size": 2967,
+      "sha256": "189e917d6a51e3859a80c917c9fd83a3c658a4234a6d4617235737feccae2d6d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hs8mjn.txt",
+      "size": 2802,
+      "sha256": "3217889d688b19751969cdd9b7d7ae819c7e2132b72192fd6d153c35361d80eb"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hshqzb.txt",
+      "size": 1311,
+      "sha256": "2a086e359de86dc337b7cdc2ee537be3add3c90100db34d058e06347d3704b34"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hsv605.txt",
+      "size": 765,
+      "sha256": "5e1b4128906ee72584f687e639254f06992181cc51b9535f807f263e70835512"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\htfqo9.txt",
+      "size": 1751,
+      "sha256": "9828fc201a635b068375f1a54286b8e241c04131fdf0a9a996b81db04e8366ac"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\htk8ia.txt",
+      "size": 683,
+      "sha256": "3da4e5f43d46e873c66f214bd5ed13ff491537be6de32c4fc531e715b932a85b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\htnyo6.txt",
+      "size": 6278,
+      "sha256": "b829de9c5d8afe7372b2814f3c9b77afc80627dd40f4c2a52a20432b188a192f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hu4793.txt",
+      "size": 725,
+      "sha256": "dbf807fa64bbf498415bf0253c12e76b0637546cb592dcf28050e25cccf52b3a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hu9xlv.txt",
+      "size": 3929,
+      "sha256": "d750424e0d3e7aa8c0d95054bd0de496e6cb6f010f7248c45909e1390824d3ae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\huufju.txt",
+      "size": 4927,
+      "sha256": "46f8e22b753fe144fc857b4c1ae5bbfbb6b878b6816bbc1a04760842308f8f68"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hv5tgx.txt",
+      "size": 1971,
+      "sha256": "26a2ac70e8c4d83701edb39ffce4e1000a0b64773a356fc2b1d644cba08c0683"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hw1vdy.txt",
+      "size": 896,
+      "sha256": "0649dfd2d90f7a7b80ee9233df4b32af19ab672a0c2d5868f7afe9bc4999ab45"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hw9ppi.txt",
+      "size": 3026,
+      "sha256": "1912ba3c4a0a6cf458bfbfc672470517fa6c2043a04e9e99605747dd9c6a79b0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hwmll2.txt",
+      "size": 4598,
+      "sha256": "61fd7ba703c3c200a706f55bdfaf0ddd61a10fa292880d6b2cc9dede4b2a63b4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hx1i21.txt",
+      "size": 3498,
+      "sha256": "ac2b2d2d3ad1625fe10de0a2051ad69c64c5ba17bbfbcd08d186e209a4aa605f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hx5kha.txt",
+      "size": 2327,
+      "sha256": "33213f5093f2d42316f79f91bfa478ee6b7a7ee42e70c5166f9dbdca1b066b1c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hxck86.txt",
+      "size": 4681,
+      "sha256": "c1cd20919e4459d1a1e1d88ab91608654b4c3801df8950180c274e83fc7573d4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hxmh12.txt",
+      "size": 1882,
+      "sha256": "ddc00825963fae43868d75ca3d64d2b878280f9e454629fda296ec7e37e33cf0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hxuhig.txt",
+      "size": 1737,
+      "sha256": "084ad363e0969597a9c16b08f68f9fd6db9db9151c515e61bd83bad1cddfdc57"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hxyq72.txt",
+      "size": 2423,
+      "sha256": "4bbf9a3bc501ddd4a88fc638e42d33485b5bc3e7dabdc691d62a48b59c808854"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hy4vqw.txt",
+      "size": 4012,
+      "sha256": "6543f41d0d9db1504cb27529f7e1cdf94eb2da2ab92e83b3b5a6e18a26cb8075"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hygbp8.txt",
+      "size": 3008,
+      "sha256": "7ff926450207d5cbcef1216d5c76129ecdf5b3ac5fd133031a7190717e14d16c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hys47q.txt",
+      "size": 2174,
+      "sha256": "99a51a4a4cceafa4e68451a279aba63a93344ffbb213b6c28a278118d5a3f917"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hyx61u.txt",
+      "size": 2119,
+      "sha256": "720c5dbb8282b44684eadc25380f09ad428183265beacb7c26acc9a90d280a3b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hz8rlm.txt",
+      "size": 235,
+      "sha256": "901c950442e924bedade0029d8bc78cc7df67353d7b2df8428b15f9e810b3c3e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hzexoq.txt",
+      "size": 805,
+      "sha256": "18ff0f362300409f8dc1bda296bfb5701c365a082b53d5eb3845e16b2b52681e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\hzps4h.txt",
+      "size": 7084,
+      "sha256": "a17e7a233a04d7603cf4837d85b20fbb3628beb89c8eb23146cb8fe162001d90"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i0njgh.txt",
+      "size": 650,
+      "sha256": "8616d5371ccf39e2e2f1e9d58d0db45742f8501f57166629898b5d2e94cad03c"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i0vxsh.txt",
+      "size": 5412,
+      "sha256": "5d8dfcb0b7e966d4b205759406c5effa24fd757dc3a0151685d5d3bb2e8aa17d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i19vny.txt",
+      "size": 1691,
+      "sha256": "ca24c349f69e50a2c9d519bed60ddae61c222ef574f382c076a6fdab78e5ec6a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i236km.txt",
+      "size": 1843,
+      "sha256": "2cd0f4d69be520a8da636f2d01e70f8da0a38dbdec62a7459b465525f466a52b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i2cukp.txt",
+      "size": 1635,
+      "sha256": "e35fdb1467731cd7b5292f0d3c0e9ccf5f59bd317ec010c48eba896fa7b5e7e8"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i2id3v.txt",
+      "size": 6148,
+      "sha256": "3156faaf6e8772b93bd965936c6240dc3b07f423c8e73e058cbabff815424f49"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i2llrp.txt",
+      "size": 5736,
+      "sha256": "e9275ebf0302990616b07d807b8f9c0724cd10de903c60283f7ae8977b9b1e43"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i32pxe.txt",
+      "size": 3571,
+      "sha256": "7054c6097d84fbd2b735de0908442b45a044d33b89013dbc1a77f2c0c39a33ac"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i3izig.txt",
+      "size": 1797,
+      "sha256": "9957dc9df78a27362e37b21146f99b219109626557250b496c5c6dca7490d752"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i3rqg9.txt",
+      "size": 2658,
+      "sha256": "d5b431ace3ae672b8d7007da39ce64ad6a69587d71c60bd362541b6e9d1ec591"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i44cjm.txt",
+      "size": 2066,
+      "sha256": "dcc9746df62b4030c301399fb53c03d5876ce6d849b44cad6cd5020e078fe7ae"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i54efy.txt",
+      "size": 597,
+      "sha256": "60cf4fb7e9d9cf038cc1d93ef7dfe5345e8e77d1a51e748d3c4510dc876ad45d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i5d1vr.txt",
+      "size": 1006,
+      "sha256": "84305ff0b545bf25b0807bbea5e27af83fc92eb06b366ab5f8edf01c554e5f07"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i5zmi7.txt",
+      "size": 3676,
+      "sha256": "c8964b401b60063dcb075c359f154e9aeec9304b7f407ca3fc3e2fa9d2f14315"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i6d429.txt",
+      "size": 575,
+      "sha256": "d6469576b83ae729880bdb2280405d3a6188c6d2d7e0e5ba70789126bc05d268"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i6k802.txt",
+      "size": 1796,
+      "sha256": "d2c5e7c943bae0cdd290bb6d42b4bda9862c93f9e378316e4c4110921abd377e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i6o2sk.txt",
+      "size": 1660,
+      "sha256": "17852bc9ee97746cb936c6f8653aefd55301aac642de8e8a9ecd603301e2001d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i6y27n.txt",
+      "size": 1600,
+      "sha256": "e80aae6f360ee32d6c73fc898b32b5857d0fa0e15f7a0a93501568bb0958167b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i76nal.txt",
+      "size": 1320,
+      "sha256": "bd3d25faeece17b74ce6a5ff08c3eb272541b4110b1b12cae2f5b99eae83451e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i7k7vj.txt",
+      "size": 1461,
+      "sha256": "82f513b2bc3af1705cac4e03460a413765d088d16ce6b85fea2aa0da2e81f826"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i7zimx.txt",
+      "size": 3518,
+      "sha256": "a3c3546a8357ea006ab6181a79cb17bec1ff9c88b7f8dbb02f368adb0fea4e9e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i8it65.txt",
+      "size": 800,
+      "sha256": "e56581234571e3bc18b0836feaeb87e185dae091daeba21aad6fe62deb405e8b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i8r3yc.txt",
+      "size": 1001,
+      "sha256": "3e27f01c92279119d0384d112d1389916cacd58d353c5189aab6fd2452c58e9a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i98ccy.txt",
+      "size": 5237,
+      "sha256": "197ff326e8a1f7022117467b4082566786a9880f49026ddd38f53c02434c5267"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\i9m1rr.txt",
+      "size": 1272,
+      "sha256": "c9c4ffe1bd62ffb77aee7c27305655d8ab44ba371bee8c6121da1394583ec816"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iama3h.txt",
+      "size": 975,
+      "sha256": "06426e8266df4fbf48caae90d08bd20115daa86d8eb17b129142efc16b6276d5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ibmiwf.txt",
+      "size": 11787,
+      "sha256": "7f9f3e039bad439a8d3448f2326ef6469f42697c927e0db30554ef2e0a89a246"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ic4aos.txt",
+      "size": 2201,
+      "sha256": "2910c1c1b0c37faaff91f5b76fb6f45f2d327ca4c7af4241a4abc28e92f96677"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\icia89.txt",
+      "size": 1663,
+      "sha256": "726a83f63d92ea6fcba976866051b4696f8494bb7001c04aee6cdefa51d24a6e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ictbgd.txt",
+      "size": 2321,
+      "sha256": "a1fb325ee04b5881996afccc634f7f9f97b863c7b37eaef6652be7875c8d21ec"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\id1f5u.txt",
+      "size": 3372,
+      "sha256": "7cf00a8449c64ffd2b2f666d53421914064eebffee35727bdb63a1bf69a6b11a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\idsywt.txt",
+      "size": 1193,
+      "sha256": "b6fa5267a253a87a944106bb6131020158e28526e58179c8e7c790503108b6e5"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ieoa0z.txt",
+      "size": 1127,
+      "sha256": "0df976f7006c83a87dc8d30d1f44599acfcb52aa9cf02162bd7d2c0d143a7452"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\if3xgf.txt",
+      "size": 1822,
+      "sha256": "420a8f9a19dbc0d7b14896c26915a27e004f04f4a2a9bb5c9234ad9941535c6d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ifbgdu.txt",
+      "size": 1478,
+      "sha256": "20ea57f480173d87737b5ec57260c1b3571900a56207b4572735b4ab0bc5c50f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iftqhw.txt",
+      "size": 4383,
+      "sha256": "c58fe931f8ca412e086df5c23f6fb6e9a97c2ff333fc87a7ba4db9b040d54726"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ig3hez.txt",
+      "size": 10677,
+      "sha256": "7dfe7aee76fd4cfbbebe6f77df47257d6fe80d6eccccfe3a14d561993ae8ee29"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\igdkyo.txt",
+      "size": 7560,
+      "sha256": "422324d0eac59321e6c1b95b00ba2d2f1b3c2161674356210d2f1c93af363c1f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\igl2hr.txt",
+      "size": 3982,
+      "sha256": "5df485d314c12770504c1c328ac946963375b07fc32852e0afd44b1f6119fff3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\igx2rz.txt",
+      "size": 1222,
+      "sha256": "0aa5dee661596ec92b40b0daa8113d1721a1f87dc0e7ce296fa663db8f45747b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ih3qov.txt",
+      "size": 2026,
+      "sha256": "7f5cf4910bd13569d16dd3fbb789d658bcc3e834042ae1416fc69017a7682d87"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ihoydd.txt",
+      "size": 3036,
+      "sha256": "a292fceb1ab964c919ae71476183eb763c01862945bcfc605afdc47867f1068e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ihz76n.txt",
+      "size": 1622,
+      "sha256": "fdd5a7dafa8c6efe72210412d453d72bc417c61922648165b6e7d573a364538a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ii4xbu.txt",
+      "size": 1610,
+      "sha256": "9484bff3b875690275abce9c3d212268aa53a5f5ec038d269014d5d5e4740c27"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iihm6b.txt",
+      "size": 2489,
+      "sha256": "ca4a5495966ac3c89e9047b07692d0372404d789966b21b9a2446008c0c9ac75"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iiscjb.txt",
+      "size": 2256,
+      "sha256": "aa09534edec5ae5ab699460d1c7a7fea8a01dc352fade76947072f9a4919a8bf"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ijgc4i.txt",
+      "size": 2832,
+      "sha256": "962d1ee4bddcf6b6d0b2a74c19cc60f96ea50c179398ce607007be7d4c21299d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ijx2zy.txt",
+      "size": 3746,
+      "sha256": "e088792109a5900e5ef63ee3f0287e8247e4ae335216643469137cd314e5ab4a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ikfcj7.txt",
+      "size": 14497,
+      "sha256": "04f36484a55164d6d53222afae19e4000dd067e8df3a324bee7743dafc539ad4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ikky7g.txt",
+      "size": 1960,
+      "sha256": "e69e91bd04309416371df88d218c793d287615eeec914a1a74a86b6416de1e13"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\illtan.txt",
+      "size": 4174,
+      "sha256": "54e1207877029d627c0f2093eea6a6dcf74f45eb702bc6ec105f3a626c520e51"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\imd5s4.txt",
+      "size": 1534,
+      "sha256": "616c6e4c75af1537149cb5dc0e0ee2ced398c6a17b05c2b6bd8c65b679e5a396"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\imf3cz.txt",
+      "size": 1928,
+      "sha256": "c646ed53009707c0871c24553c7cb2a80740a4885827870db836813e339d3797"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\imozyq.txt",
+      "size": 2004,
+      "sha256": "facc3ea5c0798c813e40560ab0d9bfe6ba7192b84bff529adf5088be64c18b7e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\in04pl.txt",
+      "size": 3237,
+      "sha256": "0f31362283e33034a42dd5e508bd17a1aef81af186062dab0dcbfa25e9130682"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\in7j0h.txt",
+      "size": 1684,
+      "sha256": "6c7e8b9345dd5448786ccefa30bbfe2ee601b42a783d01aada3c98a914b929fa"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\innyw1.txt",
+      "size": 5941,
+      "sha256": "43598908ac854517fb1cfaa95debcc3cfbf63d939d59ef223dde15fb628e5971"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\io7bsw.txt",
+      "size": 1970,
+      "sha256": "17a4532a8de7c071ec37e305ad6cb004eb3b815e7721206a58c9eafe05056e00"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ip8n1q.txt",
+      "size": 4453,
+      "sha256": "f6c428281550d4549ea2aecddb9280fc800e71cee4a90f4cbf6d1e4dbf81b600"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iperqj.txt",
+      "size": 3515,
+      "sha256": "c03f4891a46df21ed3da1ca08aba5604fb2dc3c019eec9c55bb9c4b88def5b2d"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ipmhqp.txt",
+      "size": 10211,
+      "sha256": "ffb53b2a53a57b1c86e69c616509f3f976fe5bcba6e64460cb04101580535100"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ipsvh7.txt",
+      "size": 436,
+      "sha256": "3599f0c5ce17870349e95c84f693273b5e8c94e7df6ed0e6dfc1dca26e289934"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\irae0z.txt",
+      "size": 2816,
+      "sha256": "ba3611111d8a79cc4927713f0380562920b4ed69f5a1cdca54b9943a939eb9c7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\irpvm5.txt",
+      "size": 3727,
+      "sha256": "8fbc0c3b6accbfc1a28166cb8b3b98d2b3aea3e7d9877878d9ef700dbe4c7a8e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\is8ayb.txt",
+      "size": 7353,
+      "sha256": "0b5f3e4caf7ecd61297cddc62fd888c70f5b0636ac948ceebf2af449ea0804e0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\isyxrx.txt",
+      "size": 3795,
+      "sha256": "e63b2a658b02ef01f86ab2e418a5e67d50858dcd26dfbdf09cac95008f66d2b3"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ita3mx.txt",
+      "size": 5184,
+      "sha256": "20bf77d3b94b7d9f9dfda402a024a8a1a6707cb1347281af7c244d6390760a80"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\itxur8.txt",
+      "size": 2859,
+      "sha256": "03d5e032ab1127bfedd241f0469595008b58de053bdffe08474a7ea9ae0cc54f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iu9jm2.txt",
+      "size": 1835,
+      "sha256": "b3938a87815303ba5c7b082cd1443c0cbad70098c9b86ed1470dc1b6ce599b3a"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iuib3i.txt",
+      "size": 3327,
+      "sha256": "2a1a6df46c84a38226f82b38c1b8b7b44455febd122c788d5fde3663ab7c2831"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iuv798.txt",
+      "size": 1762,
+      "sha256": "baa8d523602b89efcff08f5715e8d1f864b5b3345defbc1957024ab59a63d4fd"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iv4i4r.txt",
+      "size": 3019,
+      "sha256": "6a9c714311340be5edcce77724c07dc0012f65ef5c446297e87cfac1db59231e"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ivizev.txt",
+      "size": 1202,
+      "sha256": "0432d576e07ce0b8f102aa7a996e2d781e28e21a457693cb98c0399eecce1d36"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ivo732.txt",
+      "size": 2012,
+      "sha256": "7a67287bf90ce27b78c3e16b165e8b9340f16941007c4b7e60568a94e540fd8f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iw3n0d.txt",
+      "size": 4088,
+      "sha256": "2f69d20ab0312482a5d1ca6daf8e236b894050b12089ad346aa67ad41ed2bf26"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iweaes.txt",
+      "size": 3291,
+      "sha256": "4e19527adc97cbd58ed4247cbe51a930c5a62266282e6ed6a563cd0126120a08"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iwrfax.txt",
+      "size": 2394,
+      "sha256": "be9df4cccb63366c2fed23fc451ae51df43b3feb091f33df40b86006c715e5e4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iwxcuh.txt",
+      "size": 3041,
+      "sha256": "a310750a1deaf7c48b79b81b171e4f8887d571418821935ecc236e138440ab01"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ix84tt.txt",
+      "size": 6615,
+      "sha256": "d25c5b2550cfe757e2f6bc92a986555d40bc35c3ba4eec34b1cfc9b50ac34059"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ixplv5.txt",
+      "size": 1889,
+      "sha256": "de724374c1be208a756738a1d7ff2dfc59114c1763fd32336473a6e0c1ff0463"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\ixv0rh.txt",
+      "size": 2425,
+      "sha256": "74bf979cf66b7f2f909ab49ed484e2e4f3688628463740786c1a80e9cad048a9"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iy8jfi.txt",
+      "size": 2633,
+      "sha256": "2203fbf0752363535035c087d700b450e272b5f3bd59fe40e0b7012c2772b081"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iygsli.txt",
+      "size": 1946,
+      "sha256": "29b7ff2cd4e5c85e367fb3fa4505cf89da93ba2dfaa425396b1e755df84ef13b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\iz68dn.txt",
+      "size": 2682,
+      "sha256": "d334bbf9afacb01274c41c9851df067b66479fe77c3a9d433f4ae2336672ec21"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\izeyqj.txt",
+      "size": 867,
+      "sha256": "0e33b1343a5473fb7470aca8606815b0bed8e38f82ca3812f8470216ec5105b0"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\izrhmn.txt",
+      "size": 2382,
+      "sha256": "f46b62d2ea44bf038d93417512de95fc7ef9462d8b3628db454d4e467a3edd7f"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j09xqg.txt",
+      "size": 2576,
+      "sha256": "be125319f3bc01dc479bfd4cd4932c4cc720a49b391778ce5cb3d1a8a9ab5bd4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j0r8au.txt",
+      "size": 1545,
+      "sha256": "fd28843ef3900273afad5e242840d5962fbec7674939cbca6a359168a8446c29"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j1ur51.txt",
+      "size": 2816,
+      "sha256": "c9f2ad18efc8ee37222a6af6a6fcf8260c8e34c0ea91c2e9c1d1af2923c3344b"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j2jmsg.txt",
+      "size": 2394,
+      "sha256": "f6b6fd806a82b457b694d513cbe83a91a2c186d53a78652216bcc7830bc38989"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j3lj2h.txt",
+      "size": 1026,
+      "sha256": "fa39cc651b1000adba93b4250c1185350e3dcd7b66d64a1de50329aa1681bbb4"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j3u0ud.txt",
+      "size": 2671,
+      "sha256": "17c5318c5fc41af847898c146f30f46123a3a046d256916d2a644d8123a816b7"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j455mn.txt",
+      "size": 1074,
+      "sha256": "7b6c67fe4ae1fcf2fd12ae6d957b87d43820be3a5e394f15901fa954a08a5704"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j4bpk7.txt",
+      "size": 5698,
+      "sha256": "4a28ad9ad941224efc521d7a371559d5b2d10feca929cb6ea289a0687d88b136"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\j4gqfv.txt",
+      "size": 1459,
+      "sha256": "2135f1b129cb7185b99c033666da9143db27d90bc5426954b484a8872b07a075"
+    },
+    {
+      "path": "D:\\Research\\PLEF\\Old\\PLEF\\reddit_posts\\m1xe5o.txt",
+      "size": 1694,
+      "sha256": "9fd5d7441f407fa0a0f32987b76a92769dd4da49feeb7021cea05c9442178c2d"
+    }
+  ],
+  "reddit_txt_files": 492,
+  "corpora": {
+    "relationship": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_relationship.csv",
+      "n": 1308,
+      "sha256": "e3b87228d8cf16077827f32f7a6c335f327b3176161b183ff0df98184cd370bf",
+      "round_trip": true,
+      "provenance": "none",
+      "role": "trajectory_only",
+      "flags": [
+        "TRAJECTORY-ONLY: no classification result may be computed"
+      ]
+    },
+    "goemotions": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_goemotions.csv",
+      "n": 54263,
+      "sha256": "64e39c415e9e80d7e3558a49afb0792b7341c32a1b4498260a4bf419c964c318",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": []
+    },
+    "empathetic": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_empathetic.csv",
+      "n": 19157,
+      "sha256": "d7fcde710d7f8b50b5e7143e5e447de0d0a318918fd4703388bc8800e634b342",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": [
+        "BINARY: declared two-class in DECISIONS.md"
+      ]
+    },
+    "isear": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_isear.csv",
+      "n": 7666,
+      "sha256": "dde39d262355728e9ee43d40b97686fbec089b56173ee69ba11f6a984260a10b",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": [
+        "BINARY: declared two-class in DECISIONS.md"
+      ]
+    },
+    "semeval2017": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_semeval2017.csv",
+      "n": 52806,
+      "sha256": "3a23424810f69e14492a28b7d22738bca7f975a96cfbcf16d6c7d937e1d307c3",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": []
+    },
+    "meld": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_meld.csv",
+      "n": 13708,
+      "sha256": "e1bb4837c462839cb9dbc682fda9bfa4d641490e57b0b2506643275d3065b751",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": []
+    },
+    "tweeteval": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_tweeteval.csv",
+      "n": 59899,
+      "sha256": "890aee8b36fd3e6ddbba548e88cfaab3bc90c750f367755695d1a255fa568ee9",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": []
+    },
+    "dailydialog": {
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\corpus_dailydialog.csv",
+      "n": 101026,
+      "sha256": "7d8f8ab798f43d4096046ae5c6021c045685d692faf9ad75390f6bd8e7183e76",
+      "round_trip": true,
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "flags": []
+    }
+  },
+  "failed_gate": [],
+  "stats": {
+    "relationship": {
+      "n": 1308,
+      "words_total": 674440,
+      "words_median": 390.0,
+      "words_mean": 515.6269113149847,
+      "sents_median": 24.0,
+      "n_ge4_sents": 1288,
+      "pct_ge4_sents": 98.47094801223241
+    },
+    "goemotions": {
+      "n": 54263,
+      "words_total": 696105,
+      "words_median": 12,
+      "words_mean": 12.828354495696884,
+      "sents_median": 1,
+      "n_ge4_sents": 914,
+      "pct_ge4_sents": 1.6843889943423695
+    },
+    "empathetic": {
+      "n": 19157,
+      "words_total": 343838,
+      "words_median": 16,
+      "words_mean": 17.94842616276035,
+      "sents_median": 2,
+      "n_ge4_sents": 290,
+      "pct_ge4_sents": 1.5138069635120321
+    },
+    "isear": {
+      "n": 7666,
+      "words_total": 165608,
+      "words_median": 18.0,
+      "words_mean": 21.6029219932168,
+      "sents_median": 1.0,
+      "n_ge4_sents": 296,
+      "pct_ge4_sents": 3.8612053222019305
+    },
+    "semeval2017": {
+      "n": 52806,
+      "words_total": 1015652,
+      "words_median": 20.0,
+      "words_mean": 19.233647691550203,
+      "sents_median": 2.0,
+      "n_ge4_sents": 3405,
+      "pct_ge4_sents": 6.4481308942165665
+    },
+    "meld": {
+      "n": 13708,
+      "words_total": 109609,
+      "words_median": 6.0,
+      "words_mean": 7.995987744382842,
+      "sents_median": 1.0,
+      "n_ge4_sents": 354,
+      "pct_ge4_sents": 2.5824336154070617
+    },
+    "tweeteval": {
+      "n": 59899,
+      "words_total": 1098918,
+      "words_median": 19,
+      "words_mean": 18.34618274094726,
+      "sents_median": 2,
+      "n_ge4_sents": 2584,
+      "pct_ge4_sents": 4.3139284462178
+    },
+    "dailydialog": {
+      "n": 101026,
+      "words_total": 1397722,
+      "words_median": 11.0,
+      "words_mean": 13.835270128481778,
+      "sents_median": 1.0,
+      "n_ge4_sents": 3892,
+      "pct_ge4_sents": 3.8524736206521095
+    }
+  },
+  "overlaps": {
+    "relationship|goemotions": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "relationship|empathetic": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "relationship|isear": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "relationship|semeval2017": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "relationship|meld": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "relationship|tweeteval": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "relationship|dailydialog": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "goemotions|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "goemotions|empathetic": {
+      "n": 2,
+      "pct": 0.0037076172997423207
+    },
+    "goemotions|isear": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "goemotions|semeval2017": {
+      "n": 3,
+      "pct": 0.005561425949613481
+    },
+    "goemotions|meld": {
+      "n": 45,
+      "pct": 0.08342138924420221
+    },
+    "goemotions|tweeteval": {
+      "n": 1,
+      "pct": 0.0018538086498711603
+    },
+    "goemotions|dailydialog": {
+      "n": 2,
+      "pct": 0.0037076172997423207
+    },
+    "empathetic|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "empathetic|goemotions": {
+      "n": 2,
+      "pct": 0.010440048024220912
+    },
+    "empathetic|isear": {
+      "n": 1,
+      "pct": 0.005220024012110456
+    },
+    "empathetic|semeval2017": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "empathetic|meld": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "empathetic|tweeteval": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "empathetic|dailydialog": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "isear|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "isear|goemotions": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "isear|empathetic": {
+      "n": 1,
+      "pct": 0.013329778725673154
+    },
+    "isear|semeval2017": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "isear|meld": {
+      "n": 1,
+      "pct": 0.013329778725673154
+    },
+    "isear|tweeteval": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "isear|dailydialog": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "semeval2017|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "semeval2017|goemotions": {
+      "n": 3,
+      "pct": 0.005684402000909504
+    },
+    "semeval2017|empathetic": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "semeval2017|isear": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "semeval2017|meld": {
+      "n": 1,
+      "pct": 0.0018948006669698347
+    },
+    "semeval2017|tweeteval": {
+      "n": 22603,
+      "pct": 42.82817947551918
+    },
+    "semeval2017|dailydialog": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "meld|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "meld|goemotions": {
+      "n": 45,
+      "pct": 0.37030941408821594
+    },
+    "meld|empathetic": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "meld|isear": {
+      "n": 1,
+      "pct": 0.008229098090849244
+    },
+    "meld|semeval2017": {
+      "n": 1,
+      "pct": 0.008229098090849244
+    },
+    "meld|tweeteval": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "meld|dailydialog": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "tweeteval|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "tweeteval|goemotions": {
+      "n": 1,
+      "pct": 0.0016712347082024198
+    },
+    "tweeteval|empathetic": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "tweeteval|isear": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "tweeteval|semeval2017": {
+      "n": 22603,
+      "pct": 37.774918109499296
+    },
+    "tweeteval|meld": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "tweeteval|dailydialog": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "dailydialog|relationship": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "dailydialog|goemotions": {
+      "n": 2,
+      "pct": 0.002455916302372415
+    },
+    "dailydialog|empathetic": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "dailydialog|isear": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "dailydialog|semeval2017": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "dailydialog|meld": {
+      "n": 0,
+      "pct": 0.0
+    },
+    "dailydialog|tweeteval": {
+      "n": 0,
+      "pct": 0.0
+    }
+  },
+  "dev_split": {
+    "n": 200,
+    "seed": 20260829,
+    "hash": "edc1a20fe6519480d7712510f5bb73df768f96347b91657443ab001921a5061b"
+  },
+  "unique_items": 265452,
+  "total_items": 309833,
+  "flags": {
+    "relationship": [
+      "TRAJECTORY-ONLY: no classification result may be computed"
+    ],
+    "goemotions": [],
+    "empathetic": [
+      "BINARY: declared two-class in DECISIONS.md"
+    ],
+    "isear": [
+      "BINARY: declared two-class in DECISIONS.md"
+    ],
+    "semeval2017": [],
+    "meld": [],
+    "tweeteval": [],
+    "dailydialog": []
+  },
+  "loader_meta": {
+    "relationship": {
+      "provenance": "none",
+      "role": "trajectory_only",
+      "dropped_short": 0,
+      "min_words": 20,
+      "v1_silver_available": 1316,
+      "note": "genuine 7-subreddit narratives; NO trustworthy labels; trajectory analysis only (D18)"
+    },
+    "goemotions": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "note": "3 human raters, Demszky et al. 2020 groupings"
+    },
+    "empathetic": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "binary": true,
+      "dropped_unparseable": 10,
+      "unparseable_emotion_fields": {
+        "i really killed it!": 1,
+        "we were in a different country": 1,
+        "t even like scary things": 1,
+        "t believe i like the show power so much. i was never really ": 1,
+        "time to jump on the motorcycle and go cruising!": 1,
+        "a boy.  i hear all these different labor stories that aren't": 1,
+        "t think i wold like super heroes": 1,
+        "m so mad with my brother. he stole from me and didn't think ": 1,
+        "but what i didn't know was that he was working in the next r": 1,
+        "(": 1
+      },
+      "note": "self-reported situation emotion; BINARY (D16); a handful of rows with CSV-broken emotion fields are dropped, not pooled"
+    },
+    "isear": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "binary": true,
+      "text_edits": 5337,
+      "artifacts": {
+        "\u00e1": 9424,
+        "\u00f7": 2,
+        "\u00a6": 2
+      },
+      "note": "expert annotators; NO neutral class; BINARY (D10)"
+    },
+    "semeval2017": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "discard_reasons": {
+        "duplicate_tweet_id": 764,
+        "fewer_than_3_columns": 38
+      },
+      "note": "SemEval-2017 Task 4A gold labels"
+    },
+    "meld": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "note": "human annotation; dataset Sentiment column used directly"
+    },
+    "tweeteval": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "note": "TweetEval sentiment; derived from SemEval-2017"
+    },
+    "dailydialog": {
+      "provenance": "human",
+      "role": "classification+trajectory",
+      "mismatched_dialogues": 0,
+      "note": "manual utterance labels; mixed-quote numpy repr parsed"
+    }
+  },
+  "annotation_task": {
+    "files": [
+      {
+        "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\annotations\\annotation_task_rater1.csv",
+        "sha256": "2bedd2e5825660327d62129ddbef34edc61f2c60d6599b5c51c3b5143d33ebfb",
+        "rater": 1
+      },
+      {
+        "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\annotations\\annotation_task_rater2.csv",
+        "sha256": "576790d5eaf61e4238579d104bec19ffb354ddac93bf9c43d531c07061d04f54",
+        "rater": 2
+      },
+      {
+        "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\annotations\\annotation_task_rater3.csv",
+        "sha256": "36f767c7cb17bf566dbb044372c55517ab0b5a32d648958f559754dd36c3e3bc",
+        "rater": 3
+      }
+    ],
+    "guide": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\data\\interim\\annotations\\ANNOTATION_GUIDE.md",
+    "n": 200
+  },
+  "consensus": null,
+  "consensus_removed": []
+}

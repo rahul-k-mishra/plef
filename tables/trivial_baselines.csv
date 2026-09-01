@@ -1,0 +1,6 @@
+corpus,majority,always_neutral,random,PLEF,best_real,best_real_system,plef_at_or_below_chance
+goemotions,0.193,0.193,0.3268,0.4469,0.6043,afinn,False
+semeval2017,0.2072,0.2072,0.3216,0.4227,0.556,afinn,False
+meld,0.213,0.213,0.3215,0.3214,0.4313,afinn,True
+tweeteval,0.2097,0.2097,0.3231,0.4212,0.5564,afinn,False
+dailydialog,0.3061,0.3061,0.2365,0.4197,0.4106,huliu,False

@@ -1,0 +1,9 @@
+{
+ "corpus": "semeval2017",
+ "rows": 52806,
+ "sha256": "3531472b59152f758081a012e7d954d1d91103fd8218d5c4c3ae24c8bb8c2f44",
+ "seconds": 564.7,
+ "words": 1015652,
+ "trajectory_in_scope": false,
+ "at": "2026-08-29T02:27:56"
+}

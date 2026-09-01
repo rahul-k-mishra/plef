@@ -1,0 +1,9 @@
+{
+ "corpus": "isear",
+ "rows": 7666,
+ "sha256": "cc8e57d1b23b4574cd1a3353b5fb3cc69f92aec79816268067852bd549632266",
+ "seconds": 103.1,
+ "words": 165608,
+ "trajectory_in_scope": false,
+ "at": "2026-08-29T02:01:44"
+}

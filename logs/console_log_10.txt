@@ -1,0 +1,39 @@
+
+================================================================================
+PLEF V2 -- SCRIPT 10 : NULL DISTRIBUTIONS AND FORMAL TESTS
+================================================================================
+  script version : 10.5.0
+  started        : 2026-09-01T11:21:56
+  permutations   : 10000
+  synthetic draws: 10000
+  seed           : 20260830
+
+INPUT
+--------------------------------------------------------------------------------
+  relationship documents scored     : 1,308
+  with a stored sentence vector >=4 : 1,288
+  observed NAVA x LEWI              : r = +0.5979
+
+A  WITHIN-DOCUMENT PERMUTATION NULL
+--------------------------------------------------------------------------------
+  Each draw randomly reorders every document's own observed
+  sentence-level sentiment values and recomputes both metrics.
+  Each document's multiset of values is preserved exactly; only
+  the order changes.
+
+    draws          : 10000
+    mean r         : +0.6066
+    SD             : 0.0262
+    95% interval   : [+0.5539, +0.6565]
+    null r >= obs  : 6378 of 10000
+    empirical p    : 0.6378   (p = (1 + #[null >= observed]) / (draws + 1))
+
+B  SYNTHETIC I.I.D. NULL
+--------------------------------------------------------------------------------
+  Generating process: for a document of N sentences, draw N
+  independent values from Normal(0, sigma).
+    sigma = pooled SD of the observed sentence scores = 0.2488
+    (observed pooled mean -0.0124, set to 0 in the null)
+    document lengths matched to the observed distribution
+    N = 1288 documents per draw, lengths 4--526
+

@@ -1,0 +1,63 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 13 : ARC-WINDOW SENSITIVITY
+==============================================================================
+  script version : 13.1.0
+  started        : 2026-09-01T10:03:08
+  permutations   : 1000 per rule
+  seed           : 20260830
+  documents      : 1,288
+
+WINDOW DISJOINTNESS
+------------------------------------------------------------------------------
+  distinct document lengths : 125  (N from 4 to 526)
+  lengths where 2k > N      : none
+  tightest case             : N=327, 2k/N = 0.6667
+  The opening and closing windows are disjoint on every document
+  in this corpus under the rule actually used.
+
+RULE: k = floor(N/4) throughout
+------------------------------------------------------------------------------
+    observed r     : +0.6107
+    null mean      : +0.6144   SD 0.0249
+    null 95%       : [+0.5670, +0.6615]
+    null >= obs    : 560 of 1000
+    empirical p    : 0.5604
+    conclusion holds (p > 0.05): YES
+
+RULE: k = floor(N/3) throughout
+------------------------------------------------------------------------------
+    observed r     : +0.6349
+    null mean      : +0.6331   SD 0.0258
+    null 95%       : [+0.5824, +0.6846]
+    null >= obs    : 472 of 1000
+    empirical p    : 0.4725
+    conclusion holds (p > 0.05): YES
+
+RULE: piecewise (used in the paper)
+------------------------------------------------------------------------------
+    observed r     : +0.5979
+    null mean      : +0.6070   SD 0.0267
+    null 95%       : [+0.5542, +0.6605]
+    null >= obs    : 630 of 1000
+    empirical p    : 0.6304
+    conclusion holds (p > 0.05): YES
+
+SUMMARY
+------------------------------------------------------------------------------
+  rule                                observed  null mean        p
+------------------------------------------------------------------------------
+  k = floor(N/4) throughout            +0.6107    +0.6144   0.5604
+  k = floor(N/3) throughout            +0.6349    +0.6331   0.4725
+  piecewise (used in the paper)        +0.5979    +0.6070   0.6304
+
+  D:\Research\PLEF\Version_2\PLEF_V2\results\tables\arc_window_sensitivity.csv
+  D:\Research\PLEF\Version_2\PLEF_V2\results\ARC_WINDOW_SENSITIVITY.md
+
+==============================================================================
+DONE
+==============================================================================
+  The conclusion holds under all three window rules: the observed
+  correlation is not unusually large relative to its permutation
+  null in any of them. The choice of k does not drive the result,
+  and the manuscript may state that.

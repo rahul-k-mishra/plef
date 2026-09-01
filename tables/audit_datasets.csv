@@ -1,0 +1,9 @@
+corpus,raw_units,retained,discarded,reasons
+dailydialog,101026,101026,0,
+empathetic,19167,19157,10,dropped_unparseable=10
+goemotions,54263,54263,0,
+isear,7666,7666,0,text_edits=5337
+meld,13708,13708,0,
+relationship,1308,1308,0,v1_silver_available=1316
+semeval2017,53608,52806,802,duplicate_tweet_id=764; fewer_than_3_columns=38
+tweeteval,59899,59899,0,

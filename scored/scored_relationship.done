@@ -1,0 +1,9 @@
+{
+ "corpus": "relationship",
+ "rows": 1308,
+ "sha256": "bd9b14f261d093a4184d31456cc3695c0b1c2e8dd96bdfbe9901a8860d3b55ef",
+ "seconds": 347.8,
+ "words": 674440,
+ "trajectory_in_scope": true,
+ "at": "2026-08-29T13:06:54"
+}

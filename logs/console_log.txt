@@ -1,0 +1,176 @@
+
+==============================================================================
+PLEF V2 -- SCRIPT 01 : BOOTSTRAP + ADVERSARIAL FORENSICS
+==============================================================================
+  script version : 01.1.0
+  started        : 2026-08-28T22:34:00
+  V2 root        : D:\Research\PLEF\Version_2\PLEF_V2
+  V1 source      : D:\Research\PLEF\Old\PLEF
+  workers        : 7
+  python         : 3.11.9  (win32)
+
+BOOTSTRAP
+------------------------------------------------------------------------------
+  created  D:\Research\PLEF\Version_2\PLEF_V2\scripts\01_bootstrap_and_forensics.py
+
+V1 EVIDENCE CHECK
+------------------------------------------------------------------------------
+  metrics files found: 9/9
+
+EVIDENCE FREEZE (SHA-256)
+------------------------------------------------------------------------------
+  hashed 111 artifacts
+  manifest -> D:\Research\PLEF\Version_2\PLEF_V2\MANIFEST\input_manifest.sha256
+
+F1/F2  GOLD LABEL INTEGRITY
+------------------------------------------------------------------------------
+  dataset                      N  classes  majority    share   verdict
+------------------------------------------------------------------------------
+  consensus               10,000        3       neu    86.8%   ok
+  dailydialog             13,118        1       neu   100.0%   DEGENERATE
+  empathetic              30,000        3       neu    39.6%   ok
+  goemotions              50,000        3       pos    40.0%   ok
+  isear                    2,042        1       neu   100.0%   DEGENERATE
+  meld                     9,881        3       neu    46.1%   ok
+  reddit_relationship     10,000        3       neu    39.0%   ok
+  semeval2017             10,000        3       neu    46.3%   ok
+  tweeteval               15,000        3       neu    45.5%   ok
+
+  Majority-class guessing rates on the degenerate corpora:
+    dailydialog        PLEF= 80.6%   VADER= 30.4%
+      gold  : {'neu': 1.0}
+      PLEF  : {'neu': 0.8064, 'pos': 0.1329, 'neg': 0.0606}
+      VADER : {'pos': 0.6044, 'neu': 0.3042, 'neg': 0.0913}
+    isear              PLEF= 68.2%   VADER= 77.6%
+      gold  : {'neu': 1.0}
+      PLEF  : {'neu': 0.6822, 'neg': 0.2375, 'pos': 0.0803}
+      VADER : {'neu': 0.7757, 'neg': 0.1552, 'pos': 0.069}
+
+F3  BASELINE AUTHENTICITY
+------------------------------------------------------------------------------
+  VADER  embedded=   100   published=~  7,500   ratio=   1.33%
+  NRC    embedded=    60   published=~ 14,182   ratio=   0.42%
+  LIWC   embedded=    88   published=~ 12,000   ratio=   0.73%
+  duplicate dict keys: {'_NRC_SEEDS': ['happy', 'disgust']}
+  source self-describes as 'simplified': True
+
+F4  ABLATION VALIDITY
+------------------------------------------------------------------------------
+  hardcoded_0.5    experimental_design.py.bak:261
+      removed = [r["gase"] - w*0.5 for r in results]
+  rci_x0.7         experimental_design.py.bak:337
+      rci_no_stop = [r*0.7 for r in rci_vals]  # approx: stop word removal reduces Jaccard ~30%
+  hardcoded 0.5 found : True
+  present in shipped code (not just .bak) : False
+
+  Published Table 8 deltas vs. the weight x 0.5 identity:
+    entropy      w=0.25   published=-0.1250   w*0.5=-0.1250   IDENTICAL
+    attachment   w=0.25   published=-0.1250   w*0.5=-0.1250   IDENTICAL
+    horsemen     w=0.20   published=-0.1000   w*0.5=-0.1000   IDENTICAL
+
+F5/F6  TABLE REPRODUCIBILITY AND VALID-N RECOVERY
+------------------------------------------------------------------------------
+  dataset                PTI(recomp)      T4   ok      T7   ok   PTIxPAI     T7r   ok
+------------------------------------------------------------------------------
+  consensus                   0.1306   0.131   OK   0.126   NO    0.2766   0.266   OK
+  dailydialog                 0.0232   0.023   OK   0.052   NO    0.0483   0.101   NO
+  empathetic                  0.5016   0.502   OK   0.494   NO    0.4719   0.469   OK
+  goemotions                  0.1010   0.101   OK   0.101   OK    0.2500   0.243   OK
+  isear                       0.4267   0.000   NO   0.427   OK    0.8687   0.869   OK
+  meld                        0.0622   0.062   OK   0.064   NO    0.1343   0.135   OK
+  reddit_relationship         0.1531   0.153   OK   0.155   NO    0.2553   0.256   OK
+  semeval2017                 0.0989   0.099   OK   0.084   NO    0.3456   0.305   NO
+  tweeteval                   0.0889   0.089   OK   0.082   NO    0.3275   0.317   OK
+
+  Table 5 valid-N recovery (does ANY filter reproduce both n and r?):
+    consensus              paper n=    70  r=0.832   NOT RECOVERABLE
+    dailydialog            paper n=  4671  r=0.742   NOT RECOVERABLE
+    empathetic             paper n=   334  r=0.725   partial: arc!=short_text, n_sents>=4, lewi_drop!=0, arc & n>=4, arc & lewi!=0, n>=4 & lewi!=0
+    goemotions             paper n=    67  r=0.807   partial: arc!=short_text, n_sents>=4, lewi_drop!=0, arc & n>=4, arc & lewi!=0, n>=4 & lewi!=0
+    isear                  paper n=    28  r=0.638   RECOVERED by 'arc!=short_text'
+    meld                   paper n=   176  r=0.835   NOT RECOVERABLE
+    reddit_relationship    paper n=   163  r=0.779   partial: arc!=short_text, n_sents>=4, lewi_drop!=0, arc & n>=4, arc & lewi!=0, n>=4 & lewi!=0
+    semeval2017            paper n=   166  r=0.758   partial: arc!=short_text, n_sents>=4, arc & n>=4
+    tweeteval              paper n=   120  r=0.789   partial: arc!=short_text, n_sents>=4, arc & n>=4
+
+  Reconstructed GASE entropy+attachment term (exact, from result files):
+    ablation assumed this term = 0.2500 for every text
+    consensus              true mean=+0.4644  sd=0.0869  n=10,000
+    dailydialog            true mean=+0.4068  sd=0.1193  n=13,118
+    empathetic             true mean=+0.4524  sd=0.0974  n=30,000
+    goemotions             true mean=+0.4609  sd=0.0904  n=50,000
+    isear                  true mean=+0.4632  sd=0.0878  n=2,042
+    meld                   true mean=+0.4795  sd=0.0685  n=9,881
+    reddit_relationship    true mean=+0.4444  sd=0.1034  n=10,000
+    semeval2017            true mean=+0.4664  sd=0.0849  n=10,000
+    tweeteval              true mean=+0.4679  sd=0.0831  n=15,000
+
+F7  STRUCTURAL NULL -- NAVA x LEWI
+------------------------------------------------------------------------------
+  12 trials x 1,000 synthetic texts per model
+  noise model               trials    mean r       min       max
+------------------------------------------------------------------------------
+  iid_uniform                   12     0.686     0.654     0.711
+  iid_normal_matched            12     0.697     0.677     0.731
+  zero_inflated                 12     0.705     0.664     0.762
+  random_walk                   12     0.898     0.883     0.911
+
+  Manuscript reports observed r in [0.638, 0.85] as convergent validity.
+  Highest null mean r = 0.898.
+  VERDICT: observed range DOES NOT EXCEED the null.
+
+F8  MECHANICAL NULL -- PTI x PAI
+------------------------------------------------------------------------------
+  regime                    trials    mean r       min       max
+------------------------------------------------------------------------------
+  unrestricted                  12     0.146     0.135     0.163
+  I_ge_You                      12     0.554     0.549     0.563
+
+  Manuscript Table 7 reports PTI x PAI r from 0.101 to 0.869.
+  All nine corpora have positive mean PTI, i.e. they sit in the I >= You regime.
+
+F9  REPOSITORY HYGIENE
+------------------------------------------------------------------------------
+  distinct version identifiers: ['3.0', '4.0', '5.0', '6.0', '7.2.0', '7.3.0']  (conflict: True)
+  reviewer-facing artifacts found in repository:
+    plef_v7.py                   response_language_generator
+    plef_v7.py                   verbatim_framing_template
+    plef_v7.py                   standard_reply_script
+    plef_v7.py                   placeholder_statistic
+    plef_v7.py                   latex_paper_generator
+    plef_v7.py                   reviewer_summary_module
+    plef_v7_orig.py              response_language_generator
+    plef_v7_orig.py              verbatim_framing_template
+    plef_v7_orig.py              standard_reply_script
+    plef_v7_orig.py              placeholder_statistic
+    plef_v7_orig.py              latex_paper_generator
+    plef_v7_orig.py              reviewer_summary_module
+  backup (.bak) files shipped: 7
+
+DISCLOSURE CHECKLIST (for the response letter)
+------------------------------------------------------------------------------
+   1. Two dataset loaders produced single-class gold vectors (dailydialog, isear). All reported F1/AUC/d for these corpora are artifacts, and both are included in the abstract's headline means (macro-F1 0.415, macro-AUC 0.608) and in the 150,041 item total.
+   2. Section 5.7's 'most striking' McNemar result on DailyDialog reflects majority-class guessing on a single-class label vector, not superior handling of dialogue. Section 6.3's '>83% neutral' figure is also wrong.
+   3. Section 4.3 states VADER was run 'using the published rule-based algorithm'. The embedded lexicon holds 100 entries against roughly 7,500 in the published system, with no intensifier, punctuation or capitalisation handling. The same applies to the NRC and LIWC baselines. All of Table 3 must be recomputed against real implementations.
+   4. The Consensus silver standard is defined by agreement among these three simplified reimplementations, which share a tokenizer and overlapping vocabulary. It is not three independent systems, and VADER's 1.000 score on it is definitional.
+   5. Table 8 is not an ablation. Three of its four rows subtract weight x 0.5, a hardcoded constant; the component values were never read. The conclusions in Sections 3.4 and 5.6 that rest on it are withdrawn.
+   6. Tables 4 and 7 report the same PTI means but disagree on 7 of 9 corpora. Table 4 reproduces from the shipped result files; Table 7 does not. The manuscript combines two pipeline runs.
+   7. Table 5's valid-N population cannot be recovered from the shipped result files for 8 of 9 corpora under any tested filter. The Data Availability statement's claim that the pre-computed files allow independent verification of all reported statistics is therefore not correct as written.
+   8. The NAVA x LEWI correlation reported as the central finding (r = 0.638-0.85) does not exceed its structural null; unstructured sequences reach mean r = 0.898. The metrics are two pre-minus-post mean differences over the same signal. Sections 5.3 and 6.1, the abstract and the conclusion are rewritten accordingly.
+   9. PAI's I_dom term is built from the same pronoun counts as PTI. With random counts and no text, r reaches 0.554 in the regime all nine corpora occupy. H2 is reported as mechanically confounded, not as construct validation.
+  10. The abstract states PTI 'correlates significantly with PAI in six of nine datasets'. It is significant in all nine; six exceed an arbitrary r > 0.25 threshold. The wording is corrected.
+  11. The reported NAVA x LEWI range upper bound of 0.85 does not appear anywhere in Table 5, whose maximum is 0.835.
+  12. Sections 3 and Contribution 4 claim bootstrap confidence intervals over 500 resamples. No confidence interval appears in the manuscript. Intervals are added throughout.
+
+==============================================================================
+DONE
+==============================================================================
+  report   : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\FORENSIC_REPORT.md
+  evidence : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\defect_evidence.json
+  log      : D:\Research\PLEF\Version_2\PLEF_V2\results\forensics\console_log.txt
+  manifest : D:\Research\PLEF\Version_2\PLEF_V2\MANIFEST\input_manifest.sha256
+
+  NEXT: read FORENSIC_REPORT.md end to end, confirm every line is one you
+  are willing to put in the response letter, then send me the console output.
+  Script 02 (real baselines + corrected loaders) is written against these
+  findings, not against assumptions.

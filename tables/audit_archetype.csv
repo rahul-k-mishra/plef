@@ -1,0 +1,10 @@
+corpus,n,resolved,pct,top
+dailydialog,101026,6589,6.5,Rescuer–Victim=2821; Mirror Dynamic=1171; Push-Pull=993
+dev_relationship,200,177,88.5,Mirror Dynamic=52; Rescuer–Victim=29; Push-Pull=28
+empathetic,19157,2104,11.0,Tragic Hero=678; Rescuer–Victim=531; Slow Fade=307
+goemotions,54263,4454,8.2,Mirror Dynamic=1381; Rescuer–Victim=986; Tragic Hero=730
+isear,7666,981,12.8,Tragic Hero=323; Push-Pull=175; Rescuer–Victim=171
+meld,13708,541,3.9,Push-Pull=146; Rescuer–Victim=116; Tragic Hero=106
+relationship,1308,1153,88.1,Mirror Dynamic=361; Tragic Hero=202; Rescuer–Victim=170
+semeval2017,52806,4573,8.7,Push-Pull=1344; Mirror Dynamic=1123; Rescuer–Victim=775
+tweeteval,59899,5206,8.7,Push-Pull=1501; Mirror Dynamic=1215; Tragic Hero=887

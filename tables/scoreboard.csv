@@ -1,0 +1,9 @@
+hypothesis,verdict,detail
+H1  LEWI finds human turning points,PRELIMINARY NOT ABOVE CHANCE,"exact 0% vs chance 4%, n=19, SINGLE ANNOTATOR"
+H5  NAVA arc classification,PRELIMINARY NOT SUPPORTED,"agreement 37% vs baseline 43%, n=35"
+H2  PTI predicts power asymmetry,FAILED,"r=+0.090 [+0.045,+0.137]"
+H2ext PAI tracks VAD dominance,FAILED,"r=+0.021 [-0.025,+0.069]"
+H3  TEG tracks emotional volatility,FAILED,"r=-0.096 [-0.166,-0.030]"
+H4  GASE component validity,NEAR-CONSTANT,"A sd<0.05 on 7/8, G sd<0.05 on 8/8 -> 45% of the weight is a fixed offset"
+H6  Sentiment predicts distortion,FAILED,"r=+0.018 [-0.048,+0.077]"
+--  NAVA x LEWI as convergent validity,AT THE NOISE FLOOR,observed +0.598 vs null +0.609

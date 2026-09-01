@@ -1,0 +1,172 @@
+
+==================================================================================
+PLEF V2 -- SCRIPT 08 : AUDIT RECONCILIATION
+==================================================================================
+  script version : 08.3.1
+  started        : 2026-08-30T15:44:32
+
+A  ANNOTATION ACCOUNTING
+----------------------------------------------------------------------------------
+  The manuscript states three counts. This rebuilds the chain that
+  connects them, from the annotation files themselves.
+
+  rater 1
+    slots served              : 40
+    unique posts              : 36
+    repeat showings           : 4
+    unique posts answered     : 36
+
+  gold file                   : 36 items
+  matched to a scored post    : 36
+  of those, LEWI is defined   : 35
+    human marked NO turn      : 16
+    human marked a turn       : 19
+
+  CHAIN CLOSES: 16 + 19 = 35   YES
+
+  The manuscript must state this chain explicitly. Reporting the
+  first and last numbers without the intermediate steps is what
+  makes them read as contradictory.
+
+B  DATASET RECONCILIATION
+----------------------------------------------------------------------------------
+  Per-corpus ledger: raw units read, discarded with reason, retained.
+
+  corpus                raw  retained  discarded   reasons
+----------------------------------------------------------------------------------
+  dailydialog       101,026   101,026          0   -
+  empathetic         19,167    19,157         10   dropped_unparseable=10
+  goemotions         54,263    54,263          0   -
+  isear               7,666     7,666          0   text_edits=5337
+  meld               13,708    13,708          0   -
+  relationship        1,308     1,308          0   v1_silver_available=1316
+  semeval2017        53,608    52,806        802   duplicate_tweet_id=764; fewer_than_3_columns=38
+  tweeteval          59,899    59,899          0   -
+
+  Cross-corpus duplicate accounting, by normalised text hash.
+
+                  dailydial empatheti goemotion     isear      meld relations semeval20 tweeteval
+----------------------------------------------------------------------------------
+  dailydialog             -         0         2         0         0         0         0         0
+  empathetic              0         -         2         1         0         0         0         0
+  goemotions              2         2         -         0        45         0         3         1
+  isear                   0         1         0         -         1         0         0         0
+  meld                    0         0        45         1         -         0         1         0
+  relationship            0         0         0         0         0         -         0         0
+  semeval2017             0         0         3         0         1         0         -    22,603
+  tweeteval               0         0         1         0         0         0    22,603         -
+
+  scored documents            : 309,833
+  after within-corpus dedup   : 288,110   (-21,723)
+  after cross-corpus dedup    : 265,452   (-22,658)
+
+  The first step removes text repeated inside a single corpus; the
+  second removes text shared between corpora. Reporting one figure
+  for both makes neither reconstructible.
+
+  pairwise overlap total : 22,659
+  documents removed      : 22,658
+  excess                 : 1  -> 1 document(s) present in
+                            three corpora; each appears in three
+                            pairs but is removed twice.
+
+  largest overlaps:
+    semeval2017    & tweeteval        22,603
+    goemotions     & meld                 45
+    goemotions     & semeval2017           3
+    dailydialog    & goemotions            2
+    empathetic     & goemotions            2
+    empathetic     & isear                 1
+
+  The manuscript must report this matrix, not a single overlap, or the
+  difference between the summed and unique totals cannot be rebuilt.
+
+C  THROUGHPUT
+----------------------------------------------------------------------------------
+  shard                    words   seconds    words/s
+----------------------------------------------------------------------------------
+  dailydialog          1,397,722    1148.2      1,217
+  dev_relationship       102,188     115.2        887
+  empathetic             343,838     217.2      1,583
+  goemotions             696,105     558.6      1,246
+  isear                  165,608     103.1      1,606
+  meld                   109,609     143.3        765
+  relationship           674,440     347.8      1,939
+  semeval2017          1,015,652     564.7      1,799
+  tweeteval            1,098,918     595.9      1,844
+  note: manifest elapsed_seconds = 115.5s records only the
+        most recent invocation; per-shard times sum to 3794.0s
+  --------------------------------------------------------------------------------
+  TOTAL (all shards)   5,604,080    3794.0      1,477
+  TOTAL (evaluation)   5,501,892    3678.8      1,496
+
+  QUOTE THIS: 5,501,892 words in 61.3 minutes = 1,496 words/s
+
+  The manuscript must quote ONE of these consistently. Pairing a
+  single shard's rate with the whole run's elapsed time is what
+  produced the arithmetic error.
+
+D  COVERAGE BANDS, AS THE ABSTRACT MUST QUOTE THEM
+----------------------------------------------------------------------------------
+  band (words)      corpora      min      max   range as quoted
+----------------------------------------------------------------------------------
+  1-9                     7     7.2%    23.8%   7.2--23.8\%
+  10-19                   7    18.1%    36.2%   18.1--36.2\%
+  20-39                   7    25.8%    50.5%   25.8--50.5\%
+  40-79                   5    40.0%    81.8%   40.0--81.8\%
+  80-159                  3    62.5%    86.3%   62.5--86.3\%
+  160-319                 1    97.6%    97.6%   97.6--97.6\%
+  320+                    1    99.6%    99.6%   99.6--99.6\%
+
+  The abstract must use a band that appears in this table verbatim,
+  and must name the band. 'under ten words' and 'over forty words'
+  are not bands computed anywhere.
+
+E  ARCHETYPE RESOLUTION -- can the 88% figure be reproduced?
+----------------------------------------------------------------------------------
+  corpus                    n  resolved       %   top archetypes
+----------------------------------------------------------------------------------
+  dailydialog         101,026     6,589    6.5%   Rescuer–Victim 2.8%, Mirror Dynamic 1.2%, Push-Pull 1.0%
+  dev_relationship        200       177   88.5%   Mirror Dynamic 26.0%, Rescuer–Victim 14.5%, Push-Pull 14.0%
+  empathetic           19,157     2,104   11.0%   Tragic Hero 3.5%, Rescuer–Victim 2.8%, Slow Fade 1.6%
+  goemotions           54,263     4,454    8.2%   Mirror Dynamic 2.5%, Rescuer–Victim 1.8%, Tragic Hero 1.3%
+  isear                 7,666       981   12.8%   Tragic Hero 4.2%, Push-Pull 2.3%, Rescuer–Victim 2.2%
+  meld                 13,708       541    3.9%   Push-Pull 1.1%, Rescuer–Victim 0.8%, Tragic Hero 0.8%
+  relationship          1,308     1,153   88.1%   Mirror Dynamic 27.6%, Tragic Hero 15.4%, Rescuer–Victim 13.0%
+  semeval2017          52,806     4,573    8.7%   Push-Pull 2.5%, Mirror Dynamic 2.1%, Rescuer–Victim 1.5%
+  tweeteval            59,899     5,206    8.7%   Push-Pull 2.5%, Mirror Dynamic 2.0%, Tragic Hero 1.5%
+
+  If the manuscript quotes a figure from this table it must also
+  give the denominator, the archetype list and the method. If it
+  does not, delete the figure: an isolated positive number with no
+  result trail reads as residue from an earlier analysis.
+
+F  CHANCE BENCHMARKS -- exact derivations
+----------------------------------------------------------------------------------
+  Random three-class macro-F1: mean over 1,000 independent assignments
+  in which each item receives one of three labels with equal probability,
+  independently of its gold label. Interval = 2.5th/97.5th percentiles.
+
+  corpus                n     mean      sd     2.5%    97.5%
+----------------------------------------------------------------------------------
+  dailydialog     101,026   0.2364  0.0011   0.2341   0.2387
+  goemotions       54,263   0.3268  0.0020   0.3229   0.3306
+  meld             13,708   0.3260  0.0039   0.3182   0.3331
+  semeval2017      52,806   0.3194  0.0020   0.3154   0.3234
+  tweeteval        59,899   0.3234  0.0019   0.3197   0.3271
+
+  Human turning-point chance rate: mean over the comparison posts of
+  1/N_i (exact match) and min(1, 3/N_i) (within one sentence), where
+  N_i is the sentence count of post i.
+
+    comparison posts n = 19   sentence counts 7--114, median 30
+    exact-match chance      : 4.3%
+    within-one-sentence     : 12.9%
+
+==================================================================================
+DONE
+==================================================================================
+  report : D:\Research\PLEF\Version_2\PLEF_V2\results\AUDIT_RECONCILIATION.md
+  tables : D:\Research\PLEF\Version_2\PLEF_V2\results\tables
+
+  all quantities reconciled : True

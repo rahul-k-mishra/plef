@@ -1,0 +1,245 @@
+{
+  "generated": "2026-08-30T12:55:41",
+  "script_version": "05.4.0",
+  "workers": 7,
+  "shards": {
+    "dev_relationship": {
+      "rows": 200,
+      "seconds": 115.21992611885071,
+      "words": 102188,
+      "sha256": "d4f2437473cd1e3596697dbe307c072801310b1aafaec0450ce92bb950e43061",
+      "path": "D:\\Research\\PLEF\\Version_2\\PLEF_V2\\results\\canonical\\scored_dev_relationship.csv"
+    },
+    "dailydialog": {
+      "corpus": "dailydialog",
+      "rows": 101026,
+      "sha256": "bd7a7380eb4e4b10206bdebf1e697f3372ecdbf602360a525c4ee67a92d39a79",
+      "seconds": 1148.2,
+      "words": 1397722,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T01:46:58"
+    },
+    "empathetic": {
+      "corpus": "empathetic",
+      "rows": 19157,
+      "sha256": "0619f950130fc0771b5a8bb1597d0e505df94abb08c4b402344e9fdaadbc6002",
+      "seconds": 217.2,
+      "words": 343838,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T01:50:37"
+    },
+    "goemotions": {
+      "corpus": "goemotions",
+      "rows": 54263,
+      "sha256": "281ccf93a274a6809358bedd6c7fac50ed33a4bb2ad176f890fbe41ca0f6e978",
+      "seconds": 558.6,
+      "words": 696105,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T02:00:00"
+    },
+    "isear": {
+      "corpus": "isear",
+      "rows": 7666,
+      "sha256": "cc8e57d1b23b4574cd1a3353b5fb3cc69f92aec79816268067852bd549632266",
+      "seconds": 103.1,
+      "words": 165608,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T02:01:44"
+    },
+    "meld": {
+      "corpus": "meld",
+      "rows": 13708,
+      "sha256": "b236dc946318efc8ebb5dacf5137747d5d8e20d98b34d1c52968b37d23b6d052",
+      "seconds": 143.3,
+      "words": 109609,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T02:04:09"
+    },
+    "relationship": {
+      "corpus": "relationship",
+      "rows": 1308,
+      "sha256": "bd9b14f261d093a4184d31456cc3695c0b1c2e8dd96bdfbe9901a8860d3b55ef",
+      "seconds": 347.8,
+      "words": 674440,
+      "trajectory_in_scope": true,
+      "at": "2026-08-29T13:06:54"
+    },
+    "semeval2017": {
+      "corpus": "semeval2017",
+      "rows": 52806,
+      "sha256": "3531472b59152f758081a012e7d954d1d91103fd8218d5c4c3ae24c8bb8c2f44",
+      "seconds": 564.7,
+      "words": 1015652,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T02:27:56"
+    },
+    "tweeteval": {
+      "corpus": "tweeteval",
+      "rows": 59899,
+      "sha256": "f3b096f415bfb7ae9da3ba3cd300282e9716a9d4e773741fbc80d698dde5ada4",
+      "seconds": 595.9,
+      "words": 1098918,
+      "trajectory_in_scope": false,
+      "at": "2026-08-29T02:37:57"
+    }
+  },
+  "failed": [],
+  "skipped": [],
+  "total_rows": 310033,
+  "total_words": 5604080,
+  "elapsed_seconds": 115.5,
+  "completeness": {
+    "dailydialog": {
+      "lewi_drop": 3.8524736206521095,
+      "nava": 3.8524736206521095,
+      "teg": 44.40045136895453,
+      "rci": 29.364717993387842,
+      "ties": 44.40045136895453,
+      "sem_coherence": 39.865975095519964,
+      "nspl": 39.865975095519964,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "dev_relationship": {
+      "lewi_drop": 99.0,
+      "nava": 99.0,
+      "teg": 100.0,
+      "rci": 100.0,
+      "ties": 100.0,
+      "sem_coherence": 100.0,
+      "nspl": 100.0,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "empathetic": {
+      "lewi_drop": 1.5138069635120321,
+      "nava": 1.5138069635120321,
+      "teg": 53.886307877016236,
+      "rci": 50.63945294148353,
+      "ties": 53.886307877016236,
+      "sem_coherence": 53.59920655635016,
+      "nspl": 53.59920655635016,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "goemotions": {
+      "lewi_drop": 1.6843889943423695,
+      "nava": 1.6843889943423695,
+      "teg": 42.53542929804839,
+      "rci": 30.547518566979342,
+      "ties": 42.53542929804839,
+      "sem_coherence": 39.981202661113464,
+      "nspl": 39.981202661113464,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "isear": {
+      "lewi_drop": 3.8612053222019305,
+      "nava": 3.8612053222019305,
+      "teg": 33.48552048004174,
+      "rci": 33.10722671536655,
+      "ties": 33.48552048004174,
+      "sem_coherence": 33.36811896686668,
+      "nspl": 33.36811896686668,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "meld": {
+      "lewi_drop": 2.5824336154070617,
+      "nava": 2.5824336154070617,
+      "teg": 27.516778523489933,
+      "rci": 11.774146483805078,
+      "ties": 27.516778523489933,
+      "sem_coherence": 22.46863145608404,
+      "nspl": 22.46863145608404,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "relationship": {
+      "lewi_drop": 98.47094801223241,
+      "nava": 98.47094801223241,
+      "teg": 100.0,
+      "rci": 100.0,
+      "ties": 100.0,
+      "sem_coherence": 100.0,
+      "nspl": 100.0,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "semeval2017": {
+      "lewi_drop": 6.4481308942165665,
+      "nava": 6.4481308942165665,
+      "teg": 59.80381017308639,
+      "rci": 53.64541908116502,
+      "ties": 59.80381017308639,
+      "sem_coherence": 58.7868802787562,
+      "nspl": 58.7868802787562,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    },
+    "tweeteval": {
+      "lewi_drop": 4.3139284462178,
+      "nava": 4.3139284462178,
+      "teg": 50.09098649393145,
+      "rci": 40.97063390039901,
+      "ties": 50.09098649393145,
+      "sem_coherence": 48.69530376133157,
+      "nspl": 48.69530376133157,
+      "pti": 100.0,
+      "pai": 100.0,
+      "gase": 100.0,
+      "cd_index": 100.0,
+      "vads": 100.0
+    }
+  },
+  "sanity_ok": true,
+  "trajectory_scope": [
+    "dev_relationship",
+    "relationship"
+  ],
+  "no_label_corpora": [
+    "dev_relationship",
+    "relationship"
+  ],
+  "binary_corpora": [
+    "empathetic",
+    "isear"
+  ],
+  "baselines": [
+    "vader",
+    "nrc",
+    "empath",
+    "afinn",
+    "huliu",
+    "labmt"
+  ],
+  "legacy": [
+    "V1_vader_toy",
+    "V1_nrc_toy",
+    "V1_liwc_toy"
+  ]
+}
