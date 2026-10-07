@@ -1,6 +1,6 @@
 # PLEF V2 release manifest
 # generated 2026-09-01T13:38:40
-# 103 files, 106,288,450 bytes
+# 108 files, 106,385,229 bytes  (103 files, 106,288,450 bytes at generation; 5 entries appended 2026-10-07, see end of file)
 # sha256  bytes  path
 73200029940ff621852bb68d480b25d454681c4fdeb657339926bf2e4e755336  2969  annotation/ANNOTATION_GUIDE.md
 d740f61270ee34952c2172561c9f72ca9ac58e54cc657be17a6051d646bd1c4d  3313  annotation/annotations_rater1.csv
@@ -105,3 +105,13 @@ d1c45b2b4f41e646a0277006f00fbe2595ae629a3f8544db69998c03de9b358a  447  tables/mo
 91746270503dc0d5f3667c22f41329964e4556652dd100f008bb0fea188fc1ba  717  tables/scoreboard.csv
 f139f6906ed89c2ba28e4857aecf0210bb1302e7c22f2eab58e1e384fd4fea35  2325  tables/threshold_sweep.csv
 e68edcda30f929f8576280ff3697af3cdba395b78242777b1b887b911f12715a  379  tables/trivial_baselines.csv
+# ---- amendment 2026-10-07 ----
+# The five scripts below were released on 2026-09-01 (commit a956c9c) but
+# were omitted from this manifest, which had been generated minutes earlier.
+# Hashes are of the files as stored in the repository (LF line endings, the
+# same form as scripts 01-09 above). The original entries are unchanged.
+e39da35d6b06d64fef6a6c81639029dfdd03793557f8745c40606be80ff4d93f  33180  scripts/10_null_analysis.py
+4dbc419d12be89feefc40d929b0ce51b6a22ec0498312f966103466308f6bce4  15391  scripts/11_response_space.py
+a18b24bc046e9da9e9ea9d4ed1c90657b9d2c5e88648646bff76d62de98b381e  9417  scripts/12_equation_audit.py
+0ab861c29dbd86ff9b7dbc3c479e1962925349516e19ed8f01d33a8fb142381b  10280  scripts/13_arc_window_sensitivity.py
+aafb42545473c43f984606ec166ba4d9c7346efc93f2d2f68863f88551ab47fc  28511  scripts/14_parallel_null.py
