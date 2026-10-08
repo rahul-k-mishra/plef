@@ -115,3 +115,14 @@ e39da35d6b06d64fef6a6c81639029dfdd03793557f8745c40606be80ff4d93f  33180  scripts
 a18b24bc046e9da9e9ea9d4ed1c90657b9d2c5e88648646bff76d62de98b381e  9417  scripts/12_equation_audit.py
 0ab861c29dbd86ff9b7dbc3c479e1962925349516e19ed8f01d33a8fb142381b  10280  scripts/13_arc_window_sensitivity.py
 aafb42545473c43f984606ec166ba4d9c7346efc93f2d2f68863f88551ab47fc  28511  scripts/14_parallel_null.py
+# ---------------------------------------------------------------------------
+# AMENDMENT 2026-10-08 (commit A, tag r1-as-reviewed; script 21 v1.1.1)
+# Added folder first_revision/: the manuscript source, the PDF exactly as uploaded
+#   to the journal, and the supplementary (SUPPLEMENTARY.md) of the first revision,
+#   so that tag r1-as-reviewed preserves the paper the reviewers read together with the
+#   repository they examined. Nothing else in the repository changes in this commit.
+# Added entries:
+93100088ac750508b3f5f85a6ec9c4ad2fadfb0e90c45ddfd554a8ddd2761ddf  758323  first_revision/PLEF_revision_as_submitted.pdf
+e57eb3280ad4f4a42d33263bdfc59c71eca5f46ce41c2c2be307a564d4488683  33085  first_revision/SUPPLEMENTARY.md
+cfcbd815c2dfd656990254361f9343cd89dbb877d37245f9aeee4fd2ff0b0f2b  107517  first_revision/manuscript_revised.tex
+# AMENDMENT 2026-10-08 (commit A) ends; 3 entries added.
