@@ -126,3 +126,82 @@ aafb42545473c43f984606ec166ba4d9c7346efc93f2d2f68863f88551ab47fc  28511  scripts
 e57eb3280ad4f4a42d33263bdfc59c71eca5f46ce41c2c2be307a564d4488683  33085  first_revision/SUPPLEMENTARY.md
 cfcbd815c2dfd656990254361f9343cd89dbb877d37245f9aeee4fd2ff0b0f2b  107517  first_revision/manuscript_revised.tex
 # AMENDMENT 2026-10-08 (commit A) ends; 3 entries added.
+# ---------------------------------------------------------------------------
+# AMENDMENT 2026-10-08 (second revision, reviewer 3 point 5; script 21 v1.1.1)
+# Removed column numbered_text from the three round-1 annotation sheets (post
+#   text; public from 2026-09-01 13:47:41 IST until 2026-10-08; commits 9cd1c08,
+#   a956c9c, 04bdc4f, a6c5fc7; history not rewritten).
+# first_revision/ was added in commit A (tag r1-as-reviewed) and is listed in that
+#   commit's amendment block above; it is not repeated here.
+# Two gold files of unrecorded round moved to annotation/derived/.
+# README.md, LICENSE.txt and MANIFEST-RELEASE.txt are not manifest entries.
+# Superseded entries (paths moved or changed; the lines above are kept as the
+# record of the reviewed state):
+#   annotation/rejected/rater1_OFFLINE.csv  ->  annotation/round1_rejected/rater1_OFFLINE.csv
+#   annotation/rejected/rater2_OFFLINE.csv  ->  annotation/round1_rejected/rater2_OFFLINE.csv
+#   annotation/rejected/rater3_OFFLINE.csv  ->  annotation/round1_rejected/rater3_OFFLINE.csv
+#   annotation/rejected/annotations_rater1.csv  ->  annotation/round3/annotations_rater1.csv
+#   annotation/rejected/annotations_rater2.csv  ->  annotation/round3/annotations_rater2.csv
+#   annotation/rejected/annotations_rater3.csv  ->  annotation/round3/annotations_rater3.csv
+#   annotation/annotations_rater1.csv  ->  annotation/round4/annotations_rater1.csv
+#   annotation/gold_dev200.csv  ->  annotation/round4/gold_dev200.csv
+#   annotation/rejected/gold_dev200.csv  ->  annotation/derived/gold_dev200_rejected_folder.csv
+#   annotation/gold_dev200_UNUSABLE_alpha0.177.csv  ->  annotation/derived/gold_dev200_UNUSABLE_alpha0.177.csv
+# Added entries:
+b828b254c04aee8983717c5666d62606d80ffd22da655bc4329754afe4d8cf7e  1283  annotation/README.md
+827cd2fa685076c84eaf70c85c728990fa203a2ec93084648b7704e262d93232  960  annotation/derived/README.md
+f4726f55b32d0244d700b010fd24b7eaea4fac688bf5b8f23b052567e430daed  980  annotation/derived/gold_dev200_UNUSABLE_alpha0.177.csv
+5ff865626164ed340378235bd5626480935266fbcb116ae7d703edcd1ce3c258  8056  annotation/derived/gold_dev200_rejected_folder.csv
+58f4d5ec09ab5cbf533b48c4195599972a057f872f2a16bf94a492bf2974807e  4857  annotation/round1_rejected/rater1_OFFLINE.csv
+3ead178983af263a3e681adb0c1c17577d9952a08c8905e6a5f3db0ef9397e90  8709  annotation/round1_rejected/rater2_OFFLINE.csv
+182cdb72e47d771c00774af8d38850d62e8b448fc106fee035fc650a7111bf2a  8914  annotation/round1_rejected/rater3_OFFLINE.csv
+abdc83a27f361e48d174b59c9bca5d26f84cea6267d978c29257241b12172e67  17849  annotation/round2_rejected/annotations_rater1.csv
+ede2fb2c200be8bd37ff36f089785221c9c4d6c0cd4ede0c91a7637bc80ee6a2  17729  annotation/round2_rejected/annotations_rater2.csv
+d23947f50828c23d2321a43588554cc806e4c41ed004ec60186a02fe39fa21e2  17961  annotation/round2_rejected/annotations_rater3.csv
+24167e8f0efe0931da9e477c88fe76c1d2d9f5c833930a96113e1bcbecbe4be3  8632  annotation/round3/annotations_rater1.csv
+e772355912d84019ba87e64a6cb8214cac6b97743f2614912ee278a4958c5067  8546  annotation/round3/annotations_rater2.csv
+e061742beaf0d429bff0fe15c389659230a639d24e94df6a804112a8be925ee7  8945  annotation/round3/annotations_rater3.csv
+d740f61270ee34952c2172561c9f72ca9ac58e54cc657be17a6051d646bd1c4d  3313  annotation/round4/annotations_rater1.csv
+b695ede6b93c33a506f769aa77d3d9c70b2616ed3c22f2235ffe53537bc16d92  1607  annotation/round4/gold_dev200.csv
+3561eb5938459ed669e355f76f1bd227e30c86c6e3be76b4464a0cd9e3f3e8d3  665  collection/README.md
+d24e01e085a0a2ac867a8043c6f63c382f7e19d9000a1a76acc5835fd36ba0f7  17261  collection/extended_reddit_download.py
+f26e21d96e84a8786c868e48face13cd314133b59f70d94915e6aa70b8c3762f  17657  collection/reddit_download.py
+b95fbef141ffb964f82b79f59465dc4ba4826cacba4d6c10be43e424fee70e6f  762  corpus/README.md
+ba092164443e9a65f4b753e61590408bd2b74054b602adf1da70c5502621be19  81612  corpus/relationship_post_ids.csv
+bdfe5783301621bab1436daeccaa8560750028f157120a85969a549326c8afcf  228143  figures/fig1_coverage_scope_v2.png
+49a8dd8840d1b4e58f25cb53197b252f6356e53dbaf473c5b33a476595c931c7  171414  figures/fig4_gase_abstention_v2.png
+8b3091947bf1ae49500101dcf054a507420226a3016c24704f28d464b4cb54b6  10525  logs/console_log_15.txt
+f2c2ceada4c67d3e96d33d97a87d4f0b267a6a34df9f900d796990d0b83527f9  10699  logs/console_log_15_after_fix.txt
+31dfcb5de0d031839cfd5bb68b2e4ede2af8880edeb4a160acc93e8257b43b1e  10307  logs/console_log_15_before_r2.txt
+3c3de53daddff70fee440f170c315bf15133276eef8493c35efe472aa2045e26  10276  logs/console_log_15_fresh_clone.txt
+349faf6b49788a7448f9606b811b82f1e3e5c8dee4a3e61a86b0e60bc4726c6e  4047  logs/console_log_16.txt
+0cdc5b2417db5065536fd90c4fab679a9f76507b8c90892026b09e46a1c5915c  2565  logs/console_log_17.txt
+6c5309a2e4104af5ca854db2ee29e86e23cfd6462100ed82f77479f41c34cf97  14210  logs/console_log_18.txt
+103aa85c36d8d3ec38857a4c2c471151e0506a4e81a73410282f95884ad630bb  14418  logs/console_log_19.txt
+68fb416fb7aa0eb115187305223fea2cb2473c0ef5f237be23ba7c6aaaddde2d  33433  logs/console_log_20.txt
+167ddae36513c896912427117a63e9539c5acbe91a6c1875ea99703bccb70da6  8292  scripts/15_release_byte_audit.py
+3efee39f91af5082ec647f7c4838073ff0a66d1b68314b14472791f849732d4e  8307  scripts/16_offline_csv_probe.py
+ddb3e57624c58cda99edbfa9177e5578536c499ea26ca54b2e52eb99ff92ba77  9155  scripts/17_release_byte_fix.py
+8c0b001a2f8746097f6fc4ebf9a393a4b15b10429a6cd70d6e10a32bb5ce1e97  27061  scripts/18_match_counts.py
+189a86ccb16863b95a22a663d1b2e89a4bb523659e74b8cfd9b1b4b5e7acec03  38916  scripts/19_human_criterion_v2.py
+8e36525cbaeed6993666fcc2852759632d0c270cb6841a091cf3d8be7b0843b3  57237  scripts/20_round2_assets.py
+43ca0c66a98782d1a512f60f75f246b4b70f2a5b3489127ce02361d6e3ff1a2c  57868  scripts/21_release_correction_r2.py
+84e9b580a9e2f6a22c0af5744f931bd1441f00efbb732d9e1cdb43fa2aec84dd  6016  tables/abstention_v2.csv
+06a6eb5d94cab4dd2c1e09df0e39909f2a8f55ad98c3f9e3572e568b16b2442f  1983  tables/annotation_audit_v2.csv
+1b6210da7583581e6da9270d7e6f3c320a9b869deefcdbde00a1814dc18c1ad8  14199  tables/human_criterion_v2.csv
+9e418ee45c7199daaca6f2b81cf1d4548a46a0ca8398405ccded65a6bd56ee2b  4444338  tables/match_counts_dailydialog.csv
+1d2f09b04f90f5e117861afb37a141ab45e3f10f4302399728f6879df4140825  11083  tables/match_counts_dev_relationship.csv
+03303cf9a45bb50a643d720a04659266528b682513ed43b145d5ff019221cbd3  763565  tables/match_counts_empathetic.csv
+d7b394efc59f3884a096b0ff80f25cd8f914f9bf593aa03a61db72b9f140f307  2028461  tables/match_counts_goemotions.csv
+f1e7fe727b9a864f93b290d2c06f8ff7c1e9e013aa073b655c6f924c61e08ad2  321454  tables/match_counts_isear.csv
+ff138843d28a56252d34fc799491b9df44204b1d9a054f02df0482c4290cdffb  600047  tables/match_counts_meld.csv
+6bbae2c7e19ea5c5c62a112abfe9a2f100a9366c2bd136c6f134d76d1e05e34c  71520  tables/match_counts_relationship.csv
+4b150ea884bbee3256457139cd9ef218074b78690d809a09f1fc0c9a4e6ec9a2  2728425  tables/match_counts_semeval2017.csv
+9a51ce6fded55500afa98f784ea2e665b5830617003cb358653d3da862c2369c  2675821  tables/match_counts_tweeteval.csv
+7b8fe147704672bde9b53ecc25238d20d137cf5973202b4fd3b299c17f0d0fb9  26203  tables/release_byte_audit.csv
+73690943ac85c787aefbe875bb362859279a2d49fde4769e32f3fcb1a9aeab7d  27495  tables/release_byte_audit_after_fix.csv
+ce0643633d96fa83ff52db6e987b2d86d853b925a7af3cb6cbb9f95006703815  4180  tables/supp_alignment_comparison.csv
+4733b91aa5f19a59e5ab212ef123210257b05717d5606a48ef9b57676337a087  7885  tables/supp_annotation_intervals.csv
+1d9a13a1a8657f8e1417524a883930c62d3216b750f2549c659655c6620d80d4  44500  tables/supp_corpus_sources.csv
+a6b5faac0dd74df3248afcd73f1aece7f35992f16969615225713df33d994089  31197  tables/supp_released_text_overlap.csv
+# AMENDMENT 2026-10-08 ends; 56 entries added, 10 superseded.

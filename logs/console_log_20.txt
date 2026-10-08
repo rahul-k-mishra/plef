@@ -1,0 +1,442 @@
+
+==============================================================================================
+PLEF V2 -- SCRIPT 20 : ROUND-2 ASSETS   v1.2.0
+==============================================================================================
+  root      : /home/rahul/Research/PLEF/Version_2/PLEF_V2
+  started   : 2026-10-08T07:11:06
+  python    : 3.12.3   workers 2
+
+0  INPUT VALIDATION: FILES, COLUMNS, KEYS
+----------------------------------------------------------------------------------------------
+  OK  Version_2/PLEF_V2/results/tables/abstention_v2.csv  (22 columns used)
+  OK  Version_2/PLEF_V2/results/tables/abstention.csv  (7 columns used)
+  OK  Version_2/PLEF_V2/results/tables/abstention_binary.csv  (7 columns used)
+  OK  Version_2/PLEF_V2/results/tables/length_threshold.csv  (6 columns used)
+  OK  Version_2/PLEF_V2/results/tables/coverage.csv  (3 columns used)
+  OK  Version_2/PLEF_V2/results/tables/gase_ablation.csv  (5 columns used)
+  OK  Version_2/PLEF_V2/results/tables/human_criterion_v2.csv  (6 columns used)
+  OK  Version_2/PLEF_V2/results/tables/annotation_audit_v2.csv  (11 columns used)
+  OK  Version_2/PLEF_V2/data/interim/corpus_relationship.csv  (2 columns used)
+  OK  Version_2/PLEF_V2/data/interim/dev_split_relationship.csv  (2 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_dailydialog.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_empathetic.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_goemotions.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_isear.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_meld.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_relationship.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_semeval2017.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_tweeteval.csv  (1 columns used)
+  OK  Version_2/PLEF_V2/results/tables/match_counts_dev_relationship.csv  (1 columns used)
+  OK  Old/PLEF/corpus_BreakUps.csv  (2 columns used)
+  OK  Old/PLEF/corpus_confession.csv  (2 columns used)
+  OK  Old/PLEF/corpus_emotionalsupport.csv  (2 columns used)
+  OK  Old/PLEF/corpus_heartbreak.csv  (2 columns used)
+  OK  Old/PLEF/corpus_relationship_advice.csv  (2 columns used)
+  OK  Old/PLEF/corpus_relationships.csv  (2 columns used)
+  OK  Old/PLEF/corpus_survivinginfidelity.csv  (2 columns used)
+  OK  Old/PLEF/reddit_posts_corpus.csv  (2 columns used)
+  OK  Old/PLEF/relationship_corpus_FULL.csv  (2 columns used)
+  human_criterion_v2.csv: 103 keys required
+  every input file, column and key present
+  input     : tables/abstention_v2.csv  sha256 84e9b580a9e2f6a2...
+  input     : tables/human_criterion_v2.csv  sha256 1b6210da7583581e...
+  input     : tables/annotation_audit_v2.csv  sha256 06a6eb5d94cab4dd...
+  input     : tables/abstention.csv  sha256 a761ab15ecfd05b2...
+  input     : tables/abstention_binary.csv  sha256 64cfbcc0fcb82e1f...
+  input     : tables/length_threshold.csv  sha256 a9db6850e3d341f3...
+  input     : tables/coverage.csv  sha256 f07f186e7fb801a7...
+  input     : tables/gase_ablation.csv  sha256 06ff0e7b847834d6...
+
+1a  CHECK: abstention_v2.csv REPRODUCES THE PUBLISHED TABLE 6 AND FIG. 1b
+----------------------------------------------------------------------------------------------
+  Table 6: 42 of 42 values reproduced
+  Fig. 1b: 29 band values compared
+
+1b  CHECK: CLASS COUNTS IN abstention_v2.csv AGAINST match_counts_*.csv
+----------------------------------------------------------------------------------------------
+  dailydialog       nomatch  85,513  cancel   139  nonzero  15,374
+  empathetic        nomatch  12,061  cancel    57  nonzero   7,039
+  goemotions        nomatch  39,037  cancel   117  nonzero  15,109
+  isear             nomatch   4,639  cancel    21  nonzero   3,006
+  meld              nomatch  12,032  cancel    16  nonzero   1,660
+  relationship      nomatch      37  cancel     4  nonzero   1,267
+  semeval2017       nomatch  40,479  cancel    99  nonzero  12,228
+  tweeteval         nomatch  46,011  cancel   108  nonzero  13,780
+  dev_relationship  nomatch       6  cancel     1  nonzero     193
+  all checks passed; drawing
+
+1c  FIGURES
+----------------------------------------------------------------------------------------------
+  matplotlib 3.11.2
+  wrote /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/figures/fig1_coverage_scope_v2.png
+  CAPTION (b): Percentage of documents in each word-count band for which the
+    framework returned a non-zero score (dashed; solid for the relationship
+    corpus) and for which its lexicon matched at least one term (dotted, open
+    markers). Matched terms can cancel, so the second is never below the first.
+    Bands containing fewer than 20 documents are omitted.
+  wrote /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/figures/fig4_gase_abstention_v2.png
+  CAPTION (b): Difference in macro-F1 between the framework and VADER on the
+    fired documents, against the percentage fired; filled circles count a
+    document as fired when its score is non-zero, open squares when its lexicon
+    matched at least one term. Positive differences in green.
+    goemotions   score: fired  27.844%  delta -0.074755   match: fired   28.06%  delta -0.071214
+    semeval2017  score: fired  23.156%  delta -0.069590   match: fired  23.344%  delta -0.063579
+    meld         score: fired   12.11%  delta -0.075963   match: fired  12.226%  delta -0.067204
+    tweeteval    score: fired  23.005%  delta -0.079664   match: fired  23.186%  delta -0.072712
+    dailydialog  score: fired  15.218%  delta -0.064426   match: fired  15.355%  delta -0.059259
+    isear        score: fired  39.212%  delta 0.039356   match: fired  39.486%  delta 0.042285
+    empathetic   score: fired  36.744%  delta 0.016471   match: fired  37.041%  delta 0.014574
+
+2/3  CHECK: human_criterion_v2.csv k/n AND WILSON INTERVALS
+----------------------------------------------------------------------------------------------
+  332 keys; 0 with value or interval inconsistent with k/n
+
+2  SUPPLEMENTARY TABLE: ANNOTATION PROPORTIONS WITH INTERVALS
+----------------------------------------------------------------------------------------------
+  block            quantity                                                     k/n    prop  95% CI          chance  ratio
+----------------------------------------------------------------------------------------------
+  table9           watershed exact sentence, as implemented (stored line v     0/19    0.0%  [ 0.0, 16.8]    4.67%   0.00
+  table9           watershed within one sentence, as implemented (stored l     2/19   10.5%  [ 2.9, 31.4]   14.21%   0.74
+  table9           watershed within two sentences, as implemented (stored      4/19   21.1%  [ 8.5, 43.3]   21.44%   0.98
+  table9           watershed exact sentence, +1 only (stored line vs one-b     2/19   10.5%  [ 2.9, 31.4]    4.67%   2.25
+  table9           watershed within one sentence, +1 only (stored line vs      3/19   15.8%  [ 5.5, 37.6]   14.21%   1.11
+  table9           watershed within two sentences, +1 only (stored line vs     3/19   15.8%  [ 5.5, 37.6]   21.44%   0.74
+  table9           watershed exact sentence, +1 and displayed line mapped      1/19    5.3%  [ 0.9, 24.6]    4.67%   1.13
+  table9           watershed within one sentence, +1 and displayed line ma     2/19   10.5%  [ 2.9, 31.4]   14.21%   0.74
+  table9           watershed within two sentences, +1 and displayed line m     2/19   10.5%  [ 2.9, 31.4]   21.63%   0.49
+  table9           posts marked no turning point                              16/35   45.7%  [30.5, 61.8]                
+  table9           arc agreement (chance = majority class)                    13/35   37.1%  [23.2, 53.7]   42.86%   0.87
+  table9           arc majority-class baseline                                15/35   42.9%  [28.0, 59.1]                
+  section3.6       unanimous turning point, three-way posts                    0/26    0.0%  [ 0.0, 12.9]                
+  section3.6       two-of-three majority, three-way posts                     18/26   69.2%  [50.0, 83.5]                
+  section3.6       round 1 identical turning point, pair 1v2                100/101   99.0%  [94.6, 99.8]    6.10%  16.23
+  section3.6       round 1 identical turning point, pair 1v3                100/101   99.0%  [94.6, 99.8]    6.10%  16.23
+  section3.6       round 1 identical turning point, pair 2v3                200/200  100.0%  [98.1, 100.0]    6.10%  16.39
+  section3.6       repeat gaps under 41 items, rounds 3 and 4                 19/30   63.3%  [45.5, 78.1]                
+  section3.6       repeat showings, round 3                                  26/326    8.0%  [ 5.5, 11.4]                
+  section3.6       repeat showings, round 4                                    4/40   10.0%  [ 4.0, 23.1]                
+  pair_1v2         raw agreement incl. shared no-turn (no single chance ra     8/53   15.1%  [ 7.9, 27.1]                
+  pair_1v2         existence agreement (marginal chance)                      31/53   58.5%  [45.1, 70.7]   64.97%   0.90
+  pair_1v2         location agreement, chance 1/N                              7/30   23.3%  [11.8, 40.9]    6.35%   3.68
+  pair_1v2         location agreement, chance 1/(N-2) (submitted)              7/30   23.3%  [11.8, 40.9]    7.78%   3.00
+  pair_1v2         location agreement, chance empirical (leave-one-out)        7/30   23.3%  [11.8, 40.9]    6.47%   3.61
+  pair_1v3         raw agreement incl. shared no-turn (no single chance ra    15/51   29.4%  [18.7, 43.0]                
+  pair_1v3         existence agreement (marginal chance)                      32/51   62.7%  [49.0, 74.7]   54.44%   1.15
+  pair_1v3         location agreement, chance 1/N                              9/26   34.6%  [19.4, 53.8]    4.87%   7.11
+  pair_1v3         location agreement, chance 1/(N-2) (submitted)              9/26   34.6%  [19.4, 53.8]    5.59%   6.19
+  pair_1v3         location agreement, chance empirical (leave-one-out)        9/26   34.6%  [19.4, 53.8]    5.39%   6.42
+  pair_2v3         raw agreement incl. shared no-turn (no single chance ra    12/48   25.0%  [14.9, 38.8]                
+  pair_2v3         existence agreement (marginal chance)                      25/48   52.1%  [38.3, 65.5]   52.08%   1.00
+  pair_2v3         location agreement, chance 1/N                              5/18   27.8%  [12.5, 50.9]    6.05%   4.59
+  pair_2v3         location agreement, chance 1/(N-2) (submitted)              5/18   27.8%  [12.5, 50.9]    8.20%   3.39
+  pair_2v3         location agreement, chance empirical (leave-one-out)        5/18   27.8%  [12.5, 50.9]    6.36%   4.37
+  rater_round3_1   repeat agreement, sentiment                                  6/8   75.0%  [40.9, 92.9]                
+  rater_round3_1   repeat agreement, arc                                        7/8   87.5%  [52.9, 97.8]                
+  rater_round3_1   repeat agreement, turning point exact                        2/8   25.0%  [ 7.1, 59.1]                
+  rater_round3_1   repeat agreement, turning point within one                   2/8   25.0%  [ 7.1, 59.1]                
+  rater_round3_2   repeat agreement, sentiment                                  5/7   71.4%  [35.9, 91.8]                
+  rater_round3_2   repeat agreement, arc                                        4/7   57.1%  [25.0, 84.2]                
+  rater_round3_2   repeat agreement, turning point exact                        2/7   28.6%  [ 8.2, 64.1]                
+  rater_round3_2   repeat agreement, turning point within one                   3/7   42.9%  [15.8, 75.0]                
+  rater_round3_3   repeat agreement, sentiment                                 3/11   27.3%  [ 9.7, 56.6]                
+  rater_round3_3   repeat agreement, arc                                       3/11   27.3%  [ 9.7, 56.6]                
+  rater_round3_3   repeat agreement, turning point exact                       2/11   18.2%  [ 5.1, 47.7]                
+  rater_round3_3   repeat agreement, turning point within one                  3/11   27.3%  [ 9.7, 56.6]                
+  rater_round4_1   repeat agreement, sentiment                                  3/4   75.0%  [30.1, 95.4]                
+  rater_round4_1   repeat agreement, arc                                        4/4  100.0%  [51.0, 100.0]                
+  rater_round4_1   repeat agreement, turning point exact                        0/4    0.0%  [ 0.0, 49.0]                
+  rater_round4_1   repeat agreement, turning point within one                   0/4    0.0%  [ 0.0, 49.0]                
+  wrote /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/supp_annotation_intervals.csv  (51 rows)
+
+3  SUPPLEMENTARY TABLE: THE THREE ALIGNMENTS SIDE BY SIDE
+----------------------------------------------------------------------------------------------
+  fn2thu                        displayed line 53 is sentence 49; +1 only gives off4, verified map gives off8
+  relationship_advice_e6fs4c    displayed line 23 is sentence 22; +1 only gives off15, verified map gives off16
+  relationships_6pgxrs          displayed line 15 is sentence 14; +1 only gives off3, verified map gives off4
+  relationships_c7y2iu          displayed line 11 is sentence 10; +1 only gives off9, verified map gives off8
+  relationships_hbckl2          displayed line 83 is sentence 77; +1 only gives exact, verified map gives off6
+  survivinginfidelity_1pk43m0   displayed line 39 is sentence 38; +1 only gives off5, verified map gives off4
+  survivinginfidelity_m47t0h    displayed line 11 is sentence 10; +1 only gives off9, verified map gives off8
+
+  alignmentmeasure      k/n    prop  Wilson 95%        E[X]  P(X>=obs)  P(X<=obs)
+----------------------------------------------------------------------------------------------
+  impl    exact       0/19    0.0%  [ 0.0, 16.8]   0.887      1.000      0.393
+  impl    within1     2/19   10.5%  [ 2.9, 31.4]   2.700      0.802      0.470
+  impl    within2     4/19   21.1%  [ 8.5, 43.3]   4.073      0.624      0.624
+  plus1   exact       2/19   10.5%  [ 2.9, 31.4]   0.887      0.219      0.949
+  plus1   within1     3/19   15.8%  [ 5.5, 37.6]   2.700      0.530      0.734
+  plus1   within2     3/19   15.8%  [ 5.5, 37.6]   4.073      0.840      0.376
+  full    exact       1/19    5.3%  [ 0.9, 24.6]   0.887      0.607      0.781
+  full    within1     2/19   10.5%  [ 2.9, 31.4]   2.700      0.802      0.470
+  full    within2     2/19   10.5%  [ 2.9, 31.4]   4.110      0.961      0.155
+
+  Why +1 gives one more exact match than the verified map: the +1 column
+  compares the metric's sentence number with the annotator's displayed LINE
+  number; where a sentence earlier in the post spans more than one line, those
+  two numbers coincide by accident although they name different sentences.
+  wrote /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/supp_alignment_comparison.csv  (28 rows)
+
+4  THE EIGHTH SUBREDDIT: WHAT THE COLLECTION SCRIPTS QUERY, WHERE THE POSTS CAME FROM
+----------------------------------------------------------------------------------------------
+  pre-revision:reddit_download.py  sha256 f26e21d96e84a878...
+    subreddits queried: relationship_advice
+    id written as     : bare Reddit post id
+  pre-revision:extended_reddit_download.py  sha256 d24e01e085a0a2ac...
+    subreddits queried: relationships, relationship_advice, BreakUps, survivinginfidelity, heartbreak, confession, emotionalsupport, NarcissisticAbuse
+    id written as     : '{name}_{post_id}'
+
+  Old/PLEF entries in MANIFEST/corpora.json raw_sources: 525
+  evaluation rows 1,308 + annotation-development rows 200 = 1,508 (id sets disjoint)
+
+  split                   prefix                   ids
+----------------------------------------------------------------------------------------------
+  evaluation              (no prefix)              171
+  evaluation              BreakUps                 172
+  evaluation              confession               127
+  evaluation              emotionalsupport         128
+  evaluation              heartbreak                16
+  evaluation              relationship_advice      261
+  evaluation              relationships            263
+  evaluation              survivinginfidelity      170
+  evaluation              NarcissisticAbuse          0   <- prefix count
+  annotation_development  (no prefix)               21
+  annotation_development  BreakUps                  28
+  annotation_development  confession                22
+  annotation_development  emotionalsupport          22
+  annotation_development  heartbreak                 1
+  annotation_development  relationship_advice       39
+  annotation_development  relationships             37
+  annotation_development  survivinginfidelity       30
+  annotation_development  NarcissisticAbuse          0   <- prefix count
+
+  evidence files under Old/PLEF (read as data; SHA-256 against the manifest):
+    corpus_BreakUps.csv                    200 rows   manifest hash not listed
+    corpus_confession.csv                  150 rows   manifest hash not listed
+    corpus_emotionalsupport.csv            150 rows   manifest hash not listed
+    corpus_heartbreak.csv                   17 rows   manifest hash not listed
+    corpus_relationship_advice.csv         300 rows   manifest hash not listed
+    corpus_relationships.csv               300 rows   manifest hash not listed
+    corpus_survivinginfidelity.csv         200 rows   manifest hash not listed
+    reddit_posts_corpus.csv               1317 rows   manifest hash MATCH
+    relationship_corpus_FULL.csv          1317 rows   manifest hash not listed
+    reddit_raw.json: 492 posts (output of reddit_download.py)
+    reddit_posts/*.txt: 492 files, 492 with a matching manifest hash
+    reddit_download.py at pre-revision is set to: relationship_advice
+
+  split                    unprefixed  by <sub>_<id>  in reddit_raw/txt only  no evidence
+----------------------------------------------------------------------------------------------
+  evaluation                      171              0                     171            0
+  annotation_development           21              0                      21            0
+
+  any post attributable to r/NarcissisticAbuse: NO
+  subreddits present by prefix: BreakUps, confession, emotionalsupport, heartbreak, relationship_advice, relationships, survivinginfidelity (7)
+
+  WHAT THE METHODS PARAGRAPH CAN SAY (draft; the author decides wording):
+    The collection scripts query 8 subreddits (BreakUps, NarcissisticAbuse, confession, emotionalsupport, heartbreak, relationship_advice, relationships, survivinginfidelity).
+    The 1,508 collected posts carry a subreddit prefix from 7 of them;
+    no post can be attributed to r/NarcissisticAbuse, which is therefore not
+    listed as a source.
+    192 posts carry no prefix; of these, 0 share a Reddit id with a prefixed post in the
+    collection files, 192 occur only in the output of the single-subreddit
+    script, whose configured subreddit is r/relationship_advice (an inference from
+    the script, not a per-post record), and 0 have no recorded origin.
+  wrote /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/supp_corpus_sources.csv  (221 rows)
+
+5  RELATIONSHIP POST TEXT IN THE RELEASE WORKING TREE
+----------------------------------------------------------------------------------------------
+  posts 1508; with >= 1 fingerprint 1506; fingerprints 4441
+  release HEAD a6c5fc7e32c5116c6f9bfe9e1d3a2247885f1851; 112 files scanned (read-only)
+    annotation/rejected/rater1_OFFLINE.csv         posts  117
+    annotation/rejected/rater2_OFFLINE.csv         posts  210
+    annotation/rejected/rater3_OFFLINE.csv         posts  210
+
+  distinct posts found: 210  (annotation-development 200, evaluation 10)
+    evaluation post e35vj6                         text inside dev post(s): relationship_advice_e6fs4c
+    evaluation post relationship_advice_b6fd8u     text inside dev post(s): b78m0s
+    evaluation post relationship_advice_c13s1w     text inside dev post(s): relationship_advice_c225le
+    evaluation post relationship_advice_fdzm9q     text inside dev post(s): relationship_advice_fg0h4o
+    evaluation post relationships_32m5lj           text inside dev post(s): relationships_36j7ta
+    evaluation post relationships_3fwuub           text inside dev post(s): relationships_3g6btr
+    evaluation post relationships_92ssov           text inside dev post(s): relationships_96htm9
+    evaluation post relationships_bctq5b           text inside dev post(s): relationships_beku6e
+    evaluation post relationships_uw5mvv           text inside dev post(s): relationships_vbmdcu
+    evaluation post survivinginfidelity_jgvhp0     text inside dev post(s): survivinginfidelity_jjqevb
+  reproduces the round-2 audit (round2_audit/console_log_r2d_release_text.txt:110-112, 210 = 200 + 10): YES
+  wrote /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/supp_released_text_overlap.csv  (210 rows)
+
+6  PLACEHOLDERS IN MANUSCRIPT_CHANGES_ROUND2.md
+----------------------------------------------------------------------------------------------
+  RESOLVED (145 distinct placeholders)
+    l.31             <<19:human_criterion_v2:r4_lewi_defined>> = 35
+    l.31,44          <<19:human_criterion_v2:r4_no_tp>> = 16
+    l.31             <<19:human_criterion_v2:r4_tp_marked>> = 19
+    l.31,50,52,70    <<19:human_criterion_v2:exact_full:k>> = 1
+    l.31,52,70       <<19:human_criterion_v2:expected_exact_full>> = 0.887152
+    l.42             <<19:human_criterion_v2:r4_median_active_seconds_all_items>> = 123.500000
+    l.44             <<19:human_criterion_v2:r4_no_tp_prop>> = 0.457143
+    l.44             <<19:human_criterion_v2:r4_no_tp_prop:lo>> = 0.304658
+    l.44             <<19:human_criterion_v2:r4_no_tp_prop:hi>> = 0.618105
+    l.50,50,50,62,63,70,76 <<19:human_criterion_v2:cmp_n>> = 19
+    l.50             <<19:human_criterion_v2:cmp_display_differs_from_sentence>> = 7
+    l.50,62          <<19:human_criterion_v2:exact_full>> = 0.052632
+    l.50             <<19:human_criterion_v2:exact_full:lo>> = 0.009352
+    l.50             <<19:human_criterion_v2:exact_full:hi>> = 0.246392
+    l.50,52          <<19:human_criterion_v2:within1_full:k>> = 2
+    l.50,63          <<19:human_criterion_v2:within1_full>> = 0.105263
+    l.50             <<19:human_criterion_v2:within1_full:lo>> = 0.029358
+    l.50             <<19:human_criterion_v2:within1_full:hi>> = 0.313946
+    l.50             <<19:human_criterion_v2:exact_plus1:k>> = 2
+    l.50             <<19:human_criterion_v2:within1_plus1:k>> = 3
+    l.50             <<19:human_criterion_v2:exact_impl:k>> = 0
+    l.50             <<19:human_criterion_v2:within1_impl:k>> = 2
+    l.52             <<19:human_criterion_v2:cmp_N_min>> = 7
+    l.52             <<19:human_criterion_v2:cmp_N_max>> = 114
+    l.52             <<19:human_criterion_v2:cmp_N_median>> = 30
+    l.52             <<19:human_criterion_v2:cmp_boundary_sent>> = 1
+    l.52,62          <<19:human_criterion_v2:chance_exact_mean_full>> = 0.046692
+    l.52,63          <<19:human_criterion_v2:chance_within1_mean_full>> = 0.142123
+    l.52             <<19:human_criterion_v2:chance_exact_naive_1overN>> = 0.042899
+    l.52             <<19:human_criterion_v2:chance_within1_naive_3overN>> = 0.128697
+    l.52,70          <<19:human_criterion_v2:p_ge_exact_full>> = 0.606827
+    l.52             <<19:human_criterion_v2:expected_within1_full>> = 2.700344
+    l.52             <<19:human_criterion_v2:p_ge_within1_full>> = 0.802325
+    l.54             <<19:human_criterion_v2:submitted_binomial_p0_exact>> = 0.403116
+    l.54             <<19:human_criterion_v2:submitted_binomial_ple2_within1>> = 0.480367
+    l.54             <<19:human_criterion_v2:p0_exact_impl>> = 0.393173
+    l.54             <<19:human_criterion_v2:p_le2_within1_impl>> = 0.470430
+    l.62             <<…exact_full:lo>> = 0.009352
+    l.62             <<…exact_full:hi>> = 0.246392
+    l.63             <<…within1_full:lo>> = 0.029358
+    l.63             <<…within1_full:hi>> = 0.313946
+    l.64             <<…r4_no_tp>> = 16
+    l.64             <<…r4_lewi_defined>> = 35
+    l.64             <<…r4_no_tp_prop:lo>> = 0.304658
+    l.64             <<…r4_no_tp_prop:hi>> = 0.618105
+    l.65             <<…arc_agreement:n>> = 35
+    l.65             <<…arc_agreement>> = 0.371429
+    l.65             <<…arc_agreement:lo>> = 0.231656
+    l.65             <<…arc_agreement:hi>> = 0.536634
+    l.65             <<…arc_majority_baseline>> = 0.428571
+    l.66             <<19:human_criterion_v2:arc_kappa>> = 0.020356
+    l.70             <<…exact_full:k>> = 1
+    l.84             <<18:abstention_v2:min_eight:band_1_9_match>> = 7.200000
+    l.84             <<18:abstention_v2:max_eight:band_1_9_match>> = 23.900000
+    l.84             <<18:abstention_v2:min_eight:band_80_159_match>> = 62.500000
+    l.84             <<18:abstention_v2:max_eight:band_80_159_match>> = 87.000000
+    l.88             <<18:…:min_eight:band_1_9_match>> = 7.200000
+    l.88             <<18:…:max_eight:band_1_9_match>> = 23.900000
+    l.88             <<18:…:min_eight:band_80_159_match>> = 62.500000
+    l.88             <<18:…:max_eight:band_80_159_match>> = 87.000000
+    l.96             <<18:abstention_v2:min_three:fires_match_pct_labelled>> = 12.226
+    l.96             <<18:abstention_v2:max_three:fires_match_pct_labelled>> = 28.06
+    l.96             <<18:abstention_v2:min_three:pct_cancel>> = 0.117
+    l.96             <<18:abstention_v2:max_three:pct_cancel>> = 0.216
+    l.96             <<18:abstention_v2:max_three:delta_fired_match>> = -0.059259
+    l.96             <<18:abstention_v2:min_three:delta_fired_match>> = -0.072712
+    l.98             <<18:abstention_v2:dailydialog:plef_all_f1>> = 0.419694
+    l.98             <<18:abstention_v2:dailydialog:plef_fired_match_f1>> = 0.253853
+    l.98             <<18:abstention_v2:dailydialog:fires_match_pct_labelled>> = 15.355
+    l.98             <<18:abstention_v2:dailydialog:pct_nomatch>> = 84.645
+    l.100,112        <<18:abstention_v2:isear:delta_fired_match>> = 0.042285
+    l.100            <<18:…:isear:plef_fired_match_f1>> = 0.751914
+    l.100            <<18:…:isear:vader_fired_match_f1>> = 0.709629
+    l.100,112        <<18:abstention_v2:empathetic:delta_fired_match>> = 0.014574
+    l.100            <<18:…:empathetic:plef_fired_match_f1>> = 0.824986
+    l.100            <<18:…:empathetic:vader_fired_match_f1>> = 0.810412
+    l.132            <<18:abstention_v2:dailydialog:delta_fired_match>> = -0.059259
+    l.140            <<19:human_criterion_v2:repeat_fraction_round3:k>> = 26
+    l.140            <<19:human_criterion_v2:repeat_fraction_round3:n>> = 326
+    l.140            <<19:human_criterion_v2:repeat_fraction_round4:k>> = 4
+    l.140            <<19:human_criterion_v2:repeat_fraction_round4:n>> = 40
+    l.140            <<19:human_criterion_v2:gap_round3_rater1_min>> = 20
+    l.140            <<19:human_criterion_v2:gap_round3_rater1_max>> = 98
+    l.140            <<19:human_criterion_v2:gap_round3_rater2_min>> = 31
+    l.140            <<19:human_criterion_v2:gap_round3_rater2_max>> = 58
+    l.140            <<19:human_criterion_v2:gap_round3_rater3_min>> = 21
+    l.140            <<19:human_criterion_v2:gap_round3_rater3_max>> = 78
+    l.140            <<19:human_criterion_v2:gap_round4_rater1_min>> = 13
+    l.140            <<19:human_criterion_v2:gap_round4_rater1_max>> = 31
+    l.140            <<19:human_criterion_v2:gap_all_rounds_under41:k>> = 19
+    l.140            <<19:human_criterion_v2:gap_all_rounds_under41:n>> = 30
+    l.147            <<…r3_raw_1v2>> = 0.150943
+    l.147            <<…r3_raw_1v2:k>> = 8
+    l.147            <<…r3_raw_1v2:n>> = 53
+    l.147,147,147,147 <<…:lo>> = 0.078523
+    l.147,147,147,147 <<…:hi>> = 0.270545
+    l.147            <<…r3_raw_1v3>> = 0.294118
+    l.147            <<…r3_raw_2v3>> = 0.250000
+    l.147            <<…r3_rater1_selected_sentence_N>> = 7
+    l.147            <<…r3_rater2_selected_sentence_N>> = 4
+    l.147            <<…r3_rater3_selected_sentence_N>> = 4
+    l.147            <<…r3_existence_1v2>> = 0.584906
+    l.147            <<…r3_existence_1v3>> = 0.627451
+    l.147            <<…r3_existence_2v3>> = 0.520833
+    l.147            <<…r3_existence_chance_1v2>> = 0.649697
+    l.147            <<…r3_existence_chance_1v3>> = 0.544406
+    l.147            <<…r3_existence_chance_2v3>> = 0.520833
+    l.147            <<…r3_location_1v2>> = 0.233333
+    l.147            <<…r3_location_1v2:k>> = 7
+    l.147,147,147,153,153,153,157 <<…:n>> = 30
+    l.147            <<…r3_location_1v3>> = 0.346154
+    l.147,147        <<…:k>> = 9
+    l.147            <<…r3_location_2v3>> = 0.277778
+    l.147            <<…r3_location_chance_n_1v2>> = 0.063477
+    l.147            <<…r3_location_chance_n_1v3>> = 0.048706
+    l.147            <<…r3_location_chance_n_2v3>> = 0.060474
+    l.147,155        <<…r3_location_ratio_n_min>> = 3.675874
+    l.147,155        <<…r3_location_ratio_n_max>> = 7.106992
+    l.147            <<…r3_location_ratio_emp_loo_min>> = 3.607296
+    l.147            <<…r3_location_ratio_emp_loo_max>> = 6.423478
+    l.151            <<…r3_location_1v2:n>> = 30
+    l.151            <<…r3_location_1v3:n>> = 26
+    l.151            <<…r3_location_2v3:n>> = 18
+    l.153            <<…rep_round3_rater1_sentiment:n>> = 8
+    l.153            <<…rep_round3_rater2_sentiment:n>> = 7
+    l.153            <<…rep_round3_rater3_sentiment:n>> = 11
+    l.153,155        <<…rep_round3_sentiment_min>> = 0.272727
+    l.153,155        <<…rep_round3_sentiment_max>> = 0.750000
+    l.153            <<…rep_round3_arc_min>> = 0.272727
+    l.153            <<…rep_round3_arc_max>> = 0.875000
+    l.153,155,163    <<…rep_round3_tp_min>> = 0.181818
+    l.153,155,163    <<…rep_round3_tp_max>> = 0.285714
+    l.153            <<…rep_round4_rater1_sentiment:k>> = 3
+    l.153            <<…rep_round4_rater1_arc:k>> = 4
+    l.153            <<…rep_round4_rater1_tp:k>> = 0
+    l.157            <<…round1_tp_identical_2v3:k>> = 200
+    l.157            <<…round1_tp_identical_1v2:k>> = 100
+    l.157            <<…round1_tp_identical_1v2:n>> = 101
+    l.157            <<…round1_rater1_first_showings>> = 101
+    l.157            <<19:human_criterion_v2:round1_chance_same_sentence_n>> = 0.061020
+    l.157            <<19:human_criterion_v2:round2_partial_matches>> = 0
+    l.163            <<19:human_criterion_v2:r3_posts_by_three>> = 26
+    l.173,176        <<AUDIT:r2d:112 -- 10>> = 10 (20_round2_assets.py stage 5; supp_released_text_overlap.csv)
+    l.188            <<19:human_criterion_v2:tie_rule_constant_signal_posts_relationship>> = 34
+    l.190            <<19:human_criterion_v2:arc_tvd>> = 0.057143
+
+  UNRESOLVED (14 distinct placeholders)
+    l.18             <<DATE:...>>  -- set when the release correction is carried out (RELEASE_PLAN_ROUND2.md)
+    l.18             <<TAG:...>>  -- set when the release correction is carried out (RELEASE_PLAN_ROUND2.md)
+    l.19             <<AUDIT:...>>  -- audit-log number with no forensics-logged source yet
+    l.56             <<19:human_criterion_v2:…>>  -- key '...' not in human_criterion_v2.csv
+    l.106            <<18:abstention_v2:X:fires_match_pct_labelled>>  -- no value at row X, column fires_match_pct_labelled
+    l.106            <<18:abstention_v2:X:fires_score_pct_labelled>>  -- no value at row X, column fires_score_pct_labelled
+    l.106            <<18:abstention_v2:X:plef_all_f1>>  -- no value at row X, column plef_all_f1
+    l.106            <<18:abstention_v2:X:vader_all_f1>>  -- no value at row X, column vader_all_f1
+    l.106            <<18:abstention_v2:X:plef_fired_match_f1>>  -- no value at row X, column plef_fired_match_f1
+    l.106            <<18:abstention_v2:X:vader_fired_match_f1>>  -- no value at row X, column vader_fired_match_f1
+    l.106            <<18:abstention_v2:X:delta_fired_match>>  -- no value at row X, column delta_fired_match
+    l.176,176        <<DATE:correction>>  -- set when the release correction is carried out (RELEASE_PLAN_ROUND2.md)
+    l.176,182        <<TAG:as-reviewed>>  -- set when the release correction is carried out (RELEASE_PLAN_ROUND2.md)
+    l.182            <<TAG:corrected>>  -- set when the release correction is carried out (RELEASE_PLAN_ROUND2.md)
+
+  Open items of MANUSCRIPT_CHANGES_ROUND2.md now covered by this script:
+    O1  count of evaluation posts quoted in released dev-post text: stage 5
+    O2  Fig. 1b and Fig. 4b redrawn: stage 1 (fig1_coverage_scope_v2.png, fig4_gase_abstention_v2.png)
+    O3  Table S-x of per-pair and per-rater intervals: stage 2 (supp_annotation_intervals.csv)
+    O4  unchanged: the 84.9% neutral share and AUC values come from console_log_06 / auc.csv
+  Eighth subreddit (stage 4): NarcissisticAbuse attributable: no; unprefixed ids 192, by script setting only 192, no evidence 0
+
+==============================================================================================
+DONE
+==============================================================================================
+  finished  : 2026-10-08T07:11:23

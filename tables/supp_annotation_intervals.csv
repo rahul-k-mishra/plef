@@ -1,0 +1,52 @@
+block,section,quantity,key,k,n,proportion,wilson_lo,wilson_hi,chance,chance_key,ratio,ratio_source
+table9,Table 9 / 3.5,"watershed exact sentence, as implemented (stored line vs zero-based index)",exact_impl,0,19,0.000000,0.000000,0.168184,0.046692,chance_exact_mean_impl,0.0000,proportion / chance
+table9,Table 9 / 3.5,"watershed within one sentence, as implemented (stored line vs zero-based index)",within1_impl,2,19,0.105263,0.029358,0.313946,0.142123,chance_within1_mean_impl,0.7406,proportion / chance
+table9,Table 9 / 3.5,"watershed within two sentences, as implemented (stored line vs zero-based index)",within2_impl,4,19,0.210526,0.085075,0.433347,0.214358,chance_within2_mean_impl,0.9821,proportion / chance
+table9,Table 9 / 3.5,"watershed exact sentence, +1 only (stored line vs one-based index)",exact_plus1,2,19,0.105263,0.029358,0.313946,0.046692,chance_exact_mean_plus1,2.2544,proportion / chance
+table9,Table 9 / 3.5,"watershed within one sentence, +1 only (stored line vs one-based index)",within1_plus1,3,19,0.157895,0.055204,0.375659,0.142123,chance_within1_mean_plus1,1.1110,proportion / chance
+table9,Table 9 / 3.5,"watershed within two sentences, +1 only (stored line vs one-based index)",within2_plus1,3,19,0.157895,0.055204,0.375659,0.214358,chance_within2_mean_plus1,0.7366,proportion / chance
+table9,Table 9 / 3.5,"watershed exact sentence, +1 and displayed line mapped to its sentence",exact_full,1,19,0.052632,0.009352,0.246392,0.046692,chance_exact_mean_full,1.1272,proportion / chance
+table9,Table 9 / 3.5,"watershed within one sentence, +1 and displayed line mapped to its sentence",within1_full,2,19,0.105263,0.029358,0.313946,0.142123,chance_within1_mean_full,0.7406,proportion / chance
+table9,Table 9 / 3.5,"watershed within two sentences, +1 and displayed line mapped to its sentence",within2_full,2,19,0.105263,0.029358,0.313946,0.216342,chance_within2_mean_full,0.4866,proportion / chance
+table9,Table 9 / 3.5,posts marked no turning point,r4_no_tp_prop,16,35,0.457143,0.304658,0.618105,,,,
+table9,Table 9 / 3.5,arc agreement (chance = majority class),arc_agreement,13,35,0.371429,0.231656,0.536634,0.428571,arc_majority_baseline,0.8667,proportion / chance
+table9,Table 9 / 3.5,arc majority-class baseline,arc_majority_baseline,15,35,0.428571,0.279843,0.591429,,,,
+section3.6,3.6,"unanimous turning point, three-way posts",r3_unanimous_tp_3way,0,26,0.000000,0.000000,0.128733,,,,
+section3.6,3.6,"two-of-three majority, three-way posts",r3_majority_tp_3way,18,26,0.692308,0.500114,0.834989,,,,
+section3.6,3.6,"round 1 identical turning point, pair 1v2",round1_tp_identical_1v2,100,101,0.990099,0.946032,0.998250,0.061020,round1_chance_same_sentence_n,16.2258,proportion / chance
+section3.6,3.6,"round 1 identical turning point, pair 1v3",round1_tp_identical_1v3,100,101,0.990099,0.946032,0.998250,0.061020,round1_chance_same_sentence_n,16.2258,proportion / chance
+section3.6,3.6,"round 1 identical turning point, pair 2v3",round1_tp_identical_2v3,200,200,1.000000,0.981154,1.000000,0.061020,round1_chance_same_sentence_n,16.3881,proportion / chance
+section3.6,2.6,"repeat gaps under 41 items, rounds 3 and 4",gap_all_rounds_under41,19,30,0.633333,0.455132,0.781263,,,,
+section3.6,2.6,"repeat showings, round 3",repeat_fraction_round3,26,326,0.079755,0.055005,0.114293,,,,
+section3.6,2.6,"repeat showings, round 4",repeat_fraction_round4,4,40,0.100000,0.039579,0.230521,,,,
+pair_1v2,3.6,raw agreement incl. shared no-turn (no single chance rate),r3_raw_1v2,8,53,0.150943,0.078523,0.270545,,,,
+pair_1v2,3.6,existence agreement (marginal chance),r3_existence_1v2,31,53,0.584906,0.450942,0.707393,0.649697,r3_existence_chance_1v2,0.9003,proportion / chance
+pair_1v2,3.6,"location agreement, chance 1/N",r3_location_1v2,7,30,0.233333,0.117922,0.409287,0.063477,r3_location_chance_n_1v2,3.6759,human_criterion_v2:r3_location_ratio_n_1v2
+pair_1v2,3.6,"location agreement, chance 1/(N-2) (submitted)",r3_location_1v2,7,30,0.233333,0.117922,0.409287,0.077804,r3_location_chance_n2_1v2,2.9990,human_criterion_v2:r3_location_ratio_n2_1v2
+pair_1v2,3.6,"location agreement, chance empirical (leave-one-out)",r3_location_1v2,7,30,0.233333,0.117922,0.409287,0.064684,r3_location_chance_emp_loo_1v2,3.6073,human_criterion_v2:r3_location_ratio_emp_loo_1v2
+pair_1v3,3.6,raw agreement incl. shared no-turn (no single chance rate),r3_raw_1v3,15,51,0.294118,0.187086,0.429993,,,,
+pair_1v3,3.6,existence agreement (marginal chance),r3_existence_1v3,32,51,0.627451,0.490250,0.746797,0.544406,r3_existence_chance_1v3,1.1525,proportion / chance
+pair_1v3,3.6,"location agreement, chance 1/N",r3_location_1v3,9,26,0.346154,0.194120,0.537798,0.048706,r3_location_chance_n_1v3,7.1070,human_criterion_v2:r3_location_ratio_n_1v3
+pair_1v3,3.6,"location agreement, chance 1/(N-2) (submitted)",r3_location_1v3,9,26,0.346154,0.194120,0.537798,0.055912,r3_location_chance_n2_1v3,6.1910,human_criterion_v2:r3_location_ratio_n2_1v3
+pair_1v3,3.6,"location agreement, chance empirical (leave-one-out)",r3_location_1v3,9,26,0.346154,0.194120,0.537798,0.053889,r3_location_chance_emp_loo_1v3,6.4235,human_criterion_v2:r3_location_ratio_emp_loo_1v3
+pair_2v3,3.6,raw agreement incl. shared no-turn (no single chance rate),r3_raw_2v3,12,48,0.250000,0.149205,0.387846,,,,
+pair_2v3,3.6,existence agreement (marginal chance),r3_existence_2v3,25,48,0.520833,0.383290,0.655289,0.520833,r3_existence_chance_2v3,1.0000,proportion / chance
+pair_2v3,3.6,"location agreement, chance 1/N",r3_location_2v3,5,18,0.277778,0.124996,0.508731,0.060474,r3_location_chance_n_2v3,4.5934,human_criterion_v2:r3_location_ratio_n_2v3
+pair_2v3,3.6,"location agreement, chance 1/(N-2) (submitted)",r3_location_2v3,5,18,0.277778,0.124996,0.508731,0.081983,r3_location_chance_n2_2v3,3.3882,human_criterion_v2:r3_location_ratio_n2_2v3
+pair_2v3,3.6,"location agreement, chance empirical (leave-one-out)",r3_location_2v3,5,18,0.277778,0.124996,0.508731,0.063613,r3_location_chance_emp_loo_2v3,4.3667,human_criterion_v2:r3_location_ratio_emp_loo_2v3
+rater_round3_1,3.6,"repeat agreement, sentiment",rep_round3_rater1_sentiment,6,8,0.750000,0.409270,0.928522,,,,
+rater_round3_1,3.6,"repeat agreement, arc",rep_round3_rater1_arc,7,8,0.875000,0.529105,0.977583,,,,
+rater_round3_1,3.6,"repeat agreement, turning point exact",rep_round3_rater1_tp,2,8,0.250000,0.071478,0.590730,,,,
+rater_round3_1,3.6,"repeat agreement, turning point within one",rep_round3_rater1_tp_within1,2,8,0.250000,0.071478,0.590730,,,,
+rater_round3_2,3.6,"repeat agreement, sentiment",rep_round3_rater2_sentiment,5,7,0.714286,0.358929,0.917783,,,,
+rater_round3_2,3.6,"repeat agreement, arc",rep_round3_rater2_arc,4,7,0.571429,0.250454,0.841783,,,,
+rater_round3_2,3.6,"repeat agreement, turning point exact",rep_round3_rater2_tp,2,7,0.285714,0.082217,0.641071,,,,
+rater_round3_2,3.6,"repeat agreement, turning point within one",rep_round3_rater2_tp_within1,3,7,0.428571,0.158217,0.749546,,,,
+rater_round3_3,3.6,"repeat agreement, sentiment",rep_round3_rater3_sentiment,3,11,0.272727,0.097459,0.565650,,,,
+rater_round3_3,3.6,"repeat agreement, arc",rep_round3_rater3_arc,3,11,0.272727,0.097459,0.565650,,,,
+rater_round3_3,3.6,"repeat agreement, turning point exact",rep_round3_rater3_tp,2,11,0.181818,0.051367,0.476986,,,,
+rater_round3_3,3.6,"repeat agreement, turning point within one",rep_round3_rater3_tp_within1,3,11,0.272727,0.097459,0.565650,,,,
+rater_round4_1,3.6,"repeat agreement, sentiment",rep_round4_rater1_sentiment,3,4,0.750000,0.300636,0.954414,,,,
+rater_round4_1,3.6,"repeat agreement, arc",rep_round4_rater1_arc,4,4,1.000000,0.510100,1.000000,,,,
+rater_round4_1,3.6,"repeat agreement, turning point exact",rep_round4_rater1_tp,0,4,0.000000,0.000000,0.489900,,,,
+rater_round4_1,3.6,"repeat agreement, turning point within one",rep_round4_rater1_tp_within1,0,4,0.000000,0.000000,0.489900,,,,

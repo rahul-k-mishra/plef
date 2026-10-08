@@ -1,0 +1,42 @@
+==============================================================================
+PLEF V2 -- SCRIPT 17 : RELEASE BYTE FIX   v1.0.0   [APPLY]
+==============================================================================
+  release   : /home/rahul/Research/PLEF/Version_2/PLEF_V2/release
+  originals : /home/rahul/Research/PLEF/Version_2/PLEF_V2/data/interim/annotations/round1_compromised
+  started   : 2026-10-07T20:59:50
+  manifest  : 103 entries, line ending LF
+
+STEP 1  disable line-ending conversion in this repo
+------------------------------------------------------------------------------
+  git config core.autocrlf false
+  write /home/rahul/Research/PLEF/Version_2/PLEF_V2/release/.gitattributes  ->  '* -text'
+
+STEP 2  restore scripts/ from the committed blobs (LF form)
+------------------------------------------------------------------------------
+  17 script files currently differ from the commit
+  after checkout: 0 still differ (must be 0)
+
+STEP 3  copy the three OFFLINE originals back
+------------------------------------------------------------------------------
+  rater1_OFFLINE.csv     original sha e0ad9cf42c5a... == manifest
+  rater2_OFFLINE.csv     original sha 4aec233a1faa... == manifest
+  rater3_OFFLINE.csv     original sha 7d612f33ada4... == manifest
+
+STEP 4  verify all manifest entries hash raw on disk
+------------------------------------------------------------------------------
+  103 of 103 match
+
+STEP 5  append scripts 10-14 to the manifest and fix the count line
+------------------------------------------------------------------------------
+  e39da35d6b06d64fef6a6c81639029dfdd03793557f8745c40606be80ff4d93f    33180  scripts/10_null_analysis.py
+  4dbc419d12be89feefc40d929b0ce51b6a22ec0498312f966103466308f6bce4    15391  scripts/11_response_space.py
+  a18b24bc046e9da9e9ea9d4ed1c90657b9d2c5e88648646bff76d62de98b381e     9417  scripts/12_equation_audit.py
+  0ab861c29dbd86ff9b7dbc3c479e1962925349516e19ed8f01d33a8fb142381b    10280  scripts/13_arc_window_sensitivity.py
+  aafb42545473c43f984606ec166ba4d9c7346efc93f2d2f68863f88551ab47fc    28511  scripts/14_parallel_null.py
+  count line: '# 103 files, 106,288,450 bytes'
+        ->    '# 108 files, 106,385,229 bytes  (103 files, 106,288,450 bytes at generation; 5 entries appended 2026-10-07, see end of file)'
+  manifest written: 108 entries
+
+==============================================================================
+DONE. Nothing committed. Next: run script 15, expect disk raw 108 of 108.
+==============================================================================

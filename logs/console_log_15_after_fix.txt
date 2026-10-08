@@ -1,0 +1,150 @@
+==============================================================================
+PLEF V2 -- SCRIPT 15 : RELEASE BYTE AUDIT   v1.0.0
+==============================================================================
+  release : /home/rahul/Research/PLEF/Version_2/PLEF_V2/release
+  started : 2026-10-07T21:00:33
+  workers : 1
+  manifest entries : 108
+  git HEAD         : 04bdc4f
+
+DISK vs MANIFEST -- which form of the file on disk reproduces the hash
+------------------------------------------------------------------------------
+  raw         108
+
+GIT HEAD vs MANIFEST -- which form of the committed file reproduces the hash
+------------------------------------------------------------------------------
+  crlf         82
+  raw          23
+  none          3
+
+PER-FILE TABLE (path | disk_form | head_form | disk_has_cr | head_has_cr | bom)
+------------------------------------------------------------------------------
+  annotation/ANNOTATION_GUIDE.md                   raw      crlf        1  0  0
+  annotation/annotations_rater1.csv                raw      crlf        1  0  0
+  annotation/gold_dev200.csv                       raw      crlf        1  0  0
+  annotation/gold_dev200_UNUSABLE_alpha0.177.csv   raw      crlf        1  0  0
+  annotation/OFFLINE_GUIDE.md                      raw      crlf        1  0  0
+  annotation/rejected/annotations_rater1.csv       raw      crlf        1  0  0
+  annotation/rejected/annotations_rater2.csv       raw      crlf        1  0  0
+  annotation/rejected/annotations_rater3.csv       raw      crlf        1  0  0
+  annotation/rejected/gold_dev200.csv              raw      crlf        1  0  0
+  annotation/rejected/rater1_OFFLINE.csv           raw      none        1  0  1
+  annotation/rejected/rater2_OFFLINE.csv           raw      none        1  0  1
+  annotation/rejected/rater3_OFFLINE.csv           raw      none        1  0  1
+  AUDIT_RECONCILIATION.md                          raw      crlf        1  0  0
+  DECISIONS.md                                     raw      crlf        1  0  0
+  figures/fig1_coverage_scope.png                  raw      raw         1  1  0
+  figures/fig2_benchmark.png                       raw      raw         1  1  0
+  figures/fig3_nulls_moderator.png                 raw      raw         1  1  0
+  figures/fig3a_null_distributions.png             raw      raw         1  1  0
+  figures/fig4_gase_abstention.png                 raw      raw         1  1  0
+  logs/console_log.txt                             raw      crlf        1  0  0
+  logs/console_log_02.txt                          raw      crlf        1  0  0
+  logs/console_log_03.txt                          raw      crlf        1  0  0
+  logs/console_log_04.txt                          raw      crlf        1  0  0
+  logs/console_log_05.txt                          raw      crlf        1  0  0
+  logs/console_log_06.txt                          raw      crlf        1  0  0
+  logs/console_log_08.txt                          raw      crlf        1  0  0
+  logs/console_log_09.txt                          raw      raw         0  0  0
+  logs/console_log_10.txt                          raw      crlf        1  0  0
+  logs/console_log_11.txt                          raw      crlf        1  0  0
+  logs/console_log_12.txt                          raw      crlf        1  0  0
+  logs/console_log_13.txt                          raw      crlf        1  0  0
+  logs/console_log_14.txt                          raw      crlf        1  0  0
+  logs/FORENSIC_REPORT.md                          raw      crlf        1  0  0
+  manifest/core.json                               raw      crlf        1  0  0
+  manifest/corpora.json                            raw      crlf        1  0  0
+  manifest/environment.json                        raw      crlf        1  0  0
+  manifest/scored.json                             raw      crlf        1  0  0
+  NULLS.md                                         raw      crlf        1  0  0
+  requirements-lock.txt                            raw      crlf        1  0  0
+  scored/scored_dailydialog.csv                    raw      crlf        1  0  0
+  scored/scored_dailydialog.done                   raw      crlf        1  0  0
+  scored/scored_dev_relationship.csv               raw      crlf        1  0  0
+  scored/scored_dev_relationship.done              raw      crlf        1  0  0
+  scored/scored_empathetic.csv                     raw      crlf        1  0  0
+  scored/scored_empathetic.done                    raw      crlf        1  0  0
+  scored/scored_goemotions.csv                     raw      crlf        1  0  0
+  scored/scored_goemotions.done                    raw      crlf        1  0  0
+  scored/scored_isear.csv                          raw      crlf        1  0  0
+  scored/scored_isear.done                         raw      crlf        1  0  0
+  scored/scored_meld.csv                           raw      crlf        1  0  0
+  scored/scored_meld.done                          raw      crlf        1  0  0
+  scored/scored_relationship.csv                   raw      crlf        1  0  0
+  scored/scored_relationship.done                  raw      crlf        1  0  0
+  scored/scored_semeval2017.csv                    raw      crlf        1  0  0
+  scored/scored_semeval2017.done                   raw      crlf        1  0  0
+  scored/scored_tweeteval.csv                      raw      crlf        1  0  0
+  scored/scored_tweeteval.done                     raw      crlf        1  0  0
+  scripts/01_bootstrap_and_forensics.py            raw      raw         0  0  0
+  scripts/02_baseline_environment.py               raw      raw         0  0  0
+  scripts/03_dataset_rebuild.py                    raw      raw         0  0  0
+  scripts/04_core_rebuild.py                       raw      raw         0  0  0
+  scripts/05_full_run.py                           raw      raw         0  0  0
+  scripts/06_statistics.py                         raw      raw         0  0  0
+  scripts/07_manuscript_assets.py                  raw      raw         0  0  0
+  scripts/08_audit_reconciliation.py               raw      raw         0  0  0
+  scripts/09_release_assembly.py                   raw      raw         0  0  0
+  scripts/annotate.py                              raw      raw         0  0  0
+  scripts/check_state.py                           raw      raw         0  0  0
+  scripts/offline_annotation.py                    raw      raw         0  0  0
+  src/plef_baselines.py                            raw      crlf        1  0  0
+  src/plef_core.py                                 raw      crlf        1  0  0
+  src/plef_lexicons.json                           raw      crlf        1  0  0
+  src/plef_purity.py                               raw      crlf        1  0  0
+  tables/abstention.csv                            raw      crlf        1  0  0
+  tables/abstention_binary.csv                     raw      crlf        1  0  0
+  tables/all_results.json                          raw      crlf        1  0  0
+  tables/arc_window_sensitivity.csv                raw      crlf        1  0  0
+  tables/auc.csv                                   raw      crlf        1  0  0
+  tables/audit_annotation.csv                      raw      crlf        1  0  0
+  tables/audit_archetype.csv                       raw      crlf        1  0  0
+  tables/audit_bands.csv                           raw      crlf        1  0  0
+  tables/audit_benchmarks.csv                      raw      crlf        1  0  0
+  tables/audit_datasets.csv                        raw      crlf        1  0  0
+  tables/audit_throughput.csv                      raw      crlf        1  0  0
+  tables/chance_per_post.csv                       raw      crlf        1  0  0
+  tables/correlations.csv                          raw      crlf        1  0  0
+  tables/coverage.csv                              raw      crlf        1  0  0
+  tables/descriptive.csv                           raw      crlf        1  0  0
+  tables/domain_split.csv                          raw      crlf        1  0  0
+  tables/effect_sizes.csv                          raw      crlf        1  0  0
+  tables/gase_ablation.csv                         raw      crlf        1  0  0
+  tables/human_criterion.csv                       raw      crlf        1  0  0
+  tables/human_label_f1.csv                        raw      crlf        1  0  0
+  tables/length_threshold.csv                      raw      crlf        1  0  0
+  tables/mcnemar.csv                               raw      crlf        1  0  0
+  tables/moderators.csv                            raw      crlf        1  0  0
+  tables/null_draws.csv                            raw      crlf        1  0  0
+  tables/null_draws_parallel.csv                   raw      crlf        1  0  0
+  tables/rasp_distribution.csv                     raw      crlf        1  0  0
+  tables/response_space.csv                        raw      crlf        1  0  0
+  tables/scoreboard.csv                            raw      crlf        1  0  0
+  tables/threshold_sweep.csv                       raw      crlf        1  0  0
+  tables/trivial_baselines.csv                     raw      crlf        1  0  0
+  scripts/10_null_analysis.py                      raw      raw         0  0  0
+  scripts/11_response_space.py                     raw      raw         0  0  0
+  scripts/12_equation_audit.py                     raw      raw         0  0  0
+  scripts/13_arc_window_sensitivity.py             raw      raw         0  0  0
+  scripts/14_parallel_null.py                      raw      raw         0  0  0
+
+FILES NEEDING A HUMAN LOOK (real content difference, missing, or untracked)
+------------------------------------------------------------------------------
+  annotation/rejected/rater1_OFFLINE.csv           disk=raw head=none manifest_bytes=362207 disk_bytes=362207 head_bytes=362085
+  annotation/rejected/rater2_OFFLINE.csv           disk=raw head=none manifest_bytes=640948 disk_bytes=640948 head_bytes=640725
+  annotation/rejected/rater3_OFFLINE.csv           disk=raw head=none manifest_bytes=618812 disk_bytes=618812 head_bytes=618589
+
+TRACKED IN GIT BUT NOT IN THE MANIFEST
+------------------------------------------------------------------------------
+  LICENSE.txt
+  MANIFEST-RELEASE.txt
+  README.md
+
+IN THE MANIFEST BUT NOT TRACKED IN GIT
+------------------------------------------------------------------------------
+  none
+
+==============================================================================
+DONE in 25.1s  -> report PLEF_V2/results/forensics/release_byte_audit_after_fix.csv
+==============================================================================
+  Nothing was modified. The report CSV is the input to the fix step.

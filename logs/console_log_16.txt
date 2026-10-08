@@ -1,0 +1,59 @@
+==============================================================================
+PLEF V2 -- SCRIPT 16 : OFFLINE CSV PROBE   v1.0.0
+==============================================================================
+  root    : /home/rahul/Research/PLEF
+  release : /home/rahul/Research/PLEF/Version_2/PLEF_V2/release
+  target  : annotation/rejected/rater1_OFFLINE.csv  manifest sha e0ad9cf42c5a...  362,207 bytes
+  target  : annotation/rejected/rater2_OFFLINE.csv  manifest sha 4aec233a1faa...  640,948 bytes
+  target  : annotation/rejected/rater3_OFFLINE.csv  manifest sha 7d612f33ada4...  618,812 bytes
+
+A. SEARCH THE TREE FOR UNTOUCHED ORIGINALS
+------------------------------------------------------------------------------
+  candidates by name or size: 12
+  ORIGINAL FOUND  annotation/rejected/rater1_OFFLINE.csv
+                  /home/rahul/Research/PLEF/Version_2/PLEF_V2/data/interim/annotations/round1_compromised/rater1_OFFLINE.csv
+  ORIGINAL FOUND  annotation/rejected/rater2_OFFLINE.csv
+                  /home/rahul/Research/PLEF/Version_2/PLEF_V2/data/interim/annotations/round1_compromised/rater2_OFFLINE.csv
+  ORIGINAL FOUND  annotation/rejected/rater3_OFFLINE.csv
+                  /home/rahul/Research/PLEF/Version_2/PLEF_V2/data/interim/annotations/round1_compromised/rater3_OFFLINE.csv
+  all candidates (size, sha12, path):
+        8,307  3efee39f91af  Version_2/16_offline_csv_probe.py
+        1,746  38e58b149b8e  Version_2/PLEF_V2/data/interim/annotations/offline/OFFLINE_GUIDE.md
+      311,855  ad7553cce645  Version_2/PLEF_V2/data/interim/annotations/offline/rater1_OFFLINE.csv
+      360,727  5805470b0170  Version_2/PLEF_V2/data/interim/annotations/offline/rater1_OFFLINE_Orig.csv
+      309,407  2fa305d621e4  Version_2/PLEF_V2/data/interim/annotations/offline/rater2_OFFLINE.csv
+      638,377  1c2547e458aa  Version_2/PLEF_V2/data/interim/annotations/offline/rater2_OFFLINE_orig.csv
+      312,071  d5a54e30a40d  Version_2/PLEF_V2/data/interim/annotations/offline/rater3_OFFLINE.csv
+      616,024  b984415c61a5  Version_2/PLEF_V2/data/interim/annotations/offline/rater3_OFFLINE_orig.csv
+      362,207  e0ad9cf42c5a  Version_2/PLEF_V2/data/interim/annotations/round1_compromised/rater1_OFFLINE.csv
+      640,948  4aec233a1faa  Version_2/PLEF_V2/data/interim/annotations/round1_compromised/rater2_OFFLINE.csv
+      618,812  7d612f33ada4  Version_2/PLEF_V2/data/interim/annotations/round1_compromised/rater3_OFFLINE.csv
+       29,011  34073f3d956a  Version_2/offline_annotation.py
+
+B. RECONSTRUCT FROM GIT HEAD (LF content) BY RECORD-BOUNDARY CRLF
+------------------------------------------------------------------------------
+  annotation/rejected/rater1_OFFLINE.csv
+    HEAD bytes 362,085  manifest bytes 362,207  difference 122  (= CRs the original had at record ends)
+    csv parser, lenient    bytes 362,205  no  records 120
+    csv parser, strict     bytes 362,205  no  records 120
+    requote minimal        bytes 362,205  no  
+    requote all            bytes 364,367  no  
+    requote nonnumeric     bytes 364,367  no  
+  annotation/rejected/rater2_OFFLINE.csv
+    HEAD bytes 640,725  manifest bytes 640,948  difference 223  (= CRs the original had at record ends)
+    csv parser, lenient    bytes 640,946  no  records 221
+    csv parser, strict     bytes 640,946  no  records 221
+    requote minimal        bytes 640,946  no  
+    requote all            bytes 644,926  no  
+    requote nonnumeric     bytes 644,926  no  
+  annotation/rejected/rater3_OFFLINE.csv
+    HEAD bytes 618,589  manifest bytes 618,812  difference 223  (= CRs the original had at record ends)
+    csv parser, lenient    bytes 618,810  no  records 221
+    csv parser, strict     bytes 618,810  no  records 221
+    requote minimal        bytes 618,810  no  
+    requote all            bytes 622,790  no  
+    requote nonnumeric     bytes 622,790  no  
+
+==============================================================================
+DONE in 0.7s  -- nothing was modified
+==============================================================================

@@ -1,0 +1,29 @@
+block,id,N,N_disp,h_disp,h_sent,boundary_sent,lewi_zero_based,lewi_one_based,impl_human,impl_metric,impl_diff,impl_match,plus1_human,plus1_metric,plus1_diff,plus1_match,full_human,full_metric,full_diff,full_match,note,alignment,alignment_label,measure,k,n,proportion,wilson_lo,wilson_hi,chance_mean,expected,p_ge_observed,p_le_observed
+post,1707opw,17,17,17,17,1,7,8,17,7,-10,off10,17,8,-9,off9,17,8,-9,off9,,,,,,,,,,,,,
+post,BreakUps_1e0fccv,114,115,53,53,0,74,75,53,74,21,off21,53,75,22,off22,53,75,22,off22,,,,,,,,,,,,,
+post,emotionalsupport_lz2rga,26,26,24,24,0,17,18,24,17,-7,off7,24,18,-6,off6,24,18,-6,off6,,,,,,,,,,,,,
+post,emotionalsupport_osbv1c,9,9,3,3,0,2,3,3,2,-1,within1,3,3,0,exact,3,3,0,exact,,,,,,,,,,,,,
+post,fn2thu,68,72,53,49,0,56,57,53,56,3,off3,53,57,4,off4,49,57,8,off8,"displayed line 53 is sentence 49; +1 only gives off4, verified map gives off8",,,,,,,,,,,,
+post,h015k3,34,37,8,8,0,22,23,8,22,14,off14,8,23,15,off15,8,23,15,off15,,,,,,,,,,,,,
+post,relationship_advice_cdzjre,27,27,13,13,0,16,17,13,16,3,off3,13,17,4,off4,13,17,4,off4,,,,,,,,,,,,,
+post,relationship_advice_e6fs4c,41,42,23,22,0,37,38,23,37,14,off14,23,38,15,off15,22,38,16,off16,"displayed line 23 is sentence 22; +1 only gives off15, verified map gives off16",,,,,,,,,,,,
+post,relationships_3cfcsg,56,56,54,54,0,29,30,54,29,-25,off25,54,30,-24,off24,54,30,-24,off24,,,,,,,,,,,,,
+post,relationships_6pgxrs,19,20,15,14,0,17,18,15,17,2,within2,15,18,3,off3,14,18,4,off4,"displayed line 15 is sentence 14; +1 only gives off3, verified map gives off4",,,,,,,,,,,,
+post,relationships_c7y2iu,26,27,11,10,0,1,2,11,1,-10,off10,11,2,-9,off9,10,2,-8,off8,"displayed line 11 is sentence 10; +1 only gives off9, verified map gives off8",,,,,,,,,,,,
+post,relationships_hbckl2,85,91,83,77,0,82,83,83,82,-1,within1,83,83,0,exact,77,83,6,off6,"displayed line 83 is sentence 77; +1 only gives exact, verified map gives off6",,,,,,,,,,,,
+post,relationships_j2hohg,30,31,10,10,0,17,18,10,17,7,off7,10,18,8,off8,10,18,8,off8,,,,,,,,,,,,,
+post,relationships_nhr3yo,7,7,5,5,0,1,2,5,1,-4,off4,5,2,-3,off3,5,2,-3,off3,,,,,,,,,,,,,
+post,relationships_qb0cip,20,20,12,12,0,8,9,12,8,-4,off4,12,9,-3,off3,12,9,-3,off3,,,,,,,,,,,,,
+post,relationships_x51v9y,16,17,9,9,0,7,8,9,7,-2,within2,9,8,-1,within1,9,8,-1,within1,,,,,,,,,,,,,
+post,survivinginfidelity_1pk43m0,41,42,39,38,0,33,34,39,33,-6,off6,39,34,-5,off5,38,34,-4,off4,"displayed line 39 is sentence 38; +1 only gives off5, verified map gives off4",,,,,,,,,,,,
+post,survivinginfidelity_jncgbr,38,41,2,2,0,5,6,2,5,3,off3,2,6,4,off4,2,6,4,off4,,,,,,,,,,,,,
+post,survivinginfidelity_m47t0h,31,32,11,10,0,1,2,11,1,-10,off10,11,2,-9,off9,10,2,-8,off8,"displayed line 11 is sentence 10; +1 only gives off9, verified map gives off8",,,,,,,,,,,,
+summary,,,,,,,,,,,,,,,,,,,,,,impl,as implemented (stored line vs zero-based index),exact,0,19,0.000000,0.000000,0.168184,0.046692,0.887152,1.000000,0.393173
+summary,,,,,,,,,,,,,,,,,,,,,,impl,as implemented (stored line vs zero-based index),within1,2,19,0.105263,0.029358,0.313946,0.142123,2.700344,0.802325,0.470430
+summary,,,,,,,,,,,,,,,,,,,,,,impl,as implemented (stored line vs zero-based index),within2,4,19,0.210526,0.085075,0.433347,0.214358,4.072805,0.623694,0.623652
+summary,,,,,,,,,,,,,,,,,,,,,,plus1,+1 only (stored line vs one-based index),exact,2,19,0.105263,0.029358,0.313946,0.046692,0.887152,0.219471,0.948579
+summary,,,,,,,,,,,,,,,,,,,,,,plus1,+1 only (stored line vs one-based index),within1,3,19,0.157895,0.055204,0.375659,0.142123,2.700344,0.529570,0.733549
+summary,,,,,,,,,,,,,,,,,,,,,,plus1,+1 only (stored line vs one-based index),within2,3,19,0.157895,0.055204,0.375659,0.214358,4.072805,0.839889,0.376306
+summary,,,,,,,,,,,,,,,,,,,,,,full,+1 and displayed line mapped to its sentence,exact,1,19,0.052632,0.009352,0.246392,0.046692,0.887152,0.606827,0.780529
+summary,,,,,,,,,,,,,,,,,,,,,,full,+1 and displayed line mapped to its sentence,within1,2,19,0.105263,0.029358,0.313946,0.142123,2.700344,0.802325,0.470430
+summary,,,,,,,,,,,,,,,,,,,,,,full,+1 and displayed line mapped to its sentence,within2,2,19,0.105263,0.029358,0.313946,0.216342,4.110494,0.961236,0.155336

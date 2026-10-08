@@ -1,0 +1,209 @@
+
+==============================================================================================
+PLEF V2 -- SCRIPT 19 : HUMAN CRITERION, VERSION 2   v1.1.0
+==============================================================================================
+  root      : /home/rahul/Research/PLEF/Version_2/PLEF_V2
+  started   : 2026-10-08T06:29:43
+  python    : 3.12.3   workers 2
+  core      : sha256 e0dd29f192cad4dfb5e54df84c19a8adb5903fd9487e7b97f880eb2f76313c1a
+  annotate  : /home/rahul/Research/PLEF/Version_2/annotate.py  v1.6.1  sha256 cee01b04398345b9...
+
+0  ROUNDS: FILES, ENTRY METHOD, INSTRUMENTATION
+----------------------------------------------------------------------------------------------
+  The submitted text (Sections 2.6, 2.7) describes active time, revision
+  counts and scroll-to-end as recorded for each item. Those fields exist
+  only where entry_method is 'web'. Offline rows carry zeros.
+  round rater   rows  entry method                    secs>0  wall>0  rev>0  scroll  file
+  1     1        119  offline sheet (returned spreadsheet)       -       -      -       -  data/interim/annotations/round1_compromised/rater1_OFFLINE.csv
+  1     2        220  offline sheet (returned spreadsheet)       -       -      -       -  data/interim/annotations/round1_compromised/rater2_OFFLINE.csv
+  1     3        220  offline sheet (returned spreadsheet)       -       -      -       -  data/interim/annotations/round1_compromised/rater3_OFFLINE.csv
+  2     1        220  offline:220                          0       0      0       0  data/interim/annotations/round1_compromised/annotations_rater1.csv
+  2     2        220  offline:220                          0       0      0       0  data/interim/annotations/round1_compromised/annotations_rater2.csv
+  2     3        220  offline:220                          0       0      0       0  data/interim/annotations/round1_compromised/annotations_rater3.csv
+  3     1        108  offline:108                          0       0      0       0  data/interim/annotations/round3_low_reliability/annotations_rater1.csv
+  3     2        107  offline:107                          0       0      0       0  data/interim/annotations/round3_low_reliability/annotations_rater2.csv
+  3     3        111  offline:111                          0       0      0       0  data/interim/annotations/round3_low_reliability/annotations_rater3.csv
+  4     1         40  web:40                              40      40     40      40  data/interim/annotations/annotations_rater1.csv
+
+1  SPLITTERS, DISPLAY NUMBERING, WATERSHED INDEX BASE
+----------------------------------------------------------------------------------------------
+  dev_posts                                     : 200
+  dev_numbered_text_matches_core_split          : 200
+  dev_display_lines_differ_from_sentences       : 98
+  dev_texts_with_newline                        : 180
+  dev_lewi_stored_equals_recomputed             : 200
+  display map verified on 200/200 posts
+
+  Tie rule. Equation (1) text (ms lines 81-84): a constant smoothed signal
+  gives i* = floor(N/2) + 1. compute_lewi starts best_v at -1.0
+  (plef_core.py line 161), so the first interior index always wins.
+    N=4   implemented sentence 2   Equation (1) text 3
+    N=5   implemented sentence 2   Equation (1) text 3
+    N=6   implemented sentence 2   Equation (1) text 4
+    N=7   implemented sentence 2   Equation (1) text 4
+    N=8   implemented sentence 2   Equation (1) text 5
+    N=9   implemented sentence 2   Equation (1) text 5
+    N=10  implemented sentence 2   Equation (1) text 6
+    N=11  implemented sentence 2   Equation (1) text 6
+    N=12  implemented sentence 2   Equation (1) text 7
+    relationship: 34 of 1288 posts with >= 4 sentences have a constant signal
+    dev_relationship: 6 of 198 posts with >= 4 sentences have a constant signal
+
+2  ROUND 4: ACCOUNTING (TABLE 8)
+----------------------------------------------------------------------------------------------
+  r4_items_presented                          : 40
+  r4_repeat_showings                          : 4
+  r4_unique_posts                             : 36
+  r4_gold_equals_first_showing                : 36
+  r4_matched_scored                           : 36
+  r4_lewi_defined                             : 35
+  r4_lewi_undefined                           : 1
+  r4_no_tp                                    : 16
+  r4_no_tp_prop                               : 0.457143  (16/35)
+  r4_tp_marked                                : 19
+  r4_median_active_seconds_all_items          : 123.500000
+  r4_median_active_seconds_first_showings     : 123.500000
+  r4_scrolled_to_end                          : 1.000000  (40/40)
+
+3  ROUND 4: THE COMPARISON POSTS UNDER THREE ALIGNMENTS (TABLE 9)
+----------------------------------------------------------------------------------------------
+  id                              N Ndisp h_disp h_sent lewi0 lewi1 bnd  impl     plus1    full     
+----------------------------------------------------------------------------------------------
+  1707opw                        17    17     17     17     7     8   1  off10    off9     off9     
+  BreakUps_1e0fccv              114   115     53     53    74    75   0  off21    off22    off22    
+  emotionalsupport_lz2rga        26    26     24     24    17    18   0  off7     off6     off6     
+  emotionalsupport_osbv1c         9     9      3      3     2     3   0  within1  exact    exact    
+  fn2thu                         68    72     53     49    56    57   0  off3     off4     off8     
+  h015k3                         34    37      8      8    22    23   0  off14    off15    off15    
+  relationship_advice_cdzjre     27    27     13     13    16    17   0  off3     off4     off4     
+  relationship_advice_e6fs4c     41    42     23     22    37    38   0  off14    off15    off16    
+  relationships_3cfcsg           56    56     54     54    29    30   0  off25    off24    off24    
+  relationships_6pgxrs           19    20     15     14    17    18   0  within2  off3     off4     
+  relationships_c7y2iu           26    27     11     10     1     2   0  off10    off9     off8     
+  relationships_hbckl2           85    91     83     77    82    83   0  within1  exact    off6     
+  relationships_j2hohg           30    31     10     10    17    18   0  off7     off8     off8     
+  relationships_nhr3yo            7     7      5      5     1     2   0  off4     off3     off3     
+  relationships_qb0cip           20    20     12     12     8     9   0  off4     off3     off3     
+  relationships_x51v9y           16    17      9      9     7     8   0  within2  within1  within1  
+  survivinginfidelity_1pk43m0    41    42     39     38    33    34   0  off6     off5     off4     
+  survivinginfidelity_jncgbr     38    41      2      2     5     6   0  off3     off4     off4     
+  survivinginfidelity_m47t0h     31    32     11     10     1     2   0  off10    off9     off8     
+  N range 7-114, median 30; displayed line != sentence on 7 posts
+
+4  AGREEMENT AND SUPPORT-AWARE CHANCE, PER ALIGNMENT
+----------------------------------------------------------------------------------------------
+  chance: metric uniform on sentences 2..N-1; impl uses the published
+  model (human number as stored against support 2..N-1).
+  [impl]
+    exact      0/19    0.0%  [  0.0%,  16.8%]   chance mean  4.67%  E[X] 0.887  P(X>=0) 1.000  P(X<=0) 0.393
+    within1    2/19   10.5%  [  2.9%,  31.4%]   chance mean 14.21%  E[X] 2.700  P(X>=2) 0.802  P(X<=2) 0.470
+    within2    4/19   21.1%  [  8.5%,  43.3%]   chance mean 21.44%  E[X] 4.073  P(X>=4) 0.624  P(X<=4) 0.624
+  [plus1]
+    exact      2/19   10.5%  [  2.9%,  31.4%]   chance mean  4.67%  E[X] 0.887  P(X>=2) 0.219  P(X<=2) 0.949
+    within1    3/19   15.8%  [  5.5%,  37.6%]   chance mean 14.21%  E[X] 2.700  P(X>=3) 0.530  P(X<=3) 0.734
+    within2    3/19   15.8%  [  5.5%,  37.6%]   chance mean 21.44%  E[X] 4.073  P(X>=3) 0.840  P(X<=3) 0.376
+  [full]
+    exact      1/19    5.3%  [  0.9%,  24.6%]   chance mean  4.67%  E[X] 0.887  P(X>=1) 0.607  P(X<=1) 0.781
+    within1    2/19   10.5%  [  2.9%,  31.4%]   chance mean 14.21%  E[X] 2.700  P(X>=2) 0.802  P(X<=2) 0.470
+    within2    2/19   10.5%  [  2.9%,  31.4%]   chance mean 21.63%  E[X] 4.110  P(X>=2) 0.961  P(X<=2) 0.155
+  submitted paper's values, homogeneous binomial (labelled, not the model it names): P(0) exact 0.403, P(<=2) within-one 0.480
+  naive 1/N and 3/N benchmarks: 4.3%, 12.9%
+
+5  ARC (TABLE 9)
+----------------------------------------------------------------------------------------------
+  arc_agreement             : 0.371429  (13/35, Wilson 0.231656-0.536634)
+  arc_majority_baseline     : 0.428571  (15/35, Wilson 0.279843-0.591429)
+  arc_kappa                 : 0.020356
+  arc_tvd                   : 0.057143
+  arc_human_distribution    : {'flat': 14, 'redemptive': 15, 'tragic': 6}
+  arc_nava_distribution     : {'flat': 14, 'redemptive': 13, 'tragic': 8}
+
+6  ROUND 3: PERMITTED SUPPORT, DESIGN, RELIABILITY
+----------------------------------------------------------------------------------------------
+  offline import accepts 0 <= tp <= n_sentences (offline_annotation.py 542);
+  the shipped OFFLINE_GUIDE.md places no restriction on sentence 1 or N.
+  rater1: 77 selections; sentence 1: 0; sentence N: 7
+  rater2: 72 selections; sentence 1: 0; sentence N: 4
+  rater3: 65 selections; sentence 1: 0; sentence N: 4
+  r3_distinct_posts             : 174
+  r3_posts_by_three             : 26
+  r3_posts_by_two               : 74
+  r3_posts_by_one               : 74
+  r3_shared_1v2                 : 53
+  r3_pair_only_1v2              : 27
+  r3_shared_1v3                 : 51
+  r3_pair_only_1v3              : 25
+  r3_shared_2v3                 : 48
+  r3_pair_only_2v3              : 22
+  r3_alpha_sentiment_3way       : 0.177298
+  r3_alpha_arc_3way             : 0.002398
+  r3_unanimous_tp_3way          : 0.000000  (0/26, Wilson 0.000000-0.128733)
+  r3_majority_tp_3way           : 0.692308  (18/26, Wilson 0.500114-0.834989)
+  r3_majority_none              : 8
+  r3_majority_sentence          : 10
+
+7  ROUND 3: PAIRWISE RAW, EXISTENCE AND LOCATION AGREEMENT
+----------------------------------------------------------------------------------------------
+  1v2  raw   8/53   15.1%  [  7.9%,  27.1%]  existence  31/53   58.5%  [ 45.1%,  70.7%] chance 65.0%
+       location   7/30   23.3%  [ 11.8%,  40.9%]  chance 1/(N-2) 7.78%  1/N 6.35%  empirical LOO 6.47%  all 6.47%  boundary picks 5
+  1v3  raw  15/51   29.4%  [ 18.7%,  43.0%]  existence  32/51   62.7%  [ 49.0%,  74.7%] chance 54.4%
+       location   9/26   34.6%  [ 19.4%,  53.8%]  chance 1/(N-2) 5.59%  1/N 4.87%  empirical LOO 5.39%  all 5.38%  boundary picks 2
+  2v3  raw  12/48   25.0%  [ 14.9%,  38.8%]  existence  25/48   52.1%  [ 38.3%,  65.5%] chance 52.1%
+       location   5/18   27.8%  [ 12.5%,  50.9%]  chance 1/(N-2) 8.20%  1/N 6.05%  empirical LOO 6.36%  all 6.37%  boundary picks 2
+  location / chance ratio, n2      : 3.0 to 6.2
+  location / chance ratio, n       : 3.7 to 7.1
+  location / chance ratio, emp_loo : 3.6 to 6.4
+  location / chance ratio, emp_all : 3.6 to 6.4
+  empirical: each rater's own choices as relative position (h-0.5)/N binned
+  onto the post's N sentences; LOO excludes the post itself.
+
+8  INTRA-RATER REPEAT AGREEMENT, ROUNDS 3 AND 4
+----------------------------------------------------------------------------------------------
+  round 3 rater 1:  sentiment   6/8    75.0%  [ 40.9%,  92.9%]  arc   7/8    87.5%  [ 52.9%,  97.8%]  tp   2/8    25.0%  [  7.1%,  59.1%]
+  round 3 rater 2:  sentiment   5/7    71.4%  [ 35.9%,  91.8%]  arc   4/7    57.1%  [ 25.0%,  84.2%]  tp   2/7    28.6%  [  8.2%,  64.1%]
+  round 3 rater 3:  sentiment   3/11   27.3%  [  9.7%,  56.6%]  arc   3/11   27.3%  [  9.7%,  56.6%]  tp   2/11   18.2%  [  5.1%,  47.7%]
+  round 4 rater 1:  sentiment   3/4    75.0%  [ 30.1%,  95.4%]  arc   4/4   100.0%  [ 51.0%, 100.0%]  tp   0/4     0.0%  [  0.0%,  49.0%]
+  round 3 arc       range 27-88%
+  round 3 sentiment range 27-75%
+  round 3 tp        range 18-29%
+  round 4 arc       range 100-100%
+  round 4 sentiment range 75-75%
+  round 4 tp        range 0-0%
+
+9  REPEAT SPACING AS PRESENTED (gap = second position - first position)
+----------------------------------------------------------------------------------------------
+  full sequence: annotate.REPEAT_MIN_GAP = 40 slots;
+  short rounds: gap = max(3, n_uniq // 3) (annotate.py line 246).
+  round 3 rater 1: 8 repeats, presented min 20 median 26.5 max 98, under 41: 5
+      presented [20, 23, 24, 24, 29, 43, 46, 98]
+      slots     [43, 44, 44, 53, 55, 81, 95, 199]
+  round 3 rater 2: 7 repeats, presented min 31 median 37 max 58, under 41: 6
+      presented [31, 33, 34, 37, 38, 40, 58]
+      slots     [63, 70, 73, 73, 79, 79, 123]
+  round 3 rater 3: 11 repeats, presented min 21 median 42 max 78, under 41: 4
+      presented [21, 24, 26, 32, 42, 42, 44, 62, 73, 78, 78]
+      slots     [47, 48, 52, 64, 79, 82, 90, 131, 145, 157, 159]
+  round 4 rater 1: 4 repeats, min 13 median 14.0 max 31, under 41: 4; [13, 14, 14, 31]
+
+10  REJECTED ROUNDS: THE PATTERNS THAT REJECTED THEM
+----------------------------------------------------------------------------------------------
+  round 2 1v2: 200 comparisons, fields matching {0: 120, 3: 80}
+  round 2 1v3: 200 comparisons, fields matching {0: 140, 3: 60}
+  round 2 2v3: 200 comparisons, fields matching {0: 140, 3: 60}
+  round 2: 600 comparisons, 0 with exactly one or two matching fields
+  round 1 1v2: identical turning point 100/101
+  round 1 1v3: identical turning point 100/101
+  round 1 2v3: identical turning point 200/200
+  round 1 chance of the same sentence over 200 posts: 1/(N-2) 8.44%  1/N 6.10%
+
+WRITING
+----------------------------------------------------------------------------------------------
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/human_criterion_v2.csv  (332 keys)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/annotation_audit_v2.csv  (19 rows)
+  no figure caption in the submitted text carries an annotation number;
+  Tables 8, 9 and 12 and Sections 2.6, 3.5, 3.6, 4.3, 4.6 draw on the keys above.
+
+==============================================================================================
+DONE
+==============================================================================================
+  finished  : 2026-10-08T06:29:44

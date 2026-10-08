@@ -38,13 +38,19 @@ party packages, listed in `requirements-lock.txt`.
 
 The NRC lexicons are distributed by their author under a research licence and
 are not redistributed here. The relationship corpus consists of public Reddit
-posts; the collection scripts are included and the post text is not
-redistributed.
+posts. The post text is not part of this release: `corpus/` lists the
+posts by identifier and `collection/` holds the collection scripts. Until
+2026-10-08 the round-1 annotation spreadsheets carried the text of the 200
+annotation-development posts; see `annotation/README.md`. The first-revision
+manuscript and supplementary are in `first_revision/` (tag `r1-as-reviewed`).
 
 ## Verifying this release
 
     python -c "import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest())" <file>
 
 and compare against `MANIFEST-RELEASE.txt`.
+
+The aggregate hash below describes the release as generated on 2026-09-01; the dated amendment
+block at the end of `MANIFEST-RELEASE.txt` lists every file added or changed since.
 
 Aggregate release hash: `bdbea69ceaa7d20666207bd2b849ece742fe8d8e6f6e64ba57612dc69483211a`

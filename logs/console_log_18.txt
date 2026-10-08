@@ -1,0 +1,180 @@
+
+==============================================================================================
+PLEF V2 -- SCRIPT 18 : LEXICON MATCH COUNTS   v1.1.0
+==============================================================================================
+  root      : /home/rahul/Research/PLEF/Version_2/PLEF_V2
+  started   : 2026-10-08T06:28:26
+  python    : 3.12.3   workers 2
+  core      : /home/rahul/Research/PLEF/Version_2/PLEF_V2/src/plef_core.py  sha256 e0dd29f192cad4dfb5e54df84c19a8adb5903fd9487e7b97f880eb2f76313c1a
+  release/src/plef_core.py byte-identical to src/: True
+  lexicon   : sha256 18294c6727f66003df67c0c01ab9e66073dca34d3c60541878c35ba84825165c (required 18294c67...25165c)
+  lexicon   : 348 entries, 26 multi-word, 1 with s*i == 0
+
+A  RECOUNT EVERY DOCUMENT AND CHECK THE STORED SCORE
+----------------------------------------------------------------------------------------------
+  dailydialog       docs 101,026  scored 101,026  not in scored file 0  score mismatches 0  n_words != recount 0
+  empathetic        docs  19,157  scored  19,157  not in scored file 0  score mismatches 0  n_words != recount 0
+  goemotions        docs  54,263  scored  54,263  not in scored file 0  score mismatches 0  n_words != recount 0
+  isear             docs   7,666  scored   7,666  not in scored file 0  score mismatches 0  n_words != recount 0
+  meld              docs  13,708  scored  13,708  not in scored file 0  score mismatches 0  n_words != recount 0
+  relationship      docs   1,308  scored   1,308  not in scored file 0  score mismatches 0  n_words != recount 0
+  semeval2017       docs  52,806  scored  52,806  not in scored file 0  score mismatches 0  n_words != recount 0
+  tweeteval         docs  59,899  scored  59,899  not in scored file 0  score mismatches 0  n_words != recount 0
+  dev_relationship  docs     200  scored     200  not in scored file 0  score mismatches 0  n_words != recount 0
+  every recomputed score equals the stored sentiment_mean.
+
+B  CLASSES: nomatch / cancel / nonzero
+----------------------------------------------------------------------------------------------
+  corpus               docs         nomatch        cancel         nonzero  fires(score)  fires(match)  0-weight only
+----------------------------------------------------------------------------------------------
+  dailydialog       101,026  85,513  84.6%    139 0.14%  15,374  15.2%        15.22%        15.36%             77
+  empathetic         19,157  12,061  63.0%     57 0.30%   7,039  36.7%        36.74%        37.04%              5
+  goemotions         54,263  39,037  71.9%    117 0.22%  15,109  27.8%        27.84%        28.06%             52
+  isear               7,666   4,639  60.5%     21 0.27%   3,006  39.2%        39.21%        39.49%              3
+  meld               13,708  12,032  87.8%     16 0.12%   1,660  12.1%        12.11%        12.23%              4
+  relationship        1,308      37   2.8%      4 0.31%   1,267  96.9%        96.87%        97.17%              0
+  semeval2017        52,806  40,479  76.7%     99 0.19%  12,228  23.2%        23.16%        23.34%             42
+  tweeteval          59,899  46,011  76.8%    108 0.18%  13,780  23.0%        23.01%        23.19%             46
+  dev_relationship      200       6   3.0%      1 0.50%     193  96.5%        96.50%        97.00%              0
+  0-weight only: documents whose every match has s*i == 0, so they
+  are 'cancel' without any cancellation; counted inside 'cancel'.
+
+C  MACRO-F1, PLEF AND VADER, THREE SUBSETS, BOOTSTRAP 95% CI
+----------------------------------------------------------------------------------------------
+  corpus       subset              n  PLEF [95% CI]             VADER [95% CI]               delta
+----------------------------------------------------------------------------------------------
+  goemotions   all            54,263  0.446877 [0.442426, 0.451313]  0.580906 [0.576705, 0.584770]  -0.134029
+  goemotions   fired_score    15,109  0.474007 [0.467787, 0.480639]  0.548762 [0.540946, 0.557062]  -0.074755
+  goemotions   fired_match    15,226  0.477804 [0.471405, 0.484515]  0.549018 [0.540946, 0.557302]  -0.071214
+  semeval2017  all            52,806  0.422675 [0.417647, 0.427447]  0.540954 [0.536545, 0.545319]  -0.118279
+  semeval2017  fired_score    12,228  0.457257 [0.449392, 0.465049]  0.526847 [0.517755, 0.535285]  -0.069590
+  semeval2017  fired_match    12,327  0.462798 [0.454717, 0.470603]  0.526377 [0.517260, 0.534781]  -0.063579
+  meld         all            13,708  0.321404 [0.313546, 0.329091]  0.404429 [0.395829, 0.412742]  -0.083025
+  meld         fired_score     1,660  0.371049 [0.352925, 0.389163]  0.447012 [0.423586, 0.472190]  -0.075963
+  meld         fired_match     1,676  0.378788 [0.359806, 0.398450]  0.445992 [0.422328, 0.468956]  -0.067204
+  tweeteval    all            59,899  0.421233 [0.416934, 0.425567]  0.541398 [0.537189, 0.545628]  -0.120165
+  tweeteval    fired_score    13,780  0.444031 [0.437226, 0.450816]  0.523695 [0.515325, 0.532422]  -0.079664
+  tweeteval    fired_match    13,888  0.450523 [0.443346, 0.457700]  0.523235 [0.514939, 0.531916]  -0.072712
+  dailydialog  all           101,026  0.419694 [0.415185, 0.423803]  0.350166 [0.346827, 0.353475]  0.069528
+  dailydialog  fired_score    15,374  0.248724 [0.242438, 0.255341]  0.313150 [0.305047, 0.320735]  -0.064426
+  dailydialog  fired_match    15,513  0.253853 [0.247451, 0.260571]  0.313112 [0.304817, 0.321632]  -0.059259
+  isear        all             7,666  0.629540 [0.614431, 0.644862]  0.644823 [0.632431, 0.656972]  -0.015283
+  isear        fired_score     3,006  0.751552 [0.731217, 0.771328]  0.712196 [0.692171, 0.731525]  0.039356
+  isear        fired_match     3,027  0.751914 [0.731598, 0.771693]  0.709629 [0.689439, 0.728793]  0.042285
+  empathetic   all            19,157  0.563795 [0.556480, 0.570718]  0.724219 [0.717981, 0.730507]  -0.160424
+  empathetic   fired_score     7,039  0.828036 [0.819274, 0.836736]  0.811565 [0.802505, 0.820502]  0.016471
+  empathetic   fired_match     7,096  0.824986 [0.816238, 0.833657]  0.810412 [0.801403, 0.819398]  0.014574
+
+D  FIG. 1b LENGTH BANDS: % OF DOCUMENTS PRODUCING A SIGNAL
+----------------------------------------------------------------------------------------------
+  bands on stored n_words, bins with fewer than 20 documents blank,
+  exactly as 06_statistics.B_length (lines 327-358)
+
+E  REPRODUCTION OF THE PUBLISHED TABLE 6 AND FIG. 1b
+----------------------------------------------------------------------------------------------
+  corpus       item          published  recomputed  check
+----------------------------------------------------------------------------------------------
+  goemotions   fires %         27.8400     27.8440  OK
+  goemotions   PLEF all         0.4469      0.4469  OK
+  goemotions   VADER all        0.5809      0.5809  OK
+  goemotions   PLEF fired       0.4740      0.4740  OK
+  goemotions   VADER fired      0.5488      0.5488  OK
+  goemotions   delta           -0.0748     -0.0748  OK
+  semeval2017  fires %         23.1600     23.1560  OK
+  semeval2017  PLEF all         0.4227      0.4227  OK
+  semeval2017  VADER all        0.5410      0.5410  OK
+  semeval2017  PLEF fired       0.4573      0.4573  OK
+  semeval2017  VADER fired      0.5268      0.5268  OK
+  semeval2017  delta           -0.0696     -0.0696  OK
+  meld         fires %         12.1100     12.1100  OK
+  meld         PLEF all         0.3214      0.3214  OK
+  meld         VADER all        0.4044      0.4044  OK
+  meld         PLEF fired       0.3710      0.3710  OK
+  meld         VADER fired      0.4470      0.4470  OK
+  meld         delta           -0.0760     -0.0760  OK
+  tweeteval    fires %         23.0100     23.0050  OK
+  tweeteval    PLEF all         0.4212      0.4212  OK
+  tweeteval    VADER all        0.5414      0.5414  OK
+  tweeteval    PLEF fired       0.4440      0.4440  OK
+  tweeteval    VADER fired      0.5237      0.5237  OK
+  tweeteval    delta           -0.0797     -0.0797  OK
+  dailydialog  fires %         15.2200     15.2180  OK
+  dailydialog  PLEF all         0.4197      0.4197  OK
+  dailydialog  VADER all        0.3502      0.3502  OK
+  dailydialog  PLEF fired       0.2487      0.2487  OK
+  dailydialog  VADER fired      0.3131      0.3131  OK
+  dailydialog  delta           -0.0644     -0.0644  OK
+  isear        fires %         39.2100     39.2120  OK
+  isear        PLEF all         0.6295      0.6295  OK
+  isear        VADER all        0.6448      0.6448  OK
+  isear        PLEF fired       0.7516      0.7516  OK
+  isear        VADER fired      0.7122      0.7122  OK
+  isear        delta            0.0394      0.0394  OK
+  empathetic   fires %         36.7400     36.7440  OK
+  empathetic   PLEF all         0.5638      0.5638  OK
+  empathetic   VADER all        0.7242      0.7242  OK
+  empathetic   PLEF fired       0.8280      0.8280  OK
+  empathetic   VADER fired      0.8116      0.8116  OK
+  empathetic   delta            0.0165      0.0165  OK
+
+  corpus           band           published  score!=0  >=1 match  check
+----------------------------------------------------------------------------------------------
+  dailydialog      1_9                  9.5       9.5        9.6  OK
+  dailydialog      10_19               18.1      18.1       18.3  OK
+  dailydialog      20_39               28.5      28.5       28.9  OK
+  dailydialog      40_79               45.2      45.2       45.7  OK
+  dailydialog      80_159              62.5      62.5       62.5  OK
+  dev_relationship 80_159              83.3      83.3       87.5  OK
+  dev_relationship 160_319             98.3      98.3       98.3  OK
+  dev_relationship 320+               100.0     100.0      100.0  OK
+  empathetic       1_9                 23.8      23.8       23.9  OK
+  empathetic       10_19               36.2      36.2       36.3  OK
+  empathetic       20_39               42.4      42.4       43.0  OK
+  empathetic       40_79               56.6      56.6       58.2  OK
+  goemotions       1_9                 19.0      19.0       19.1  OK
+  goemotions       10_19               29.7      29.7       30.0  OK
+  goemotions       20_39               39.7      39.7       40.1  OK
+  isear            1_9                 16.0      16.0       16.1  OK
+  isear            10_19               31.0      31.0       31.2  OK
+  isear            20_39               50.5      50.5       50.8  OK
+  isear            40_79               68.2      68.2       69.0  OK
+  isear            80_159              83.3      83.3       83.3  OK
+  meld             1_9                  7.2       7.2        7.2  OK
+  meld             10_19               19.1      19.1       19.4  OK
+  meld             20_39               28.1      28.1       28.4  OK
+  relationship     40_79               81.8      81.8       86.4  OK
+  relationship     80_159              86.3      86.3       87.0  OK
+  relationship     160_319             97.6      97.6       97.9  OK
+  relationship     320+                99.6      99.6       99.6  OK
+  semeval2017      1_9                 11.5      11.5       11.6  OK
+  semeval2017      10_19               19.8      19.8       19.8  OK
+  semeval2017      20_39               25.8      25.8       26.0  OK
+  semeval2017      40_79               40.0      40.0       40.0  OK
+  tweeteval        1_9                 11.3      11.3       11.4  OK
+  tweeteval        10_19               20.1      20.1       20.2  OK
+  tweeteval        20_39               27.9      27.9       28.2  OK
+
+  REPRODUCTION: OK -- published values recomputed exactly
+  range over the eight corpora, 1-9 words     score : 7.2-23.8%
+  range over the eight corpora, 1-9 words     match : 7.2-23.9%
+  range over the eight corpora, 80-159 words  score : 62.5-86.3%
+  range over the eight corpora, 80-159 words  match : 62.5-87.0%
+
+F  WRITING
+----------------------------------------------------------------------------------------------
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_dailydialog.csv  (101,026 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_empathetic.csv  (19,157 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_goemotions.csv  (54,263 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_isear.csv  (7,666 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_meld.csv  (13,708 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_relationship.csv  (1,308 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_semeval2017.csv  (52,806 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_tweeteval.csv  (59,899 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/match_counts_dev_relationship.csv  (200 rows)
+  /home/rahul/Research/PLEF/Version_2/PLEF_V2/results/tables/abstention_v2.csv  (9 corpus rows + 6 range rows min_/max_ over eight, three, two; 53 columns)
+  columns: corpus, n_docs, n_nomatch, pct_nomatch, n_cancel, pct_cancel, n_nonzero, pct_nonzero, n_fires_score, fires_score_pct, n_fires_match, fires_match_pct, n_cancel_zero_weight_only, n_all, plef_all_f1, plef_all_lo, plef_all_hi, vader_all_f1, vader_all_lo, vader_all_hi, n_fired_score, plef_fired_score_f1, plef_fired_score_lo, plef_fired_score_hi, vader_fired_score_f1, vader_fired_score_lo, vader_fired_score_hi, n_fired_match, plef_fired_match_f1, plef_fired_match_lo, plef_fired_match_hi, vader_fired_match_f1, vader_fired_match_lo, vader_fired_match_hi, delta_all, delta_fired_score, delta_fired_match, fires_score_pct_labelled, fires_match_pct_labelled, band_1_9_score, band_1_9_match, band_10_19_score, band_10_19_match, band_20_39_score, band_20_39_match, band_40_79_score, band_40_79_match, band_80_159_score, band_80_159_match, band_160_319_score, band_160_319_match, band_320_1000000000_score, band_320_1000000000_match
+
+==============================================================================================
+DONE
+==============================================================================================
+  finished  : 2026-10-08T06:29:42
