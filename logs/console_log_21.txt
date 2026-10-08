@@ -1,0 +1,57 @@
+
+==============================================================================================
+PLEF V2 -- SCRIPT 21 : RELEASE CORRECTION, SECOND REVISION   v1.1.2   [APPLY + PUSH]
+==============================================================================================
+  root      : /home/rahul/Research/PLEF/Version_2/PLEF_V2
+  release   : /home/rahul/Research/PLEF/Version_2/PLEF_V2/release
+  started   : 2026-10-08T09:43:01
+  python    : 3.12.3   workers 2
+
+0  PRECONDITIONS
+----------------------------------------------------------------------------------------------
+  branch main, origin https://github.com/rahul-k-mishra/plef.git, clean, autocrlf false, .gitattributes '* -text'
+  HEAD c3f6a1e8cc58a08f36eb98df86862ae714587804; r1-as-reviewed 4d51c8a1715570edb45b5b80bfc0031d63e16584; r2-corrected -
+  manifest: 167 current entries hash raw on disk; 10 old paths superseded by an amendment are not checked
+  console_log_15_before_r2.txt: no file needs a human look
+  first-revision sources present with the planned hashes
+  pre-revision collection-script blobs as planned
+  all 48 source files present; Section 2.2 wording found in the manuscript
+
+1  FINGERPRINTS OF THE 1,508 RELATIONSHIP POSTS
+----------------------------------------------------------------------------------------------
+  posts 1508 (evaluation 1308, annotation-development 200); 12-word fingerprints 4441; distinct 8-word windows 774443
+
+2  OPTIONAL TAGS OF THE PUSHED STATES (plan step 1)
+----------------------------------------------------------------------------------------------
+  not requested (--tag-pushed-states)
+
+3  COMMIT A: first_revision/ ALONE ON TOP OF a6c5fc7 (plan step 6)
+----------------------------------------------------------------------------------------------
+  r1-as-reviewed exists at 4d51c8a and verifies against its own manifest; commit A skipped
+
+4  COMMIT B: THE CORRECTION (plan steps 2-5, 7, 8)
+----------------------------------------------------------------------------------------------
+  HEAD c3f6a1e is commit B (untagged, parent r1-as-reviewed); commit B skipped
+
+5  VERIFICATION (plan step 9.1)
+----------------------------------------------------------------------------------------------
+  tree of c3f6a1e: 153 text files scanned; files with post text: 0
+  history reachable from c3f6a1e: 248 blobs; blobs with post text: 6 (expected: the six earlier versions of the round-1 sheets)
+    blob 1db814f716: 210 posts
+    blob 5d965568b5: 210 posts
+    blob 67746ea1e7: 210 posts
+    blob 74f49d2b50: 117 posts
+    blob bf7b876ef4: 117 posts
+    blob fc7987adbb: 210 posts
+  posts found in history: 200 annotation-development, 10 evaluation (evaluation posts quoted inside annotation-development posts)
+
+6  PUSH (plan step 10)
+----------------------------------------------------------------------------------------------
+  pushed tag r1-as-reviewed
+  pushed main: c3f6a1e refs/remotes/origin/main@{2026-10-08T09:18:00+05:30}: update by push
+  <<DATE:correction>> = 2026-10-08T09:18:00+05:30  (the push that removed the post text from the current version)
+
+7  COMMIT C: THE CONSOLE LOGS, THEN TAG r2-corrected (after verification and push)
+----------------------------------------------------------------------------------------------
+  console_log_15_after_r2.txt exists and is added
+  the copy of this log in commit C ends with this line (2026-10-08T09:43:44)

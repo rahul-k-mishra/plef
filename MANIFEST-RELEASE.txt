@@ -205,3 +205,7 @@ ce0643633d96fa83ff52db6e987b2d86d853b925a7af3cb6cbb9f95006703815  4180  tables/s
 1d9a13a1a8657f8e1417524a883930c62d3216b750f2549c659655c6620d80d4  44500  tables/supp_corpus_sources.csv
 a6b5faac0dd74df3248afcd73f1aece7f35992f16969615225713df33d994089  31197  tables/supp_released_text_overlap.csv
 # AMENDMENT 2026-10-08 ends; 56 entries added, 10 superseded.
+# AMENDMENT 2026-10-08 (commit C, tag r2-corrected): console logs added after verification and push (logs/console_log_15_after_r2.txt, logs/console_log_21.txt); scripts/15_release_byte_audit.py replaced by v1.1.1, which reads these amendment blocks, and its entry below supersedes the hash recorded for the same path in commit B's block.
+e7701d06991108f45da486ce20e41edc33bdb39ddb6d3ed55cc3b50866bd4741  16300  logs/console_log_15_after_r2.txt
+b351098613f904a0a2852139f7a13ed6a8e3e9175ae9a5e6d667ef0a3520a7ed  3388  logs/console_log_21.txt
+52a8a14f3e64fe56d0460e6240b6f38c93d24fa889f7b3df060ab069629c9339  16806  scripts/15_release_byte_audit.py

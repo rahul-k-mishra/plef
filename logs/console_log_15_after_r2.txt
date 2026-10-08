@@ -1,0 +1,231 @@
+==============================================================================
+PLEF V2 -- SCRIPT 15 : RELEASE BYTE AUDIT   v1.1.0
+==============================================================================
+  release : /tmp/plef-after
+  started : 2026-10-08T09:24:25
+  workers : 1
+  manifest entries : 167
+  superseded paths : 10 (from dated amendment blocks)
+  git HEAD         : c3f6a1e
+
+DISK vs MANIFEST -- which form of the file on disk reproduces the hash
+------------------------------------------------------------------------------
+  raw         157
+
+GIT HEAD vs MANIFEST -- which form of the committed file reproduces the hash
+------------------------------------------------------------------------------
+  raw         157
+
+PER-FILE TABLE (path | disk_form | head_form | disk_has_cr | head_has_cr | bom)
+------------------------------------------------------------------------------
+  annotation/ANNOTATION_GUIDE.md                   raw      raw         1  1  0
+  annotation/OFFLINE_GUIDE.md                      raw      raw         1  1  0
+  AUDIT_RECONCILIATION.md                          raw      raw         1  1  0
+  DECISIONS.md                                     raw      raw         1  1  0
+  figures/fig1_coverage_scope.png                  raw      raw         1  1  0
+  figures/fig2_benchmark.png                       raw      raw         1  1  0
+  figures/fig3_nulls_moderator.png                 raw      raw         1  1  0
+  figures/fig3a_null_distributions.png             raw      raw         1  1  0
+  figures/fig4_gase_abstention.png                 raw      raw         1  1  0
+  logs/console_log.txt                             raw      raw         1  1  0
+  logs/console_log_02.txt                          raw      raw         1  1  0
+  logs/console_log_03.txt                          raw      raw         1  1  0
+  logs/console_log_04.txt                          raw      raw         1  1  0
+  logs/console_log_05.txt                          raw      raw         1  1  0
+  logs/console_log_06.txt                          raw      raw         1  1  0
+  logs/console_log_08.txt                          raw      raw         1  1  0
+  logs/console_log_09.txt                          raw      raw         0  0  0
+  logs/console_log_10.txt                          raw      raw         1  1  0
+  logs/console_log_11.txt                          raw      raw         1  1  0
+  logs/console_log_12.txt                          raw      raw         1  1  0
+  logs/console_log_13.txt                          raw      raw         1  1  0
+  logs/console_log_14.txt                          raw      raw         1  1  0
+  logs/FORENSIC_REPORT.md                          raw      raw         1  1  0
+  manifest/core.json                               raw      raw         1  1  0
+  manifest/corpora.json                            raw      raw         1  1  0
+  manifest/environment.json                        raw      raw         1  1  0
+  manifest/scored.json                             raw      raw         1  1  0
+  NULLS.md                                         raw      raw         1  1  0
+  requirements-lock.txt                            raw      raw         1  1  0
+  scored/scored_dailydialog.csv                    raw      raw         1  1  0
+  scored/scored_dailydialog.done                   raw      raw         1  1  0
+  scored/scored_dev_relationship.csv               raw      raw         1  1  0
+  scored/scored_dev_relationship.done              raw      raw         1  1  0
+  scored/scored_empathetic.csv                     raw      raw         1  1  0
+  scored/scored_empathetic.done                    raw      raw         1  1  0
+  scored/scored_goemotions.csv                     raw      raw         1  1  0
+  scored/scored_goemotions.done                    raw      raw         1  1  0
+  scored/scored_isear.csv                          raw      raw         1  1  0
+  scored/scored_isear.done                         raw      raw         1  1  0
+  scored/scored_meld.csv                           raw      raw         1  1  0
+  scored/scored_meld.done                          raw      raw         1  1  0
+  scored/scored_relationship.csv                   raw      raw         1  1  0
+  scored/scored_relationship.done                  raw      raw         1  1  0
+  scored/scored_semeval2017.csv                    raw      raw         1  1  0
+  scored/scored_semeval2017.done                   raw      raw         1  1  0
+  scored/scored_tweeteval.csv                      raw      raw         1  1  0
+  scored/scored_tweeteval.done                     raw      raw         1  1  0
+  scripts/01_bootstrap_and_forensics.py            raw      raw         0  0  0
+  scripts/02_baseline_environment.py               raw      raw         0  0  0
+  scripts/03_dataset_rebuild.py                    raw      raw         0  0  0
+  scripts/04_core_rebuild.py                       raw      raw         0  0  0
+  scripts/05_full_run.py                           raw      raw         0  0  0
+  scripts/06_statistics.py                         raw      raw         0  0  0
+  scripts/07_manuscript_assets.py                  raw      raw         0  0  0
+  scripts/08_audit_reconciliation.py               raw      raw         0  0  0
+  scripts/09_release_assembly.py                   raw      raw         0  0  0
+  scripts/annotate.py                              raw      raw         0  0  0
+  scripts/check_state.py                           raw      raw         0  0  0
+  scripts/offline_annotation.py                    raw      raw         0  0  0
+  src/plef_baselines.py                            raw      raw         1  1  0
+  src/plef_core.py                                 raw      raw         1  1  0
+  src/plef_lexicons.json                           raw      raw         1  1  0
+  src/plef_purity.py                               raw      raw         1  1  0
+  tables/abstention.csv                            raw      raw         1  1  0
+  tables/abstention_binary.csv                     raw      raw         1  1  0
+  tables/all_results.json                          raw      raw         1  1  0
+  tables/arc_window_sensitivity.csv                raw      raw         1  1  0
+  tables/auc.csv                                   raw      raw         1  1  0
+  tables/audit_annotation.csv                      raw      raw         1  1  0
+  tables/audit_archetype.csv                       raw      raw         1  1  0
+  tables/audit_bands.csv                           raw      raw         1  1  0
+  tables/audit_benchmarks.csv                      raw      raw         1  1  0
+  tables/audit_datasets.csv                        raw      raw         1  1  0
+  tables/audit_throughput.csv                      raw      raw         1  1  0
+  tables/chance_per_post.csv                       raw      raw         1  1  0
+  tables/correlations.csv                          raw      raw         1  1  0
+  tables/coverage.csv                              raw      raw         1  1  0
+  tables/descriptive.csv                           raw      raw         1  1  0
+  tables/domain_split.csv                          raw      raw         1  1  0
+  tables/effect_sizes.csv                          raw      raw         1  1  0
+  tables/gase_ablation.csv                         raw      raw         1  1  0
+  tables/human_criterion.csv                       raw      raw         1  1  0
+  tables/human_label_f1.csv                        raw      raw         1  1  0
+  tables/length_threshold.csv                      raw      raw         1  1  0
+  tables/mcnemar.csv                               raw      raw         1  1  0
+  tables/moderators.csv                            raw      raw         1  1  0
+  tables/null_draws.csv                            raw      raw         1  1  0
+  tables/null_draws_parallel.csv                   raw      raw         1  1  0
+  tables/rasp_distribution.csv                     raw      raw         1  1  0
+  tables/response_space.csv                        raw      raw         1  1  0
+  tables/scoreboard.csv                            raw      raw         1  1  0
+  tables/threshold_sweep.csv                       raw      raw         1  1  0
+  tables/trivial_baselines.csv                     raw      raw         1  1  0
+  scripts/10_null_analysis.py                      raw      raw         0  0  0
+  scripts/11_response_space.py                     raw      raw         0  0  0
+  scripts/12_equation_audit.py                     raw      raw         0  0  0
+  scripts/13_arc_window_sensitivity.py             raw      raw         0  0  0
+  scripts/14_parallel_null.py                      raw      raw         0  0  0
+  first_revision/PLEF_revision_as_submitted.pdf    raw      raw         1  1  0
+  first_revision/SUPPLEMENTARY.md                  raw      raw         0  0  0
+  first_revision/manuscript_revised.tex            raw      raw         0  0  0
+  annotation/README.md                             raw      raw         0  0  0
+  annotation/derived/README.md                     raw      raw         0  0  0
+  annotation/derived/gold_dev200_UNUSABLE_alpha0.177.csv raw      raw         1  1  0
+  annotation/derived/gold_dev200_rejected_folder.csv raw      raw         1  1  0
+  annotation/round1_rejected/rater1_OFFLINE.csv    raw      raw         1  1  1
+  annotation/round1_rejected/rater2_OFFLINE.csv    raw      raw         1  1  1
+  annotation/round1_rejected/rater3_OFFLINE.csv    raw      raw         1  1  1
+  annotation/round2_rejected/annotations_rater1.csv raw      raw         1  1  0
+  annotation/round2_rejected/annotations_rater2.csv raw      raw         1  1  0
+  annotation/round2_rejected/annotations_rater3.csv raw      raw         1  1  0
+  annotation/round3/annotations_rater1.csv         raw      raw         1  1  0
+  annotation/round3/annotations_rater2.csv         raw      raw         1  1  0
+  annotation/round3/annotations_rater3.csv         raw      raw         1  1  0
+  annotation/round4/annotations_rater1.csv         raw      raw         1  1  0
+  annotation/round4/gold_dev200.csv                raw      raw         1  1  0
+  collection/README.md                             raw      raw         0  0  0
+  collection/extended_reddit_download.py           raw      raw         1  1  0
+  collection/reddit_download.py                    raw      raw         1  1  0
+  corpus/README.md                                 raw      raw         0  0  0
+  corpus/relationship_post_ids.csv                 raw      raw         0  0  0
+  figures/fig1_coverage_scope_v2.png               raw      raw         1  1  0
+  figures/fig4_gase_abstention_v2.png              raw      raw         1  1  0
+  logs/console_log_15.txt                          raw      raw         0  0  0
+  logs/console_log_15_after_fix.txt                raw      raw         0  0  0
+  logs/console_log_15_before_r2.txt                raw      raw         0  0  0
+  logs/console_log_15_fresh_clone.txt              raw      raw         0  0  0
+  logs/console_log_16.txt                          raw      raw         0  0  0
+  logs/console_log_17.txt                          raw      raw         0  0  0
+  logs/console_log_18.txt                          raw      raw         0  0  0
+  logs/console_log_19.txt                          raw      raw         0  0  0
+  logs/console_log_20.txt                          raw      raw         0  0  0
+  scripts/15_release_byte_audit.py                 raw      raw         0  0  0
+  scripts/16_offline_csv_probe.py                  raw      raw         0  0  0
+  scripts/17_release_byte_fix.py                   raw      raw         0  0  0
+  scripts/18_match_counts.py                       raw      raw         0  0  0
+  scripts/19_human_criterion_v2.py                 raw      raw         0  0  0
+  scripts/20_round2_assets.py                      raw      raw         0  0  0
+  scripts/21_release_correction_r2.py              raw      raw         0  0  0
+  tables/abstention_v2.csv                         raw      raw         1  1  0
+  tables/annotation_audit_v2.csv                   raw      raw         1  1  0
+  tables/human_criterion_v2.csv                    raw      raw         1  1  0
+  tables/match_counts_dailydialog.csv              raw      raw         1  1  0
+  tables/match_counts_dev_relationship.csv         raw      raw         1  1  0
+  tables/match_counts_empathetic.csv               raw      raw         1  1  0
+  tables/match_counts_goemotions.csv               raw      raw         1  1  0
+  tables/match_counts_isear.csv                    raw      raw         1  1  0
+  tables/match_counts_meld.csv                     raw      raw         1  1  0
+  tables/match_counts_relationship.csv             raw      raw         1  1  0
+  tables/match_counts_semeval2017.csv              raw      raw         1  1  0
+  tables/match_counts_tweeteval.csv                raw      raw         1  1  0
+  tables/release_byte_audit.csv                    raw      raw         0  0  0
+  tables/release_byte_audit_after_fix.csv          raw      raw         0  0  0
+  tables/supp_alignment_comparison.csv             raw      raw         1  1  0
+  tables/supp_annotation_intervals.csv             raw      raw         1  1  0
+  tables/supp_corpus_sources.csv                   raw      raw         1  1  0
+  tables/supp_released_text_overlap.csv            raw      raw         1  1  0
+
+SUPERSEDED PATHS (moved by a dated amendment; verified at their new path)
+------------------------------------------------------------------------------
+  annotation/annotations_rater1.csv
+      -> annotation/round4/annotations_rater1.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/gold_dev200.csv
+      -> annotation/round4/gold_dev200.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/gold_dev200_UNUSABLE_alpha0.177.csv
+      -> annotation/derived/gold_dev200_UNUSABLE_alpha0.177.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/rejected/annotations_rater1.csv
+      -> annotation/round3/annotations_rater1.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/rejected/annotations_rater2.csv
+      -> annotation/round3/annotations_rater2.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/rejected/annotations_rater3.csv
+      -> annotation/round3/annotations_rater3.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/rejected/gold_dev200.csv
+      -> annotation/derived/gold_dev200_rejected_folder.csv   disk=raw head=raw
+      moved, unchanged: new path reproduces the entry's hash
+  annotation/rejected/rater1_OFFLINE.csv
+      -> annotation/round1_rejected/rater1_OFFLINE.csv   disk=none head=none
+      moved and changed: new path verified against its own added entry
+  annotation/rejected/rater2_OFFLINE.csv
+      -> annotation/round1_rejected/rater2_OFFLINE.csv   disk=none head=none
+      moved and changed: new path verified against its own added entry
+  annotation/rejected/rater3_OFFLINE.csv
+      -> annotation/round1_rejected/rater3_OFFLINE.csv   disk=none head=none
+      moved and changed: new path verified against its own added entry
+  10 superseded: 7 moved unchanged, 3 moved and changed, 0 defects
+
+FILES NEEDING A HUMAN LOOK (real content difference, missing, or untracked)
+------------------------------------------------------------------------------
+  none -- every mismatch is a line-ending form
+
+TRACKED IN GIT BUT NOT IN THE MANIFEST
+------------------------------------------------------------------------------
+  .gitattributes
+  LICENSE.txt
+  MANIFEST-RELEASE.txt
+  README.md
+
+IN THE MANIFEST BUT NOT TRACKED IN GIT
+------------------------------------------------------------------------------
+  none
+
+==============================================================================
+DONE in 28.8s  -> report PLEF_V2/results/forensics/release_byte_audit_after_r2.csv
+==============================================================================
+  Nothing was modified. The report CSV is the input to the fix step.
